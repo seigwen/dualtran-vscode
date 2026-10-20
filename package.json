@@ -1,0 +1,73 @@
+{
+  "name": "dualtran",
+  "displayName": "DualTran — Translate in Place",
+  "description": "Translate the selection and keep it next to the code: inline ghost line or side-by-side panel. Google or your own AI model (BYOK).",
+  "version": "0.1.0",
+  "publisher": "seigwen",
+  "license": "MIT",
+  "icon": "assets/icon.png",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": ["Other", "Machine Learning"],
+  "keywords": ["translate", "translation", "i18n", "ai", "openai", "google"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seigwen/dualtran-vscode"
+  },
+  "main": "./extension.js",
+  "activationEvents": [],
+  "contributes": {
+    "commands": [
+      { "command": "dualtran.translateInline", "title": "DualTran: Translate Selection (inline)" },
+      { "command": "dualtran.translatePanel", "title": "DualTran: Translate Selection (side panel)" },
+      { "command": "dualtran.replaceSelection", "title": "DualTran: Translate and Replace Selection" },
+      { "command": "dualtran.clearInline", "title": "DualTran: Clear Inline Translations" },
+      { "command": "dualtran.pickTarget", "title": "DualTran: Pick Target Language" },
+      { "command": "dualtran.setApiKey", "title": "DualTran: Set AI API Key" }
+    ],
+    "keybindings": [
+      { "command": "dualtran.translateInline", "key": "ctrl+alt+t", "mac": "cmd+alt+t", "when": "editorTextFocus" },
+      { "command": "dualtran.escape", "key": "escape", "when": "editorTextFocus" }
+    ],
+    "configuration": {
+      "title": "DualTran",
+      "properties": {
+        "dualtran.engine": {
+          "type": "string",
+          "enum": ["google", "ai"],
+          "enumDescriptions": ["Google Translate (no account)", "Any OpenAI-compatible endpoint with your key"],
+          "default": "google",
+          "description": "Translation engine."
+        },
+        "dualtran.sourceLanguage": {
+          "type": "string",
+          "default": "auto",
+          "description": "Source language code, or 'auto'."
+        },
+        "dualtran.targetLanguage": {
+          "type": "string",
+          "default": "zh-CN",
+          "description": "Target language code (e.g. zh-CN, en, ja)."
+        },
+        "dualtran.ai.endpoint": {
+          "type": "string",
+          "default": "https://api.openai.com/v1",
+          "description": "Base URL of an OpenAI-compatible API (OpenAI, DeepSeek, Groq, Ollama, …)."
+        },
+        "dualtran.ai.model": {
+          "type": "string",
+          "default": "gpt-4o-mini",
+          "description": "Model name for the AI engine."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^3.2.1"
+  }
+}
