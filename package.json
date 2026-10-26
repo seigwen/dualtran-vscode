@@ -3,7 +3,7 @@
   "displayName": "DualTran — Translate in Place",
   "description": "Translate the selection and keep it next to the code: inline ghost line or side-by-side panel. Google or your own AI model (BYOK).",
   "version": "0.1.0",
-  "publisher": "seigwen",
+  "publisher": "seigwenlee",
   "license": "MIT",
   "icon": "assets/icon.png",
   "engines": {
