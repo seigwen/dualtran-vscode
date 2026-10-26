@@ -1,5 +1,8 @@
 # DualTran for VS Code
 
+[![VS Code Marketplace](https://img.shields.io/visual-studio-marketplace/v/seigwenlee.dualtran?label=VS%20Code&logo=visualstudiocode)](https://marketplace.visualstudio.com/items?itemName=seigwenlee.dualtran)
+[![Installs](https://img.shields.io/visual-studio-marketplace/i/seigwenlee.dualtran)](https://marketplace.visualstudio.com/items?itemName=seigwenlee.dualtran)
+
 Translate the selection without leaving the editor. The translation appears **inline at the end of the line**
 (press `Esc` to clear it), or **side by side** in a panel.
 
@@ -36,11 +39,15 @@ any non-empty key.
 
 ## Install
 
-Download the `.vsix` from [Releases](https://github.com/seigwen/dualtran-vscode/releases) and run:
+From the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=seigwenlee.dualtran):
 
 ```bash
-code --install-extension dualtran-0.1.0.vsix
+code --install-extension seigwenlee.dualtran
 ```
+
+Or search **DualTran** in the Extensions view. Offline install: download the `.vsix` from
+[Releases](https://github.com/seigwen/dualtran-vscode/releases) and run
+`code --install-extension dualtran-0.1.0.vsix`.
 
 ## Privacy
 
