@@ -59,3 +59,7 @@ endpoint). No DualTran server is involved.
 ## License
 
 MIT.
+
+## E2E
+
+`npm run e2e` downloads VS Code stable once (`.vscode-test/`), launches the real extension host and runs checks against a local mock endpoint: commands registered, model/key/reasoning on the wire, exactly one retry without `reasoning_effort` when a gateway rejects it, the side-panel webview opening, and global settings persistence. Linux needs `xvfb-run -a npm run e2e`.

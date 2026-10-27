@@ -7,6 +7,8 @@
  */
 "use strict";
 
+const fs = require("node:fs/promises");
+const path = require("node:path");
 const vscode = require("vscode");
 const { translate } = require("./src/translate");
 const { MODELS_DEV_URL, projectCatalog, buildProviderList, resolveReasoning } = require("./src/catalog");
@@ -19,7 +21,9 @@ let status;
 let panel;
 
 const CATALOG_TTL = 24 * 60 * 60 * 1000;
-const CATALOG_KEY = "dualtran.catalog";
+// The projection is ~1.3 MB; globalState is a json blob VS Code warns about at
+// this size, so it lives in the extension's global storage directory instead.
+const CATALOG_FILE = "catalog.json";
 
 /** models.dev id behind a built-in alias (google-gemini → google). */
 function devIdFor(providerId) {
@@ -36,14 +40,27 @@ const BUILTINS_BY_ID = require("./src/catalog").BUILTINS.reduce((acc, entry) => 
  * models.dev catalogue, cached for a day. A failed refresh falls back to the
  * stale copy so a flaky network never empties the provider list.
  */
+function catalogPath(context) {
+  return path.join(context.globalStorageUri.fsPath, CATALOG_FILE);
+}
+
+async function readCatalogCache(context) {
+  try {
+    return JSON.parse(await fs.readFile(catalogPath(context), "utf8"));
+  } catch {
+    return null;
+  }
+}
+
 async function loadCatalog(context) {
-  const cached = context.globalState.get(CATALOG_KEY);
+  const cached = await readCatalogCache(context);
   if (cached && Date.now() - cached.ts < CATALOG_TTL) return cached.data;
   try {
     const res = await fetch(MODELS_DEV_URL);
     if (!res.ok) throw new Error("HTTP " + res.status);
     const data = projectCatalog(await res.json());
-    await context.globalState.update(CATALOG_KEY, { ts: Date.now(), data });
+    await fs.mkdir(context.globalStorageUri.fsPath, { recursive: true });
+    await fs.writeFile(catalogPath(context), JSON.stringify({ ts: Date.now(), data }), "utf8");
     return data;
   } catch (error) {
     if (cached) return cached.data;
@@ -290,7 +307,7 @@ function activate(context) {
   });
 
   cmd("dualtran.refreshProviders", async () => {
-    await context.globalState.update(CATALOG_KEY, undefined);
+    await fs.rm(catalogPath(context), { force: true });
     try {
       const catalog = await loadCatalog(context);
       vscode.window.showInformationMessage("DualTran: " + catalog.providers.length + " providers loaded from models.dev.");
@@ -298,6 +315,15 @@ function activate(context) {
       vscode.window.showErrorMessage("DualTran: catalogue refresh failed — " + (error && error.message ? error.message : error));
     }
   });
+
+  // E2E seam: the host tests cannot type into a secret prompt, and SecretStorage
+  // lives on the extension context. Registered only when the test harness sets
+  // DT_E2E, so production never sees it.
+  if (process.env.DT_E2E === "1") {
+    cmd("dualtran.__e2e.setApiKey", async (key) => {
+      await context.secrets.store("dualtran.aiKey", String(key || "e2e-key"));
+    });
+  }
 
   cmd("dualtran.setApiKey", async () => {
     const entered = await vscode.window.showInputBox({
