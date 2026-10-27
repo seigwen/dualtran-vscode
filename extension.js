@@ -9,6 +9,7 @@
 
 const vscode = require("vscode");
 const { translate } = require("./src/translate");
+const { MODELS_DEV_URL, projectCatalog, buildProviderList, resolveReasoning } = require("./src/catalog");
 
 /** @type {vscode.TextEditorDecorationType | undefined} */
 let ghost;
@@ -16,6 +17,39 @@ let ghost;
 let status;
 /** @type {vscode.WebviewPanel | undefined} */
 let panel;
+
+const CATALOG_TTL = 24 * 60 * 60 * 1000;
+const CATALOG_KEY = "dualtran.catalog";
+
+/** models.dev id behind a built-in alias (google-gemini → google). */
+function devIdFor(providerId) {
+  const builtIn = BUILTINS_BY_ID[providerId];
+  return builtIn ? builtIn.dev : providerId;
+}
+
+const BUILTINS_BY_ID = require("./src/catalog").BUILTINS.reduce((acc, entry) => {
+  acc[entry.id] = entry;
+  return acc;
+}, {});
+
+/**
+ * models.dev catalogue, cached for a day. A failed refresh falls back to the
+ * stale copy so a flaky network never empties the provider list.
+ */
+async function loadCatalog(context) {
+  const cached = context.globalState.get(CATALOG_KEY);
+  if (cached && Date.now() - cached.ts < CATALOG_TTL) return cached.data;
+  try {
+    const res = await fetch(MODELS_DEV_URL);
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    const data = projectCatalog(await res.json());
+    await context.globalState.update(CATALOG_KEY, { ts: Date.now(), data });
+    return data;
+  } catch (error) {
+    if (cached) return cached.data;
+    throw error;
+  }
+}
 
 const LANGUAGES = [
   ["zh-CN", "Chinese (Simplified)"],
@@ -39,8 +73,10 @@ function config() {
     engine: c.get("engine", "google"),
     sourceLanguage: c.get("sourceLanguage", "auto"),
     targetLanguage: c.get("targetLanguage", "zh-CN"),
+    provider: c.get("ai.provider", "openai"),
     endpoint: c.get("ai.endpoint", "https://api.openai.com/v1"),
     model: c.get("ai.model", "gpt-4o-mini"),
+    reasoning: c.get("ai.reasoning", "lowest"),
   };
 }
 
@@ -68,19 +104,31 @@ function selectionOrLine(editor) {
 
 async function runTranslate(context, text) {
   const cfg = config();
+  let reasoning = "";
+  if (cfg.engine === "ai" && cfg.reasoning !== "default") {
+    // Unknown models resolve to "" — a parameter the endpoint invents would only cause a 400.
+    const catalog = await loadCatalog(context).catch(() => null);
+    const levels = catalog && catalog.reasoning[devIdFor(cfg.provider)] && catalog.reasoning[devIdFor(cfg.provider)][cfg.model];
+    reasoning = resolveReasoning(cfg.reasoning, levels);
+  }
   const opts = {
     engine: cfg.engine,
     sourceLanguage: cfg.sourceLanguage,
     targetLanguage: cfg.targetLanguage,
-    ai: { endpoint: cfg.endpoint, model: cfg.model, key: cfg.engine === "ai" ? await apiKey(context) : "" },
+    ai: {
+      endpoint: cfg.endpoint,
+      model: cfg.model,
+      reasoning,
+      key: cfg.engine === "ai" ? await apiKey(context) : "",
+    },
   };
   return translate(text, opts);
 }
 
-function paintStatus(text) {
+function paintStatus(text, busy) {
   if (!status) return;
   if (text) {
-    status.text = "$(globe) " + text;
+    status.text = (busy ? "$(sync~spin) " : "$(globe) ") + text;
     status.show();
     clearTimeout(paintStatus._t);
     paintStatus._t = setTimeout(() => status.hide(), 6000);
@@ -147,7 +195,7 @@ function activate(context) {
     const text = selectionOrLine(editor).trim();
     if (!text) return;
     try {
-      paintStatus("translating…");
+      paintStatus("translating…", true);
       const result = await runTranslate(context, text);
       const line = editor.selection.end.line;
       const endChar = editor.document.lineAt(line).range.end.character;
@@ -171,7 +219,7 @@ function activate(context) {
     const text = selectionOrLine(editor).trim();
     if (!text) return;
     try {
-      paintStatus("translating…");
+      paintStatus("translating…", true);
       const result = await runTranslate(context, text);
       showPanel(context, text, result, config().targetLanguage);
       paintStatus("");
@@ -200,6 +248,55 @@ function activate(context) {
       { title: "DualTran — target language" }
     );
     if (pick) await vscode.workspace.getConfiguration("dualtran").update("targetLanguage", pick.code, vscode.ConfigurationTarget.Global);
+  });
+
+  cmd("dualtran.pickProvider", async () => {
+    let catalog;
+    try {
+      catalog = await loadCatalog(context);
+    } catch (error) {
+      return vscode.window.showErrorMessage("DualTran: could not load models.dev — " + (error && error.message ? error.message : error));
+    }
+    const list = buildProviderList(catalog.providers, catalog.modelsById);
+    const firstCatalogue = list.findIndex((provider) => !provider.builtIn);
+    const items = [];
+    list.forEach((provider, index) => {
+      if (index === firstCatalogue) {
+        items.push({ label: "More (models.dev)", kind: vscode.QuickPickItemKind.Separator });
+      }
+      items.push({
+        label: provider.name,
+        description: provider.id,
+        detail: provider.api,
+        provider,
+      });
+    });
+    const pick = await vscode.window.showQuickPick(items, {
+      title: "DualTran — AI provider",
+      placeHolder: "Built-in first, then every provider models.dev knows",
+      matchOnDescription: true,
+      matchOnDetail: true,
+    });
+    if (!pick || !pick.provider) return;
+    const cfg = vscode.workspace.getConfiguration("dualtran");
+    const model = (pick.provider.models[0] && pick.provider.models[0].id) || "";
+    await cfg.update("ai.provider", pick.provider.id, vscode.ConfigurationTarget.Global);
+    await cfg.update("ai.endpoint", pick.provider.api, vscode.ConfigurationTarget.Global);
+    await cfg.update("engine", "ai", vscode.ConfigurationTarget.Global);
+    if (model) await cfg.update("ai.model", model, vscode.ConfigurationTarget.Global);
+    vscode.window.showInformationMessage(
+      "DualTran: " + pick.provider.name + (model ? " — " + model : " — set a model")
+    );
+  });
+
+  cmd("dualtran.refreshProviders", async () => {
+    await context.globalState.update(CATALOG_KEY, undefined);
+    try {
+      const catalog = await loadCatalog(context);
+      vscode.window.showInformationMessage("DualTran: " + catalog.providers.length + " providers loaded from models.dev.");
+    } catch (error) {
+      vscode.window.showErrorMessage("DualTran: catalogue refresh failed — " + (error && error.message ? error.message : error));
+    }
   });
 
   cmd("dualtran.setApiKey", async () => {

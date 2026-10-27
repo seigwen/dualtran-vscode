@@ -20,6 +20,8 @@ Translate the selection without leaving the editor. The translation appears **in
 | DualTran: Translate and Replace Selection | — | Overwrite the selection with the translation |
 | DualTran: Clear Inline Translations | `Esc` | Remove ghost lines |
 | DualTran: Pick Target Language | — | Quick pick, saved to settings |
+| DualTran: Choose AI Provider | — | Quick pick: built-in providers, then everything models.dev lists |
+| DualTran: Refresh Provider Catalogue (models.dev) | — | Drop the cached catalogue and fetch it again |
 | DualTran: Set AI API Key | — | Stored in the OS keychain |
 
 ## Settings

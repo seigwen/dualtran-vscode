@@ -9,8 +9,18 @@
   "engines": {
     "vscode": "^1.85.0"
   },
-  "categories": ["Other", "Machine Learning"],
-  "keywords": ["translate", "translation", "i18n", "ai", "openai", "google"],
+  "categories": [
+    "Other",
+    "Machine Learning"
+  ],
+  "keywords": [
+    "translate",
+    "translation",
+    "i18n",
+    "ai",
+    "openai",
+    "google"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/seigwen/dualtran-vscode"
@@ -19,24 +29,65 @@
   "activationEvents": [],
   "contributes": {
     "commands": [
-      { "command": "dualtran.translateInline", "title": "DualTran: Translate Selection (inline)" },
-      { "command": "dualtran.translatePanel", "title": "DualTran: Translate Selection (side panel)" },
-      { "command": "dualtran.replaceSelection", "title": "DualTran: Translate and Replace Selection" },
-      { "command": "dualtran.clearInline", "title": "DualTran: Clear Inline Translations" },
-      { "command": "dualtran.pickTarget", "title": "DualTran: Pick Target Language" },
-      { "command": "dualtran.setApiKey", "title": "DualTran: Set AI API Key" }
+      {
+        "command": "dualtran.translateInline",
+        "title": "DualTran: Translate Selection (inline)"
+      },
+      {
+        "command": "dualtran.translatePanel",
+        "title": "DualTran: Translate Selection (side panel)"
+      },
+      {
+        "command": "dualtran.replaceSelection",
+        "title": "DualTran: Translate and Replace Selection"
+      },
+      {
+        "command": "dualtran.clearInline",
+        "title": "DualTran: Clear Inline Translations"
+      },
+      {
+        "command": "dualtran.pickTarget",
+        "title": "DualTran: Pick Target Language"
+      },
+      {
+        "command": "dualtran.setApiKey",
+        "title": "DualTran: Set AI API Key"
+      },
+      {
+        "command": "dualtran.pickProvider",
+        "title": "DualTran: Choose AI Provider (built-in + models.dev)"
+      },
+      {
+        "command": "dualtran.refreshProviders",
+        "title": "DualTran: Refresh Provider Catalogue (models.dev)"
+      }
     ],
     "keybindings": [
-      { "command": "dualtran.translateInline", "key": "ctrl+alt+t", "mac": "cmd+alt+t", "when": "editorTextFocus" },
-      { "command": "dualtran.escape", "key": "escape", "when": "editorTextFocus" }
+      {
+        "command": "dualtran.translateInline",
+        "key": "ctrl+alt+t",
+        "mac": "cmd+alt+t",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "dualtran.escape",
+        "key": "escape",
+        "when": "editorTextFocus"
+      }
     ],
     "configuration": {
       "title": "DualTran",
       "properties": {
         "dualtran.engine": {
           "type": "string",
-          "enum": ["google", "ai"],
-          "enumDescriptions": ["Google Translate (no account)", "Any OpenAI-compatible endpoint with your key"],
+          "enum": [
+            "google",
+            "ai"
+          ],
+          "enumDescriptions": [
+            "Google Translate (no account)",
+            "Any OpenAI-compatible endpoint with your key"
+          ],
           "default": "google",
           "description": "Translation engine."
         },
@@ -59,6 +110,38 @@
           "type": "string",
           "default": "gpt-4o-mini",
           "description": "Model name for the AI engine."
+        },
+        "dualtran.ai.provider": {
+          "type": "string",
+          "default": "openai",
+          "markdownDescription": "AI provider id. Use **DualTran: Choose AI Provider** to pick from the built-in list and the 200+ providers in models.dev; the command fills in the matching endpoint and model."
+        },
+        "dualtran.ai.reasoning": {
+          "type": "string",
+          "enum": [
+            "lowest",
+            "default",
+            "none",
+            "minimal",
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "enumDescriptions": [
+            "Use the lowest level the selected model accepts (default)",
+            "Send no reasoning parameter — let the provider decide",
+            "No reasoning",
+            "Minimal reasoning",
+            "Low reasoning",
+            "Medium reasoning",
+            "High reasoning",
+            "Extra-high reasoning",
+            "Maximum reasoning"
+          ],
+          "default": "lowest",
+          "description": "How much reasoning effort to request. Unknown or unsupported levels are dropped automatically."
         }
       }
     }
