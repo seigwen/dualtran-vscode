@@ -1,0 +1,140 @@
+{
+  "cmdTranslateInline": {
+    "message": "DualTran: Seçimi Çevir (satır içi)"
+  },
+  "cmdTranslatePanel": {
+    "message": "DualTran: Seçimi Çevir (yan panel)"
+  },
+  "cmdReplaceSelection": {
+    "message": "DualTran: Seçimi Çevir ve Değiştir"
+  },
+  "cmdClearInline": {
+    "message": "DualTran: Satır İçi Çevirileri Temizle"
+  },
+  "cmdPickTarget": {
+    "message": "DualTran: Hedef Dili Seç"
+  },
+  "cmdSetApiKey": {
+    "message": "DualTran: AI API Anahtarını Ayarla"
+  },
+  "cmdPickProvider": {
+    "message": "DualTran: AI Sağlayıcısını Seç (yerleşik + models.dev)"
+  },
+  "cmdRefreshProviders": {
+    "message": "DualTran: Sağlayıcı Kataloğunu Yenile (models.dev)"
+  },
+  "cfgEngine": {
+    "message": "Çeviri motoru."
+  },
+  "cfgEngineGoogle": {
+    "message": "Google Translate (hesap gerekmez)"
+  },
+  "cfgEngineAi": {
+    "message": "Anahtarınızla herhangi bir OpenAI uyumlu uç nokta"
+  },
+  "cfgSource": {
+    "message": "Kaynak dil kodu veya 'auto'."
+  },
+  "cfgTarget": {
+    "message": "Hedef dil kodu (ör. zh-CN, en, ja)."
+  },
+  "cfgEndpoint": {
+    "message": "OpenAI uyumlu bir API'nin temel URL'si (OpenAI, DeepSeek, Groq, Ollama, …)."
+  },
+  "cfgModel": {
+    "message": "AI motoru için model adı."
+  },
+  "cfgProvider": {
+    "message": "AI sağlayıcı kimliği. Yerleşik listeden ve models.dev üzerindeki 200+ sağlayıcıdan seçmek için **DualTran: Choose AI Provider** kullanın; komut eşleşen uç noktayı ve modeli doldurur."
+  },
+  "cfgReasoning": {
+    "message": "İstenecek akıl yürütme çabası düzeyi. Bilinmeyen veya desteklenmeyen düzeyler otomatik olarak kaldırılır."
+  },
+  "cfgReasoningLowest": {
+    "message": "Seçili modelin kabul ettiği en düşük düzeyi kullan (varsayılan)"
+  },
+  "cfgReasoningDefault": {
+    "message": "Akıl yürütme parametresi gönderme — sağlayıcı karar versin"
+  },
+  "cfgReasoningNone": {
+    "message": "Akıl yürütme yok"
+  },
+  "cfgReasoningMinimal": {
+    "message": "Minimal akıl yürütme"
+  },
+  "cfgReasoningLow": {
+    "message": "Düşük akıl yürütme"
+  },
+  "cfgReasoningMedium": {
+    "message": "Orta akıl yürütme"
+  },
+  "cfgReasoningHigh": {
+    "message": "Yüksek akıl yürütme"
+  },
+  "cfgReasoningXhigh": {
+    "message": "Çok yüksek akıl yürütme"
+  },
+  "cfgReasoningMax": {
+    "message": "Maksimum akıl yürütme"
+  },
+  "cfgSectionTitle": {
+    "message": "DualTran"
+  },
+  "warnOpenFile": {
+    "message": "DualTran: önce bir dosya açın."
+  },
+  "warnSelectText": {
+    "message": "DualTran: değiştirilecek metni seçin."
+  },
+  "errorPrefix": {
+    "message": "DualTran: {0}"
+  },
+  "inputApiKeyTitle": {
+    "message": "DualTran — AI API anahtarı"
+  },
+  "inputApiKeyPromptExisting": {
+    "message": "VS Code SecretStorage aracılığıyla işletim sistemi anahtar zincirinde saklanır. Mevcut anahtarı korumak için boş bırakın."
+  },
+  "inputApiKeyPromptNew": {
+    "message": "SecretStorage (işletim sistemi anahtar zinciri) içinde saklanır."
+  },
+  "errorNoApiKey": {
+    "message": "API anahtarı ayarlanmamış (DualTran: AI API Anahtarını Ayarla)."
+  },
+  "pickTargetTitle": {
+    "message": "DualTran — hedef dil"
+  },
+  "pickProviderTitle": {
+    "message": "DualTran — AI sağlayıcısı"
+  },
+  "pickProviderPlaceholder": {
+    "message": "Önce yerleşik, ardından models.dev'in bildiği tüm sağlayıcılar"
+  },
+  "providerSeparator": {
+    "message": "Daha fazla (models.dev)"
+  },
+  "infoProviderPicked": {
+    "message": "DualTran: {0}"
+  },
+  "infoProviderModel": {
+    "message": "DualTran: {0} — {1}"
+  },
+  "infoSetModel": {
+    "message": "DualTran: {0} — bir model ayarlayın"
+  },
+  "infoProvidersLoaded": {
+    "message": "DualTran: models.dev üzerinden {0} sağlayıcı yüklendi."
+  },
+  "errorCatalogueRefresh": {
+    "message": "DualTran: katalog yenileme başarısız — {0}"
+  },
+  "errorCatalogueLoad": {
+    "message": "DualTran: models.dev yüklenemedi — {0}"
+  },
+  "infoApiKeySaved": {
+    "message": "DualTran: API anahtarı kaydedildi."
+  },
+  "statusTranslating": {
+    "message": "çevriliyor…"
+  }
+}

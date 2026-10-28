@@ -1,0 +1,140 @@
+{
+  "cmdTranslateInline": {
+    "message": "DualTran: ترجمه انتخاب (درون‌خطی)"
+  },
+  "cmdTranslatePanel": {
+    "message": "DualTran: ترجمه انتخاب (پنل کناری)"
+  },
+  "cmdReplaceSelection": {
+    "message": "DualTran: ترجمه و جایگزینی انتخاب"
+  },
+  "cmdClearInline": {
+    "message": "DualTran: پاک کردن ترجمه‌های درون‌خطی"
+  },
+  "cmdPickTarget": {
+    "message": "DualTran: انتخاب زبان مقصد"
+  },
+  "cmdSetApiKey": {
+    "message": "DualTran: تنظیم کلید API هوش مصنوعی"
+  },
+  "cmdPickProvider": {
+    "message": "DualTran: انتخاب ارائه‌دهنده هوش مصنوعی (داخلی + models.dev)"
+  },
+  "cmdRefreshProviders": {
+    "message": "DualTran: به‌روزرسانی فهرست ارائه‌دهندگان (models.dev)"
+  },
+  "cfgEngine": {
+    "message": "موتور ترجمه."
+  },
+  "cfgEngineGoogle": {
+    "message": "Google Translate (بدون حساب)"
+  },
+  "cfgEngineAi": {
+    "message": "هر نقطه پایانی سازگار با OpenAI همراه با کلید شما"
+  },
+  "cfgSource": {
+    "message": "کد زبان مبدأ، یا 'auto'."
+  },
+  "cfgTarget": {
+    "message": "کد زبان مقصد (مثلاً zh-CN، en، ja)."
+  },
+  "cfgEndpoint": {
+    "message": "نشانی پایه یک API سازگار با OpenAI (OpenAI، DeepSeek، Groq، Ollama، …)."
+  },
+  "cfgModel": {
+    "message": "نام مدل برای موتور هوش مصنوعی."
+  },
+  "cfgProvider": {
+    "message": "شناسه ارائه‌دهنده هوش مصنوعی. از **DualTran: Choose AI Provider** برای انتخاب از فهرست داخلی و بیش از ۲۰۰ ارائه‌دهنده در models.dev استفاده کنید؛ فرمان نقطه پایانی و مدل مطابق را پر می‌کند."
+  },
+  "cfgReasoning": {
+    "message": "میزان تلاش استدلال درخواستی. سطوح ناشناخته یا پشتیبانی‌نشده به‌طور خودکار حذف می‌شوند."
+  },
+  "cfgReasoningLowest": {
+    "message": "استفاده از پایین‌ترین سطحی که مدل انتخاب‌شده می‌پذیرد (پیش‌فرض)"
+  },
+  "cfgReasoningDefault": {
+    "message": "ارسال نکردن پارامتر استدلال — تصمیم‌گیری با ارائه‌دهنده"
+  },
+  "cfgReasoningNone": {
+    "message": "بدون استدلال"
+  },
+  "cfgReasoningMinimal": {
+    "message": "استدلال حداقلی"
+  },
+  "cfgReasoningLow": {
+    "message": "استدلال کم"
+  },
+  "cfgReasoningMedium": {
+    "message": "استدلال متوسط"
+  },
+  "cfgReasoningHigh": {
+    "message": "استدلال زیاد"
+  },
+  "cfgReasoningXhigh": {
+    "message": "استدلال بسیار زیاد"
+  },
+  "cfgReasoningMax": {
+    "message": "حداکثر استدلال"
+  },
+  "cfgSectionTitle": {
+    "message": "DualTran"
+  },
+  "warnOpenFile": {
+    "message": "DualTran: ابتدا یک فایل باز کنید"
+  },
+  "warnSelectText": {
+    "message": "DualTran: متنی را که باید جایگزین شود انتخاب کنید"
+  },
+  "errorPrefix": {
+    "message": "DualTran: {0}"
+  },
+  "inputApiKeyTitle": {
+    "message": "DualTran — کلید API هوش مصنوعی"
+  },
+  "inputApiKeyPromptExisting": {
+    "message": "در زنجیره کلید سیستم‌عامل از طریق VS Code SecretStorage ذخیره شده است. برای حفظ کلید فعلی خالی بگذارید."
+  },
+  "inputApiKeyPromptNew": {
+    "message": "در SecretStorage (زنجیره کلید سیستم‌عامل) ذخیره می‌شود."
+  },
+  "errorNoApiKey": {
+    "message": "کلید API تنظیم نشده است (DualTran: Set AI API Key)."
+  },
+  "pickTargetTitle": {
+    "message": "DualTran — زبان مقصد"
+  },
+  "pickProviderTitle": {
+    "message": "DualTran — ارائه‌دهنده هوش مصنوعی"
+  },
+  "pickProviderPlaceholder": {
+    "message": "ابتدا ارائه‌دهنده‌های داخلی، سپس همه ارائه‌دهنده‌های شناخته‌شده در models.dev"
+  },
+  "providerSeparator": {
+    "message": "بیشتر (models.dev)"
+  },
+  "infoProviderPicked": {
+    "message": "DualTran: {0}"
+  },
+  "infoProviderModel": {
+    "message": "DualTran: {0} — {1}"
+  },
+  "infoSetModel": {
+    "message": "DualTran: {0} — یک مدل تنظیم کنید"
+  },
+  "infoProvidersLoaded": {
+    "message": "DualTran: {0} ارائه‌دهنده از models.dev بارگذاری شد"
+  },
+  "errorCatalogueRefresh": {
+    "message": "DualTran: به‌روزرسانی کاتالوگ ناموفق بود — {0}"
+  },
+  "errorCatalogueLoad": {
+    "message": "DualTran: بارگذاری models.dev ممکن نشد — {0}"
+  },
+  "infoApiKeySaved": {
+    "message": "DualTran: کلید API ذخیره شد"
+  },
+  "statusTranslating": {
+    "message": "در حال ترجمه…"
+  }
+}

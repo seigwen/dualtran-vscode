@@ -1,0 +1,140 @@
+{
+  "cmdTranslateInline": {
+    "message": "DualTran: Kijelölés fordítása (beágyazva)"
+  },
+  "cmdTranslatePanel": {
+    "message": "DualTran: Kijelölés fordítása (oldalpanel)"
+  },
+  "cmdReplaceSelection": {
+    "message": "DualTran: Kijelölés fordítása és cseréje"
+  },
+  "cmdClearInline": {
+    "message": "DualTran: Beágyazott fordítások törlése"
+  },
+  "cmdPickTarget": {
+    "message": "DualTran: Célnyelv kiválasztása"
+  },
+  "cmdSetApiKey": {
+    "message": "DualTran: AI API-kulcs beállítása"
+  },
+  "cmdPickProvider": {
+    "message": "DualTran: AI-szolgáltató kiválasztása (beépített + models.dev)"
+  },
+  "cmdRefreshProviders": {
+    "message": "DualTran: Szolgáltatókatalógus frissítése (models.dev)"
+  },
+  "cfgEngine": {
+    "message": "Fordítási motor."
+  },
+  "cfgEngineGoogle": {
+    "message": "Google Translate (fiók nélkül)"
+  },
+  "cfgEngineAi": {
+    "message": "Bármely OpenAI-kompatibilis végpont a saját kulcsoddal"
+  },
+  "cfgSource": {
+    "message": "Forrásnyelv kódja, vagy 'auto'."
+  },
+  "cfgTarget": {
+    "message": "Célnyelv kódja (pl. zh-CN, en, ja)."
+  },
+  "cfgEndpoint": {
+    "message": "Egy OpenAI-kompatibilis API alap URL-je (OpenAI, DeepSeek, Groq, Ollama, …)."
+  },
+  "cfgModel": {
+    "message": "Az AI-motor modellneve."
+  },
+  "cfgProvider": {
+    "message": "AI-szolgáltató azonosítója. Használd a **DualTran: Choose AI Provider** parancsot a beépített listából és a models.dev 200+ szolgáltatójából való választáshoz; a parancs kitölti a megfelelő végpontot és modellt."
+  },
+  "cfgReasoning": {
+    "message": "Mennyi érvelési erőfeszítést kérj. Az ismeretlen vagy nem támogatott szintek automatikusan el lesznek dobva."
+  },
+  "cfgReasoningLowest": {
+    "message": "A kiválasztott modell által elfogadott legalacsonyabb szint használata (alapértelmezett)"
+  },
+  "cfgReasoningDefault": {
+    "message": "Ne küldj érvelési paramétert — hagyd a szolgáltatóra a döntést"
+  },
+  "cfgReasoningNone": {
+    "message": "Nincs érvelés"
+  },
+  "cfgReasoningMinimal": {
+    "message": "Minimális érvelés"
+  },
+  "cfgReasoningLow": {
+    "message": "Alacsony érvelés"
+  },
+  "cfgReasoningMedium": {
+    "message": "Közepes érvelés"
+  },
+  "cfgReasoningHigh": {
+    "message": "Magas érvelés"
+  },
+  "cfgReasoningXhigh": {
+    "message": "Extra magas érvelés"
+  },
+  "cfgReasoningMax": {
+    "message": "Maximális érvelés"
+  },
+  "cfgSectionTitle": {
+    "message": "DualTran"
+  },
+  "warnOpenFile": {
+    "message": "DualTran: először nyisson meg egy fájlt."
+  },
+  "warnSelectText": {
+    "message": "DualTran: jelölje ki a cserélendő szöveget."
+  },
+  "errorPrefix": {
+    "message": "DualTran: {0}"
+  },
+  "inputApiKeyTitle": {
+    "message": "DualTran — AI API-kulcs"
+  },
+  "inputApiKeyPromptExisting": {
+    "message": "Az operációs rendszer kulcstárában tárolva a VS Code SecretStorage segítségével. Hagyja üresen a jelenlegi kulcs megtartásához."
+  },
+  "inputApiKeyPromptNew": {
+    "message": "A SecretStorage-ban tárolva (operációs rendszer kulcstára)."
+  },
+  "errorNoApiKey": {
+    "message": "Nincs beállított API-kulcs (DualTran: AI API-kulcs beállítása)."
+  },
+  "pickTargetTitle": {
+    "message": "DualTran — célnyelv"
+  },
+  "pickProviderTitle": {
+    "message": "DualTran — AI-szolgáltató"
+  },
+  "pickProviderPlaceholder": {
+    "message": "Először a beépítettek, majd a models.dev által ismert összes szolgáltató"
+  },
+  "providerSeparator": {
+    "message": "Továbbiak (models.dev)"
+  },
+  "infoProviderPicked": {
+    "message": "DualTran: {0}"
+  },
+  "infoProviderModel": {
+    "message": "DualTran: {0} — {1}"
+  },
+  "infoSetModel": {
+    "message": "DualTran: {0} — állítson be egy modellt"
+  },
+  "infoProvidersLoaded": {
+    "message": "DualTran: {0} szolgáltató betöltve a models.dev-ről."
+  },
+  "errorCatalogueRefresh": {
+    "message": "DualTran: a katalógus frissítése sikertelen – {0}"
+  },
+  "errorCatalogueLoad": {
+    "message": "DualTran: a models.dev nem tölthető be – {0}"
+  },
+  "infoApiKeySaved": {
+    "message": "DualTran: API-kulcs mentve."
+  },
+  "statusTranslating": {
+    "message": "fordítás…"
+  }
+}

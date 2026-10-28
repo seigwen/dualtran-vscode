@@ -1,0 +1,140 @@
+{
+  "cmdTranslateInline": {
+    "message": "DualTran: Vertaal Seleksie (inlyn)"
+  },
+  "cmdTranslatePanel": {
+    "message": "DualTran: Vertaal Seleksie (sypaneel)"
+  },
+  "cmdReplaceSelection": {
+    "message": "DualTran: Vertaal en Vervang Seleksie"
+  },
+  "cmdClearInline": {
+    "message": "DualTran: Vee Inlyn Vertalings Uit"
+  },
+  "cmdPickTarget": {
+    "message": "DualTran: Kies Teikentaal"
+  },
+  "cmdSetApiKey": {
+    "message": "DualTran: Stel KI API-sleutel"
+  },
+  "cmdPickProvider": {
+    "message": "DualTran: Kies KI-verskaffer (ingebou + models.dev)"
+  },
+  "cmdRefreshProviders": {
+    "message": "DualTran: Verfris Verskafferkatalogus (models.dev)"
+  },
+  "cfgEngine": {
+    "message": "Vertaalenjin."
+  },
+  "cfgEngineGoogle": {
+    "message": "Google Translate (geen rekening)"
+  },
+  "cfgEngineAi": {
+    "message": "Enige OpenAI-versoenbare eindpunt met jou sleutel"
+  },
+  "cfgSource": {
+    "message": "Brontaal-kode, of 'auto'."
+  },
+  "cfgTarget": {
+    "message": "Teeltaal-kode (bv. zh-CN, en, ja)."
+  },
+  "cfgEndpoint": {
+    "message": "Basis-URL van 'n OpenAI-versoenbare API (OpenAI, DeepSeek, Groq, Ollama, …)."
+  },
+  "cfgModel": {
+    "message": "Modelnaam vir die KI-enjin."
+  },
+  "cfgProvider": {
+    "message": "KI-verskaffer-id. Gebruik **DualTran: Choose AI Provider** om uit die ingeboude lys en die 200+ verskaffers in models.dev te kies; die opdrag vul die ooreenstemmende eindpunt en model in."
+  },
+  "cfgReasoning": {
+    "message": "Hoeveel redenasie-inspanning om aan te vra. Onbekende of onondersteunde vlakke word outomaties verwerp."
+  },
+  "cfgReasoningLowest": {
+    "message": "Gebruik die laagste vlak wat die gekose model aanvaar (verstek)"
+  },
+  "cfgReasoningDefault": {
+    "message": "Stuur geen redenasie-parameter nie — laat die verskaffer besluit"
+  },
+  "cfgReasoningNone": {
+    "message": "Geen redenasie"
+  },
+  "cfgReasoningMinimal": {
+    "message": "Minimale redenering"
+  },
+  "cfgReasoningLow": {
+    "message": "Lae redenering"
+  },
+  "cfgReasoningMedium": {
+    "message": "Medium redenering"
+  },
+  "cfgReasoningHigh": {
+    "message": "Hoë redenering"
+  },
+  "cfgReasoningXhigh": {
+    "message": "Ekstra-hoë redenering"
+  },
+  "cfgReasoningMax": {
+    "message": "Maksimum redenering"
+  },
+  "cfgSectionTitle": {
+    "message": "DualTran"
+  },
+  "warnOpenFile": {
+    "message": "DualTran: maak eers 'n lêer oop."
+  },
+  "warnSelectText": {
+    "message": "DualTran: kies die teks om te vervang."
+  },
+  "errorPrefix": {
+    "message": "DualTran: {0}"
+  },
+  "inputApiKeyTitle": {
+    "message": "DualTran — AI API-sleutel"
+  },
+  "inputApiKeyPromptExisting": {
+    "message": "Gestoor in die bedryfstelsel se sleutelring via VS Code SecretStorage. Los leeg om die huidige sleutel te behou."
+  },
+  "inputApiKeyPromptNew": {
+    "message": "Gestoor in SecretStorage (bedryfstelsel se sleutelring)."
+  },
+  "errorNoApiKey": {
+    "message": "Geen API-sleutel gestel nie (DualTran: Stel AI API-sleutel)."
+  },
+  "pickTargetTitle": {
+    "message": "DualTran — teikentaal"
+  },
+  "pickProviderTitle": {
+    "message": "DualTran — AI-verskaffer"
+  },
+  "pickProviderPlaceholder": {
+    "message": "Ingeboude eerste, dan elke verskaffer wat models.dev ken"
+  },
+  "providerSeparator": {
+    "message": "Meer (models.dev)"
+  },
+  "infoProviderPicked": {
+    "message": "DualTran: {0}"
+  },
+  "infoProviderModel": {
+    "message": "DualTran: {0} — {1}"
+  },
+  "infoSetModel": {
+    "message": "DualTran: {0} — stel 'n model"
+  },
+  "infoProvidersLoaded": {
+    "message": "DualTran: {0} verskaffers gelaai vanaf models.dev."
+  },
+  "errorCatalogueRefresh": {
+    "message": "DualTran: katalogusverfrissing het misluk — {0}"
+  },
+  "errorCatalogueLoad": {
+    "message": "DualTran: kon nie models.dev laai nie — {0}"
+  },
+  "infoApiKeySaved": {
+    "message": "DualTran: API-sleutel gestoor."
+  },
+  "statusTranslating": {
+    "message": "vertaal…"
+  }
+}

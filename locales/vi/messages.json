@@ -1,0 +1,140 @@
+{
+  "cmdTranslateInline": {
+    "message": "DualTran: Dịch đoạn chọn (nội tuyến)"
+  },
+  "cmdTranslatePanel": {
+    "message": "DualTran: Dịch đoạn chọn (bảng bên)"
+  },
+  "cmdReplaceSelection": {
+    "message": "DualTran: Dịch và thay thế đoạn chọn"
+  },
+  "cmdClearInline": {
+    "message": "DualTran: Xóa bản dịch nội tuyến"
+  },
+  "cmdPickTarget": {
+    "message": "DualTran: Chọn ngôn ngữ đích"
+  },
+  "cmdSetApiKey": {
+    "message": "DualTran: Đặt khóa API AI"
+  },
+  "cmdPickProvider": {
+    "message": "DualTran: Chọn nhà cung cấp AI (tích hợp sẵn + models.dev)"
+  },
+  "cmdRefreshProviders": {
+    "message": "DualTran: Làm mới danh mục nhà cung cấp (models.dev)"
+  },
+  "cfgEngine": {
+    "message": "Công cụ dịch."
+  },
+  "cfgEngineGoogle": {
+    "message": "Google Translate (không cần tài khoản)"
+  },
+  "cfgEngineAi": {
+    "message": "Bất kỳ endpoint tương thích OpenAI nào với khóa của bạn"
+  },
+  "cfgSource": {
+    "message": "Mã ngôn ngữ nguồn, hoặc 'auto'."
+  },
+  "cfgTarget": {
+    "message": "Mã ngôn ngữ đích (ví dụ: zh-CN, en, ja)."
+  },
+  "cfgEndpoint": {
+    "message": "URL cơ sở của API tương thích OpenAI (OpenAI, DeepSeek, Groq, Ollama, …)."
+  },
+  "cfgModel": {
+    "message": "Tên mô hình cho công cụ AI."
+  },
+  "cfgProvider": {
+    "message": "ID nhà cung cấp AI. Dùng **DualTran: Choose AI Provider** để chọn từ danh sách tích hợp và hơn 200 nhà cung cấp trong models.dev; lệnh sẽ tự điền endpoint và mô hình tương ứng."
+  },
+  "cfgReasoning": {
+    "message": "Mức độ suy luận cần yêu cầu. Các mức không xác định hoặc không được hỗ trợ sẽ tự động bị loại bỏ."
+  },
+  "cfgReasoningLowest": {
+    "message": "Dùng mức thấp nhất mà mô hình đã chọn chấp nhận (mặc định)"
+  },
+  "cfgReasoningDefault": {
+    "message": "Không gửi tham số suy luận — để nhà cung cấp quyết định"
+  },
+  "cfgReasoningNone": {
+    "message": "Không suy luận"
+  },
+  "cfgReasoningMinimal": {
+    "message": "Suy luận tối thiểu"
+  },
+  "cfgReasoningLow": {
+    "message": "Suy luận thấp"
+  },
+  "cfgReasoningMedium": {
+    "message": "Suy luận trung bình"
+  },
+  "cfgReasoningHigh": {
+    "message": "Suy luận cao"
+  },
+  "cfgReasoningXhigh": {
+    "message": "Suy luận rất cao"
+  },
+  "cfgReasoningMax": {
+    "message": "Suy luận tối đa"
+  },
+  "cfgSectionTitle": {
+    "message": "DualTran"
+  },
+  "warnOpenFile": {
+    "message": "DualTran: hãy mở tệp trước."
+  },
+  "warnSelectText": {
+    "message": "DualTran: hãy chọn văn bản cần thay thế."
+  },
+  "errorPrefix": {
+    "message": "DualTran: {0}"
+  },
+  "inputApiKeyTitle": {
+    "message": "DualTran — khóa API AI"
+  },
+  "inputApiKeyPromptExisting": {
+    "message": "Được lưu trong keychain của hệ điều hành qua VS Code SecretStorage. Để trống để giữ khóa hiện tại."
+  },
+  "inputApiKeyPromptNew": {
+    "message": "Được lưu trong SecretStorage (keychain của hệ điều hành)."
+  },
+  "errorNoApiKey": {
+    "message": "Chưa đặt API key (DualTran: Đặt AI API Key)."
+  },
+  "pickTargetTitle": {
+    "message": "DualTran — ngôn ngữ đích"
+  },
+  "pickProviderTitle": {
+    "message": "DualTran — nhà cung cấp AI"
+  },
+  "pickProviderPlaceholder": {
+    "message": "Tích hợp sẵn trước, sau đó là mọi nhà cung cấp mà models.dev biết"
+  },
+  "providerSeparator": {
+    "message": "Thêm (models.dev)"
+  },
+  "infoProviderPicked": {
+    "message": "DualTran: {0}"
+  },
+  "infoProviderModel": {
+    "message": "DualTran: {0} — {1}"
+  },
+  "infoSetModel": {
+    "message": "DualTran: {0} — đặt một model"
+  },
+  "infoProvidersLoaded": {
+    "message": "DualTran: đã tải {0} nhà cung cấp từ models.dev."
+  },
+  "errorCatalogueRefresh": {
+    "message": "DualTran: làm mới danh mục thất bại — {0}"
+  },
+  "errorCatalogueLoad": {
+    "message": "DualTran: không thể tải models.dev — {0}"
+  },
+  "infoApiKeySaved": {
+    "message": "DualTran: đã lưu khóa API."
+  },
+  "statusTranslating": {
+    "message": "đang dịch…"
+  }
+}

@@ -11,6 +11,20 @@ Translate the selection without leaving the editor. The translation appears **in
   Groq, Together, Ollama, LM Studio, …
 - The API key lives in VS Code `SecretStorage` (the OS keychain), never in settings.json.
 
+## Languages
+
+The interface ships **38 language catalogues** (same set as the browser extension). VS Code applies the
+languages its own UI supports (currently about a dozen); the rest are generated and become live the day
+VS Code adds them — no code change needed.
+
+```bash
+npm run i18n:sync    # fill every catalogue (reuses the extension's translations, machine-translates the rest)
+npm run i18n:check   # missing key / empty value / lost placeholder → fail
+```
+
+`npm run i18n:build` regenerates `package.nls.<locale>.json` and `l10n/bundle.l10n.<locale>.json` from the
+catalogues; `npm run verify` runs `i18n:check`.
+
 ## Commands
 
 | Command | Shortcut | What it does |

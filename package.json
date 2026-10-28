@@ -2,7 +2,7 @@
   "name": "dualtran",
   "displayName": "DualTran — Translate in Place",
   "description": "Translate the selection and keep it next to the code: inline ghost line or side-by-side panel. Google or your own AI model (BYOK).",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "publisher": "seigwenlee",
   "license": "MIT",
   "icon": "assets/icon.png",
@@ -31,35 +31,35 @@
     "commands": [
       {
         "command": "dualtran.translateInline",
-        "title": "DualTran: Translate Selection (inline)"
+        "title": "%cmdTranslateInline%"
       },
       {
         "command": "dualtran.translatePanel",
-        "title": "DualTran: Translate Selection (side panel)"
+        "title": "%cmdTranslatePanel%"
       },
       {
         "command": "dualtran.replaceSelection",
-        "title": "DualTran: Translate and Replace Selection"
+        "title": "%cmdReplaceSelection%"
       },
       {
         "command": "dualtran.clearInline",
-        "title": "DualTran: Clear Inline Translations"
+        "title": "%cmdClearInline%"
       },
       {
         "command": "dualtran.pickTarget",
-        "title": "DualTran: Pick Target Language"
+        "title": "%cmdPickTarget%"
       },
       {
         "command": "dualtran.setApiKey",
-        "title": "DualTran: Set AI API Key"
+        "title": "%cmdSetApiKey%"
       },
       {
         "command": "dualtran.pickProvider",
-        "title": "DualTran: Choose AI Provider (built-in + models.dev)"
+        "title": "%cmdPickProvider%"
       },
       {
         "command": "dualtran.refreshProviders",
-        "title": "DualTran: Refresh Provider Catalogue (models.dev)"
+        "title": "%cmdRefreshProviders%"
       }
     ],
     "keybindings": [
@@ -76,7 +76,7 @@
       }
     ],
     "configuration": {
-      "title": "DualTran",
+      "title": "%cfgSectionTitle%",
       "properties": {
         "dualtran.engine": {
           "type": "string",
@@ -85,36 +85,36 @@
             "ai"
           ],
           "enumDescriptions": [
-            "Google Translate (no account)",
-            "Any OpenAI-compatible endpoint with your key"
+            "%cfgEngineGoogle%",
+            "%cfgEngineAi%"
           ],
           "default": "google",
-          "description": "Translation engine."
+          "description": "%cfgEngine%"
         },
         "dualtran.sourceLanguage": {
           "type": "string",
           "default": "auto",
-          "description": "Source language code, or 'auto'."
+          "description": "%cfgSource%"
         },
         "dualtran.targetLanguage": {
           "type": "string",
           "default": "zh-CN",
-          "description": "Target language code (e.g. zh-CN, en, ja)."
+          "description": "%cfgTarget%"
         },
         "dualtran.ai.endpoint": {
           "type": "string",
           "default": "https://api.openai.com/v1",
-          "description": "Base URL of an OpenAI-compatible API (OpenAI, DeepSeek, Groq, Ollama, …)."
+          "description": "%cfgEndpoint%"
         },
         "dualtran.ai.model": {
           "type": "string",
           "default": "gpt-4o-mini",
-          "description": "Model name for the AI engine."
+          "description": "%cfgModel%"
         },
         "dualtran.ai.provider": {
           "type": "string",
           "default": "openai",
-          "markdownDescription": "AI provider id. Use **DualTran: Choose AI Provider** to pick from the built-in list and the 200+ providers in models.dev; the command fills in the matching endpoint and model."
+          "markdownDescription": "%cfgProvider%"
         },
         "dualtran.ai.reasoning": {
           "type": "string",
@@ -130,18 +130,18 @@
             "max"
           ],
           "enumDescriptions": [
-            "Use the lowest level the selected model accepts (default)",
-            "Send no reasoning parameter — let the provider decide",
-            "No reasoning",
-            "Minimal reasoning",
-            "Low reasoning",
-            "Medium reasoning",
-            "High reasoning",
-            "Extra-high reasoning",
-            "Maximum reasoning"
+            "%cfgReasoningLowest%",
+            "%cfgReasoningDefault%",
+            "%cfgReasoningNone%",
+            "%cfgReasoningMinimal%",
+            "%cfgReasoningLow%",
+            "%cfgReasoningMedium%",
+            "%cfgReasoningHigh%",
+            "%cfgReasoningXhigh%",
+            "%cfgReasoningMax%"
           ],
           "default": "lowest",
-          "description": "How much reasoning effort to request. Unknown or unsupported levels are dropped automatically."
+          "description": "%cfgReasoning%"
         }
       }
     }
@@ -150,10 +150,14 @@
     "test": "node --test tests/*.test.js",
     "package": "vsce package",
     "e2e": "node e2e/run-tests.mjs",
-    "verify": "npm test && npm run e2e"
+    "verify": "npm test && npm run e2e && npm run i18n:check",
+    "i18n:build": "node scripts/build-nls.mjs",
+    "i18n:sync": "node scripts/locale-kit.mjs",
+    "i18n:check": "node scripts/locale-kit.mjs --check"
   },
   "devDependencies": {
     "@vscode/test-electron": "^2.5.2",
     "@vscode/vsce": "^3.2.1"
-  }
+  },
+  "l10n": "./l10n"
 }

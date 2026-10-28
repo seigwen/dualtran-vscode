@@ -1,0 +1,140 @@
+{
+  "cmdTranslateInline": {
+    "message": "DualTran: 翻譯選取範圍（內嵌）"
+  },
+  "cmdTranslatePanel": {
+    "message": "DualTran: 翻譯選取範圍（側邊面板）"
+  },
+  "cmdReplaceSelection": {
+    "message": "DualTran: 翻譯並取代選取範圍"
+  },
+  "cmdClearInline": {
+    "message": "DualTran: 清除內嵌譯文"
+  },
+  "cmdPickTarget": {
+    "message": "DualTran: 選擇目標語言"
+  },
+  "cmdSetApiKey": {
+    "message": "DualTran: 設定 AI API Key"
+  },
+  "cmdPickProvider": {
+    "message": "DualTran: 選擇 AI 服務商（內建 + models.dev）"
+  },
+  "cmdRefreshProviders": {
+    "message": "DualTran: 重新整理服務商目錄（models.dev）"
+  },
+  "cfgEngine": {
+    "message": "翻譯引擎。"
+  },
+  "cfgEngineGoogle": {
+    "message": "Google 翻譯（無需帳號）"
+  },
+  "cfgEngineAi": {
+    "message": "任意 OpenAI 相容端點 + 自己的金鑰"
+  },
+  "cfgSource": {
+    "message": "來源語言代碼，或 'auto'。"
+  },
+  "cfgTarget": {
+    "message": "目標語言代碼（如 zh-CN、en、ja）。"
+  },
+  "cfgEndpoint": {
+    "message": "OpenAI 相容 API 的 Base URL（OpenAI、DeepSeek、Groq、Ollama…）。"
+  },
+  "cfgModel": {
+    "message": "AI 引擎使用的模型名稱。"
+  },
+  "cfgProvider": {
+    "message": "AI 服務商 id。用 **DualTran: 選擇 AI 服務商** 從內建清單與 models.dev 的 200+ 服務商中挑選；指令會自動填好對應的 endpoint 與 model。"
+  },
+  "cfgReasoning": {
+    "message": "要求多少推理強度。未知或模型不支援的等級會自動捨棄。"
+  },
+  "cfgReasoningLowest": {
+    "message": "使用所選模型支援的最低等級（預設）"
+  },
+  "cfgReasoningDefault": {
+    "message": "不送出推理參數，交給服務商決定"
+  },
+  "cfgReasoningNone": {
+    "message": "不推理"
+  },
+  "cfgReasoningMinimal": {
+    "message": "極低推理"
+  },
+  "cfgReasoningLow": {
+    "message": "低推理"
+  },
+  "cfgReasoningMedium": {
+    "message": "中等推理"
+  },
+  "cfgReasoningHigh": {
+    "message": "高推理"
+  },
+  "cfgReasoningXhigh": {
+    "message": "極高推理"
+  },
+  "cfgReasoningMax": {
+    "message": "最高推理"
+  },
+  "cfgSectionTitle": {
+    "message": "DualTran"
+  },
+  "warnOpenFile": {
+    "message": "DualTran: 請先開啟一個檔案。"
+  },
+  "warnSelectText": {
+    "message": "DualTran: 請先選取要取代的文字。"
+  },
+  "errorPrefix": {
+    "message": "DualTran: {0}"
+  },
+  "inputApiKeyTitle": {
+    "message": "DualTran — AI API Key"
+  },
+  "inputApiKeyPromptExisting": {
+    "message": "透過 VS Code SecretStorage 存在系統鑰匙圈。留空則保留目前的 Key。"
+  },
+  "inputApiKeyPromptNew": {
+    "message": "儲存在 SecretStorage（系統鑰匙圈）。"
+  },
+  "errorNoApiKey": {
+    "message": "尚未設定 API Key（DualTran: 設定 AI API Key）。"
+  },
+  "pickTargetTitle": {
+    "message": "DualTran — 目標語言"
+  },
+  "pickProviderTitle": {
+    "message": "DualTran — AI 服務商"
+  },
+  "pickProviderPlaceholder": {
+    "message": "先列內建服務商，再列 models.dev 收錄的全部"
+  },
+  "providerSeparator": {
+    "message": "更多（models.dev）"
+  },
+  "infoProviderPicked": {
+    "message": "DualTran: {0}"
+  },
+  "infoProviderModel": {
+    "message": "DualTran: {0} — {1}"
+  },
+  "infoSetModel": {
+    "message": "DualTran: {0} — 請設定模型"
+  },
+  "infoProvidersLoaded": {
+    "message": "DualTran: 已從 models.dev 載入 {0} 個服務商。"
+  },
+  "errorCatalogueRefresh": {
+    "message": "DualTran: 服務商目錄重新整理失敗 — {0}"
+  },
+  "errorCatalogueLoad": {
+    "message": "DualTran: 無法載入 models.dev — {0}"
+  },
+  "infoApiKeySaved": {
+    "message": "DualTran: API Key 已儲存。"
+  },
+  "statusTranslating": {
+    "message": "翻譯中…"
+  }
+}

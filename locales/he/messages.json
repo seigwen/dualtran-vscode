@@ -1,0 +1,140 @@
+{
+  "cmdTranslateInline": {
+    "message": "DualTran: תרגם בחירה (בתוך השורה)"
+  },
+  "cmdTranslatePanel": {
+    "message": "DualTran: תרגם בחירה (חלונית צד)"
+  },
+  "cmdReplaceSelection": {
+    "message": "DualTran: תרגם והחלף בחירה"
+  },
+  "cmdClearInline": {
+    "message": "DualTran: נקה תרגומים בתוך השורה"
+  },
+  "cmdPickTarget": {
+    "message": "DualTran: בחר שפת יעד"
+  },
+  "cmdSetApiKey": {
+    "message": "DualTran: הגדר מפתח API של AI"
+  },
+  "cmdPickProvider": {
+    "message": "DualTran: בחר ספק AI (מובנה + models.dev)"
+  },
+  "cmdRefreshProviders": {
+    "message": "DualTran: רענן קטלוג ספקים (models.dev)"
+  },
+  "cfgEngine": {
+    "message": "מנוע תרגום."
+  },
+  "cfgEngineGoogle": {
+    "message": "Google Translate (ללא חשבון)"
+  },
+  "cfgEngineAi": {
+    "message": "כל נקודת קצה תואמת OpenAI עם המפתח שלך"
+  },
+  "cfgSource": {
+    "message": "קוד שפת מקור, או 'auto'."
+  },
+  "cfgTarget": {
+    "message": "קוד שפת יעד (למשל zh-CN, en, ja)."
+  },
+  "cfgEndpoint": {
+    "message": "כתובת URL בסיסית של API תואם OpenAI (OpenAI, DeepSeek, Groq, Ollama, …)."
+  },
+  "cfgModel": {
+    "message": "שם המודל עבור מנוע ה-AI."
+  },
+  "cfgProvider": {
+    "message": "מזהה ספק AI. השתמש ב-**DualTran: Choose AI Provider** כדי לבחור מהרשימה המובנית וממעל 200 הספקים ב-models.dev; הפקודה ממלאת את נקודת הקצה והמודל המתאימים."
+  },
+  "cfgReasoning": {
+    "message": "כמה מאמץ חשיבה לבקש. רמות לא ידועות או לא נתמכות מוסרות אוטומטית."
+  },
+  "cfgReasoningLowest": {
+    "message": "השתמש ברמה הנמוכה ביותר שהמודל הנבחר מקבל (ברירת מחדל)"
+  },
+  "cfgReasoningDefault": {
+    "message": "לא לשלוח פרמטר חשיבה — לתת לספק להחליט"
+  },
+  "cfgReasoningNone": {
+    "message": "ללא חשיבה"
+  },
+  "cfgReasoningMinimal": {
+    "message": "הסקה מינימלית"
+  },
+  "cfgReasoningLow": {
+    "message": "הסקה נמוכה"
+  },
+  "cfgReasoningMedium": {
+    "message": "הסקה בינונית"
+  },
+  "cfgReasoningHigh": {
+    "message": "הסקה גבוהה"
+  },
+  "cfgReasoningXhigh": {
+    "message": "הסקה גבוהה במיוחד"
+  },
+  "cfgReasoningMax": {
+    "message": "הסקה מקסימלית"
+  },
+  "cfgSectionTitle": {
+    "message": "DualTran"
+  },
+  "warnOpenFile": {
+    "message": "DualTran: פתח קובץ תחילה"
+  },
+  "warnSelectText": {
+    "message": "DualTran: בחר את הטקסט להחלפה"
+  },
+  "errorPrefix": {
+    "message": "DualTran: {0}"
+  },
+  "inputApiKeyTitle": {
+    "message": "DualTran — מפתח API של AI"
+  },
+  "inputApiKeyPromptExisting": {
+    "message": "נשמר במחזיק המפתחות של מערכת ההפעלה באמצעות VS Code SecretStorage. השאר ריק כדי לשמור על המפתח הנוכחי."
+  },
+  "inputApiKeyPromptNew": {
+    "message": "נשמר ב-SecretStorage (מחזיק המפתחות של מערכת ההפעלה)."
+  },
+  "errorNoApiKey": {
+    "message": "לא הוגדר מפתח API (DualTran: הגדר מפתח API של AI)."
+  },
+  "pickTargetTitle": {
+    "message": "DualTran — שפת יעד"
+  },
+  "pickProviderTitle": {
+    "message": "DualTran — ספק AI"
+  },
+  "pickProviderPlaceholder": {
+    "message": "מובנה תחילה, ואז כל ספק ש-models.dev מכיר"
+  },
+  "providerSeparator": {
+    "message": "עוד (models.dev)"
+  },
+  "infoProviderPicked": {
+    "message": "DualTran: {0}"
+  },
+  "infoProviderModel": {
+    "message": "DualTran: {0} — {1}"
+  },
+  "infoSetModel": {
+    "message": "DualTran: {0} — הגדר מודל"
+  },
+  "infoProvidersLoaded": {
+    "message": "DualTran: {0} ספקים נטענו מ-models.dev."
+  },
+  "errorCatalogueRefresh": {
+    "message": "DualTran: רענון הקטלוג נכשל — {0}"
+  },
+  "errorCatalogueLoad": {
+    "message": "DualTran: לא ניתן לטעון את models.dev — {0}"
+  },
+  "infoApiKeySaved": {
+    "message": "DualTran: מפתח ה-API נשמר."
+  },
+  "statusTranslating": {
+    "message": "מתרגם…"
+  }
+}

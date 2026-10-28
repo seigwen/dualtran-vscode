@@ -1,0 +1,140 @@
+{
+  "cmdTranslateInline": {
+    "message": "DualTran: Selectie vertalen (inline)"
+  },
+  "cmdTranslatePanel": {
+    "message": "DualTran: Selectie vertalen (zijpaneel)"
+  },
+  "cmdReplaceSelection": {
+    "message": "DualTran: Selectie vertalen en vervangen"
+  },
+  "cmdClearInline": {
+    "message": "DualTran: Inline vertalingen wissen"
+  },
+  "cmdPickTarget": {
+    "message": "DualTran: Doeltaal kiezen"
+  },
+  "cmdSetApiKey": {
+    "message": "DualTran: AI API-sleutel instellen"
+  },
+  "cmdPickProvider": {
+    "message": "DualTran: AI-provider kiezen (ingebouwd + models.dev)"
+  },
+  "cmdRefreshProviders": {
+    "message": "DualTran: Providercatalogus vernieuwen (models.dev)"
+  },
+  "cfgEngine": {
+    "message": "Vertaalengine."
+  },
+  "cfgEngineGoogle": {
+    "message": "Google Translate (geen account)"
+  },
+  "cfgEngineAi": {
+    "message": "Elk OpenAI-compatibel endpoint met uw sleutel"
+  },
+  "cfgSource": {
+    "message": "Brontaalcode, of 'auto'."
+  },
+  "cfgTarget": {
+    "message": "Doeltaalcode (bijv. zh-CN, en, ja)."
+  },
+  "cfgEndpoint": {
+    "message": "Basis-URL van een OpenAI-compatibele API (OpenAI, DeepSeek, Groq, Ollama, …)."
+  },
+  "cfgModel": {
+    "message": "Modelnaam voor de AI-engine."
+  },
+  "cfgProvider": {
+    "message": "AI-provider-id. Gebruik **DualTran: Choose AI Provider** om te kiezen uit de ingebouwde lijst en de 200+ providers in models.dev; de opdracht vult het bijbehorende endpoint en model in."
+  },
+  "cfgReasoning": {
+    "message": "Hoeveel redeneerinspanning moet worden aangevraagd. Onbekende of niet-ondersteunde niveaus worden automatisch verwijderd."
+  },
+  "cfgReasoningLowest": {
+    "message": "Gebruik het laagste niveau dat het geselecteerde model accepteert (standaard)"
+  },
+  "cfgReasoningDefault": {
+    "message": "Geen redeneerparameter verzenden — laat de provider beslissen"
+  },
+  "cfgReasoningNone": {
+    "message": "Geen redenering"
+  },
+  "cfgReasoningMinimal": {
+    "message": "Minimaal redeneren"
+  },
+  "cfgReasoningLow": {
+    "message": "Laag redeneren"
+  },
+  "cfgReasoningMedium": {
+    "message": "Gemiddeld redeneren"
+  },
+  "cfgReasoningHigh": {
+    "message": "Hoog redeneren"
+  },
+  "cfgReasoningXhigh": {
+    "message": "Extra hoog redeneren"
+  },
+  "cfgReasoningMax": {
+    "message": "Maximaal redeneren"
+  },
+  "cfgSectionTitle": {
+    "message": "DualTran"
+  },
+  "warnOpenFile": {
+    "message": "DualTran: open eerst een bestand."
+  },
+  "warnSelectText": {
+    "message": "DualTran: selecteer de tekst die u wilt vervangen."
+  },
+  "errorPrefix": {
+    "message": "DualTran: {0}"
+  },
+  "inputApiKeyTitle": {
+    "message": "DualTran — AI API-sleutel"
+  },
+  "inputApiKeyPromptExisting": {
+    "message": "Opgeslagen in de OS-sleutelhanger via VS Code SecretStorage. Laat leeg om de huidige sleutel te behouden."
+  },
+  "inputApiKeyPromptNew": {
+    "message": "Opgeslagen in SecretStorage (OS-sleutelhanger)."
+  },
+  "errorNoApiKey": {
+    "message": "Geen API-sleutel ingesteld (DualTran: AI API-sleutel instellen)."
+  },
+  "pickTargetTitle": {
+    "message": "DualTran — doeltaal"
+  },
+  "pickProviderTitle": {
+    "message": "DualTran — AI-provider"
+  },
+  "pickProviderPlaceholder": {
+    "message": "Eerst ingebouwd, daarna elke provider die models.dev kent"
+  },
+  "providerSeparator": {
+    "message": "Meer (models.dev)"
+  },
+  "infoProviderPicked": {
+    "message": "DualTran: {0}"
+  },
+  "infoProviderModel": {
+    "message": "DualTran: {0} — {1}"
+  },
+  "infoSetModel": {
+    "message": "DualTran: {0} — stel een model in"
+  },
+  "infoProvidersLoaded": {
+    "message": "DualTran: {0} providers geladen uit models.dev."
+  },
+  "errorCatalogueRefresh": {
+    "message": "DualTran: vernieuwen van catalogus mislukt — {0}"
+  },
+  "errorCatalogueLoad": {
+    "message": "DualTran: kon models.dev niet laden — {0}"
+  },
+  "infoApiKeySaved": {
+    "message": "DualTran: API-sleutel opgeslagen."
+  },
+  "statusTranslating": {
+    "message": "vertalen…"
+  }
+}

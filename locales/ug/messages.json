@@ -1,0 +1,140 @@
+{
+  "cmdTranslateInline": {
+    "message": "DualTran: تاللانمىنى تەرجىمە قىلىش (قۇر ئىچىدە)"
+  },
+  "cmdTranslatePanel": {
+    "message": "DualTran: تاللانمىنى تەرجىمە قىلىش (يان تاختىدا)"
+  },
+  "cmdReplaceSelection": {
+    "message": "DualTran: تاللانمىنى تەرجىمە قىلىپ ئالماشتۇرۇش"
+  },
+  "cmdClearInline": {
+    "message": "DualTran: قۇر ئىچىدىكى تەرجىمىلەرنى تازىلاش"
+  },
+  "cmdPickTarget": {
+    "message": "DualTran: نىشان تىلنى تاللاش"
+  },
+  "cmdSetApiKey": {
+    "message": "DualTran: AI API ئاچقۇچىنى تەڭشەش"
+  },
+  "cmdPickProvider": {
+    "message": "DualTran: AI تەمىنلىگۈچىنى تاللاش (ئىچكى + models.dev)"
+  },
+  "cmdRefreshProviders": {
+    "message": "DualTran: تەمىنلىگۈچى كاتالوگىنى يېڭىلاش (models.dev)"
+  },
+  "cfgEngine": {
+    "message": "تەرجىمە قىلىش ماتورى."
+  },
+  "cfgEngineGoogle": {
+    "message": "Google Translate (ھېساباتسىز)"
+  },
+  "cfgEngineAi": {
+    "message": "ھەر قانداق OpenAI غا ماس كېلىدىغان ئاخىرلاشقان نۇقتا ۋە ئاچقۇچىڭىز"
+  },
+  "cfgSource": {
+    "message": "مەنبە تىل كودى ياكى 'auto'."
+  },
+  "cfgTarget": {
+    "message": "نىشان تىل كودى (مەسىلەن zh-CN، en، ja)."
+  },
+  "cfgEndpoint": {
+    "message": "OpenAI غا ماس كېلىدىغان API نىڭ ئاساسىي URL ى (OpenAI، DeepSeek، Groq، Ollama، …)."
+  },
+  "cfgModel": {
+    "message": "AI ماتورى ئۈچۈن مودېل ئىسمى."
+  },
+  "cfgProvider": {
+    "message": "AI تەمىنلىگۈچى id سى. **DualTran: Choose AI Provider** نى ئىشلىتىپ قۇرۇلغان تىزىملىكتىن ۋە models.dev دىكى 200+ تەمىنلىگۈچىدىن تاللاڭ؛ بۇيرۇق ماس كېلىدىغان ئاخىرلاشقان نۇقتا ۋە مودېلنى تولدۇرىدۇ."
+  },
+  "cfgReasoning": {
+    "message": "قانچىلىك پىكىر يۈرگۈزۈش تەلەپ قىلىنىدۇ. نامەلۇم ياكى قوللانمايدىغان دەرىجىلەر ئاپتوماتىك چىقىرىۋېتىلىدۇ."
+  },
+  "cfgReasoningLowest": {
+    "message": "تاللانغان مودېل قوبۇل قىلىدىغان ئەڭ تۆۋەن دەرىجىنى ئىشلىتىڭ (سۈكۈتتىكى)"
+  },
+  "cfgReasoningDefault": {
+    "message": "پىكىر يۈرگۈزۈش پارامېتىرىنى ئەۋەتمەڭ — تەمىنلىگۈچى قارار قىلسۇن"
+  },
+  "cfgReasoningNone": {
+    "message": "پىكىر يۈرگۈزۈش يوق"
+  },
+  "cfgReasoningMinimal": {
+    "message": "ئەڭ تۆۋەن پىكىر قىلىش"
+  },
+  "cfgReasoningLow": {
+    "message": "تۆۋەن پىكىر قىلىش"
+  },
+  "cfgReasoningMedium": {
+    "message": "ئوتتۇرا پىكىر قىلىش"
+  },
+  "cfgReasoningHigh": {
+    "message": "يۇقىرى پىكىر قىلىش"
+  },
+  "cfgReasoningXhigh": {
+    "message": "ئالاھىدە يۇقىرى پىكىر قىلىش"
+  },
+  "cfgReasoningMax": {
+    "message": "ئەڭ يۇقىرى پىكىر قىلىش"
+  },
+  "cfgSectionTitle": {
+    "message": "DualTran"
+  },
+  "warnOpenFile": {
+    "message": "DualTran: ئالدى بىلەن بىر ھۆججەت ئېچىڭ."
+  },
+  "warnSelectText": {
+    "message": "DualTran: ئالماشتۇرىدىغان تېكىستنى تاللاڭ."
+  },
+  "errorPrefix": {
+    "message": "DualTran: {0}"
+  },
+  "inputApiKeyTitle": {
+    "message": "DualTran — AI API ئاچقۇچى"
+  },
+  "inputApiKeyPromptExisting": {
+    "message": "OS ئاچقۇچ ھالقىسىدا VS Code SecretStorage ئارقىلىق ساقلىنىدۇ. ھازىرقى ئاچقۇچنى ساقلاپ قېلىش ئۈچۈن بوش قويۇڭ."
+  },
+  "inputApiKeyPromptNew": {
+    "message": "SecretStorage (OS ئاچقۇچ ھالقىسى) دا ساقلىنىدۇ."
+  },
+  "errorNoApiKey": {
+    "message": "API ئاچقۇچى تەڭشەلمىدى (DualTran: AI API ئاچقۇچىنى تەڭشەڭ)."
+  },
+  "pickTargetTitle": {
+    "message": "DualTran — نىشان تىل"
+  },
+  "pickProviderTitle": {
+    "message": "DualTran — AI تەمىنلىگۈچى"
+  },
+  "pickProviderPlaceholder": {
+    "message": "ئالدى بىلەن قۇرۇلما تەمىنلىگۈچى، ئاندىن models.dev بىلگەن بارلىق تەمىنلىگۈچىلەر"
+  },
+  "providerSeparator": {
+    "message": "تېخىمۇ كۆپ (models.dev)"
+  },
+  "infoProviderPicked": {
+    "message": "DualTran: {0}"
+  },
+  "infoProviderModel": {
+    "message": "DualTran: {0} — {1}"
+  },
+  "infoSetModel": {
+    "message": "DualTran: {0} — بىر مودېل تەڭشەڭ"
+  },
+  "infoProvidersLoaded": {
+    "message": "DualTran: models.dev دىن {0} تەمىنلىگۈچى يۈكلەندى."
+  },
+  "errorCatalogueRefresh": {
+    "message": "DualTran: كاتالوگ يېڭىلاش مەغلۇپ بولدى — {0}"
+  },
+  "errorCatalogueLoad": {
+    "message": "DualTran: models.dev نى يۈكلىيالمىدى — {0}"
+  },
+  "infoApiKeySaved": {
+    "message": "DualTran: API ئاچقۇچى ساقلاندى."
+  },
+  "statusTranslating": {
+    "message": "تەرجىمە قىلىنىۋاتىدۇ…"
+  }
+}

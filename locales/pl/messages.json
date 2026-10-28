@@ -1,0 +1,140 @@
+{
+  "cmdTranslateInline": {
+    "message": "DualTran: tłumacz zaznaczenie (w tekście)"
+  },
+  "cmdTranslatePanel": {
+    "message": "DualTran: tłumacz zaznaczenie (panel boczny)"
+  },
+  "cmdReplaceSelection": {
+    "message": "DualTran: tłumacz i zastąp zaznaczenie"
+  },
+  "cmdClearInline": {
+    "message": "DualTran: wyczyść tłumaczenia w tekście"
+  },
+  "cmdPickTarget": {
+    "message": "DualTran: wybierz język docelowy"
+  },
+  "cmdSetApiKey": {
+    "message": "DualTran: ustaw klucz API AI"
+  },
+  "cmdPickProvider": {
+    "message": "DualTran: wybierz dostawcę AI (wbudowany + models.dev)"
+  },
+  "cmdRefreshProviders": {
+    "message": "DualTran: odśwież katalog dostawców (models.dev)"
+  },
+  "cfgEngine": {
+    "message": "Silnik tłumaczenia."
+  },
+  "cfgEngineGoogle": {
+    "message": "Google Translate (bez konta)"
+  },
+  "cfgEngineAi": {
+    "message": "Dowolny punkt końcowy zgodny z OpenAI z Twoim kluczem"
+  },
+  "cfgSource": {
+    "message": "Kod języka źródłowego lub „auto”."
+  },
+  "cfgTarget": {
+    "message": "Kod języka docelowego (np. zh-CN, en, ja)."
+  },
+  "cfgEndpoint": {
+    "message": "Bazowy adres URL interfejsu API zgodnego z OpenAI (OpenAI, DeepSeek, Groq, Ollama, …)."
+  },
+  "cfgModel": {
+    "message": "Nazwa modelu dla silnika AI."
+  },
+  "cfgProvider": {
+    "message": "Identyfikator dostawcy AI. Użyj **DualTran: Wybierz dostawcę AI**, aby wybrać z wbudowanej listy oraz ponad 200 dostawców w models.dev; polecenie uzupełni pasujący punkt końcowy i model."
+  },
+  "cfgReasoning": {
+    "message": "Ile wysiłku rozumowania żądać. Nieznane lub nieobsługiwane poziomy są automatycznie pomijane."
+  },
+  "cfgReasoningLowest": {
+    "message": "Użyj najniższego poziomu akceptowanego przez wybrany model (domyślnie)"
+  },
+  "cfgReasoningDefault": {
+    "message": "Nie wysyłaj parametru rozumowania — pozwól dostawcy zdecydować"
+  },
+  "cfgReasoningNone": {
+    "message": "Bez rozumowania"
+  },
+  "cfgReasoningMinimal": {
+    "message": "Minimalne rozumowanie"
+  },
+  "cfgReasoningLow": {
+    "message": "Niskie rozumowanie"
+  },
+  "cfgReasoningMedium": {
+    "message": "Średnie rozumowanie"
+  },
+  "cfgReasoningHigh": {
+    "message": "Wysokie rozumowanie"
+  },
+  "cfgReasoningXhigh": {
+    "message": "Bardzo wysokie rozumowanie"
+  },
+  "cfgReasoningMax": {
+    "message": "Maksymalne rozumowanie"
+  },
+  "cfgSectionTitle": {
+    "message": "DualTran"
+  },
+  "warnOpenFile": {
+    "message": "DualTran: najpierw otwórz plik"
+  },
+  "warnSelectText": {
+    "message": "DualTran: zaznacz tekst do zastąpienia"
+  },
+  "errorPrefix": {
+    "message": "DualTran: {0}"
+  },
+  "inputApiKeyTitle": {
+    "message": "DualTran — klucz API AI"
+  },
+  "inputApiKeyPromptExisting": {
+    "message": "Przechowywany w pęku kluczy systemu przez VS Code SecretStorage. Pozostaw puste, aby zachować bieżący klucz."
+  },
+  "inputApiKeyPromptNew": {
+    "message": "Przechowywany w SecretStorage (pęk kluczy systemu)."
+  },
+  "errorNoApiKey": {
+    "message": "Nie ustawiono klucza API (DualTran: Ustaw klucz API AI)."
+  },
+  "pickTargetTitle": {
+    "message": "DualTran — język docelowy"
+  },
+  "pickProviderTitle": {
+    "message": "DualTran — dostawca AI"
+  },
+  "pickProviderPlaceholder": {
+    "message": "Najpierw wbudowane, potem wszyscy dostawcy znani models.dev"
+  },
+  "providerSeparator": {
+    "message": "Więcej (models.dev)"
+  },
+  "infoProviderPicked": {
+    "message": "DualTran: {0}"
+  },
+  "infoProviderModel": {
+    "message": "DualTran: {0} — {1}"
+  },
+  "infoSetModel": {
+    "message": "DualTran: {0} — ustaw model"
+  },
+  "infoProvidersLoaded": {
+    "message": "DualTran: wczytano {0} dostawców z models.dev."
+  },
+  "errorCatalogueRefresh": {
+    "message": "DualTran: odświeżanie katalogu nie powiodło się — {0}"
+  },
+  "errorCatalogueLoad": {
+    "message": "DualTran: nie można wczytać models.dev — {0}"
+  },
+  "infoApiKeySaved": {
+    "message": "DualTran: klucz API zapisany."
+  },
+  "statusTranslating": {
+    "message": "tłumaczenie…"
+  }
+}

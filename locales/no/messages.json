@@ -1,0 +1,140 @@
+{
+  "cmdTranslateInline": {
+    "message": "DualTran: Oversett utvalg (inline)"
+  },
+  "cmdTranslatePanel": {
+    "message": "DualTran: Oversett utvalg (sidepanel)"
+  },
+  "cmdReplaceSelection": {
+    "message": "DualTran: Oversett og erstatt utvalg"
+  },
+  "cmdClearInline": {
+    "message": "DualTran: Fjern inline-oversettelser"
+  },
+  "cmdPickTarget": {
+    "message": "DualTran: Velg målspråk"
+  },
+  "cmdSetApiKey": {
+    "message": "DualTran: Angi AI-API-nøkkel"
+  },
+  "cmdPickProvider": {
+    "message": "DualTran: Velg AI-leverandør (innebygd + models.dev)"
+  },
+  "cmdRefreshProviders": {
+    "message": "DualTran: Oppdater leverandørkatalog (models.dev)"
+  },
+  "cfgEngine": {
+    "message": "Oversettelsesmotor."
+  },
+  "cfgEngineGoogle": {
+    "message": "Google Translate (uten konto)"
+  },
+  "cfgEngineAi": {
+    "message": "Enhver OpenAI-kompatibel endepunkt med din nøkkel"
+  },
+  "cfgSource": {
+    "message": "Kildekode for språk, eller 'auto'."
+  },
+  "cfgTarget": {
+    "message": "Målspråkkode (f.eks. zh-CN, en, ja)."
+  },
+  "cfgEndpoint": {
+    "message": "Basis-URL for et OpenAI-kompatibelt API (OpenAI, DeepSeek, Groq, Ollama, …)."
+  },
+  "cfgModel": {
+    "message": "Modellnavn for AI-motoren."
+  },
+  "cfgProvider": {
+    "message": "AI-leverandør-ID. Bruk **DualTran: Choose AI Provider** for å velge fra den innebygde listen og de over 200 leverandørene i models.dev; kommandoen fyller inn samsvarende endepunkt og modell."
+  },
+  "cfgReasoning": {
+    "message": "Hvor mye resonneringsinnsats som skal forespørres. Ukjente eller ikke-støttede nivåer fjernes automatisk."
+  },
+  "cfgReasoningLowest": {
+    "message": "Bruk det laveste nivået den valgte modellen godtar (standard)"
+  },
+  "cfgReasoningDefault": {
+    "message": "Send ingen resonneringsparameter – la leverandøren bestemme"
+  },
+  "cfgReasoningNone": {
+    "message": "Ingen resonnering"
+  },
+  "cfgReasoningMinimal": {
+    "message": "Minimal resonnering"
+  },
+  "cfgReasoningLow": {
+    "message": "Lav resonnering"
+  },
+  "cfgReasoningMedium": {
+    "message": "Middels resonnering"
+  },
+  "cfgReasoningHigh": {
+    "message": "Høy resonnering"
+  },
+  "cfgReasoningXhigh": {
+    "message": "Ekstra høy resonnering"
+  },
+  "cfgReasoningMax": {
+    "message": "Maksimal resonnering"
+  },
+  "cfgSectionTitle": {
+    "message": "DualTran"
+  },
+  "warnOpenFile": {
+    "message": "DualTran: åpne en fil først"
+  },
+  "warnSelectText": {
+    "message": "DualTran: velg teksten som skal erstattes"
+  },
+  "errorPrefix": {
+    "message": "DualTran: {0}"
+  },
+  "inputApiKeyTitle": {
+    "message": "DualTran — AI API-nøkkel"
+  },
+  "inputApiKeyPromptExisting": {
+    "message": "Lagret i OS-nøkkelringen via VS Code SecretStorage. La stå tom for å beholde gjeldende nøkkel."
+  },
+  "inputApiKeyPromptNew": {
+    "message": "Lagret i SecretStorage (OS-nøkkelring)."
+  },
+  "errorNoApiKey": {
+    "message": "Ingen API-nøkkel angitt (DualTran: Angi AI-API-nøkkel)."
+  },
+  "pickTargetTitle": {
+    "message": "DualTran — målspråk"
+  },
+  "pickProviderTitle": {
+    "message": "DualTran — AI-leverandør"
+  },
+  "pickProviderPlaceholder": {
+    "message": "Innebygd først, deretter alle leverandører models.dev kjenner"
+  },
+  "providerSeparator": {
+    "message": "Mer (models.dev)"
+  },
+  "infoProviderPicked": {
+    "message": "DualTran: {0}"
+  },
+  "infoProviderModel": {
+    "message": "DualTran: {0} — {1}"
+  },
+  "infoSetModel": {
+    "message": "DualTran: {0} — angi en modell"
+  },
+  "infoProvidersLoaded": {
+    "message": "DualTran: {0} leverandører lastet fra models.dev."
+  },
+  "errorCatalogueRefresh": {
+    "message": "DualTran: oppdatering av katalog mislyktes – {0}"
+  },
+  "errorCatalogueLoad": {
+    "message": "DualTran: kunne ikke laste models.dev – {0}"
+  },
+  "infoApiKeySaved": {
+    "message": "DualTran: API-nøkkel lagret."
+  },
+  "statusTranslating": {
+    "message": "oversetter…"
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "cmdTranslateInline": {
+    "message": "DualTran: Þýða val (innfellt)"
+  },
+  "cmdTranslatePanel": {
+    "message": "DualTran: Þýða val (hliðarspjald)"
+  },
+  "cmdReplaceSelection": {
+    "message": "DualTran: Þýða og skipta út vali"
+  },
+  "cmdClearInline": {
+    "message": "DualTran: Hreinsa innfelldar þýðingar"
+  },
+  "cmdPickTarget": {
+    "message": "DualTran: Velja markmál"
+  },
+  "cmdSetApiKey": {
+    "message": "DualTran: Stillа AI API-lykil"
+  },
+  "cmdPickProvider": {
+    "message": "DualTran: Velja AI-þjónustuaðila (innbyggður + models.dev)"
+  },
+  "cmdRefreshProviders": {
+    "message": "DualTran: Endurnýja þjónustuaðilaskrá (models.dev)"
+  },
+  "cfgEngine": {
+    "message": "Þýðingarvél."
+  },
+  "cfgEngineGoogle": {
+    "message": "Google Translate (án reiknings)"
+  },
+  "cfgEngineAi": {
+    "message": "Hvaða OpenAI-samhæfða endapunktur sem er með lyklinum þínum"
+  },
+  "cfgSource": {
+    "message": "Kóði upprunamáls, eða 'auto'."
+  },
+  "cfgTarget": {
+    "message": "Kóði markmáls (t.d. zh-CN, en, ja)."
+  },
+  "cfgEndpoint": {
+    "message": "Grunnslóð OpenAI-samhæfðs API (OpenAI, DeepSeek, Groq, Ollama, …)."
+  },
+  "cfgModel": {
+    "message": "Líkansheiti fyrir AI-vélina."
+  },
+  "cfgProvider": {
+    "message": "Auðkenni AI-veitanda. Notaðu **DualTran: Choose AI Provider** til að velja úr innbyggða listanum og 200+ veitendum í models.dev; skipunin fyllir inn samsvarandi endapunkt og líkan."
+  },
+  "cfgReasoning": {
+    "message": "Hversu mikla rökhugsun á að biðja um. Óþekkt eða óstudd stig eru felld út sjálfkrafa."
+  },
+  "cfgReasoningLowest": {
+    "message": "Nota lægsta stig sem valið líkan samþykkir (sjálfgefið)"
+  },
+  "cfgReasoningDefault": {
+    "message": "Senda enga rökhugsunarfæribreytu — láta veitandann ákveða"
+  },
+  "cfgReasoningNone": {
+    "message": "Engin rökhugsun"
+  },
+  "cfgReasoningMinimal": {
+    "message": "Lágmarks rökhugsun"
+  },
+  "cfgReasoningLow": {
+    "message": "Lítil rökhugsun"
+  },
+  "cfgReasoningMedium": {
+    "message": "Miðlungs rökhugsun"
+  },
+  "cfgReasoningHigh": {
+    "message": "Mikil rökhugsun"
+  },
+  "cfgReasoningXhigh": {
+    "message": "Mjög mikil rökhugsun"
+  },
+  "cfgReasoningMax": {
+    "message": "Hámarks rökhugsun"
+  },
+  "cfgSectionTitle": {
+    "message": "DualTran"
+  },
+  "warnOpenFile": {
+    "message": "DualTran: opnaðu skrá fyrst."
+  },
+  "warnSelectText": {
+    "message": "DualTran: veldu textann sem á að skipta út."
+  },
+  "errorPrefix": {
+    "message": "DualTran: {0}"
+  },
+  "inputApiKeyTitle": {
+    "message": "DualTran — API-lykill fyrir AI"
+  },
+  "inputApiKeyPromptExisting": {
+    "message": "Geymt í lyklakippu stýrikerfisins í gegnum VS Code SecretStorage. Skildu eftir autt til að halda núverandi lykli."
+  },
+  "inputApiKeyPromptNew": {
+    "message": "Geymt í SecretStorage (lyklakippa stýrikerfisins)."
+  },
+  "errorNoApiKey": {
+    "message": "Enginn API-lykill stilltur (DualTran: Set AI API Key)."
+  },
+  "pickTargetTitle": {
+    "message": "DualTran — markmál"
+  },
+  "pickProviderTitle": {
+    "message": "DualTran — AI-veitandi"
+  },
+  "pickProviderPlaceholder": {
+    "message": "Innbyggður fyrst, síðan hver veitandi sem models.dev þekkir"
+  },
+  "providerSeparator": {
+    "message": "Fleiri (models.dev)"
+  },
+  "infoProviderPicked": {
+    "message": "DualTran: {0}"
+  },
+  "infoProviderModel": {
+    "message": "DualTran: {0} — {1}"
+  },
+  "infoSetModel": {
+    "message": "DualTran: {0} — stilltu líkan"
+  },
+  "infoProvidersLoaded": {
+    "message": "DualTran: {0} veitendur hlaðnir úr models.dev."
+  },
+  "errorCatalogueRefresh": {
+    "message": "DualTran: endurnýjun vörulista mistókst — {0}"
+  },
+  "errorCatalogueLoad": {
+    "message": "DualTran: gat ekki hlaðið models.dev — {0}"
+  },
+  "infoApiKeySaved": {
+    "message": "DualTran: API-lykill vistaður."
+  },
+  "statusTranslating": {
+    "message": "þýði…"
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "cmdTranslateInline": {
+    "message": "DualTran: prevedi izbor (v vrstici)"
+  },
+  "cmdTranslatePanel": {
+    "message": "DualTran: prevedi izbor (stranska plošča)"
+  },
+  "cmdReplaceSelection": {
+    "message": "DualTran: prevedi in zamenjaj izbor"
+  },
+  "cmdClearInline": {
+    "message": "DualTran: počisti prevode v vrstici"
+  },
+  "cmdPickTarget": {
+    "message": "DualTran: izberi ciljni jezik"
+  },
+  "cmdSetApiKey": {
+    "message": "DualTran: nastavi API ključ za AI"
+  },
+  "cmdPickProvider": {
+    "message": "DualTran: izberi ponudnika AI (vgrajeni + models.dev)"
+  },
+  "cmdRefreshProviders": {
+    "message": "DualTran: osveži katalog ponudnikov (models.dev)"
+  },
+  "cfgEngine": {
+    "message": "Prevajalnik."
+  },
+  "cfgEngineGoogle": {
+    "message": "Google Translate (brez računa)"
+  },
+  "cfgEngineAi": {
+    "message": "Katerakoli končna točka, združljiva z OpenAI, z vašim ključem"
+  },
+  "cfgSource": {
+    "message": "Koda izvornega jezika ali 'auto'."
+  },
+  "cfgTarget": {
+    "message": "Koda ciljnega jezika (npr. zh-CN, en, ja)."
+  },
+  "cfgEndpoint": {
+    "message": "Osnovni URL API-ja, združljivega z OpenAI (OpenAI, DeepSeek, Groq, Ollama, …)."
+  },
+  "cfgModel": {
+    "message": "Ime modela za AI-pogon."
+  },
+  "cfgProvider": {
+    "message": "ID ponudnika AI. Uporabite **DualTran: Choose AI Provider** za izbiro s vgrajenega seznama in med več kot 200 ponudniki v models.dev; ukaz samodejno izpolni ustrezno končno točko in model."
+  },
+  "cfgReasoning": {
+    "message": "Koliko truda za sklepanje zahtevati. Neznane ali nepodprte ravni se samodejno zavržejo."
+  },
+  "cfgReasoningLowest": {
+    "message": "Uporabi najnižjo raven, ki jo izbrani model sprejme (privzeto)"
+  },
+  "cfgReasoningDefault": {
+    "message": "Ne pošlji parametra za sklepanje – prepusti odločitev ponudniku"
+  },
+  "cfgReasoningNone": {
+    "message": "Brez sklepanja"
+  },
+  "cfgReasoningMinimal": {
+    "message": "Minimalno sklepanje"
+  },
+  "cfgReasoningLow": {
+    "message": "Nizko sklepanje"
+  },
+  "cfgReasoningMedium": {
+    "message": "Srednje sklepanje"
+  },
+  "cfgReasoningHigh": {
+    "message": "Visoko sklepanje"
+  },
+  "cfgReasoningXhigh": {
+    "message": "Zelo visoko sklepanje"
+  },
+  "cfgReasoningMax": {
+    "message": "Najvišje sklepanje"
+  },
+  "cfgSectionTitle": {
+    "message": "DualTran"
+  },
+  "warnOpenFile": {
+    "message": "DualTran: najprej odprite datoteko."
+  },
+  "warnSelectText": {
+    "message": "DualTran: izberite besedilo za zamenjavo."
+  },
+  "errorPrefix": {
+    "message": "DualTran: {0}"
+  },
+  "inputApiKeyTitle": {
+    "message": "DualTran — ključ API za AI"
+  },
+  "inputApiKeyPromptExisting": {
+    "message": "Shranjeno v ključavnici OS prek VS Code SecretStorage. Pustite prazno, da obdržite trenutni ključ."
+  },
+  "inputApiKeyPromptNew": {
+    "message": "Shranjeno v SecretStorage (ključavnica OS)."
+  },
+  "errorNoApiKey": {
+    "message": "Ključ API ni nastavljen (DualTran: Nastavi ključ API za AI)."
+  },
+  "pickTargetTitle": {
+    "message": "DualTran — ciljni jezik"
+  },
+  "pickProviderTitle": {
+    "message": "DualTran — ponudnik AI"
+  },
+  "pickProviderPlaceholder": {
+    "message": "Najprej vgrajeni, nato vsi ponudniki, ki jih pozna models.dev"
+  },
+  "providerSeparator": {
+    "message": "Več (models.dev)"
+  },
+  "infoProviderPicked": {
+    "message": "DualTran: {0}"
+  },
+  "infoProviderModel": {
+    "message": "DualTran: {0} — {1}"
+  },
+  "infoSetModel": {
+    "message": "DualTran: {0} — nastavite model"
+  },
+  "infoProvidersLoaded": {
+    "message": "DualTran: iz models.dev naloženih ponudnikov: {0}."
+  },
+  "errorCatalogueRefresh": {
+    "message": "DualTran: osvežitev kataloga ni uspela — {0}"
+  },
+  "errorCatalogueLoad": {
+    "message": "DualTran: models.dev ni bilo mogoče naložiti — {0}"
+  },
+  "infoApiKeySaved": {
+    "message": "DualTran: API ključ je shranjen."
+  },
+  "statusTranslating": {
+    "message": "prevajanje…"
+  }
+}

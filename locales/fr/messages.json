@@ -1,0 +1,140 @@
+{
+  "cmdTranslateInline": {
+    "message": "DualTran : Traduire la sélection (en ligne)"
+  },
+  "cmdTranslatePanel": {
+    "message": "DualTran : Traduire la sélection (panneau latéral)"
+  },
+  "cmdReplaceSelection": {
+    "message": "DualTran : Traduire et remplacer la sélection"
+  },
+  "cmdClearInline": {
+    "message": "DualTran : Effacer les traductions en ligne"
+  },
+  "cmdPickTarget": {
+    "message": "DualTran : Choisir la langue cible"
+  },
+  "cmdSetApiKey": {
+    "message": "DualTran : Définir la clé API IA"
+  },
+  "cmdPickProvider": {
+    "message": "DualTran : Choisir le fournisseur IA (intégré + models.dev)"
+  },
+  "cmdRefreshProviders": {
+    "message": "DualTran : Actualiser le catalogue des fournisseurs (models.dev)"
+  },
+  "cfgEngine": {
+    "message": "Moteur de traduction."
+  },
+  "cfgEngineGoogle": {
+    "message": "Google Translate (sans compte)"
+  },
+  "cfgEngineAi": {
+    "message": "Tout point de terminaison compatible OpenAI avec votre clé"
+  },
+  "cfgSource": {
+    "message": "Code de langue source, ou 'auto'."
+  },
+  "cfgTarget": {
+    "message": "Code de langue cible (par ex. zh-CN, en, ja)."
+  },
+  "cfgEndpoint": {
+    "message": "URL de base d'une API compatible OpenAI (OpenAI, DeepSeek, Groq, Ollama, …)."
+  },
+  "cfgModel": {
+    "message": "Nom du modèle pour le moteur IA."
+  },
+  "cfgProvider": {
+    "message": "Identifiant du fournisseur IA. Utilisez **DualTran: Choose AI Provider** pour choisir dans la liste intégrée et parmi les 200+ fournisseurs de models.dev ; la commande renseigne le point de terminaison et le modèle correspondants."
+  },
+  "cfgReasoning": {
+    "message": "Niveau d'effort de raisonnement à demander. Les niveaux inconnus ou non pris en charge sont ignorés automatiquement."
+  },
+  "cfgReasoningLowest": {
+    "message": "Utiliser le niveau le plus bas accepté par le modèle sélectionné (par défaut)"
+  },
+  "cfgReasoningDefault": {
+    "message": "N'envoyer aucun paramètre de raisonnement — laisser le fournisseur décider"
+  },
+  "cfgReasoningNone": {
+    "message": "Aucun raisonnement"
+  },
+  "cfgReasoningMinimal": {
+    "message": "Raisonnement minimal"
+  },
+  "cfgReasoningLow": {
+    "message": "Raisonnement faible"
+  },
+  "cfgReasoningMedium": {
+    "message": "Raisonnement moyen"
+  },
+  "cfgReasoningHigh": {
+    "message": "Raisonnement élevé"
+  },
+  "cfgReasoningXhigh": {
+    "message": "Raisonnement très élevé"
+  },
+  "cfgReasoningMax": {
+    "message": "Raisonnement maximal"
+  },
+  "cfgSectionTitle": {
+    "message": "DualTran"
+  },
+  "warnOpenFile": {
+    "message": "DualTran : ouvrez d'abord un fichier."
+  },
+  "warnSelectText": {
+    "message": "DualTran : sélectionnez le texte à remplacer."
+  },
+  "errorPrefix": {
+    "message": "DualTran : {0}"
+  },
+  "inputApiKeyTitle": {
+    "message": "DualTran — clé API IA"
+  },
+  "inputApiKeyPromptExisting": {
+    "message": "Stockée dans le trousseau du système via VS Code SecretStorage. Laisser vide pour conserver la clé actuelle."
+  },
+  "inputApiKeyPromptNew": {
+    "message": "Stockée dans SecretStorage (trousseau du système)."
+  },
+  "errorNoApiKey": {
+    "message": "Aucune clé API définie (DualTran : Définir la clé API IA)."
+  },
+  "pickTargetTitle": {
+    "message": "DualTran — langue cible"
+  },
+  "pickProviderTitle": {
+    "message": "DualTran — fournisseur IA"
+  },
+  "pickProviderPlaceholder": {
+    "message": "Intégrés d'abord, puis tous les fournisseurs connus de models.dev"
+  },
+  "providerSeparator": {
+    "message": "Plus (models.dev)"
+  },
+  "infoProviderPicked": {
+    "message": "DualTran : {0}"
+  },
+  "infoProviderModel": {
+    "message": "DualTran : {0} — {1}"
+  },
+  "infoSetModel": {
+    "message": "DualTran : {0} — définir un modèle"
+  },
+  "infoProvidersLoaded": {
+    "message": "DualTran : {0} fournisseurs chargés depuis models.dev."
+  },
+  "errorCatalogueRefresh": {
+    "message": "DualTran : échec de l'actualisation du catalogue — {0}"
+  },
+  "errorCatalogueLoad": {
+    "message": "DualTran : impossible de charger models.dev — {0}"
+  },
+  "infoApiKeySaved": {
+    "message": "DualTran : clé API enregistrée."
+  },
+  "statusTranslating": {
+    "message": "traduction en cours…"
+  }
+}

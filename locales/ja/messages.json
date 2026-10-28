@@ -1,0 +1,140 @@
+{
+  "cmdTranslateInline": {
+    "message": "DualTran: 選択範囲を翻訳（インライン）"
+  },
+  "cmdTranslatePanel": {
+    "message": "DualTran: 選択範囲を翻訳（サイドパネル）"
+  },
+  "cmdReplaceSelection": {
+    "message": "DualTran: 選択範囲を翻訳して置換"
+  },
+  "cmdClearInline": {
+    "message": "DualTran: インライン翻訳をクリア"
+  },
+  "cmdPickTarget": {
+    "message": "DualTran: ターゲット言語を選択"
+  },
+  "cmdSetApiKey": {
+    "message": "DualTran: AI APIキーを設定"
+  },
+  "cmdPickProvider": {
+    "message": "DualTran: AIプロバイダーを選択（組み込み + models.dev）"
+  },
+  "cmdRefreshProviders": {
+    "message": "DualTran: プロバイダーカタログを更新（models.dev）"
+  },
+  "cfgEngine": {
+    "message": "翻訳エンジン"
+  },
+  "cfgEngineGoogle": {
+    "message": "Google Translate（アカウント不要）"
+  },
+  "cfgEngineAi": {
+    "message": "APIキーを設定したOpenAI互換の任意のエンドポイント"
+  },
+  "cfgSource": {
+    "message": "ソース言語コード、または「auto」"
+  },
+  "cfgTarget": {
+    "message": "ターゲット言語コード（例: zh-CN、en、ja）"
+  },
+  "cfgEndpoint": {
+    "message": "OpenAI互換APIのベースURL（OpenAI、DeepSeek、Groq、Ollamaなど）"
+  },
+  "cfgModel": {
+    "message": "AIエンジンのモデル名"
+  },
+  "cfgProvider": {
+    "message": "AIプロバイダーID。**DualTran: Choose AI Provider** で組み込みリストとmodels.devの200以上のプロバイダーから選択できます。コマンドが対応するエンドポイントとモデルを自動入力します"
+  },
+  "cfgReasoning": {
+    "message": "要求する推論の強度。不明または未対応のレベルは自動的に除外されます"
+  },
+  "cfgReasoningLowest": {
+    "message": "選択したモデルが受け入れる最低レベルを使用（デフォルト）"
+  },
+  "cfgReasoningDefault": {
+    "message": "推論パラメーターを送信せず、プロバイダーに任せる"
+  },
+  "cfgReasoningNone": {
+    "message": "推論なし"
+  },
+  "cfgReasoningMinimal": {
+    "message": "最小推論"
+  },
+  "cfgReasoningLow": {
+    "message": "低推論"
+  },
+  "cfgReasoningMedium": {
+    "message": "中推論"
+  },
+  "cfgReasoningHigh": {
+    "message": "高推論"
+  },
+  "cfgReasoningXhigh": {
+    "message": "超高推論"
+  },
+  "cfgReasoningMax": {
+    "message": "最大推論"
+  },
+  "cfgSectionTitle": {
+    "message": "DualTran"
+  },
+  "warnOpenFile": {
+    "message": "DualTran: 先にファイルを開いてください"
+  },
+  "warnSelectText": {
+    "message": "DualTran: 置換するテキストを選択してください"
+  },
+  "errorPrefix": {
+    "message": "DualTran: {0}"
+  },
+  "inputApiKeyTitle": {
+    "message": "DualTran — AI APIキー"
+  },
+  "inputApiKeyPromptExisting": {
+    "message": "VS Code SecretStorage 経由で OS のキーチェーンに保存されます。現在のキーを維持するには空のままにしてください"
+  },
+  "inputApiKeyPromptNew": {
+    "message": "SecretStorage（OS のキーチェーン）に保存されます"
+  },
+  "errorNoApiKey": {
+    "message": "API キーが設定されていません（DualTran: AI API キーを設定）"
+  },
+  "pickTargetTitle": {
+    "message": "DualTran — 対象言語"
+  },
+  "pickProviderTitle": {
+    "message": "DualTran — AI プロバイダー"
+  },
+  "pickProviderPlaceholder": {
+    "message": "組み込みを先に、続いて models.dev が認識するすべてのプロバイダー"
+  },
+  "providerSeparator": {
+    "message": "その他（models.dev）"
+  },
+  "infoProviderPicked": {
+    "message": "DualTran: {0}"
+  },
+  "infoProviderModel": {
+    "message": "DualTran: {0} — {1}"
+  },
+  "infoSetModel": {
+    "message": "DualTran: {0} — モデルを設定してください"
+  },
+  "infoProvidersLoaded": {
+    "message": "DualTran: models.dev から {0} 件のプロバイダーを読み込みました"
+  },
+  "errorCatalogueRefresh": {
+    "message": "DualTran: カタログの更新に失敗しました — {0}"
+  },
+  "errorCatalogueLoad": {
+    "message": "DualTran: models.dev を読み込めませんでした — {0}"
+  },
+  "infoApiKeySaved": {
+    "message": "DualTran: API キーを保存しました"
+  },
+  "statusTranslating": {
+    "message": "翻訳中…"
+  }
+}

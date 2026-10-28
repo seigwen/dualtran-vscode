@@ -1,0 +1,140 @@
+{
+  "cmdTranslateInline": {
+    "message": "DualTran: Přeložit výběr (vloženě)"
+  },
+  "cmdTranslatePanel": {
+    "message": "DualTran: Přeložit výběr (boční panel)"
+  },
+  "cmdReplaceSelection": {
+    "message": "DualTran: Přeložit a nahradit výběr"
+  },
+  "cmdClearInline": {
+    "message": "DualTran: Vymazat vložené překlady"
+  },
+  "cmdPickTarget": {
+    "message": "DualTran: Vybrat cílový jazyk"
+  },
+  "cmdSetApiKey": {
+    "message": "DualTran: Nastavit API klíč AI"
+  },
+  "cmdPickProvider": {
+    "message": "DualTran: Zvolit poskytovatele AI (vestavěný + models.dev)"
+  },
+  "cmdRefreshProviders": {
+    "message": "DualTran: Obnovit katalog poskytovatelů (models.dev)"
+  },
+  "cfgEngine": {
+    "message": "Překladový engine."
+  },
+  "cfgEngineGoogle": {
+    "message": "Google Translate (bez účtu)"
+  },
+  "cfgEngineAi": {
+    "message": "Libovolný koncový bod kompatibilní s OpenAI s vaším klíčem"
+  },
+  "cfgSource": {
+    "message": "Kód zdrojového jazyka nebo 'auto'."
+  },
+  "cfgTarget": {
+    "message": "Kód cílového jazyka (např. zh-CN, en, ja)."
+  },
+  "cfgEndpoint": {
+    "message": "Základní URL rozhraní API kompatibilního s OpenAI (OpenAI, DeepSeek, Groq, Ollama, …)."
+  },
+  "cfgModel": {
+    "message": "Název modelu pro AI engine."
+  },
+  "cfgProvider": {
+    "message": "ID poskytovatele AI. Pomocí **DualTran: Choose AI Provider** vyberte z vestavěného seznamu a více než 200 poskytovatelů v models.dev; příkaz doplní odpovídající koncový bod a model."
+  },
+  "cfgReasoning": {
+    "message": "Jak velké úsilí o uvažování požadovat. Neznámé nebo nepodporované úrovně se automaticky vynechají."
+  },
+  "cfgReasoningLowest": {
+    "message": "Použít nejnižší úroveň, kterou vybraný model akceptuje (výchozí)"
+  },
+  "cfgReasoningDefault": {
+    "message": "Neposílat parametr uvažování — nechat rozhodnutí na poskytovateli"
+  },
+  "cfgReasoningNone": {
+    "message": "Bez uvažování"
+  },
+  "cfgReasoningMinimal": {
+    "message": "Minimální uvažování"
+  },
+  "cfgReasoningLow": {
+    "message": "Nízké uvažování"
+  },
+  "cfgReasoningMedium": {
+    "message": "Střední uvažování"
+  },
+  "cfgReasoningHigh": {
+    "message": "Vysoké uvažování"
+  },
+  "cfgReasoningXhigh": {
+    "message": "Velmi vysoké uvažování"
+  },
+  "cfgReasoningMax": {
+    "message": "Maximální uvažování"
+  },
+  "cfgSectionTitle": {
+    "message": "DualTran"
+  },
+  "warnOpenFile": {
+    "message": "DualTran: nejprve otevřete soubor."
+  },
+  "warnSelectText": {
+    "message": "DualTran: vyberte text k nahrazení."
+  },
+  "errorPrefix": {
+    "message": "DualTran: {0}"
+  },
+  "inputApiKeyTitle": {
+    "message": "DualTran — API klíč AI"
+  },
+  "inputApiKeyPromptExisting": {
+    "message": "Uloženo v klíčence OS prostřednictvím VS Code SecretStorage. Ponechte prázdné pro zachování stávajícího klíče."
+  },
+  "inputApiKeyPromptNew": {
+    "message": "Uloženo v SecretStorage (klíčenka OS)."
+  },
+  "errorNoApiKey": {
+    "message": "Není nastaven žádný API klíč (DualTran: Nastavit AI API klíč)."
+  },
+  "pickTargetTitle": {
+    "message": "DualTran — cílový jazyk"
+  },
+  "pickProviderTitle": {
+    "message": "DualTran — poskytovatel AI"
+  },
+  "pickProviderPlaceholder": {
+    "message": "Nejprve vestavěné, poté všichni poskytovatelé známí models.dev"
+  },
+  "providerSeparator": {
+    "message": "Další (models.dev)"
+  },
+  "infoProviderPicked": {
+    "message": "DualTran: {0}"
+  },
+  "infoProviderModel": {
+    "message": "DualTran: {0} — {1}"
+  },
+  "infoSetModel": {
+    "message": "DualTran: {0} — nastavte model"
+  },
+  "infoProvidersLoaded": {
+    "message": "DualTran: načteno {0} poskytovatelů z models.dev."
+  },
+  "errorCatalogueRefresh": {
+    "message": "DualTran: obnovení katalogu selhalo — {0}"
+  },
+  "errorCatalogueLoad": {
+    "message": "DualTran: nepodařilo se načíst models.dev — {0}"
+  },
+  "infoApiKeySaved": {
+    "message": "DualTran: API klíč uložen."
+  },
+  "statusTranslating": {
+    "message": "překládání…"
+  }
+}

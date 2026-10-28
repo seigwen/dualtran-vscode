@@ -1,0 +1,140 @@
+{
+  "cmdTranslateInline": {
+    "message": "DualTran: Prevedi izbor (u liniji)"
+  },
+  "cmdTranslatePanel": {
+    "message": "DualTran: Prevedi izbor (bočni panel)"
+  },
+  "cmdReplaceSelection": {
+    "message": "DualTran: Prevedi i zameni izbor"
+  },
+  "cmdClearInline": {
+    "message": "DualTran: Obriši prevode u liniji"
+  },
+  "cmdPickTarget": {
+    "message": "DualTran: Izaberi ciljni jezik"
+  },
+  "cmdSetApiKey": {
+    "message": "DualTran: Podesi AI API ključ"
+  },
+  "cmdPickProvider": {
+    "message": "DualTran: Izaberi AI provajdera (ugrađeni + models.dev)"
+  },
+  "cmdRefreshProviders": {
+    "message": "DualTran: Osveži katalog provajdera (models.dev)"
+  },
+  "cfgEngine": {
+    "message": "Mehanizam prevođenja."
+  },
+  "cfgEngineGoogle": {
+    "message": "Google Translate (bez naloga)"
+  },
+  "cfgEngineAi": {
+    "message": "Bilo koja OpenAI-kompatibilna krajnja tačka sa vašim ključem"
+  },
+  "cfgSource": {
+    "message": "Kôd izvornog jezika ili „auto“."
+  },
+  "cfgTarget": {
+    "message": "Kôd ciljnog jezika (npr. zh-CN, en, ja)."
+  },
+  "cfgEndpoint": {
+    "message": "Osnovni URL OpenAI-kompatibilnog API-ja (OpenAI, DeepSeek, Groq, Ollama, …)."
+  },
+  "cfgModel": {
+    "message": "Naziv modela za AI mehanizam."
+  },
+  "cfgProvider": {
+    "message": "ID AI provajdera. Koristite **DualTran: Choose AI Provider** da izaberete iz ugrađene liste i preko 200 provajdera u models.dev; komanda popunjava odgovarajuću krajnju tačku i model."
+  },
+  "cfgReasoning": {
+    "message": "Koliko napora zaključivanja da se zatraži. Nepoznati ili nepodržani nivoi se automatski odbacuju."
+  },
+  "cfgReasoningLowest": {
+    "message": "Koristi najniži nivo koji izabrani model prihvata (podrazumevano)"
+  },
+  "cfgReasoningDefault": {
+    "message": "Ne šalji parametar zaključivanja — prepusti provajderu da odluči"
+  },
+  "cfgReasoningNone": {
+    "message": "Bez zaključivanja"
+  },
+  "cfgReasoningMinimal": {
+    "message": "Minimalno rezonovanje"
+  },
+  "cfgReasoningLow": {
+    "message": "Nisko rezonovanje"
+  },
+  "cfgReasoningMedium": {
+    "message": "Srednje rezonovanje"
+  },
+  "cfgReasoningHigh": {
+    "message": "Visoko rezonovanje"
+  },
+  "cfgReasoningXhigh": {
+    "message": "Ekstra-visoko rezonovanje"
+  },
+  "cfgReasoningMax": {
+    "message": "Maksimalno rezonovanje"
+  },
+  "cfgSectionTitle": {
+    "message": "DualTran"
+  },
+  "warnOpenFile": {
+    "message": "DualTran: prvo otvorite datoteku."
+  },
+  "warnSelectText": {
+    "message": "DualTran: izaberite tekst koji želite da zamenite."
+  },
+  "errorPrefix": {
+    "message": "DualTran: {0}"
+  },
+  "inputApiKeyTitle": {
+    "message": "DualTran — AI API ključ"
+  },
+  "inputApiKeyPromptExisting": {
+    "message": "Sačuvano u OS keychain-u preko VS Code SecretStorage. Ostavite prazno da zadržite trenutni ključ."
+  },
+  "inputApiKeyPromptNew": {
+    "message": "Sačuvano u SecretStorage (OS keychain)."
+  },
+  "errorNoApiKey": {
+    "message": "API ključ nije postavljen (DualTran: Set AI API Key)."
+  },
+  "pickTargetTitle": {
+    "message": "DualTran — ciljni jezik"
+  },
+  "pickProviderTitle": {
+    "message": "DualTran — AI provajder"
+  },
+  "pickProviderPlaceholder": {
+    "message": "Prvo ugrađeni, zatim svaki provajder koji models.dev poznaje"
+  },
+  "providerSeparator": {
+    "message": "Više (models.dev)"
+  },
+  "infoProviderPicked": {
+    "message": "DualTran: {0}"
+  },
+  "infoProviderModel": {
+    "message": "DualTran: {0} — {1}"
+  },
+  "infoSetModel": {
+    "message": "DualTran: {0} — postavite model"
+  },
+  "infoProvidersLoaded": {
+    "message": "DualTran: učitano {0} provajdera sa models.dev."
+  },
+  "errorCatalogueRefresh": {
+    "message": "DualTran: osvežavanje kataloga nije uspelo — {0}"
+  },
+  "errorCatalogueLoad": {
+    "message": "DualTran: nije moguće učitati models.dev — {0}"
+  },
+  "infoApiKeySaved": {
+    "message": "DualTran: API ključ je sačuvan."
+  },
+  "statusTranslating": {
+    "message": "prevodim…"
+  }
+}

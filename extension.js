@@ -10,6 +10,9 @@
 const fs = require("node:fs/promises");
 const path = require("node:path");
 const vscode = require("vscode");
+
+/** Runtime strings go through VS Code's own l10n (l10n/bundle.l10n.<locale>.json). */
+const t = (message, ...args) => (args.length ? vscode.l10n.t(message, ...args.map(String)) : vscode.l10n.t(message));
 const { translate } = require("./src/translate");
 const { MODELS_DEV_URL, projectCatalog, buildProviderList, resolveReasoning } = require("./src/catalog");
 
@@ -101,12 +104,12 @@ async function apiKey(context) {
   const key = await context.secrets.get("dualtran.aiKey");
   if (!key) {
     const entered = await vscode.window.showInputBox({
-      title: "DualTran — AI API key",
-      prompt: "Stored in the OS keychain via VS Code SecretStorage. Leave empty to keep the current key.",
+      title: t("DualTran — AI API key"),
+      prompt: t("Stored in the OS keychain via VS Code SecretStorage. Leave empty to keep the current key."),
       password: true,
       ignoreFocusOut: true,
     });
-    if (!entered) throw new Error("No API key set (DualTran: Set AI API Key).");
+    if (!entered) throw new Error(t("No API key set (DualTran: Set AI API Key)."));
     await context.secrets.store("dualtran.aiKey", entered);
     return entered;
   }
@@ -208,11 +211,11 @@ function activate(context) {
 
   cmd("dualtran.translateInline", async () => {
     const editor = vscode.window.activeTextEditor;
-    if (!editor) return vscode.window.showWarningMessage("DualTran: open a file first.");
+    if (!editor) return vscode.window.showWarningMessage(t("DualTran: open a file first."));
     const text = selectionOrLine(editor).trim();
     if (!text) return;
     try {
-      paintStatus("translating…", true);
+      paintStatus(t("translating…"), true);
       const result = await runTranslate(context, text);
       const line = editor.selection.end.line;
       const endChar = editor.document.lineAt(line).range.end.character;
@@ -220,7 +223,7 @@ function activate(context) {
       editor.setDecorations(ghost, [{ range, renderOptions: { after: { contentText: "  " + result.replace(/\s*\n\s*/g, " ") } } }]);
       paintStatus(result.slice(0, 60) + (result.length > 60 ? "…" : ""));
     } catch (e) {
-      vscode.window.showErrorMessage("DualTran: " + (e && e.message ? e.message : e));
+      vscode.window.showErrorMessage(t("DualTran: {0}", e && e.message ? e.message : e));
       paintStatus("");
     }
   });
@@ -232,16 +235,16 @@ function activate(context) {
 
   cmd("dualtran.translatePanel", async () => {
     const editor = vscode.window.activeTextEditor;
-    if (!editor) return vscode.window.showWarningMessage("DualTran: open a file first.");
+    if (!editor) return vscode.window.showWarningMessage(t("DualTran: open a file first."));
     const text = selectionOrLine(editor).trim();
     if (!text) return;
     try {
-      paintStatus("translating…", true);
+      paintStatus(t("translating…"), true);
       const result = await runTranslate(context, text);
       showPanel(context, text, result, config().targetLanguage);
       paintStatus("");
     } catch (e) {
-      vscode.window.showErrorMessage("DualTran: " + (e && e.message ? e.message : e));
+      vscode.window.showErrorMessage(t("DualTran: {0}", e && e.message ? e.message : e));
       paintStatus("");
     }
   });
@@ -249,20 +252,20 @@ function activate(context) {
   cmd("dualtran.replaceSelection", async () => {
     const editor = vscode.window.activeTextEditor;
     if (!editor) return;
-    if (editor.selection.isEmpty) return vscode.window.showWarningMessage("DualTran: select the text to replace.");
+    if (editor.selection.isEmpty) return vscode.window.showWarningMessage(t("DualTran: select the text to replace."));
     const text = editor.document.getText(editor.selection);
     try {
       const result = await runTranslate(context, text);
       await editor.edit((b) => b.replace(editor.selection, result));
     } catch (e) {
-      vscode.window.showErrorMessage("DualTran: " + (e && e.message ? e.message : e));
+      vscode.window.showErrorMessage(t("DualTran: {0}", e && e.message ? e.message : e));
     }
   });
 
   cmd("dualtran.pickTarget", async () => {
     const pick = await vscode.window.showQuickPick(
       LANGUAGES.map(([code, label]) => ({ label: label, description: code, code })),
-      { title: "DualTran — target language" }
+      { title: t("DualTran — target language") }
     );
     if (pick) await vscode.workspace.getConfiguration("dualtran").update("targetLanguage", pick.code, vscode.ConfigurationTarget.Global);
   });
@@ -272,14 +275,14 @@ function activate(context) {
     try {
       catalog = await loadCatalog(context);
     } catch (error) {
-      return vscode.window.showErrorMessage("DualTran: could not load models.dev — " + (error && error.message ? error.message : error));
+      return vscode.window.showErrorMessage(t("DualTran: could not load models.dev — {0}", error && error.message ? error.message : error));
     }
     const list = buildProviderList(catalog.providers, catalog.modelsById);
     const firstCatalogue = list.findIndex((provider) => !provider.builtIn);
     const items = [];
     list.forEach((provider, index) => {
       if (index === firstCatalogue) {
-        items.push({ label: "More (models.dev)", kind: vscode.QuickPickItemKind.Separator });
+        items.push({ label: t("More (models.dev)"), kind: vscode.QuickPickItemKind.Separator });
       }
       items.push({
         label: provider.name,
@@ -289,8 +292,8 @@ function activate(context) {
       });
     });
     const pick = await vscode.window.showQuickPick(items, {
-      title: "DualTran — AI provider",
-      placeHolder: "Built-in first, then every provider models.dev knows",
+      title: t("DualTran — AI provider"),
+      placeHolder: t("Built-in first, then every provider models.dev knows"),
       matchOnDescription: true,
       matchOnDetail: true,
     });
@@ -302,7 +305,7 @@ function activate(context) {
     await cfg.update("engine", "ai", vscode.ConfigurationTarget.Global);
     if (model) await cfg.update("ai.model", model, vscode.ConfigurationTarget.Global);
     vscode.window.showInformationMessage(
-      "DualTran: " + pick.provider.name + (model ? " — " + model : " — set a model")
+      model ? t("DualTran: {0} — {1}", pick.provider.name, model) : t("DualTran: {0} — set a model", pick.provider.name)
     );
   });
 
@@ -310,9 +313,9 @@ function activate(context) {
     await fs.rm(catalogPath(context), { force: true });
     try {
       const catalog = await loadCatalog(context);
-      vscode.window.showInformationMessage("DualTran: " + catalog.providers.length + " providers loaded from models.dev.");
+      vscode.window.showInformationMessage(t("DualTran: {0} providers loaded from models.dev.", catalog.providers.length));
     } catch (error) {
-      vscode.window.showErrorMessage("DualTran: catalogue refresh failed — " + (error && error.message ? error.message : error));
+      vscode.window.showErrorMessage(t("DualTran: catalogue refresh failed — {0}", error && error.message ? error.message : error));
     }
   });
 
@@ -327,14 +330,14 @@ function activate(context) {
 
   cmd("dualtran.setApiKey", async () => {
     const entered = await vscode.window.showInputBox({
-      title: "DualTran — AI API key",
-      prompt: "Stored in SecretStorage (OS keychain).",
+      title: t("DualTran — AI API key"),
+      prompt: t("Stored in SecretStorage (OS keychain)."),
       password: true,
       ignoreFocusOut: true,
     });
     if (entered) {
       await context.secrets.store("dualtran.aiKey", entered);
-      vscode.window.showInformationMessage("DualTran: API key saved.");
+      vscode.window.showInformationMessage(t("DualTran: API key saved."));
     }
   });
 

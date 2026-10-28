@@ -1,0 +1,140 @@
+{
+  "cmdTranslateInline": {
+    "message": "DualTran: ترجمة التحديد (مباشر)"
+  },
+  "cmdTranslatePanel": {
+    "message": "DualTran: ترجمة التحديد (لوحة جانبية)"
+  },
+  "cmdReplaceSelection": {
+    "message": "DualTran: ترجمة واستبدال التحديد"
+  },
+  "cmdClearInline": {
+    "message": "DualTran: مسح الترجمات المباشرة"
+  },
+  "cmdPickTarget": {
+    "message": "DualTran: اختيار اللغة الهدف"
+  },
+  "cmdSetApiKey": {
+    "message": "DualTran: تعيين مفتاح API للذكاء الاصطناعي"
+  },
+  "cmdPickProvider": {
+    "message": "DualTran: اختيار مزود الذكاء الاصطناعي (مدمج + models.dev)"
+  },
+  "cmdRefreshProviders": {
+    "message": "DualTran: تحديث كتالوج المزودين (models.dev)"
+  },
+  "cfgEngine": {
+    "message": "محرك الترجمة."
+  },
+  "cfgEngineGoogle": {
+    "message": "Google Translate (بدون حساب)"
+  },
+  "cfgEngineAi": {
+    "message": "أي نقطة نهاية متوافقة مع OpenAI باستخدام مفتاحك"
+  },
+  "cfgSource": {
+    "message": "رمز لغة المصدر، أو 'auto'."
+  },
+  "cfgTarget": {
+    "message": "رمز لغة الهدف (مثل zh-CN، en، ja)."
+  },
+  "cfgEndpoint": {
+    "message": "عنوان URL الأساسي لواجهة برمجة تطبيقات متوافقة مع OpenAI (OpenAI، DeepSeek، Groq، Ollama، …)."
+  },
+  "cfgModel": {
+    "message": "اسم النموذج لمحرك الذكاء الاصطناعي."
+  },
+  "cfgProvider": {
+    "message": "معرّف مزوّد الذكاء الاصطناعي. استخدم **DualTran: Choose AI Provider** للاختيار من القائمة المدمجة ومن أكثر من 200 مزوّد في models.dev؛ يملأ الأمر نقطة النهاية والنموذج المطابقين."
+  },
+  "cfgReasoning": {
+    "message": "مقدار جهد الاستدلال المطلوب. يتم إسقاط المستويات غير المعروفة أو غير المدعومة تلقائيًا."
+  },
+  "cfgReasoningLowest": {
+    "message": "استخدم أدنى مستوى يقبله النموذج المحدد (افتراضي)"
+  },
+  "cfgReasoningDefault": {
+    "message": "لا ترسل معامل استدلال — اترك القرار للمزوّد"
+  },
+  "cfgReasoningNone": {
+    "message": "بدون استدلال"
+  },
+  "cfgReasoningMinimal": {
+    "message": "استدلال أدنى"
+  },
+  "cfgReasoningLow": {
+    "message": "استدلال منخفض"
+  },
+  "cfgReasoningMedium": {
+    "message": "استدلال متوسط"
+  },
+  "cfgReasoningHigh": {
+    "message": "استدلال مرتفع"
+  },
+  "cfgReasoningXhigh": {
+    "message": "استدلال مرتفع جدًا"
+  },
+  "cfgReasoningMax": {
+    "message": "استدلال أقصى"
+  },
+  "cfgSectionTitle": {
+    "message": "DualTran"
+  },
+  "warnOpenFile": {
+    "message": "DualTran: افتح ملفًا أولًا"
+  },
+  "warnSelectText": {
+    "message": "DualTran: حدد النص المراد استبداله"
+  },
+  "errorPrefix": {
+    "message": "DualTran: {0}"
+  },
+  "inputApiKeyTitle": {
+    "message": "DualTran — مفتاح AI API"
+  },
+  "inputApiKeyPromptExisting": {
+    "message": "مخزّن في سلسلة مفاتيح نظام التشغيل عبر VS Code SecretStorage. اتركه فارغًا للاحتفاظ بالمفتاح الحالي."
+  },
+  "inputApiKeyPromptNew": {
+    "message": "مخزّن في SecretStorage (سلسلة مفاتيح نظام التشغيل)."
+  },
+  "errorNoApiKey": {
+    "message": "لم يتم تعيين مفتاح API (DualTran: تعيين مفتاح API للذكاء الاصطناعي)."
+  },
+  "pickTargetTitle": {
+    "message": "DualTran — اللغة الهدف"
+  },
+  "pickProviderTitle": {
+    "message": "DualTran — مزوّد الذكاء الاصطناعي"
+  },
+  "pickProviderPlaceholder": {
+    "message": "المزوّدون المدمجون أولًا، ثم كل مزوّد يعرفه models.dev"
+  },
+  "providerSeparator": {
+    "message": "المزيد (models.dev)"
+  },
+  "infoProviderPicked": {
+    "message": "DualTran: {0}"
+  },
+  "infoProviderModel": {
+    "message": "DualTran: {0} — {1}"
+  },
+  "infoSetModel": {
+    "message": "DualTran: {0} — عيّن نموذجًا"
+  },
+  "infoProvidersLoaded": {
+    "message": "DualTran: تم تحميل {0} من مزودي الخدمة من models.dev."
+  },
+  "errorCatalogueRefresh": {
+    "message": "DualTran: فشل تحديث الكتالوج — {0}"
+  },
+  "errorCatalogueLoad": {
+    "message": "DualTran: تعذر تحميل models.dev — {0}"
+  },
+  "infoApiKeySaved": {
+    "message": "DualTran: تم حفظ مفتاح API."
+  },
+  "statusTranslating": {
+    "message": "جارٍ الترجمة…"
+  }
+}

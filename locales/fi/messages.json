@@ -1,0 +1,140 @@
+{
+  "cmdTranslateInline": {
+    "message": "DualTran: Käännä valinta (rivinsisäisesti)"
+  },
+  "cmdTranslatePanel": {
+    "message": "DualTran: Käännä valinta (sivupaneeli)"
+  },
+  "cmdReplaceSelection": {
+    "message": "DualTran: Käännä ja korvaa valinta"
+  },
+  "cmdClearInline": {
+    "message": "DualTran: Tyhjennä rivinsisäiset käännökset"
+  },
+  "cmdPickTarget": {
+    "message": "DualTran: Valitse kohdekieli"
+  },
+  "cmdSetApiKey": {
+    "message": "DualTran: Aseta AI-rajapinta-avain"
+  },
+  "cmdPickProvider": {
+    "message": "DualTran: Valitse AI-tarjoaja (sisäänrakennettu + models.dev)"
+  },
+  "cmdRefreshProviders": {
+    "message": "DualTran: Päivitä tarjoajaluettelo (models.dev)"
+  },
+  "cfgEngine": {
+    "message": "Käännösmoottori."
+  },
+  "cfgEngineGoogle": {
+    "message": "Google Translate (ei tiliä)"
+  },
+  "cfgEngineAi": {
+    "message": "Mikä tahansa OpenAI-yhteensopiva päätepiste omalla avaimellasi"
+  },
+  "cfgSource": {
+    "message": "Lähdekielen koodi tai 'auto'."
+  },
+  "cfgTarget": {
+    "message": "Kohdekielen koodi (esim. zh-CN, en, ja)."
+  },
+  "cfgEndpoint": {
+    "message": "OpenAI-yhteensopivan API:n perus-URL (OpenAI, DeepSeek, Groq, Ollama, …)."
+  },
+  "cfgModel": {
+    "message": "AI-moottorin mallin nimi."
+  },
+  "cfgProvider": {
+    "message": "AI-tarjoajan tunniste. Valitse sisäänrakennetusta luettelosta ja models.dev-palvelun yli 200 tarjoajasta komennolla **DualTran: Choose AI Provider**; komento täyttää vastaavan päätepisteen ja mallin."
+  },
+  "cfgReasoning": {
+    "message": "Kuinka paljon päättelypanosta pyydetään. Tuntemattomat tai tukemattomat tasot poistetaan automaattisesti."
+  },
+  "cfgReasoningLowest": {
+    "message": "Käytä alinta tasoa, jonka valittu malli hyväksyy (oletus)"
+  },
+  "cfgReasoningDefault": {
+    "message": "Älä lähetä päättelyparametria — anna tarjoajan päättää"
+  },
+  "cfgReasoningNone": {
+    "message": "Ei päättelyä"
+  },
+  "cfgReasoningMinimal": {
+    "message": "Minimaalinen päättely"
+  },
+  "cfgReasoningLow": {
+    "message": "Matala päättely"
+  },
+  "cfgReasoningMedium": {
+    "message": "Keskitasoinen päättely"
+  },
+  "cfgReasoningHigh": {
+    "message": "Korkea päättely"
+  },
+  "cfgReasoningXhigh": {
+    "message": "Erittäin korkea päättely"
+  },
+  "cfgReasoningMax": {
+    "message": "Maksimaalinen päättely"
+  },
+  "cfgSectionTitle": {
+    "message": "DualTran"
+  },
+  "warnOpenFile": {
+    "message": "DualTran: avaa ensin tiedosto."
+  },
+  "warnSelectText": {
+    "message": "DualTran: valitse korvattava teksti."
+  },
+  "errorPrefix": {
+    "message": "DualTran: {0}"
+  },
+  "inputApiKeyTitle": {
+    "message": "DualTran — AI API -avain"
+  },
+  "inputApiKeyPromptExisting": {
+    "message": "Tallennettu käyttöjärjestelmän avainnippuun VS Code SecretStoragen kautta. Jätä tyhjäksi säilyttääksesi nykyisen avaimen."
+  },
+  "inputApiKeyPromptNew": {
+    "message": "Tallennettu SecretStorageen (käyttöjärjestelmän avainnippu)."
+  },
+  "errorNoApiKey": {
+    "message": "API-avainta ei ole asetettu (DualTran: Aseta AI API -avain)."
+  },
+  "pickTargetTitle": {
+    "message": "DualTran — kohdekieli"
+  },
+  "pickProviderTitle": {
+    "message": "DualTran — AI-palveluntarjoaja"
+  },
+  "pickProviderPlaceholder": {
+    "message": "Sisäänrakennettu ensin, sitten kaikki models.dev:n tuntemat palveluntarjoajat"
+  },
+  "providerSeparator": {
+    "message": "Lisää (models.dev)"
+  },
+  "infoProviderPicked": {
+    "message": "DualTran: {0}"
+  },
+  "infoProviderModel": {
+    "message": "DualTran: {0} — {1}"
+  },
+  "infoSetModel": {
+    "message": "DualTran: {0} — aseta malli"
+  },
+  "infoProvidersLoaded": {
+    "message": "DualTran: {0} palveluntarjoajaa ladattu models.dev-palvelusta."
+  },
+  "errorCatalogueRefresh": {
+    "message": "DualTran: luettelon päivitys epäonnistui — {0}"
+  },
+  "errorCatalogueLoad": {
+    "message": "DualTran: models.dev-palvelua ei voitu ladata — {0}"
+  },
+  "infoApiKeySaved": {
+    "message": "DualTran: API-avain tallennettu."
+  },
+  "statusTranslating": {
+    "message": "käännetään…"
+  }
+}

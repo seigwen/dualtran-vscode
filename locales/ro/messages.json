@@ -1,0 +1,140 @@
+{
+  "cmdTranslateInline": {
+    "message": "DualTran: Traduce selecția (în linie)"
+  },
+  "cmdTranslatePanel": {
+    "message": "DualTran: Traduce selecția (panou lateral)"
+  },
+  "cmdReplaceSelection": {
+    "message": "DualTran: Traduce și înlocuiește selecția"
+  },
+  "cmdClearInline": {
+    "message": "DualTran: Șterge traducerile în linie"
+  },
+  "cmdPickTarget": {
+    "message": "DualTran: Alege limba țintă"
+  },
+  "cmdSetApiKey": {
+    "message": "DualTran: Setează cheia API AI"
+  },
+  "cmdPickProvider": {
+    "message": "DualTran: Alege furnizorul AI (încorporat + models.dev)"
+  },
+  "cmdRefreshProviders": {
+    "message": "DualTran: Reîmprospătează catalogul furnizorilor (models.dev)"
+  },
+  "cfgEngine": {
+    "message": "Motor de traducere."
+  },
+  "cfgEngineGoogle": {
+    "message": "Google Translate (fără cont)"
+  },
+  "cfgEngineAi": {
+    "message": "Orice endpoint compatibil OpenAI cu cheia ta"
+  },
+  "cfgSource": {
+    "message": "Codul limbii sursă sau „auto”."
+  },
+  "cfgTarget": {
+    "message": "Codul limbii țintă (de ex. zh-CN, en, ja)."
+  },
+  "cfgEndpoint": {
+    "message": "URL-ul de bază al unui API compatibil OpenAI (OpenAI, DeepSeek, Groq, Ollama, …)."
+  },
+  "cfgModel": {
+    "message": "Numele modelului pentru motorul AI."
+  },
+  "cfgProvider": {
+    "message": "ID-ul furnizorului AI. Folosește **DualTran: Choose AI Provider** pentru a alege din lista integrată și din cele peste 200 de furnizori din models.dev; comanda completează endpoint-ul și modelul corespunzătoare."
+  },
+  "cfgReasoning": {
+    "message": "Cât efort de raționament să se solicite. Nivelurile necunoscute sau neacceptate sunt eliminate automat."
+  },
+  "cfgReasoningLowest": {
+    "message": "Folosește cel mai scăzut nivel acceptat de modelul selectat (implicit)"
+  },
+  "cfgReasoningDefault": {
+    "message": "Nu trimite niciun parametru de raționament — lasă furnizorul să decidă"
+  },
+  "cfgReasoningNone": {
+    "message": "Fără raționament"
+  },
+  "cfgReasoningMinimal": {
+    "message": "Raționament minim"
+  },
+  "cfgReasoningLow": {
+    "message": "Raționament scăzut"
+  },
+  "cfgReasoningMedium": {
+    "message": "Raționament mediu"
+  },
+  "cfgReasoningHigh": {
+    "message": "Raționament ridicat"
+  },
+  "cfgReasoningXhigh": {
+    "message": "Raționament foarte ridicat"
+  },
+  "cfgReasoningMax": {
+    "message": "Raționament maxim"
+  },
+  "cfgSectionTitle": {
+    "message": "DualTran"
+  },
+  "warnOpenFile": {
+    "message": "DualTran: deschideți mai întâi un fișier"
+  },
+  "warnSelectText": {
+    "message": "DualTran: selectați textul de înlocuit"
+  },
+  "errorPrefix": {
+    "message": "DualTran: {0}"
+  },
+  "inputApiKeyTitle": {
+    "message": "DualTran — cheie API AI"
+  },
+  "inputApiKeyPromptExisting": {
+    "message": "Stocată în keychain-ul sistemului de operare prin VS Code SecretStorage. Lăsați gol pentru a păstra cheia curentă."
+  },
+  "inputApiKeyPromptNew": {
+    "message": "Stocată în SecretStorage (keychain-ul sistemului de operare)."
+  },
+  "errorNoApiKey": {
+    "message": "Nicio cheie API setată (DualTran: Set AI API Key)."
+  },
+  "pickTargetTitle": {
+    "message": "DualTran — limba țintă"
+  },
+  "pickProviderTitle": {
+    "message": "DualTran — furnizor AI"
+  },
+  "pickProviderPlaceholder": {
+    "message": "Mai întâi cele integrate, apoi fiecare furnizor cunoscut de models.dev"
+  },
+  "providerSeparator": {
+    "message": "Mai multe (models.dev)"
+  },
+  "infoProviderPicked": {
+    "message": "DualTran: {0}"
+  },
+  "infoProviderModel": {
+    "message": "DualTran: {0} — {1}"
+  },
+  "infoSetModel": {
+    "message": "DualTran: {0} — setați un model"
+  },
+  "infoProvidersLoaded": {
+    "message": "DualTran: {0} furnizori încărcați din models.dev."
+  },
+  "errorCatalogueRefresh": {
+    "message": "DualTran: reîmprospătarea catalogului a eșuat — {0}"
+  },
+  "errorCatalogueLoad": {
+    "message": "DualTran: nu s-a putut încărca models.dev — {0}"
+  },
+  "infoApiKeySaved": {
+    "message": "DualTran: cheia API a fost salvată."
+  },
+  "statusTranslating": {
+    "message": "se traduce…"
+  }
+}

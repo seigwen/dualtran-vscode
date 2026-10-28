@@ -1,0 +1,140 @@
+{
+  "cmdTranslateInline": {
+    "message": "DualTran: 선택 항목 번역 (인라인)"
+  },
+  "cmdTranslatePanel": {
+    "message": "DualTran: 선택 항목 번역 (사이드 패널)"
+  },
+  "cmdReplaceSelection": {
+    "message": "DualTran: 선택 항목 번역 후 바꾸기"
+  },
+  "cmdClearInline": {
+    "message": "DualTran: 인라인 번역 지우기"
+  },
+  "cmdPickTarget": {
+    "message": "DualTran: 대상 언어 선택"
+  },
+  "cmdSetApiKey": {
+    "message": "DualTran: AI API 키 설정"
+  },
+  "cmdPickProvider": {
+    "message": "DualTran: AI 제공자 선택 (내장 + models.dev)"
+  },
+  "cmdRefreshProviders": {
+    "message": "DualTran: 제공자 목록 새로 고침 (models.dev)"
+  },
+  "cfgEngine": {
+    "message": "번역 엔진"
+  },
+  "cfgEngineGoogle": {
+    "message": "Google Translate (계정 불필요)"
+  },
+  "cfgEngineAi": {
+    "message": "키를 사용하는 OpenAI 호환 엔드포인트"
+  },
+  "cfgSource": {
+    "message": "원본 언어 코드 또는 'auto'"
+  },
+  "cfgTarget": {
+    "message": "대상 언어 코드 (예: zh-CN, en, ja)"
+  },
+  "cfgEndpoint": {
+    "message": "OpenAI 호환 API의 기본 URL (OpenAI, DeepSeek, Groq, Ollama, …)"
+  },
+  "cfgModel": {
+    "message": "AI 엔진의 모델 이름"
+  },
+  "cfgProvider": {
+    "message": "AI 제공자 ID. **DualTran: Choose AI Provider**를 사용하여 내장 목록과 models.dev의 200개 이상 제공자 중에서 선택하세요. 명령이 일치하는 엔드포인트와 모델을 채웁니다."
+  },
+  "cfgReasoning": {
+    "message": "요청할 추론 노력 수준. 알 수 없거나 지원되지 않는 수준은 자동으로 제거됩니다."
+  },
+  "cfgReasoningLowest": {
+    "message": "선택한 모델이 허용하는 가장 낮은 수준 사용 (기본값)"
+  },
+  "cfgReasoningDefault": {
+    "message": "추론 매개변수를 보내지 않고 제공자가 결정하도록 함"
+  },
+  "cfgReasoningNone": {
+    "message": "추론 없음"
+  },
+  "cfgReasoningMinimal": {
+    "message": "최소 추론"
+  },
+  "cfgReasoningLow": {
+    "message": "낮은 추론"
+  },
+  "cfgReasoningMedium": {
+    "message": "중간 추론"
+  },
+  "cfgReasoningHigh": {
+    "message": "높은 추론"
+  },
+  "cfgReasoningXhigh": {
+    "message": "매우 높은 추론"
+  },
+  "cfgReasoningMax": {
+    "message": "최대 추론"
+  },
+  "cfgSectionTitle": {
+    "message": "DualTran"
+  },
+  "warnOpenFile": {
+    "message": "DualTran: 먼저 파일을 여세요"
+  },
+  "warnSelectText": {
+    "message": "DualTran: 바꿀 텍스트를 선택하세요"
+  },
+  "errorPrefix": {
+    "message": "DualTran: {0}"
+  },
+  "inputApiKeyTitle": {
+    "message": "DualTran — AI API 키"
+  },
+  "inputApiKeyPromptExisting": {
+    "message": "VS Code SecretStorage를 통해 OS 키체인에 저장됩니다. 현재 키를 유지하려면 비워 두세요."
+  },
+  "inputApiKeyPromptNew": {
+    "message": "SecretStorage(OS 키체인)에 저장됩니다."
+  },
+  "errorNoApiKey": {
+    "message": "API 키가 설정되지 않았습니다 (DualTran: AI API 키 설정)."
+  },
+  "pickTargetTitle": {
+    "message": "DualTran — 대상 언어"
+  },
+  "pickProviderTitle": {
+    "message": "DualTran — AI 제공자"
+  },
+  "pickProviderPlaceholder": {
+    "message": "내장 제공자 우선, 그다음 models.dev가 아는 모든 제공자"
+  },
+  "providerSeparator": {
+    "message": "더 보기 (models.dev)"
+  },
+  "infoProviderPicked": {
+    "message": "DualTran: {0}"
+  },
+  "infoProviderModel": {
+    "message": "DualTran: {0} — {1}"
+  },
+  "infoSetModel": {
+    "message": "DualTran: {0} — 모델 설정"
+  },
+  "infoProvidersLoaded": {
+    "message": "DualTran: models.dev에서 {0}개 제공자 로드됨"
+  },
+  "errorCatalogueRefresh": {
+    "message": "DualTran: 카탈로그 새로 고침 실패 — {0}"
+  },
+  "errorCatalogueLoad": {
+    "message": "DualTran: models.dev를 로드할 수 없음 — {0}"
+  },
+  "infoApiKeySaved": {
+    "message": "DualTran: API 키 저장됨"
+  },
+  "statusTranslating": {
+    "message": "번역 중…"
+  }
+}

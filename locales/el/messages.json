@@ -1,0 +1,140 @@
+{
+  "cmdTranslateInline": {
+    "message": "DualTran: Μετάφραση επιλογής (ενσωματωμένη)"
+  },
+  "cmdTranslatePanel": {
+    "message": "DualTran: Μετάφραση επιλογής (πλαϊνό πάνελ)"
+  },
+  "cmdReplaceSelection": {
+    "message": "DualTran: Μετάφραση και αντικατάσταση επιλογής"
+  },
+  "cmdClearInline": {
+    "message": "DualTran: Εκκαθάριση ενσωματωμένων μεταφράσεων"
+  },
+  "cmdPickTarget": {
+    "message": "DualTran: Επιλογή γλώσσας προορισμού"
+  },
+  "cmdSetApiKey": {
+    "message": "DualTran: Ορισμός κλειδιού API AI"
+  },
+  "cmdPickProvider": {
+    "message": "DualTran: Επιλογή παρόχου AI (ενσωματωμένος + models.dev)"
+  },
+  "cmdRefreshProviders": {
+    "message": "DualTran: Ανανέωση καταλόγου παρόχων (models.dev)"
+  },
+  "cfgEngine": {
+    "message": "Μηχανή μετάφρασης."
+  },
+  "cfgEngineGoogle": {
+    "message": "Google Translate (χωρίς λογαριασμό)"
+  },
+  "cfgEngineAi": {
+    "message": "Οποιοδήποτε endpoint συμβατό με OpenAI με το κλειδί σας"
+  },
+  "cfgSource": {
+    "message": "Κωδικός γλώσσας πηγής ή 'auto'."
+  },
+  "cfgTarget": {
+    "message": "Κωδικός γλώσσας προορισμού (π.χ. zh-CN, en, ja)."
+  },
+  "cfgEndpoint": {
+    "message": "Βασικό URL ενός API συμβατού με OpenAI (OpenAI, DeepSeek, Groq, Ollama, …)."
+  },
+  "cfgModel": {
+    "message": "Όνομα μοντέλου για τη μηχανή AI."
+  },
+  "cfgProvider": {
+    "message": "Αναγνωριστικό παρόχου AI. Χρησιμοποιήστε **DualTran: Choose AI Provider** για επιλογή από την ενσωματωμένη λίστα και τους 200+ παρόχους στο models.dev· η εντολή συμπληρώνει το αντίστοιχο endpoint και μοντέλο."
+  },
+  "cfgReasoning": {
+    "message": "Πόση προσπάθεια συλλογισμού να ζητηθεί. Άγνωστα ή μη υποστηριζόμενα επίπεδα παραλείπονται αυτόματα."
+  },
+  "cfgReasoningLowest": {
+    "message": "Χρήση του χαμηλότερου επιπέδου που δέχεται το επιλεγμένο μοντέλο (προεπιλογή)"
+  },
+  "cfgReasoningDefault": {
+    "message": "Χωρίς παράμετρο συλλογισμού — αφήστε τον πάροχο να αποφασίσει"
+  },
+  "cfgReasoningNone": {
+    "message": "Χωρίς συλλογισμό"
+  },
+  "cfgReasoningMinimal": {
+    "message": "Ελάχιστη συλλογιστική"
+  },
+  "cfgReasoningLow": {
+    "message": "Χαμηλή συλλογιστική"
+  },
+  "cfgReasoningMedium": {
+    "message": "Μεσαία συλλογιστική"
+  },
+  "cfgReasoningHigh": {
+    "message": "Υψηλή συλλογιστική"
+  },
+  "cfgReasoningXhigh": {
+    "message": "Εξαιρετικά υψηλή συλλογιστική"
+  },
+  "cfgReasoningMax": {
+    "message": "Μέγιστη συλλογιστική"
+  },
+  "cfgSectionTitle": {
+    "message": "DualTran"
+  },
+  "warnOpenFile": {
+    "message": "DualTran: ανοίξτε πρώτα ένα αρχείο."
+  },
+  "warnSelectText": {
+    "message": "DualTran: επιλέξτε το κείμενο προς αντικατάσταση."
+  },
+  "errorPrefix": {
+    "message": "DualTran: {0}"
+  },
+  "inputApiKeyTitle": {
+    "message": "DualTran — κλειδί API AI"
+  },
+  "inputApiKeyPromptExisting": {
+    "message": "Αποθηκευμένο στο κλειδοθήκη του λειτουργικού συστήματος μέσω VS Code SecretStorage. Αφήστε κενό για να διατηρήσετε το τρέχον κλειδί."
+  },
+  "inputApiKeyPromptNew": {
+    "message": "Αποθηκευμένο στο SecretStorage (κλειδοθήκη λειτουργικού συστήματος)."
+  },
+  "errorNoApiKey": {
+    "message": "Δεν έχει οριστεί κλειδί API (DualTran: Ορισμός κλειδιού API AI)."
+  },
+  "pickTargetTitle": {
+    "message": "DualTran — γλώσσα προορισμού"
+  },
+  "pickProviderTitle": {
+    "message": "DualTran — πάροχος AI"
+  },
+  "pickProviderPlaceholder": {
+    "message": "Ενσωματωμένος πρώτα, μετά κάθε πάροχος που γνωρίζει το models.dev"
+  },
+  "providerSeparator": {
+    "message": "Περισσότερα (models.dev)"
+  },
+  "infoProviderPicked": {
+    "message": "DualTran: {0}"
+  },
+  "infoProviderModel": {
+    "message": "DualTran: {0} — {1}"
+  },
+  "infoSetModel": {
+    "message": "DualTran: {0} — ορίστε ένα μοντέλο"
+  },
+  "infoProvidersLoaded": {
+    "message": "DualTran: φορτώθηκαν {0} πάροχοι από το models.dev."
+  },
+  "errorCatalogueRefresh": {
+    "message": "DualTran: η ανανέωση του καταλόγου απέτυχε — {0}"
+  },
+  "errorCatalogueLoad": {
+    "message": "DualTran: δεν ήταν δυνατή η φόρτωση του models.dev — {0}"
+  },
+  "infoApiKeySaved": {
+    "message": "DualTran: το κλειδί API αποθηκεύτηκε."
+  },
+  "statusTranslating": {
+    "message": "μετάφραση…"
+  }
+}

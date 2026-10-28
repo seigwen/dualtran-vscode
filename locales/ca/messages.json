@@ -1,0 +1,140 @@
+{
+  "cmdTranslateInline": {
+    "message": "DualTran: Tradueix la selecció (en línia)"
+  },
+  "cmdTranslatePanel": {
+    "message": "DualTran: Tradueix la selecció (panell lateral)"
+  },
+  "cmdReplaceSelection": {
+    "message": "DualTran: Tradueix i substitueix la selecció"
+  },
+  "cmdClearInline": {
+    "message": "DualTran: Esborra les traduccions en línia"
+  },
+  "cmdPickTarget": {
+    "message": "DualTran: Tria la llengua de destinació"
+  },
+  "cmdSetApiKey": {
+    "message": "DualTran: Defineix la clau API d'IA"
+  },
+  "cmdPickProvider": {
+    "message": "DualTran: Tria el proveïdor d'IA (integrat + models.dev)"
+  },
+  "cmdRefreshProviders": {
+    "message": "DualTran: Actualitza el catàleg de proveïdors (models.dev)"
+  },
+  "cfgEngine": {
+    "message": "Motor de traducció."
+  },
+  "cfgEngineGoogle": {
+    "message": "Google Translate (sense compte)"
+  },
+  "cfgEngineAi": {
+    "message": "Qualsevol punt final compatible amb OpenAI amb la teva clau"
+  },
+  "cfgSource": {
+    "message": "Codi d'idioma d'origen, o 'auto'."
+  },
+  "cfgTarget": {
+    "message": "Codi d'idioma de destinació (p. ex. zh-CN, en, ja)."
+  },
+  "cfgEndpoint": {
+    "message": "URL base d'una API compatible amb OpenAI (OpenAI, DeepSeek, Groq, Ollama, …)."
+  },
+  "cfgModel": {
+    "message": "Nom del model per al motor d'IA."
+  },
+  "cfgProvider": {
+    "message": "Identificador del proveïdor d'IA. Utilitza **DualTran: Choose AI Provider** per triar de la llista integrada i dels més de 200 proveïdors de models.dev; l'ordre emplena el punt final i el model corresponents."
+  },
+  "cfgReasoning": {
+    "message": "Quant esforç de raonament cal sol·licitar. Els nivells desconeguts o no suportats es descarten automàticament."
+  },
+  "cfgReasoningLowest": {
+    "message": "Utilitza el nivell més baix que accepta el model seleccionat (per defecte)"
+  },
+  "cfgReasoningDefault": {
+    "message": "No enviïs cap paràmetre de raonament — deixa que ho decideixi el proveïdor"
+  },
+  "cfgReasoningNone": {
+    "message": "Sense raonament"
+  },
+  "cfgReasoningMinimal": {
+    "message": "Raonament mínim"
+  },
+  "cfgReasoningLow": {
+    "message": "Raonament baix"
+  },
+  "cfgReasoningMedium": {
+    "message": "Raonament mitjà"
+  },
+  "cfgReasoningHigh": {
+    "message": "Raonament alt"
+  },
+  "cfgReasoningXhigh": {
+    "message": "Raonament molt alt"
+  },
+  "cfgReasoningMax": {
+    "message": "Raonament màxim"
+  },
+  "cfgSectionTitle": {
+    "message": "DualTran"
+  },
+  "warnOpenFile": {
+    "message": "DualTran: obre un fitxer primer"
+  },
+  "warnSelectText": {
+    "message": "DualTran: selecciona el text a substituir"
+  },
+  "errorPrefix": {
+    "message": "DualTran: {0}"
+  },
+  "inputApiKeyTitle": {
+    "message": "DualTran — clau API d'IA"
+  },
+  "inputApiKeyPromptExisting": {
+    "message": "Emmagatzemada al clauer del sistema operatiu mitjançant VS Code SecretStorage. Deixa-ho buit per mantenir la clau actual."
+  },
+  "inputApiKeyPromptNew": {
+    "message": "Emmagatzemada a SecretStorage (clauer del sistema operatiu)."
+  },
+  "errorNoApiKey": {
+    "message": "No hi ha cap clau API configurada (DualTran: Estableix la clau API d'IA)."
+  },
+  "pickTargetTitle": {
+    "message": "DualTran — idioma de destinació"
+  },
+  "pickProviderTitle": {
+    "message": "DualTran — proveïdor d'IA"
+  },
+  "pickProviderPlaceholder": {
+    "message": "Primer els integrats, després tots els proveïdors que coneix models.dev"
+  },
+  "providerSeparator": {
+    "message": "Més (models.dev)"
+  },
+  "infoProviderPicked": {
+    "message": "DualTran: {0}"
+  },
+  "infoProviderModel": {
+    "message": "DualTran: {0} — {1}"
+  },
+  "infoSetModel": {
+    "message": "DualTran: {0} — estableix un model"
+  },
+  "infoProvidersLoaded": {
+    "message": "DualTran: {0} proveïdors carregats des de models.dev."
+  },
+  "errorCatalogueRefresh": {
+    "message": "DualTran: ha fallat l'actualització del catàleg — {0}"
+  },
+  "errorCatalogueLoad": {
+    "message": "DualTran: no s'ha pogut carregar models.dev — {0}"
+  },
+  "infoApiKeySaved": {
+    "message": "DualTran: clau API desada."
+  },
+  "statusTranslating": {
+    "message": "s'està traduint…"
+  }
+}

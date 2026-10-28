@@ -1,0 +1,140 @@
+{
+  "cmdTranslateInline": {
+    "message": "DualTran: แปลข้อความที่เลือก (แบบอินไลน์)"
+  },
+  "cmdTranslatePanel": {
+    "message": "DualTran: แปลข้อความที่เลือก (แผงด้านข้าง)"
+  },
+  "cmdReplaceSelection": {
+    "message": "DualTran: แปลและแทนที่ข้อความที่เลือก"
+  },
+  "cmdClearInline": {
+    "message": "DualTran: ล้างคำแปลแบบอินไลน์"
+  },
+  "cmdPickTarget": {
+    "message": "DualTran: เลือกภาษาปลายทาง"
+  },
+  "cmdSetApiKey": {
+    "message": "DualTran: ตั้งค่าคีย์ API ของ AI"
+  },
+  "cmdPickProvider": {
+    "message": "DualTran: เลือกผู้ให้บริการ AI (ในตัว + models.dev)"
+  },
+  "cmdRefreshProviders": {
+    "message": "DualTran: รีเฟรชแคตตาล็อกผู้ให้บริการ (models.dev)"
+  },
+  "cfgEngine": {
+    "message": "เครื่องมือแปลภาษา"
+  },
+  "cfgEngineGoogle": {
+    "message": "Google Translate (ไม่ต้องใช้บัญชี)"
+  },
+  "cfgEngineAi": {
+    "message": "ปลายทางที่เข้ากันได้กับ OpenAI พร้อมคีย์ของคุณ"
+  },
+  "cfgSource": {
+    "message": "รหัสภาษาต้นทาง หรือ 'auto'"
+  },
+  "cfgTarget": {
+    "message": "รหัสภาษาปลายทาง (เช่น zh-CN, en, ja)"
+  },
+  "cfgEndpoint": {
+    "message": "URL ฐานของ API ที่เข้ากันได้กับ OpenAI (OpenAI, DeepSeek, Groq, Ollama, …)"
+  },
+  "cfgModel": {
+    "message": "ชื่อโมเดลสำหรับเอนจิน AI"
+  },
+  "cfgProvider": {
+    "message": "รหัสผู้ให้บริการ AI ใช้ **DualTran: Choose AI Provider** เพื่อเลือกจากรายการในตัวและผู้ให้บริการกว่า 200 รายใน models.dev คำสั่งจะเติมปลายทางและโมเดลที่ตรงกันให้"
+  },
+  "cfgReasoning": {
+    "message": "ระดับความพยายามในการให้เหตุผลที่จะร้องขอ ระดับที่ไม่รู้จักหรือไม่รองรับจะถูกตัดออกโดยอัตโนมัติ"
+  },
+  "cfgReasoningLowest": {
+    "message": "ใช้ระดับต่ำสุดที่โมเดลที่เลือกยอมรับ (ค่าเริ่มต้น)"
+  },
+  "cfgReasoningDefault": {
+    "message": "ไม่ส่งพารามิเตอร์การให้เหตุผล — ให้ผู้ให้บริการตัดสินใจ"
+  },
+  "cfgReasoningNone": {
+    "message": "ไม่มีการให้เหตุผล"
+  },
+  "cfgReasoningMinimal": {
+    "message": "การให้เหตุผลน้อยที่สุด"
+  },
+  "cfgReasoningLow": {
+    "message": "การให้เหตุผลต่ำ"
+  },
+  "cfgReasoningMedium": {
+    "message": "การให้เหตุผลปานกลาง"
+  },
+  "cfgReasoningHigh": {
+    "message": "การให้เหตุผลสูง"
+  },
+  "cfgReasoningXhigh": {
+    "message": "การให้เหตุผลสูงมาก"
+  },
+  "cfgReasoningMax": {
+    "message": "การให้เหตุผลสูงสุด"
+  },
+  "cfgSectionTitle": {
+    "message": "DualTran"
+  },
+  "warnOpenFile": {
+    "message": "DualTran: เปิดไฟล์ก่อน"
+  },
+  "warnSelectText": {
+    "message": "DualTran: เลือกข้อความที่จะแทนที่"
+  },
+  "errorPrefix": {
+    "message": "DualTran: {0}"
+  },
+  "inputApiKeyTitle": {
+    "message": "DualTran — คีย์ API ของ AI"
+  },
+  "inputApiKeyPromptExisting": {
+    "message": "จัดเก็บในคีย์เชนของระบบปฏิบัติการผ่าน VS Code SecretStorage เว้นว่างไว้เพื่อใช้คีย์ปัจจุบัน"
+  },
+  "inputApiKeyPromptNew": {
+    "message": "จัดเก็บใน SecretStorage (คีย์เชนของระบบปฏิบัติการ)"
+  },
+  "errorNoApiKey": {
+    "message": "ยังไม่ได้ตั้งค่าคีย์ API (DualTran: ตั้งค่าคีย์ API AI)"
+  },
+  "pickTargetTitle": {
+    "message": "DualTran — ภาษาปลายทาง"
+  },
+  "pickProviderTitle": {
+    "message": "DualTran — ผู้ให้บริการ AI"
+  },
+  "pickProviderPlaceholder": {
+    "message": "ในตัวก่อน จากนั้นทุกผู้ให้บริการที่ models.dev รู้จัก"
+  },
+  "providerSeparator": {
+    "message": "เพิ่มเติม (models.dev)"
+  },
+  "infoProviderPicked": {
+    "message": "DualTran: {0}"
+  },
+  "infoProviderModel": {
+    "message": "DualTran: {0} — {1}"
+  },
+  "infoSetModel": {
+    "message": "DualTran: {0} — ตั้งค่าโมเดล"
+  },
+  "infoProvidersLoaded": {
+    "message": "DualTran: โหลดผู้ให้บริการ {0} รายการจาก models.dev แล้ว"
+  },
+  "errorCatalogueRefresh": {
+    "message": "DualTran: รีเฟรชแคตตาล็อกไม่สำเร็จ — {0}"
+  },
+  "errorCatalogueLoad": {
+    "message": "DualTran: ไม่สามารถโหลด models.dev ได้ — {0}"
+  },
+  "infoApiKeySaved": {
+    "message": "DualTran: บันทึกคีย์ API แล้ว"
+  },
+  "statusTranslating": {
+    "message": "กำลังแปล…"
+  }
+}

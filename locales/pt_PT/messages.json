@@ -1,0 +1,140 @@
+{
+  "cmdTranslateInline": {
+    "message": "DualTran: Traduzir Seleção (em linha)"
+  },
+  "cmdTranslatePanel": {
+    "message": "DualTran: Traduzir Seleção (painel lateral)"
+  },
+  "cmdReplaceSelection": {
+    "message": "DualTran: Traduzir e Substituir Seleção"
+  },
+  "cmdClearInline": {
+    "message": "DualTran: Limpar Traduções em Linha"
+  },
+  "cmdPickTarget": {
+    "message": "DualTran: Escolher Idioma de Destino"
+  },
+  "cmdSetApiKey": {
+    "message": "DualTran: Definir Chave de API de IA"
+  },
+  "cmdPickProvider": {
+    "message": "DualTran: Escolher Fornecedor de IA (integrado + models.dev)"
+  },
+  "cmdRefreshProviders": {
+    "message": "DualTran: Atualizar Catálogo de Fornecedores (models.dev)"
+  },
+  "cfgEngine": {
+    "message": "Motor de tradução."
+  },
+  "cfgEngineGoogle": {
+    "message": "Google Translate (sem conta)"
+  },
+  "cfgEngineAi": {
+    "message": "Qualquer endpoint compatível com OpenAI com a sua chave"
+  },
+  "cfgSource": {
+    "message": "Código do idioma de origem, ou 'auto'."
+  },
+  "cfgTarget": {
+    "message": "Código do idioma de destino (ex.: zh-CN, en, ja)."
+  },
+  "cfgEndpoint": {
+    "message": "URL base de uma API compatível com OpenAI (OpenAI, DeepSeek, Groq, Ollama, …)."
+  },
+  "cfgModel": {
+    "message": "Nome do modelo para o motor de IA."
+  },
+  "cfgProvider": {
+    "message": "ID do fornecedor de IA. Use **DualTran: Choose AI Provider** para escolher na lista integrada e nos mais de 200 fornecedores em models.dev; o comando preenche o endpoint e o modelo correspondentes."
+  },
+  "cfgReasoning": {
+    "message": "Quanto esforço de raciocínio pedir. Níveis desconhecidos ou não suportados são descartados automaticamente."
+  },
+  "cfgReasoningLowest": {
+    "message": "Usar o nível mais baixo aceite pelo modelo selecionado (predefinição)"
+  },
+  "cfgReasoningDefault": {
+    "message": "Não enviar parâmetro de raciocínio — deixar o fornecedor decidir"
+  },
+  "cfgReasoningNone": {
+    "message": "Sem raciocínio"
+  },
+  "cfgReasoningMinimal": {
+    "message": "Raciocínio mínimo"
+  },
+  "cfgReasoningLow": {
+    "message": "Raciocínio baixo"
+  },
+  "cfgReasoningMedium": {
+    "message": "Raciocínio médio"
+  },
+  "cfgReasoningHigh": {
+    "message": "Raciocínio alto"
+  },
+  "cfgReasoningXhigh": {
+    "message": "Raciocínio muito alto"
+  },
+  "cfgReasoningMax": {
+    "message": "Raciocínio máximo"
+  },
+  "cfgSectionTitle": {
+    "message": "DualTran"
+  },
+  "warnOpenFile": {
+    "message": "DualTran: abra primeiro um ficheiro."
+  },
+  "warnSelectText": {
+    "message": "DualTran: selecione o texto a substituir."
+  },
+  "errorPrefix": {
+    "message": "DualTran: {0}"
+  },
+  "inputApiKeyTitle": {
+    "message": "DualTran — chave API de IA"
+  },
+  "inputApiKeyPromptExisting": {
+    "message": "Guardada no cofre do sistema através do VS Code SecretStorage. Deixe vazio para manter a chave atual."
+  },
+  "inputApiKeyPromptNew": {
+    "message": "Guardada no SecretStorage (cofre do sistema)."
+  },
+  "errorNoApiKey": {
+    "message": "Nenhuma chave de API definida (DualTran: Definir chave de API de IA)."
+  },
+  "pickTargetTitle": {
+    "message": "DualTran — idioma de destino"
+  },
+  "pickProviderTitle": {
+    "message": "DualTran — fornecedor de IA"
+  },
+  "pickProviderPlaceholder": {
+    "message": "Integrado primeiro, depois todos os fornecedores que o models.dev conhece"
+  },
+  "providerSeparator": {
+    "message": "Mais (models.dev)"
+  },
+  "infoProviderPicked": {
+    "message": "DualTran: {0}"
+  },
+  "infoProviderModel": {
+    "message": "DualTran: {0} — {1}"
+  },
+  "infoSetModel": {
+    "message": "DualTran: {0} — defina um modelo"
+  },
+  "infoProvidersLoaded": {
+    "message": "DualTran: {0} fornecedores carregados de models.dev."
+  },
+  "errorCatalogueRefresh": {
+    "message": "DualTran: falha ao atualizar o catálogo — {0}"
+  },
+  "errorCatalogueLoad": {
+    "message": "DualTran: não foi possível carregar models.dev — {0}"
+  },
+  "infoApiKeySaved": {
+    "message": "DualTran: chave de API guardada."
+  },
+  "statusTranslating": {
+    "message": "a traduzir…"
+  }
+}

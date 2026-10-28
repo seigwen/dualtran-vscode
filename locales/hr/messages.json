@@ -1,0 +1,140 @@
+{
+  "cmdTranslateInline": {
+    "message": "DualTran: Prevedi odabrano (umetnuto)"
+  },
+  "cmdTranslatePanel": {
+    "message": "DualTran: Prevedi odabrano (bočna ploča)"
+  },
+  "cmdReplaceSelection": {
+    "message": "DualTran: Prevedi i zamijeni odabrano"
+  },
+  "cmdClearInline": {
+    "message": "DualTran: Očisti umetnute prijevode"
+  },
+  "cmdPickTarget": {
+    "message": "DualTran: Odaberi ciljni jezik"
+  },
+  "cmdSetApiKey": {
+    "message": "DualTran: Postavi AI API ključ"
+  },
+  "cmdPickProvider": {
+    "message": "DualTran: Odaberi AI pružatelja (ugrađeno + models.dev)"
+  },
+  "cmdRefreshProviders": {
+    "message": "DualTran: Osvježi katalog pružatelja (models.dev)"
+  },
+  "cfgEngine": {
+    "message": "Motor prijevoda."
+  },
+  "cfgEngineGoogle": {
+    "message": "Google Translate (bez računa)"
+  },
+  "cfgEngineAi": {
+    "message": "Bilo koja OpenAI-kompatibilna krajnja točka s vašim ključem"
+  },
+  "cfgSource": {
+    "message": "Kod izvornog jezika ili 'auto'."
+  },
+  "cfgTarget": {
+    "message": "Kod ciljnog jezika (npr. zh-CN, en, ja)."
+  },
+  "cfgEndpoint": {
+    "message": "Osnovni URL OpenAI-kompatibilnog API-ja (OpenAI, DeepSeek, Groq, Ollama, …)."
+  },
+  "cfgModel": {
+    "message": "Naziv modela za AI mehanizam."
+  },
+  "cfgProvider": {
+    "message": "ID AI pružatelja. Koristite **DualTran: Choose AI Provider** za odabir s ugrađenog popisa i 200+ pružatelja u models.dev; naredba popunjava odgovarajuću krajnju točku i model."
+  },
+  "cfgReasoning": {
+    "message": "Koliko truda zaključivanja zatražiti. Nepoznate ili nepodržane razine automatski se odbacuju."
+  },
+  "cfgReasoningLowest": {
+    "message": "Koristi najnižu razinu koju odabrani model prihvaća (zadano)"
+  },
+  "cfgReasoningDefault": {
+    "message": "Ne šalji parametar zaključivanja — prepusti odluku pružatelju"
+  },
+  "cfgReasoningNone": {
+    "message": "Bez zaključivanja"
+  },
+  "cfgReasoningMinimal": {
+    "message": "Minimalno zaključivanje"
+  },
+  "cfgReasoningLow": {
+    "message": "Nisko zaključivanje"
+  },
+  "cfgReasoningMedium": {
+    "message": "Srednje zaključivanje"
+  },
+  "cfgReasoningHigh": {
+    "message": "Visoko zaključivanje"
+  },
+  "cfgReasoningXhigh": {
+    "message": "Vrlo visoko zaključivanje"
+  },
+  "cfgReasoningMax": {
+    "message": "Maksimalno zaključivanje"
+  },
+  "cfgSectionTitle": {
+    "message": "DualTran"
+  },
+  "warnOpenFile": {
+    "message": "DualTran: prvo otvorite datoteku."
+  },
+  "warnSelectText": {
+    "message": "DualTran: odaberite tekst koji želite zamijeniti."
+  },
+  "errorPrefix": {
+    "message": "DualTran: {0}"
+  },
+  "inputApiKeyTitle": {
+    "message": "DualTran — AI API ključ"
+  },
+  "inputApiKeyPromptExisting": {
+    "message": "Pohranjeno u OS ključanici putem VS Code SecretStorage. Ostavite prazno da zadržite trenutni ključ."
+  },
+  "inputApiKeyPromptNew": {
+    "message": "Pohranjeno u SecretStorage (OS ključanica)."
+  },
+  "errorNoApiKey": {
+    "message": "API ključ nije postavljen (DualTran: Postavi AI API ključ)."
+  },
+  "pickTargetTitle": {
+    "message": "DualTran — ciljni jezik"
+  },
+  "pickProviderTitle": {
+    "message": "DualTran — AI pružatelj"
+  },
+  "pickProviderPlaceholder": {
+    "message": "Prvo ugrađeni, zatim svi pružatelji koje models.dev poznaje"
+  },
+  "providerSeparator": {
+    "message": "Više (models.dev)"
+  },
+  "infoProviderPicked": {
+    "message": "DualTran: {0}"
+  },
+  "infoProviderModel": {
+    "message": "DualTran: {0} — {1}"
+  },
+  "infoSetModel": {
+    "message": "DualTran: {0} — postavite model"
+  },
+  "infoProvidersLoaded": {
+    "message": "DualTran: {0} pružatelja učitano iz models.dev."
+  },
+  "errorCatalogueRefresh": {
+    "message": "DualTran: osvježavanje kataloga nije uspjelo — {0}"
+  },
+  "errorCatalogueLoad": {
+    "message": "DualTran: nije moguće učitati models.dev — {0}"
+  },
+  "infoApiKeySaved": {
+    "message": "DualTran: API ključ spremljen."
+  },
+  "statusTranslating": {
+    "message": "prevođenje…"
+  }
+}

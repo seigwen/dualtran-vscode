@@ -1,0 +1,140 @@
+{
+  "cmdTranslateInline": {
+    "message": "DualTran: चयन का अनुवाद करें (इनलाइन)"
+  },
+  "cmdTranslatePanel": {
+    "message": "DualTran: चयन का अनुवाद करें (साइड पैनल)"
+  },
+  "cmdReplaceSelection": {
+    "message": "DualTran: चयन का अनुवाद करें और बदलें"
+  },
+  "cmdClearInline": {
+    "message": "DualTran: इनलाइन अनुवाद साफ़ करें"
+  },
+  "cmdPickTarget": {
+    "message": "DualTran: लक्ष्य भाषा चुनें"
+  },
+  "cmdSetApiKey": {
+    "message": "DualTran: AI API कुंजी सेट करें"
+  },
+  "cmdPickProvider": {
+    "message": "DualTran: AI प्रदाता चुनें (अंतर्निहित + models.dev)"
+  },
+  "cmdRefreshProviders": {
+    "message": "DualTran: प्रदाता सूची रीफ़्रेश करें (models.dev)"
+  },
+  "cfgEngine": {
+    "message": "अनुवाद इंजन"
+  },
+  "cfgEngineGoogle": {
+    "message": "Google Translate (खाता आवश्यक नहीं)"
+  },
+  "cfgEngineAi": {
+    "message": "आपकी कुंजी के साथ कोई भी OpenAI-संगत एंडपॉइंट"
+  },
+  "cfgSource": {
+    "message": "स्रोत भाषा कोड, या 'auto'।"
+  },
+  "cfgTarget": {
+    "message": "लक्ष्य भाषा कोड (जैसे zh-CN, en, ja)।"
+  },
+  "cfgEndpoint": {
+    "message": "OpenAI-संगत API का बेस URL (OpenAI, DeepSeek, Groq, Ollama, …)।"
+  },
+  "cfgModel": {
+    "message": "AI इंजन के लिए मॉडल नाम।"
+  },
+  "cfgProvider": {
+    "message": "AI प्रदाता आईडी। अंतर्निहित सूची और models.dev में 200+ प्रदाताओं में से चुनने के लिए **DualTran: Choose AI Provider** का उपयोग करें; कमांड मेल खाता एंडपॉइंट और मॉडल भर देता है।"
+  },
+  "cfgReasoning": {
+    "message": "कितना रीज़निंग प्रयास अनुरोध करना है। अज्ञात या असमर्थित स्तर स्वचालित रूप से हटा दिए जाते हैं।"
+  },
+  "cfgReasoningLowest": {
+    "message": "चयनित मॉडल द्वारा स्वीकार किया गया न्यूनतम स्तर उपयोग करें (डिफ़ॉल्ट)"
+  },
+  "cfgReasoningDefault": {
+    "message": "कोई रीज़निंग पैरामीटर न भेजें — प्रदाता को निर्णय लेने दें"
+  },
+  "cfgReasoningNone": {
+    "message": "कोई रीज़निंग नहीं"
+  },
+  "cfgReasoningMinimal": {
+    "message": "न्यूनतम तर्क"
+  },
+  "cfgReasoningLow": {
+    "message": "कम तर्क"
+  },
+  "cfgReasoningMedium": {
+    "message": "मध्यम तर्क"
+  },
+  "cfgReasoningHigh": {
+    "message": "उच्च तर्क"
+  },
+  "cfgReasoningXhigh": {
+    "message": "अति-उच्च तर्क"
+  },
+  "cfgReasoningMax": {
+    "message": "अधिकतम तर्क"
+  },
+  "cfgSectionTitle": {
+    "message": "DualTran"
+  },
+  "warnOpenFile": {
+    "message": "DualTran: पहले एक फ़ाइल खोलें"
+  },
+  "warnSelectText": {
+    "message": "DualTran: बदलने के लिए टेक्स्ट चुनें"
+  },
+  "errorPrefix": {
+    "message": "DualTran: {0}"
+  },
+  "inputApiKeyTitle": {
+    "message": "DualTran — AI API कुंजी"
+  },
+  "inputApiKeyPromptExisting": {
+    "message": "VS Code SecretStorage के माध्यम से OS कीचेन में संग्रहीत। वर्तमान कुंजी रखने के लिए खाली छोड़ें।"
+  },
+  "inputApiKeyPromptNew": {
+    "message": "SecretStorage (OS कीचेन) में संग्रहीत।"
+  },
+  "errorNoApiKey": {
+    "message": "कोई API कुंजी सेट नहीं (DualTran: AI API कुंजी सेट करें)।"
+  },
+  "pickTargetTitle": {
+    "message": "DualTran — लक्ष्य भाषा"
+  },
+  "pickProviderTitle": {
+    "message": "DualTran — AI प्रदाता"
+  },
+  "pickProviderPlaceholder": {
+    "message": "पहले अंतर्निहित, फिर models.dev के सभी प्रदाता"
+  },
+  "providerSeparator": {
+    "message": "अधिक (models.dev)"
+  },
+  "infoProviderPicked": {
+    "message": "DualTran: {0}"
+  },
+  "infoProviderModel": {
+    "message": "DualTran: {0} — {1}"
+  },
+  "infoSetModel": {
+    "message": "DualTran: {0} — मॉडल सेट करें"
+  },
+  "infoProvidersLoaded": {
+    "message": "DualTran: models.dev से {0} प्रदाता लोड हुए।"
+  },
+  "errorCatalogueRefresh": {
+    "message": "DualTran: कैटलॉग रीफ़्रेश विफल — {0}"
+  },
+  "errorCatalogueLoad": {
+    "message": "DualTran: models.dev लोड नहीं हो सका — {0}"
+  },
+  "infoApiKeySaved": {
+    "message": "DualTran: API कुंजी सहेजी गई।"
+  },
+  "statusTranslating": {
+    "message": "अनुवाद हो रहा है…"
+  }
+}

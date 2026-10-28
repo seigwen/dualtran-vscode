@@ -1,0 +1,140 @@
+{
+  "cmdTranslateInline": {
+    "message": "DualTran: Перекласти виділене (вбудовано)"
+  },
+  "cmdTranslatePanel": {
+    "message": "DualTran: Перекласти виділене (бічна панель)"
+  },
+  "cmdReplaceSelection": {
+    "message": "DualTran: Перекласти й замінити виділене"
+  },
+  "cmdClearInline": {
+    "message": "DualTran: Очистити вбудовані переклади"
+  },
+  "cmdPickTarget": {
+    "message": "DualTran: Вибрати цільову мову"
+  },
+  "cmdSetApiKey": {
+    "message": "DualTran: Встановити API-ключ AI"
+  },
+  "cmdPickProvider": {
+    "message": "DualTran: Вибрати AI-провайдера (вбудований + models.dev)"
+  },
+  "cmdRefreshProviders": {
+    "message": "DualTran: Оновити каталог провайдерів (models.dev)"
+  },
+  "cfgEngine": {
+    "message": "Рушій перекладу."
+  },
+  "cfgEngineGoogle": {
+    "message": "Google Translate (без облікового запису)"
+  },
+  "cfgEngineAi": {
+    "message": "Будь-яка кінцева точка, сумісна з OpenAI, з вашим ключем"
+  },
+  "cfgSource": {
+    "message": "Код вихідної мови або 'auto'."
+  },
+  "cfgTarget": {
+    "message": "Код цільової мови (наприклад, zh-CN, en, ja)."
+  },
+  "cfgEndpoint": {
+    "message": "Базова URL-адреса API, сумісного з OpenAI (OpenAI, DeepSeek, Groq, Ollama, …)."
+  },
+  "cfgModel": {
+    "message": "Назва моделі для AI-рушія."
+  },
+  "cfgProvider": {
+    "message": "Ідентифікатор AI-провайдера. Використовуйте **DualTran: Choose AI Provider**, щоб вибрати зі вбудованого списку та понад 200 провайдерів у models.dev; команда заповнить відповідні кінцеву точку та модель."
+  },
+  "cfgReasoning": {
+    "message": "Скільки зусиль на міркування запитувати. Невідомі або непідтримувані рівні відкидаються автоматично."
+  },
+  "cfgReasoningLowest": {
+    "message": "Використовувати найнижчий рівень, який приймає вибрана модель (за замовчуванням)"
+  },
+  "cfgReasoningDefault": {
+    "message": "Не надсилати параметр міркування — дозволити провайдеру вирішувати"
+  },
+  "cfgReasoningNone": {
+    "message": "Без міркування"
+  },
+  "cfgReasoningMinimal": {
+    "message": "Мінімальні міркування"
+  },
+  "cfgReasoningLow": {
+    "message": "Низькі міркування"
+  },
+  "cfgReasoningMedium": {
+    "message": "Середні міркування"
+  },
+  "cfgReasoningHigh": {
+    "message": "Високі міркування"
+  },
+  "cfgReasoningXhigh": {
+    "message": "Дуже високі міркування"
+  },
+  "cfgReasoningMax": {
+    "message": "Максимальні міркування"
+  },
+  "cfgSectionTitle": {
+    "message": "DualTran"
+  },
+  "warnOpenFile": {
+    "message": "DualTran: спочатку відкрийте файл"
+  },
+  "warnSelectText": {
+    "message": "DualTran: виділіть текст для заміни"
+  },
+  "errorPrefix": {
+    "message": "DualTran: {0}"
+  },
+  "inputApiKeyTitle": {
+    "message": "DualTran — ключ API ШІ"
+  },
+  "inputApiKeyPromptExisting": {
+    "message": "Зберігається в сховищі ключів ОС через VS Code SecretStorage. Залиште порожнім, щоб зберегти поточний ключ."
+  },
+  "inputApiKeyPromptNew": {
+    "message": "Зберігається в SecretStorage (сховище ключів ОС)."
+  },
+  "errorNoApiKey": {
+    "message": "API-ключ не встановлено (DualTran: Set AI API Key)."
+  },
+  "pickTargetTitle": {
+    "message": "DualTran — цільова мова"
+  },
+  "pickProviderTitle": {
+    "message": "DualTran — постачальник ШІ"
+  },
+  "pickProviderPlaceholder": {
+    "message": "Спочатку вбудовані, потім усі постачальники, відомі models.dev"
+  },
+  "providerSeparator": {
+    "message": "Більше (models.dev)"
+  },
+  "infoProviderPicked": {
+    "message": "DualTran: {0}"
+  },
+  "infoProviderModel": {
+    "message": "DualTran: {0} — {1}"
+  },
+  "infoSetModel": {
+    "message": "DualTran: {0} — встановіть модель"
+  },
+  "infoProvidersLoaded": {
+    "message": "DualTran: завантажено постачальників з models.dev: {0}."
+  },
+  "errorCatalogueRefresh": {
+    "message": "DualTran: не вдалося оновити каталог — {0}"
+  },
+  "errorCatalogueLoad": {
+    "message": "DualTran: не вдалося завантажити models.dev — {0}"
+  },
+  "infoApiKeySaved": {
+    "message": "DualTran: API-ключ збережено."
+  },
+  "statusTranslating": {
+    "message": "переклад…"
+  }
+}

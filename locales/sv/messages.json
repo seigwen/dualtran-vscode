@@ -1,0 +1,140 @@
+{
+  "cmdTranslateInline": {
+    "message": "DualTran: Översätt markering (inline)"
+  },
+  "cmdTranslatePanel": {
+    "message": "DualTran: Översätt markering (sidopanel)"
+  },
+  "cmdReplaceSelection": {
+    "message": "DualTran: Översätt och ersätt markering"
+  },
+  "cmdClearInline": {
+    "message": "DualTran: Rensa inline-översättningar"
+  },
+  "cmdPickTarget": {
+    "message": "DualTran: Välj målspråk"
+  },
+  "cmdSetApiKey": {
+    "message": "DualTran: Ange AI-API-nyckel"
+  },
+  "cmdPickProvider": {
+    "message": "DualTran: Välj AI-leverantör (inbyggd + models.dev)"
+  },
+  "cmdRefreshProviders": {
+    "message": "DualTran: Uppdatera leverantörskatalog (models.dev)"
+  },
+  "cfgEngine": {
+    "message": "Översättningsmotor."
+  },
+  "cfgEngineGoogle": {
+    "message": "Google Translate (inget konto)"
+  },
+  "cfgEngineAi": {
+    "message": "Valfri OpenAI-kompatibel endpoint med din nyckel"
+  },
+  "cfgSource": {
+    "message": "Källspråkkod, eller 'auto'."
+  },
+  "cfgTarget": {
+    "message": "Målspråkkod (t.ex. zh-CN, en, ja)."
+  },
+  "cfgEndpoint": {
+    "message": "Bas-URL för ett OpenAI-kompatibelt API (OpenAI, DeepSeek, Groq, Ollama, …)."
+  },
+  "cfgModel": {
+    "message": "Modellnamn för AI-motorn."
+  },
+  "cfgProvider": {
+    "message": "AI-leverantörs-id. Använd **DualTran: Choose AI Provider** för att välja från den inbyggda listan och de 200+ leverantörerna i models.dev; kommandot fyller i matchande endpoint och modell."
+  },
+  "cfgReasoning": {
+    "message": "Hur mycket resonemangsansträngning som ska begäras. Okända eller ej stödda nivåer tas bort automatiskt."
+  },
+  "cfgReasoningLowest": {
+    "message": "Använd den lägsta nivån som den valda modellen accepterar (standard)"
+  },
+  "cfgReasoningDefault": {
+    "message": "Skicka ingen resonemangsparameter — låt leverantören bestämma"
+  },
+  "cfgReasoningNone": {
+    "message": "Inget resonemang"
+  },
+  "cfgReasoningMinimal": {
+    "message": "Minimal resonemang"
+  },
+  "cfgReasoningLow": {
+    "message": "Lågt resonemang"
+  },
+  "cfgReasoningMedium": {
+    "message": "Medelhögt resonemang"
+  },
+  "cfgReasoningHigh": {
+    "message": "Högt resonemang"
+  },
+  "cfgReasoningXhigh": {
+    "message": "Extra högt resonemang"
+  },
+  "cfgReasoningMax": {
+    "message": "Maximalt resonemang"
+  },
+  "cfgSectionTitle": {
+    "message": "DualTran"
+  },
+  "warnOpenFile": {
+    "message": "DualTran: öppna en fil först"
+  },
+  "warnSelectText": {
+    "message": "DualTran: markera texten som ska ersättas"
+  },
+  "errorPrefix": {
+    "message": "DualTran: {0}"
+  },
+  "inputApiKeyTitle": {
+    "message": "DualTran — AI API-nyckel"
+  },
+  "inputApiKeyPromptExisting": {
+    "message": "Lagras i operativsystemets nyckelring via VS Code SecretStorage. Lämna tomt för att behålla nuvarande nyckel."
+  },
+  "inputApiKeyPromptNew": {
+    "message": "Lagras i SecretStorage (operativsystemets nyckelring)."
+  },
+  "errorNoApiKey": {
+    "message": "Ingen API-nyckel angiven (DualTran: Ange AI API-nyckel)."
+  },
+  "pickTargetTitle": {
+    "message": "DualTran — målspråk"
+  },
+  "pickProviderTitle": {
+    "message": "DualTran — AI-leverantör"
+  },
+  "pickProviderPlaceholder": {
+    "message": "Inbyggd först, sedan alla leverantörer som models.dev känner till"
+  },
+  "providerSeparator": {
+    "message": "Fler (models.dev)"
+  },
+  "infoProviderPicked": {
+    "message": "DualTran: {0}"
+  },
+  "infoProviderModel": {
+    "message": "DualTran: {0} — {1}"
+  },
+  "infoSetModel": {
+    "message": "DualTran: {0} — ange en modell"
+  },
+  "infoProvidersLoaded": {
+    "message": "DualTran: {0} leverantörer inlästa från models.dev."
+  },
+  "errorCatalogueRefresh": {
+    "message": "DualTran: uppdatering av katalogen misslyckades — {0}"
+  },
+  "errorCatalogueLoad": {
+    "message": "DualTran: kunde inte läsa in models.dev — {0}"
+  },
+  "infoApiKeySaved": {
+    "message": "DualTran: API-nyckel sparad."
+  },
+  "statusTranslating": {
+    "message": "översätter…"
+  }
+}
