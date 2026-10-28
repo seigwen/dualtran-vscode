@@ -47,6 +47,10 @@ async function waitFor(predicate, timeoutMs, label) {
 }
 
 async function runChecks() {
+  // Warm-up start of a localised profile: it only exists to let VS Code build
+  // its extension cache, which is what makes the language pack take effect.
+  if (process.env.DT_WARMUP === "1") return;
+
   const extension = vscode.extensions.getExtension("seigwenlee.dualtran");
   assert.ok(extension, "DualTran extension is not installed in the test host");
   await extension.activate();
@@ -119,6 +123,60 @@ async function runChecks() {
   const reread = vscode.workspace.getConfiguration("dualtran");
   assert.strictEqual(reread.get("ai.provider"), "openai");
   assert.strictEqual(reread.get("ai.reasoning"), "high");
+
+  // 5) localisation: the host's display language selects our bundles
+  const expectedLocale = process.env.DT_EXPECT_LOCALE || "";
+  const localeProbe = {
+    envLanguage: vscode.env.language,
+    translatedStatus: vscode.l10n.t("translating…"),
+    translatedSaved: vscode.l10n.t("DualTran: API key saved."),
+    commandTitles: (vscode.extensions.getExtension("seigwenlee.dualtran").packageJSON.contributes.commands || []).map(
+      (command) => command.title
+    ),
+  };
+  fs.writeFileSync(path.join(ARTIFACTS, "i18n-probe.json"), JSON.stringify(localeProbe, null, 2));
+
+  if (expectedLocale) {
+    const cataloguePath = path.join(__dirname, "..", "..", "locales", expectedLocale, "messages.json");
+    const catalogue = JSON.parse(fs.readFileSync(cataloguePath, "utf8"));
+    // VS Code resolves %keys% in the manifest from package.nls.<locale>.json.
+    const nlsPath = path.join(__dirname, "..", "..", `package.nls.${expectedLocale}.json`);
+    const nls = JSON.parse(fs.readFileSync(nlsPath, "utf8"));
+    const titles = localeProbe.commandTitles;
+    assert.ok(
+      titles.length > 0 && titles.every((entry) => typeof entry === "object" && entry.value !== entry.original),
+      `manifest command titles were not localised: ${JSON.stringify(titles)}`
+    );
+    const localised = titles.find((entry) => entry.value === nls.cmdRefreshProviders);
+    assert.ok(
+      localised && localised.value !== localised.original,
+      "the provider-catalogue command title must come from package.nls.<locale>.json"
+    );
+    assert.strictEqual(
+      vscode.env.language,
+      expectedLocale,
+      `the host ignored --locale=${expectedLocale} (env.language=${vscode.env.language})`
+    );
+    assert.strictEqual(
+      localeProbe.translatedStatus,
+      catalogue.statusTranslating.message,
+      `l10n.t must use l10n/bundle.l10n.${expectedLocale}.json, got "${localeProbe.translatedStatus}"`
+    );
+    assert.strictEqual(
+      localeProbe.translatedSaved,
+      catalogue.infoApiKeySaved.message,
+      `runtime message not translated, got "${localeProbe.translatedSaved}"`
+    );
+  } else {
+    // English host: no bundle for "en" — l10n.t must return the source string,
+    // and the manifest titles stay unresolved English.
+    assert.strictEqual(localeProbe.translatedStatus, "translating…");
+    assert.strictEqual(localeProbe.translatedSaved, "DualTran: API key saved.");
+    assert.ok(
+      localeProbe.commandTitles.every((entry) => entry.value === entry.original),
+      "English host must show the source titles"
+    );
+  }
 
   fs.writeFileSync(path.join(ARTIFACTS, "host-checks.txt"), "all host checks passed\n");
 }

@@ -18,6 +18,13 @@ languages its own UI supports (currently about a dozen); the rest are generated 
 VS Code adds them — no code change needed.
 
 On a headless Linux box the end-to-end suite needs an X server: `xvfb-run -a npm run e2e`.
+`npm run e2e:locale` runs the same suite inside a German host: it downloads the
+`MS-CEINTL.vscode-language-pack-de` VSIX once into `.vscode-test/langpacks/`,
+unpacks it into a throwaway profile and starts VS Code twice (the first start
+only builds the extension cache — without it `--locale` is ignored). The run
+then asserts `vscode.env.language === "de"`, that `l10n.t` returns our
+`l10n/bundle.l10n.de.json` strings and that the manifest command titles come
+from `package.nls.de.json`.
 
 ```bash
 npm run i18n:sync    # fill every catalogue (reuses the extension's translations, machine-translates the rest)
