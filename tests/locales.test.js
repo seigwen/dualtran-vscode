@@ -62,6 +62,21 @@ test("package.nls.json and the l10n bundles match the catalogues", () => {
   }
 });
 
+test("no user-visible literal bypasses l10n", () => {
+  const source = fs.readFileSync(path.join(ROOT, "extension.js"), "utf8");
+  const offenders = [];
+  const patterns = [
+    // A non-empty literal means a real sentence; "" is just a reset.
+    /show(?:Information|Warning|Error)Message\(\s*"[^"]/g,
+    /paintStatus\(\s*"[^"]/g,
+    /(?:title|placeHolder|prompt):\s*"[^"]/g,
+  ];
+  for (const pattern of patterns) {
+    for (const match of source.matchAll(pattern)) offenders.push(match[0]);
+  }
+  assert.deepEqual(offenders, [], `wrap these in t(): ${offenders.join(" | ")}`);
+});
+
 test("manifest strings use %keys% that package.nls defines", () => {
   const pkg = JSON.parse(fs.readFileSync(path.join(ROOT, "package.json"), "utf8"));
   const nls = JSON.parse(fs.readFileSync(path.join(ROOT, "package.nls.json"), "utf8"));

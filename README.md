@@ -17,6 +17,8 @@ The interface ships **38 language catalogues** (same set as the browser extensio
 languages its own UI supports (currently about a dozen); the rest are generated and become live the day
 VS Code adds them — no code change needed.
 
+On a headless Linux box the end-to-end suite needs an X server: `xvfb-run -a npm run e2e`.
+
 ```bash
 npm run i18n:sync    # fill every catalogue (reuses the extension's translations, machine-translates the rest)
 npm run i18n:check   # missing key / empty value / lost placeholder → fail
