@@ -36,6 +36,8 @@
   "pickTargetTitle": "DualTran — idioma de destino",
   "pickProviderTitle": "DualTran — provedor de IA",
   "pickProviderPlaceholder": "Integrado primeiro, depois todos os provedores que o models.dev conhece",
+  "pickModelTitle": "DualTran — Modelo de IA",
+  "pickModelPlaceholder": "Escolha o modelo que este provedor deve usar",
   "providerSeparator": "Mais (models.dev)",
   "infoProviderPicked": "DualTran: {0}",
   "infoProviderModel": "DualTran: {0} — {1}",

@@ -110,6 +110,8 @@
   "pickProviderPlaceholder": {
     "message": "Ενσωματωμένος πρώτα, μετά κάθε πάροχος που γνωρίζει το models.dev"
   },
+  "pickModelTitle": { "message": "DualTran — Μοντέλο AI", "description": "DualTran — AI model" },
+  "pickModelPlaceholder": { "message": "Επιλέξτε το μοντέλο που πρέπει να χρησιμοποιεί αυτός ο πάροχος", "description": "Choose the model this provider should use" },
   "providerSeparator": {
     "message": "Περισσότερα (models.dev)"
   },

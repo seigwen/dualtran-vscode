@@ -110,6 +110,8 @@
   "pickProviderPlaceholder": {
     "message": "Indbygget først, derefter alle udbydere models.dev kender"
   },
+  "pickModelTitle": { "message": "DualTran — AI-model", "description": "DualTran — AI model" },
+  "pickModelPlaceholder": { "message": "Vælg den model, som denne udbyder skal bruge", "description": "Choose the model this provider should use" },
   "providerSeparator": {
     "message": "Mere (models.dev)"
   },

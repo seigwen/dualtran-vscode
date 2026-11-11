@@ -36,6 +36,8 @@
   "pickTargetTitle": "DualTran — שפת יעד",
   "pickProviderTitle": "DualTran — ספק AI",
   "pickProviderPlaceholder": "מובנה תחילה, ואז כל ספק ש-models.dev מכיר",
+  "pickModelTitle": "DualTran — מודל AI",
+  "pickModelPlaceholder": "בחרו את המודל שספק זה אמור להשתמש בו",
   "providerSeparator": "עוד (models.dev)",
   "infoProviderPicked": "DualTran: {0}",
   "infoProviderModel": "DualTran: {0} — {1}",

@@ -36,6 +36,8 @@
   "pickTargetTitle": "DualTran — ciljni jezik",
   "pickProviderTitle": "DualTran — AI provajder",
   "pickProviderPlaceholder": "Prvo ugrađeni, zatim svaki provajder koji models.dev poznaje",
+  "pickModelTitle": "DualTran — AI модел",
+  "pickModelPlaceholder": "Изаберите модел који овај добављач треба да користи",
   "providerSeparator": "Više (models.dev)",
   "infoProviderPicked": "DualTran: {0}",
   "infoProviderModel": "DualTran: {0} — {1}",

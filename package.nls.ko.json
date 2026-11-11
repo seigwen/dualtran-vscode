@@ -36,6 +36,8 @@
   "pickTargetTitle": "DualTran — 대상 언어",
   "pickProviderTitle": "DualTran — AI 제공자",
   "pickProviderPlaceholder": "내장 제공자 우선, 그다음 models.dev가 아는 모든 제공자",
+  "pickModelTitle": "DualTran — AI 모델",
+  "pickModelPlaceholder": "이 공급자가 사용할 모델을 선택하세요",
   "providerSeparator": "더 보기 (models.dev)",
   "infoProviderPicked": "DualTran: {0}",
   "infoProviderModel": "DualTran: {0} — {1}",

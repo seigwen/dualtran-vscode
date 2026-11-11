@@ -36,6 +36,8 @@
   "pickTargetTitle": "DualTran — limba țintă",
   "pickProviderTitle": "DualTran — furnizor AI",
   "pickProviderPlaceholder": "Mai întâi cele integrate, apoi fiecare furnizor cunoscut de models.dev",
+  "pickModelTitle": "DualTran — Model AI",
+  "pickModelPlaceholder": "Alegeți modelul pe care să îl folosească acest furnizor",
   "providerSeparator": "Mai multe (models.dev)",
   "infoProviderPicked": "DualTran: {0}",
   "infoProviderModel": "DualTran: {0} — {1}",

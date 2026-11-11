@@ -110,6 +110,8 @@
   "pickProviderPlaceholder": {
     "message": "Inbyggd först, sedan alla leverantörer som models.dev känner till"
   },
+  "pickModelTitle": { "message": "DualTran — AI-modell", "description": "DualTran — AI model" },
+  "pickModelPlaceholder": { "message": "Välj den modell som den här leverantören ska använda", "description": "Choose the model this provider should use" },
   "providerSeparator": {
     "message": "Fler (models.dev)"
   },

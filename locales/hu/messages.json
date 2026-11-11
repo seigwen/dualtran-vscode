@@ -110,6 +110,8 @@
   "pickProviderPlaceholder": {
     "message": "Először a beépítettek, majd a models.dev által ismert összes szolgáltató"
   },
+  "pickModelTitle": { "message": "DualTran — AI-modell", "description": "DualTran — AI model" },
+  "pickModelPlaceholder": { "message": "Válassza ki a modellt, amelyet ennek a szolgáltatónak használnia kell", "description": "Choose the model this provider should use" },
   "providerSeparator": {
     "message": "Továbbiak (models.dev)"
   },

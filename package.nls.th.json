@@ -36,6 +36,8 @@
   "pickTargetTitle": "DualTran — ภาษาปลายทาง",
   "pickProviderTitle": "DualTran — ผู้ให้บริการ AI",
   "pickProviderPlaceholder": "ในตัวก่อน จากนั้นทุกผู้ให้บริการที่ models.dev รู้จัก",
+  "pickModelTitle": "DualTran — โมเดล AI",
+  "pickModelPlaceholder": "เลือกโมเดลที่ผู้ให้บริการนี้ควรใช้",
   "providerSeparator": "เพิ่มเติม (models.dev)",
   "infoProviderPicked": "DualTran: {0}",
   "infoProviderModel": "DualTran: {0} — {1}",

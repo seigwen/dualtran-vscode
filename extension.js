@@ -16,6 +16,8 @@ const t = (message, ...args) => (args.length ? vscode.l10n.t(message, ...args.ma
 const { translate } = require("./src/translate");
 const { MODELS_DEV_URL, projectCatalog, buildProviderList, resolveReasoning } = require("./src/catalog");
 
+const pkg = require("./package.json");
+
 /** @type {vscode.TextEditorDecorationType | undefined} */
 let ghost;
 /** @type {vscode.StatusBarItem | undefined} */
@@ -71,28 +73,34 @@ async function loadCatalog(context) {
   }
 }
 
-const LANGUAGES = [
-  ["zh-CN", "Chinese (Simplified)"],
-  ["zh-TW", "Chinese (Traditional)"],
-  ["en", "English"],
-  ["ja", "Japanese"],
-  ["ko", "Korean"],
-  ["es", "Spanish"],
-  ["fr", "French"],
-  ["de", "German"],
-  ["ru", "Russian"],
-  ["pt", "Portuguese"],
-  ["it", "Italian"],
-  ["ar", "Arabic"],
-  ["hi", "Hindi"],
-];
+/**
+ * The target languages, read from the manifest's enum so the Settings dropdown
+ * and the QuickPick can never drift apart. One entry per enum slot.
+ */
+const TARGET = pkg.contributes.configuration.properties["dualtran.targetLanguage"];
+const LANGUAGES = (TARGET.enum || []).map((code, index) => [
+  code,
+  (TARGET.enumDescriptions && TARGET.enumDescriptions[index]) || code,
+]);
+const TARGET_CODES = new Set(LANGUAGES.map(([code]) => code));
+
+/**
+ * A target language only ever comes from the enum: a hand-edited setting with an
+ * unknown code falls back to the current/default value instead of being sent to
+ * the engine. Known codes pass through untouched (case is the caller's business).
+ */
+function normalizeTargetLanguage(code, fallback = TARGET.default) {
+  const value = typeof code === "string" ? code.trim() : "";
+  if (TARGET_CODES.has(value)) return value;
+  return TARGET_CODES.has(fallback) ? fallback : TARGET.default;
+}
 
 function config() {
   const c = vscode.workspace.getConfiguration("dualtran");
   return {
     engine: c.get("engine", "google"),
     sourceLanguage: c.get("sourceLanguage", "auto"),
-    targetLanguage: c.get("targetLanguage", "zh-CN"),
+    targetLanguage: normalizeTargetLanguage(c.get("targetLanguage", TARGET.default)),
     provider: c.get("ai.provider", "openai"),
     endpoint: c.get("ai.endpoint", "https://api.openai.com/v1"),
     model: c.get("ai.model", "gpt-4o-mini"),
@@ -263,11 +271,17 @@ function activate(context) {
   });
 
   cmd("dualtran.pickTarget", async () => {
+    const current = config().targetLanguage;
     const pick = await vscode.window.showQuickPick(
       LANGUAGES.map(([code, label]) => ({ label: label, description: code, code })),
       { title: t("DualTran — target language") }
     );
-    if (pick) await vscode.workspace.getConfiguration("dualtran").update("targetLanguage", pick.code, vscode.ConfigurationTarget.Global);
+    if (!pick) return;
+    // Only a code the enum knows is ever written (or sent): anything else keeps the current one.
+    const code = normalizeTargetLanguage(pick.code, current);
+    if (code === pick.code) {
+      await vscode.workspace.getConfiguration("dualtran").update("targetLanguage", code, vscode.ConfigurationTarget.Global);
+    }
   });
 
   cmd("dualtran.pickProvider", async () => {
@@ -277,36 +291,43 @@ function activate(context) {
     } catch (error) {
       return vscode.window.showErrorMessage(t("DualTran: could not load models.dev — {0}", error && error.message ? error.message : error));
     }
+    // One list: buildProviderList already merged the built-ins into the
+    // catalogue and sorted the result — render it as given, no divider.
     const list = buildProviderList(catalog.providers, catalog.modelsById);
-    const firstCatalogue = list.findIndex((provider) => !provider.builtIn);
-    const items = [];
-    list.forEach((provider, index) => {
-      if (index === firstCatalogue) {
-        items.push({ label: t("More (models.dev)"), kind: vscode.QuickPickItemKind.Separator });
-      }
-      items.push({
-        label: provider.name,
-        description: provider.id,
-        detail: provider.api,
-        provider,
-      });
-    });
-    const pick = await vscode.window.showQuickPick(items, {
-      title: t("DualTran — AI provider"),
-      placeHolder: t("Built-in first, then every provider models.dev knows"),
-      matchOnDescription: true,
-      matchOnDetail: true,
-    });
-    if (!pick || !pick.provider) return;
     const cfg = vscode.workspace.getConfiguration("dualtran");
-    const model = (pick.provider.models[0] && pick.provider.models[0].id) || "";
+    const pick = await vscode.window.showQuickPick(
+      list.map((provider) => ({ label: provider.name, description: provider.id, detail: provider.api, provider })),
+      {
+        title: t("DualTran — AI provider"),
+        placeHolder: t("Built-in first, then every provider models.dev knows"),
+        matchOnDescription: true,
+        matchOnDetail: true,
+      }
+    );
+    if (!pick || !pick.provider) return;
+    // Step one: the provider decides the endpoint (a user may still edit it afterwards).
     await cfg.update("ai.provider", pick.provider.id, vscode.ConfigurationTarget.Global);
     await cfg.update("ai.endpoint", pick.provider.api, vscode.ConfigurationTarget.Global);
     await cfg.update("engine", "ai", vscode.ConfigurationTarget.Global);
-    if (model) await cfg.update("ai.model", model, vscode.ConfigurationTarget.Global);
-    vscode.window.showInformationMessage(
-      model ? t("DualTran: {0} — {1}", pick.provider.name, model) : t("DualTran: {0} — set a model", pick.provider.name)
+
+    // Step two: that provider's models, in the same alphabetical order. The
+    // model step writes ai.model only — an endpoint edited in between stays.
+    const modelPick = await vscode.window.showQuickPick(
+      pick.provider.models.map((model) => ({ label: model.label, description: model.id, model })),
+      {
+        title: t("pickModelTitle"),
+        placeHolder: t("pickModelPlaceholder", pick.provider.name),
+        matchOnDescription: true,
+      }
     );
+    if (!modelPick || !modelPick.model) {
+      if (pick.provider.models.length === 0) {
+        return vscode.window.showInformationMessage(t("DualTran: {0} — set a model", pick.provider.name));
+      }
+      return;
+    }
+    await cfg.update("ai.model", modelPick.model.id, vscode.ConfigurationTarget.Global);
+    vscode.window.showInformationMessage(t("DualTran: {0} — {1}", pick.provider.name, modelPick.model.id));
   });
 
   cmd("dualtran.refreshProviders", async () => {
@@ -355,4 +376,4 @@ function deactivate() {
   if (status) status.dispose();
 }
 
-module.exports = { activate, deactivate };
+module.exports = { activate, deactivate, normalizeTargetLanguage, LANGUAGES, TARGET_CODES };

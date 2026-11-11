@@ -110,6 +110,8 @@
   "pickProviderPlaceholder": {
     "message": "Prvo ugrađeni, zatim svaki provajder koji models.dev poznaje"
   },
+  "pickModelTitle": { "message": "DualTran — AI модел", "description": "DualTran — AI model" },
+  "pickModelPlaceholder": { "message": "Изаберите модел који овај добављач треба да користи", "description": "Choose the model this provider should use" },
   "providerSeparator": {
     "message": "Više (models.dev)"
   },

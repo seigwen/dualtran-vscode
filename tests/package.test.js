@@ -30,9 +30,11 @@ test("the vsix contains every module the extension requires at runtime", () => {
   const required = new Set();
   for (const file of sources) {
     const code = fs.readFileSync(path.join(ROOT, file), "utf8");
-    for (const match of code.matchAll(/require\("(\.\/[^"]+|\.\.\/src\/[^"]+)"\)/g)) {
+    for (const match of code.matchAll(/require\("(\.\/[^"]+|\/src\/[^"]+)"\)/g)) {
       const rel = path.posix.normalize(path.posix.join(path.posix.dirname(file), match[1]));
-      required.add(rel.endsWith(".js") ? rel : `${rel}.js`);
+      // A JSON require (package.json) ships as itself; a script gets its .js extension.
+      if (rel.endsWith(".json")) required.add(rel);
+      else required.add(rel.endsWith(".js") ? rel : `${rel}.js`);
     }
   }
   for (const rel of required) {

@@ -110,6 +110,8 @@
   "pickProviderPlaceholder": {
     "message": "Primer els integrats, després tots els proveïdors que coneix models.dev"
   },
+  "pickModelTitle": { "message": "DualTran — Model d'IA", "description": "DualTran — AI model" },
+  "pickModelPlaceholder": { "message": "Tria el model que ha de fer servir aquest proveïdor", "description": "Choose the model this provider should use" },
   "providerSeparator": {
     "message": "Més (models.dev)"
   },

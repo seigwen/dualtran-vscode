@@ -36,6 +36,8 @@
   "pickTargetTitle": "DualTran — اللغة الهدف",
   "pickProviderTitle": "DualTran — مزوّد الذكاء الاصطناعي",
   "pickProviderPlaceholder": "المزوّدون المدمجون أولًا، ثم كل مزوّد يعرفه models.dev",
+  "pickModelTitle": "DualTran — نموذج ذكاء اصطناعي",
+  "pickModelPlaceholder": "اختر النموذج الذي يجب أن يستخدمه هذا المزوّد",
   "providerSeparator": "المزيد (models.dev)",
   "infoProviderPicked": "DualTran: {0}",
   "infoProviderModel": "DualTran: {0} — {1}",

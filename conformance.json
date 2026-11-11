@@ -1,0 +1,22 @@
+{
+  "spec": "2.0.0",
+  "host": "dualtran-vscode",
+  "payload": "tests/conformance.test.js",
+  "static": {
+    "files": ["extension.js", "package.json"],
+    "patterns": [
+      "providerSeparator",
+      "__separator__",
+      "__more__",
+      "More (models.dev)",
+      "QuickPickItemKind.Separator"
+    ]
+  },
+  "platformLimits": [
+    {
+      "rule": "R2",
+      "reason": "VS Code settings schema cannot enumerate models.dev models dynamically; model picker is a QuickPick",
+      "evidence": "package.json dualtran.ai.model stays a free string (custom model ids are typed there), models are listed by the second QuickPick inside dualtran.pickProvider built from the models.dev catalogue (tests/conformance.test.js pins both ends)"
+    }
+  ]
+}

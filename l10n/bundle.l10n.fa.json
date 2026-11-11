@@ -36,6 +36,8 @@
   "DualTran — target language": "DualTran — زبان مقصد",
   "DualTran — AI provider": "DualTran — ارائه‌دهنده هوش مصنوعی",
   "Built-in first, then every provider models.dev knows": "ابتدا ارائه‌دهنده‌های داخلی، سپس همه ارائه‌دهنده‌های شناخته‌شده در models.dev",
+  "DualTran — AI model": "DualTran — مدل هوش مصنوعی",
+  "Choose the model this provider should use": "مدلی را انتخاب کنید که این ارائه‌دهنده باید از آن استفاده کند",
   "More (models.dev)": "بیشتر (models.dev)",
   "DualTran: {0} — {1}": "DualTran: {0} — {1}",
   "DualTran: {0} — set a model": "DualTran: {0} — یک مدل تنظیم کنید",

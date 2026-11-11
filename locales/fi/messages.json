@@ -110,6 +110,8 @@
   "pickProviderPlaceholder": {
     "message": "Sisäänrakennettu ensin, sitten kaikki models.dev:n tuntemat palveluntarjoajat"
   },
+  "pickModelTitle": { "message": "DualTran — Tekoälymalli", "description": "DualTran — AI model" },
+  "pickModelPlaceholder": { "message": "Valitse malli, jota tämän palveluntarjoajan pitäisi käyttää", "description": "Choose the model this provider should use" },
   "providerSeparator": {
     "message": "Lisää (models.dev)"
   },

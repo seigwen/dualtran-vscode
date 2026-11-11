@@ -110,6 +110,8 @@
   "pickProviderPlaceholder": {
     "message": "Сначала встроенные, затем все провайдеры, известные models.dev"
   },
+  "pickModelTitle": { "message": "DualTran — Модель ИИ", "description": "DualTran — AI model" },
+  "pickModelPlaceholder": { "message": "Выберите модель, которую должен использовать этот провайдер", "description": "Choose the model this provider should use" },
   "providerSeparator": {
     "message": "Ещё (models.dev)"
   },

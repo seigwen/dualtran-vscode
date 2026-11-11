@@ -36,6 +36,8 @@
   "DualTran — target language": "DualTran — hedef dil",
   "DualTran — AI provider": "DualTran — AI sağlayıcısı",
   "Built-in first, then every provider models.dev knows": "Önce yerleşik, ardından models.dev'in bildiği tüm sağlayıcılar",
+  "DualTran — AI model": "DualTran — YZ modeli",
+  "Choose the model this provider should use": "Bu sağlayıcının kullanması gereken modeli seçin",
   "More (models.dev)": "Daha fazla (models.dev)",
   "DualTran: {0} — {1}": "DualTran: {0} — {1}",
   "DualTran: {0} — set a model": "DualTran: {0} — bir model ayarlayın",

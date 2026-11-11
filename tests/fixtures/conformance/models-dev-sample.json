@@ -1,0 +1,2205 @@
+{
+ "openai": {
+  "id": "openai",
+  "name": "OpenAI",
+  "api": null,
+  "models": {
+   "gpt-image-2": {
+    "id": "gpt-image-2",
+    "name": "gpt-image-2"
+   },
+   "gpt-6-sol": {
+    "id": "gpt-6-sol",
+    "name": "GPT-6 Sol",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "none",
+       "low",
+       "medium",
+       "high",
+       "xhigh",
+       "max"
+      ]
+     }
+    ]
+   },
+   "text-embedding-ada-002": {
+    "id": "text-embedding-ada-002",
+    "name": "text-embedding-ada-002"
+   },
+   "gpt-realtime-2.1": {
+    "id": "gpt-realtime-2.1",
+    "name": "GPT-Realtime-2.1",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "minimal",
+       "low",
+       "medium",
+       "high",
+       "xhigh"
+      ]
+     }
+    ]
+   },
+   "gpt-5.6-luna": {
+    "id": "gpt-5.6-luna",
+    "name": "GPT-5.6 Luna",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "none",
+       "low",
+       "medium",
+       "high",
+       "xhigh",
+       "max"
+      ]
+     }
+    ]
+   },
+   "gpt-5.4-mini": {
+    "id": "gpt-5.4-mini",
+    "name": "GPT-5.4 mini",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "none",
+       "low",
+       "medium",
+       "high",
+       "xhigh"
+      ]
+     }
+    ]
+   },
+   "gpt-daybreak-red-latest": {
+    "id": "gpt-daybreak-red-latest",
+    "name": "Daybreak Red",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "none",
+       "low",
+       "medium",
+       "high",
+       "xhigh",
+       "max"
+      ]
+     }
+    ]
+   },
+   "gpt-5.3-codex": {
+    "id": "gpt-5.3-codex",
+    "name": "GPT-5.3 Codex",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "none",
+       "low",
+       "medium",
+       "high",
+       "xhigh"
+      ]
+     }
+    ]
+   },
+   "gpt-4o": {
+    "id": "gpt-4o",
+    "name": "GPT-4o"
+   },
+   "gpt-4-turbo": {
+    "id": "gpt-4-turbo",
+    "name": "GPT-4 Turbo"
+   },
+   "gpt-5.6": {
+    "id": "gpt-5.6",
+    "name": "GPT-5.6",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "none",
+       "low",
+       "medium",
+       "high",
+       "xhigh",
+       "max"
+      ]
+     }
+    ]
+   },
+   "gpt-5.6-sol": {
+    "id": "gpt-5.6-sol",
+    "name": "GPT-5.6 Sol",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "none",
+       "low",
+       "medium",
+       "high",
+       "xhigh",
+       "max"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "anthropic": {
+  "id": "anthropic",
+  "name": "Anthropic",
+  "api": null,
+  "models": {
+   "claude-opus-4-5": {
+    "id": "claude-opus-4-5",
+    "name": "Claude Opus 4.5 (latest)",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "low",
+       "medium",
+       "high"
+      ]
+     },
+     {
+      "type": "budget_tokens",
+      "min": 1024
+     }
+    ]
+   },
+   "claude-sonnet-4-5": {
+    "id": "claude-sonnet-4-5",
+    "name": "Claude Sonnet 4.5 (latest)",
+    "reasoning_options": [
+     {
+      "type": "budget_tokens",
+      "min": 1024
+     }
+    ]
+   },
+   "claude-opus-4-6": {
+    "id": "claude-opus-4-6",
+    "name": "Claude Opus 4.6",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "low",
+       "medium",
+       "high",
+       "max"
+      ]
+     },
+     {
+      "type": "budget_tokens",
+      "min": 1024
+     }
+    ]
+   },
+   "claude-fable-5-1": {
+    "id": "claude-fable-5-1",
+    "name": "Claude Fable 5.1",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "low",
+       "medium",
+       "high",
+       "xhigh",
+       "max"
+      ]
+     }
+    ]
+   },
+   "claude-sonnet-5": {
+    "id": "claude-sonnet-5",
+    "name": "Claude Sonnet 5",
+    "reasoning_options": [
+     {
+      "type": "toggle"
+     },
+     {
+      "type": "effort",
+      "values": [
+       "low",
+       "medium",
+       "high",
+       "xhigh",
+       "max"
+      ]
+     }
+    ]
+   },
+   "claude-sonnet-5-5": {
+    "id": "claude-sonnet-5-5",
+    "name": "Claude Sonnet 5.5",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "low",
+       "medium",
+       "high",
+       "xhigh",
+       "max"
+      ]
+     }
+    ]
+   },
+   "claude-fable-5": {
+    "id": "claude-fable-5",
+    "name": "Claude Fable 5",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "low",
+       "medium",
+       "high",
+       "xhigh",
+       "max"
+      ]
+     }
+    ]
+   },
+   "claude-opus-5": {
+    "id": "claude-opus-5",
+    "name": "Claude Opus 5",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "low",
+       "medium",
+       "high",
+       "xhigh",
+       "max"
+      ]
+     }
+    ]
+   },
+   "claude-opus-4-5-20251101": {
+    "id": "claude-opus-4-5-20251101",
+    "name": "Claude Opus 4.5",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "low",
+       "medium",
+       "high"
+      ]
+     },
+     {
+      "type": "budget_tokens",
+      "min": 1024
+     }
+    ]
+   },
+   "claude-haiku-5-5": {
+    "id": "claude-haiku-5-5",
+    "name": "Claude Haiku 5.5",
+    "reasoning_options": [
+     {
+      "type": "toggle"
+     },
+     {
+      "type": "effort",
+      "values": [
+       "low",
+       "medium",
+       "high",
+       "xhigh",
+       "max"
+      ]
+     }
+    ]
+   },
+   "claude-haiku-4-5": {
+    "id": "claude-haiku-4-5",
+    "name": "Claude Haiku 4.5 (latest)",
+    "reasoning_options": [
+     {
+      "type": "budget_tokens",
+      "min": 1024
+     }
+    ]
+   },
+   "claude-fable-5-2": {
+    "id": "claude-fable-5-2",
+    "name": "Claude Fable 5.2",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "low",
+       "medium",
+       "high",
+       "xhigh",
+       "max"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "google": {
+  "id": "google",
+  "name": "Google",
+  "api": null,
+  "models": {
+   "gemini-3-flash-preview": {
+    "id": "gemini-3-flash-preview",
+    "name": "Gemini 3 Flash Preview",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "minimal",
+       "low",
+       "medium",
+       "high"
+      ]
+     }
+    ]
+   },
+   "gemini-flash-latest": {
+    "id": "gemini-flash-latest",
+    "name": "Gemini Flash Latest",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "low",
+       "medium",
+       "high"
+      ]
+     }
+    ]
+   },
+   "gemini-3.1-flash-lite-preview": {
+    "id": "gemini-3.1-flash-lite-preview",
+    "name": "Gemini 3.1 Flash Lite Preview",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "minimal",
+       "low",
+       "medium",
+       "high"
+      ]
+     }
+    ]
+   },
+   "deep-research-max-preview-04-2026": {
+    "id": "deep-research-max-preview-04-2026",
+    "name": "Deep Research Max Preview (Apr-21-2026)",
+    "reasoning_options": []
+   },
+   "gemini-4-carbon": {
+    "id": "gemini-4-carbon",
+    "name": "Gemini 4 Carbon",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "low",
+       "medium",
+       "high"
+      ]
+     }
+    ]
+   },
+   "gemini-3.6-flash": {
+    "id": "gemini-3.6-flash",
+    "name": "Gemini 3.6 Flash",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "minimal",
+       "low",
+       "medium",
+       "high"
+      ]
+     }
+    ]
+   },
+   "gemini-embedding-001": {
+    "id": "gemini-embedding-001",
+    "name": "Gemini Embedding 001"
+   },
+   "gemini-2.5-flash-lite": {
+    "id": "gemini-2.5-flash-lite",
+    "name": "Gemini 2.5 Flash-Lite",
+    "reasoning_options": [
+     {
+      "type": "toggle"
+     },
+     {
+      "type": "budget_tokens",
+      "min": 512,
+      "max": 24576
+     }
+    ]
+   },
+   "gemini-omni-flash-preview": {
+    "id": "gemini-omni-flash-preview",
+    "name": "Gemini Omni Flash Preview",
+    "reasoning_options": []
+   },
+   "gemini-2.5-flash-preview-tts": {
+    "id": "gemini-2.5-flash-preview-tts",
+    "name": "Gemini 2.5 Flash Preview TTS"
+   },
+   "lyria-3-clip-preview": {
+    "id": "lyria-3-clip-preview",
+    "name": "Lyria 3 Clip Preview"
+   },
+   "gemini-3.1-flash-lite-image": {
+    "id": "gemini-3.1-flash-lite-image",
+    "name": "Nano Banana 2 Lite",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "minimal",
+       "high"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "deepseek": {
+  "id": "deepseek",
+  "name": "DeepSeek",
+  "api": "https://api.deepseek.com",
+  "models": {
+   "deepseek-v4-pro": {
+    "id": "deepseek-v4-pro",
+    "name": "DeepSeek V4 Pro",
+    "reasoning_options": [
+     {
+      "type": "toggle"
+     },
+     {
+      "type": "effort",
+      "values": [
+       "low",
+       "high",
+       "max"
+      ]
+     }
+    ]
+   },
+   "deepseek-flash": {
+    "id": "deepseek-flash",
+    "name": "DeepSeek V4.1 Flash 1017",
+    "reasoning_options": [
+     {
+      "type": "toggle"
+     },
+     {
+      "type": "effort",
+      "values": [
+       "low",
+       "high",
+       "max"
+      ]
+     }
+    ]
+   },
+   "deepseek-v4-flash": {
+    "id": "deepseek-v4-flash",
+    "name": "DeepSeek V4 Flash",
+    "reasoning_options": [
+     {
+      "type": "toggle"
+     },
+     {
+      "type": "effort",
+      "values": [
+       "low",
+       "high",
+       "max"
+      ]
+     }
+    ]
+   },
+   "deepseek-v4-flash-vision-exp": {
+    "id": "deepseek-v4-flash-vision-exp",
+    "name": "DeepSeek V4 Flash Vision Exp",
+    "reasoning_options": [
+     {
+      "type": "toggle"
+     },
+     {
+      "type": "effort",
+      "values": [
+       "low",
+       "high",
+       "max"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "moonshotai": {
+  "id": "moonshotai",
+  "name": "Moonshot AI",
+  "api": "https://api.moonshot.ai/v1",
+  "models": {
+   "kimi-k2.7-code": {
+    "id": "kimi-k2.7-code",
+    "name": "Kimi K2.7 Code",
+    "reasoning_options": []
+   },
+   "kimi-k2.6": {
+    "id": "kimi-k2.6",
+    "name": "Kimi K2.6",
+    "reasoning_options": [
+     {
+      "type": "toggle"
+     }
+    ]
+   },
+   "kimi-k3.1-pro": {
+    "id": "kimi-k3.1-pro",
+    "name": "Kimi K3.1 Pro",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "low",
+       "high",
+       "max"
+      ]
+     }
+    ]
+   },
+   "kimi-k3.1-pro-highspeed": {
+    "id": "kimi-k3.1-pro-highspeed",
+    "name": "Kimi K3.1 Pro Highspeed",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "low",
+       "high",
+       "max"
+      ]
+     }
+    ]
+   },
+   "kimi-k2.7-code-highspeed": {
+    "id": "kimi-k2.7-code-highspeed",
+    "name": "Kimi K2.7 Code HighSpeed",
+    "reasoning_options": []
+   },
+   "kimi-k3": {
+    "id": "kimi-k3",
+    "name": "Kimi K3",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "low",
+       "high",
+       "max"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "xai": {
+  "id": "xai",
+  "name": "xAI",
+  "api": null,
+  "models": {
+   "grok-imagine-image": {
+    "id": "grok-imagine-image",
+    "name": "Grok Imagine Image"
+   },
+   "grok-imagine-video-1.5": {
+    "id": "grok-imagine-video-1.5",
+    "name": "Grok Imagine Video 1.5"
+   },
+   "grok-4.20-0309-non-reasoning": {
+    "id": "grok-4.20-0309-non-reasoning",
+    "name": "Grok 4.20 (Non-Reasoning)"
+   },
+   "grok-4.5": {
+    "id": "grok-4.5",
+    "name": "Grok 4.5",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "low",
+       "medium",
+       "high",
+       "xhigh"
+      ]
+     }
+    ]
+   },
+   "grok-4.6": {
+    "id": "grok-4.6",
+    "name": "Grok 4.6",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "low",
+       "medium",
+       "high",
+       "xhigh"
+      ]
+     }
+    ]
+   },
+   "grok-4.20-0309-reasoning": {
+    "id": "grok-4.20-0309-reasoning",
+    "name": "Grok 4.20 (Reasoning)",
+    "reasoning_options": []
+   },
+   "grok-4.20-multi-agent-0309": {
+    "id": "grok-4.20-multi-agent-0309",
+    "name": "Grok 4.20 Multi-Agent",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "low",
+       "medium",
+       "high",
+       "xhigh"
+      ]
+     }
+    ]
+   },
+   "grok-4.3": {
+    "id": "grok-4.3",
+    "name": "Grok 4.3",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "none",
+       "low",
+       "medium",
+       "high",
+       "xhigh"
+      ]
+     }
+    ]
+   },
+   "grok-4.7": {
+    "id": "grok-4.7",
+    "name": "Grok 4.7",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "low",
+       "medium",
+       "high",
+       "xhigh"
+      ]
+     }
+    ]
+   },
+   "grok-build-0.1": {
+    "id": "grok-build-0.1",
+    "name": "Grok Build 0.1",
+    "reasoning_options": []
+   },
+   "grok-imagine-video-1.5-lite": {
+    "id": "grok-imagine-video-1.5-lite",
+    "name": "Grok Imagine Video 1.5 Lite"
+   },
+   "grok-imagine-video": {
+    "id": "grok-imagine-video",
+    "name": "Grok Imagine Video"
+   }
+  }
+ },
+ "groq": {
+  "id": "groq",
+  "name": "Groq",
+  "api": null,
+  "models": {
+   "llama-3.3-70b-versatile": {
+    "id": "llama-3.3-70b-versatile",
+    "name": "Llama 3.3 70B"
+   },
+   "allam-2-7b": {
+    "id": "allam-2-7b",
+    "name": "ALLaM-2-7b"
+   },
+   "whisper-large-v3": {
+    "id": "whisper-large-v3",
+    "name": "Whisper"
+   },
+   "whisper-large-v3-turbo": {
+    "id": "whisper-large-v3-turbo",
+    "name": "Whisper Large V3 Turbo"
+   },
+   "llama-3.1-8b-instant": {
+    "id": "llama-3.1-8b-instant",
+    "name": "Llama 3.1 8B"
+   },
+   "canopylabs/orpheus-v1-english": {
+    "id": "canopylabs/orpheus-v1-english",
+    "name": "Canopy Labs Orpheus V1 English"
+   },
+   "canopylabs/orpheus-arabic-saudi": {
+    "id": "canopylabs/orpheus-arabic-saudi",
+    "name": "Canopy Labs Orpheus Arabic Saudi"
+   },
+   "qwen/qwen3.8-27b": {
+    "id": "qwen/qwen3.8-27b",
+    "name": "Qwen3.8 27B",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "none",
+       "default",
+       "low",
+       "medium",
+       "high"
+      ]
+     }
+    ]
+   },
+   "qwen/qwen3.6-27b": {
+    "id": "qwen/qwen3.6-27b",
+    "name": "Qwen3.6 27B",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "none",
+       "default"
+      ]
+     }
+    ]
+   },
+   "openai/gpt-oss-safeguard-20b": {
+    "id": "openai/gpt-oss-safeguard-20b",
+    "name": "Safety GPT OSS 20B",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "low",
+       "medium",
+       "high"
+      ]
+     }
+    ]
+   },
+   "openai/gpt-oss-20b": {
+    "id": "openai/gpt-oss-20b",
+    "name": "GPT OSS 20B",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "low",
+       "medium",
+       "high"
+      ]
+     }
+    ]
+   },
+   "openai/gpt-oss-120b": {
+    "id": "openai/gpt-oss-120b",
+    "name": "GPT OSS 120B",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "low",
+       "medium",
+       "high"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "mistral": {
+  "id": "mistral",
+  "name": "Mistral",
+  "api": null,
+  "models": {
+   "voxtral-mini-tts-latest": {
+    "id": "voxtral-mini-tts-latest",
+    "name": "Voxtral Mini TTS (latest)"
+   },
+   "mistral-large-2512": {
+    "id": "mistral-large-2512",
+    "name": "Mistral Large 3"
+   },
+   "open-mistral-nemo": {
+    "id": "open-mistral-nemo",
+    "name": "Open Mistral Nemo"
+   },
+   "ministral-3b-2512": {
+    "id": "ministral-3b-2512",
+    "name": "Ministral 3 3B"
+   },
+   "labs-leanstral-1-5-1": {
+    "id": "labs-leanstral-1-5-1",
+    "name": "Leanstral 1.5",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "none",
+       "high"
+      ]
+     }
+    ]
+   },
+   "mistral-large-4-0-8": {
+    "id": "mistral-large-4-0-8",
+    "name": "Mistral Large 4.0.8",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "low",
+       "medium",
+       "high"
+      ]
+     }
+    ]
+   },
+   "voxtral-small-latest": {
+    "id": "voxtral-small-latest",
+    "name": "Voxtral Small (latest)"
+   },
+   "mistral-small-latest": {
+    "id": "mistral-small-latest",
+    "name": "Mistral Small (latest)",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "none",
+       "high"
+      ]
+     }
+    ]
+   },
+   "devstral-2512": {
+    "id": "devstral-2512",
+    "name": "Devstral 2"
+   },
+   "mistral-medium-2604": {
+    "id": "mistral-medium-2604",
+    "name": "Mistral Medium 3.5",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "none",
+       "high"
+      ]
+     }
+    ]
+   },
+   "voxtral-small-2507": {
+    "id": "voxtral-small-2507",
+    "name": "Voxtral Small"
+   },
+   "mistral-small-2506": {
+    "id": "mistral-small-2506",
+    "name": "Mistral Small 3.2"
+   }
+  }
+ },
+ "openrouter": {
+  "id": "openrouter",
+  "name": "OpenRouter",
+  "api": "https://openrouter.ai/api/v1",
+  "models": {
+   "nex-agi/nex-n2.6": {
+    "id": "nex-agi/nex-n2.6",
+    "name": "Nex-N2.6",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "medium",
+       "high"
+      ]
+     }
+    ]
+   },
+   "nex-agi/nex-n2.5-mini": {
+    "id": "nex-agi/nex-n2.5-mini",
+    "name": "Nex-N2.5-Mini",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "none",
+       "medium",
+       "high"
+      ]
+     }
+    ]
+   },
+   "nex-agi/nex-n2.5-pro": {
+    "id": "nex-agi/nex-n2.5-pro",
+    "name": "Nex-N2.5-Pro",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "none",
+       "medium",
+       "high"
+      ]
+     }
+    ]
+   },
+   "ibm-granite/granite-4.2-8b": {
+    "id": "ibm-granite/granite-4.2-8b",
+    "name": "Granite 4.2 8B",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "none",
+       "low",
+       "high"
+      ]
+     }
+    ]
+   },
+   "meta/muse-spark-1.3": {
+    "id": "meta/muse-spark-1.3",
+    "name": "Muse Spark 1.3",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "minimal",
+       "low",
+       "medium",
+       "high",
+       "xhigh",
+       "max"
+      ]
+     }
+    ]
+   },
+   "meta/muse-ember": {
+    "id": "meta/muse-ember",
+    "name": "Muse Ember",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "minimal",
+       "low",
+       "medium",
+       "high",
+       "xhigh",
+       "max"
+      ]
+     }
+    ]
+   },
+   "meta/muse-spark-open": {
+    "id": "meta/muse-spark-open",
+    "name": "Muse Spark Open",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "low",
+       "medium",
+       "high",
+       "xhigh"
+      ]
+     }
+    ]
+   },
+   "meta/muse-spark-1.2-contributor": {
+    "id": "meta/muse-spark-1.2-contributor",
+    "name": "Muse Spark 1.2 Contributor",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "minimal",
+       "low",
+       "medium",
+       "high",
+       "xhigh"
+      ]
+     }
+    ]
+   },
+   "meta/muse-wonder": {
+    "id": "meta/muse-wonder",
+    "name": "Muse Wonder",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "minimal",
+       "low",
+       "medium",
+       "high",
+       "xhigh",
+       "max"
+      ]
+     }
+    ]
+   },
+   "meta/muse-spark-1.2": {
+    "id": "meta/muse-spark-1.2",
+    "name": "Muse Spark 1.2",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "minimal",
+       "low",
+       "medium",
+       "high",
+       "xhigh"
+      ]
+     }
+    ]
+   },
+   "meta/muse-spark-1.3-contributor": {
+    "id": "meta/muse-spark-1.3-contributor",
+    "name": "Muse Spark 1.3 Contributor",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "minimal",
+       "low",
+       "medium",
+       "high",
+       "xhigh",
+       "max"
+      ]
+     }
+    ]
+   },
+   "meta/muse-glimmer-30b": {
+    "id": "meta/muse-glimmer-30b",
+    "name": "Muse Glimmer 30B",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "low",
+       "medium",
+       "high",
+       "xhigh"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "lmstudio": {
+  "id": "lmstudio",
+  "name": "LMStudio",
+  "api": "http://127.0.0.1:1234/v1",
+  "models": {
+   "qwen/qwen3-30b-a3b-2507": {
+    "id": "qwen/qwen3-30b-a3b-2507",
+    "name": "Qwen3 30B A3B 2507"
+   },
+   "qwen/qwen3-coder-30b": {
+    "id": "qwen/qwen3-coder-30b",
+    "name": "Qwen3 Coder 30B"
+   },
+   "openai/gpt-oss-20b": {
+    "id": "openai/gpt-oss-20b",
+    "name": "GPT OSS 20B",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "low",
+       "medium",
+       "high"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "zhipuai": {
+  "id": "zhipuai",
+  "name": "Zhipu AI",
+  "api": "https://open.bigmodel.cn/api/paas/v4",
+  "models": {
+   "glm-4.5": {
+    "id": "glm-4.5",
+    "name": "GLM-4.5",
+    "reasoning_options": [
+     {
+      "type": "toggle"
+     }
+    ]
+   },
+   "glm-5": {
+    "id": "glm-5",
+    "name": "GLM-5",
+    "reasoning_options": [
+     {
+      "type": "toggle"
+     }
+    ]
+   },
+   "glm-4.7-flashx": {
+    "id": "glm-4.7-flashx",
+    "name": "GLM-4.7-FlashX",
+    "reasoning_options": [
+     {
+      "type": "toggle"
+     }
+    ]
+   },
+   "glm-5v-turbo": {
+    "id": "glm-5v-turbo",
+    "name": "GLM-5V-Turbo",
+    "reasoning_options": [
+     {
+      "type": "toggle"
+     }
+    ]
+   },
+   "glm-4.5-air": {
+    "id": "glm-4.5-air",
+    "name": "GLM-4.5-Air",
+    "reasoning_options": [
+     {
+      "type": "toggle"
+     }
+    ]
+   },
+   "glm-4.5v": {
+    "id": "glm-4.5v",
+    "name": "GLM-4.5V",
+    "reasoning_options": [
+     {
+      "type": "toggle"
+     }
+    ]
+   },
+   "glm-4.7": {
+    "id": "glm-4.7",
+    "name": "GLM-4.7",
+    "reasoning_options": [
+     {
+      "type": "toggle"
+     }
+    ]
+   },
+   "glm-4.7-flash": {
+    "id": "glm-4.7-flash",
+    "name": "GLM-4.7-Flash",
+    "reasoning_options": [
+     {
+      "type": "toggle"
+     }
+    ]
+   },
+   "glm-4.6v": {
+    "id": "glm-4.6v",
+    "name": "GLM-4.6V",
+    "reasoning_options": [
+     {
+      "type": "toggle"
+     }
+    ]
+   },
+   "glm-5.3-flashx": {
+    "id": "glm-5.3-flashx",
+    "name": "GLM-5.3-FlashX",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "low",
+       "high",
+       "max"
+      ]
+     }
+    ]
+   },
+   "glm-5.3": {
+    "id": "glm-5.3",
+    "name": "GLM-5.3",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "low",
+       "high",
+       "max"
+      ]
+     }
+    ]
+   },
+   "glm-5.1": {
+    "id": "glm-5.1",
+    "name": "GLM-5.1",
+    "reasoning_options": [
+     {
+      "type": "toggle"
+     }
+    ]
+   }
+  }
+ },
+ "alibaba-cn": {
+  "id": "alibaba-cn",
+  "name": "Alibaba (China)",
+  "api": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "models": {
+   "qwen-omni-turbo": {
+    "id": "qwen-omni-turbo",
+    "name": "Qwen-Omni Turbo"
+   },
+   "qwen3-max": {
+    "id": "qwen3-max",
+    "name": "Qwen3 Max",
+    "reasoning_options": [
+     {
+      "type": "toggle"
+     },
+     {
+      "type": "budget_tokens",
+      "max": 81920
+     }
+    ]
+   },
+   "qwen-plus-character": {
+    "id": "qwen-plus-character",
+    "name": "Qwen Plus Character"
+   },
+   "qwen-math-plus": {
+    "id": "qwen-math-plus",
+    "name": "Qwen Math Plus"
+   },
+   "qwen-long": {
+    "id": "qwen-long",
+    "name": "Qwen Long"
+   },
+   "qwen3.7-plus": {
+    "id": "qwen3.7-plus",
+    "name": "Qwen3.7 Plus",
+    "reasoning_options": [
+     {
+      "type": "toggle"
+     },
+     {
+      "type": "budget_tokens",
+      "max": 262144
+     }
+    ]
+   },
+   "qwen3.6-max-preview": {
+    "id": "qwen3.6-max-preview",
+    "name": "Qwen3.6 Max Preview",
+    "reasoning_options": [
+     {
+      "type": "toggle"
+     },
+     {
+      "type": "budget_tokens",
+      "max": 131072
+     }
+    ]
+   },
+   "qwen3-vl-30b-a3b": {
+    "id": "qwen3-vl-30b-a3b",
+    "name": "Qwen3-VL 30B-A3B",
+    "reasoning_options": []
+   },
+   "deepseek-v4.1-flash": {
+    "id": "deepseek-v4.1-flash",
+    "name": "DeepSeek V4.1 Flash",
+    "reasoning_options": [
+     {
+      "type": "toggle"
+     },
+     {
+      "type": "effort",
+      "values": [
+       "low",
+       "high",
+       "max"
+      ]
+     }
+    ]
+   },
+   "qwen3.8-omni-flash": {
+    "id": "qwen3.8-omni-flash",
+    "name": "Qwen3.8 Omni Flash",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "none",
+       "low",
+       "medium",
+       "xhigh"
+      ]
+     }
+    ]
+   },
+   "glm-5": {
+    "id": "glm-5",
+    "name": "GLM-5",
+    "reasoning_options": [
+     {
+      "type": "toggle"
+     },
+     {
+      "type": "budget_tokens",
+      "max": 32768
+     }
+    ]
+   },
+   "deepseek-v3": {
+    "id": "deepseek-v3",
+    "name": "DeepSeek V3"
+   }
+  }
+ },
+ "siliconflow": {
+  "id": "siliconflow",
+  "name": "SiliconFlow",
+  "api": "https://api.siliconflow.com/v1",
+  "models": {
+   "nex-agi/Nex-N2-Pro": {
+    "id": "nex-agi/Nex-N2-Pro",
+    "name": "Nex-N2-Pro",
+    "reasoning_options": [
+     {
+      "type": "budget_tokens",
+      "min": 128,
+      "max": 32768
+     }
+    ]
+   },
+   "ByteDance-Seed/Seed-OSS-36B-Instruct": {
+    "id": "ByteDance-Seed/Seed-OSS-36B-Instruct",
+    "name": "ByteDance-Seed/Seed-OSS-36B-Instruct"
+   },
+   "stepfun-ai/Step-3.5-Flash": {
+    "id": "stepfun-ai/Step-3.5-Flash",
+    "name": "stepfun-ai/Step-3.5-Flash",
+    "reasoning_options": []
+   },
+   "inclusionAI/Ling-flash-2.0": {
+    "id": "inclusionAI/Ling-flash-2.0",
+    "name": "inclusionAI/Ling-flash-2.0"
+   },
+   "Qwen/Qwen3.8-2.4T-A95B": {
+    "id": "Qwen/Qwen3.8-2.4T-A95B",
+    "name": "Qwen3.8 2.4T A95B",
+    "reasoning_options": [
+     {
+      "type": "budget_tokens",
+      "min": 128,
+      "max": 32768
+     }
+    ]
+   },
+   "Qwen/Qwen3-VL-32B-Instruct": {
+    "id": "Qwen/Qwen3-VL-32B-Instruct",
+    "name": "Qwen/Qwen3-VL-32B-Instruct"
+   },
+   "Qwen/Qwen2.5-72B-Instruct": {
+    "id": "Qwen/Qwen2.5-72B-Instruct",
+    "name": "Qwen/Qwen2.5-72B-Instruct"
+   },
+   "Qwen/Qwen3-VL-30B-A3B-Thinking": {
+    "id": "Qwen/Qwen3-VL-30B-A3B-Thinking",
+    "name": "Qwen/Qwen3-VL-30B-A3B-Thinking",
+    "reasoning_options": [
+     {
+      "type": "budget_tokens",
+      "min": 128,
+      "max": 32768
+     }
+    ]
+   },
+   "Qwen/Qwen3.5-27B": {
+    "id": "Qwen/Qwen3.5-27B",
+    "name": "Qwen3.5 27B"
+   },
+   "Qwen/Qwen3.5-397B-A17B": {
+    "id": "Qwen/Qwen3.5-397B-A17B",
+    "name": "Qwen3.5 397B-A17B"
+   },
+   "Qwen/Qwen3-Coder-480B-A35B-Instruct": {
+    "id": "Qwen/Qwen3-Coder-480B-A35B-Instruct",
+    "name": "Qwen/Qwen3-Coder-480B-A35B-Instruct"
+   },
+   "Qwen/Qwen3.5-35B-A3B": {
+    "id": "Qwen/Qwen3.5-35B-A3B",
+    "name": "Qwen3.5 35B-A3B"
+   }
+  }
+ },
+ "cohere": {
+  "id": "cohere",
+  "name": "Cohere",
+  "api": null,
+  "models": {
+   "command-a-translate-08-2025": {
+    "id": "command-a-translate-08-2025",
+    "name": "Command A Translate"
+   },
+   "command-r-08-2024": {
+    "id": "command-r-08-2024",
+    "name": "Command R"
+   },
+   "command-r7b-12-2024": {
+    "id": "command-r7b-12-2024",
+    "name": "Command R7B"
+   },
+   "command-r-plus-08-2024": {
+    "id": "command-r-plus-08-2024",
+    "name": "Command R+"
+   },
+   "north-small-translate-09-2026": {
+    "id": "north-small-translate-09-2026",
+    "name": "North Small Translate"
+   },
+   "tiny-aya-fire": {
+    "id": "tiny-aya-fire",
+    "name": "Tiny Aya Fire"
+   },
+   "command-a-reasoning-08-2025": {
+    "id": "command-a-reasoning-08-2025",
+    "name": "Command A Reasoning",
+    "reasoning_options": [
+     {
+      "type": "toggle"
+     },
+     {
+      "type": "budget_tokens",
+      "min": 1
+     }
+    ]
+   },
+   "tiny-aya-water": {
+    "id": "tiny-aya-water",
+    "name": "Tiny Aya Water"
+   },
+   "command-a-plus-05-2026": {
+    "id": "command-a-plus-05-2026",
+    "name": "Command A Plus",
+    "reasoning_options": [
+     {
+      "type": "toggle"
+     },
+     {
+      "type": "budget_tokens",
+      "min": 1
+     }
+    ]
+   },
+   "tiny-aya-earth": {
+    "id": "tiny-aya-earth",
+    "name": "Tiny Aya Earth"
+   },
+   "c4ai-aya-vision-32b": {
+    "id": "c4ai-aya-vision-32b",
+    "name": "Aya Vision 32B"
+   },
+   "c4ai-aya-expanse-32b": {
+    "id": "c4ai-aya-expanse-32b",
+    "name": "Aya Expanse 32B"
+   }
+  }
+ },
+ "perplexity": {
+  "id": "perplexity",
+  "name": "Perplexity",
+  "api": null,
+  "models": {
+   "sonar-pro": {
+    "id": "sonar-pro",
+    "name": "Sonar Pro"
+   },
+   "sonar-deep-research": {
+    "id": "sonar-deep-research",
+    "name": "Perplexity Sonar Deep Research",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "minimal",
+       "low",
+       "medium",
+       "high"
+      ]
+     }
+    ]
+   },
+   "sonar-reasoning-pro": {
+    "id": "sonar-reasoning-pro",
+    "name": "Sonar Reasoning Pro",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "minimal",
+       "low",
+       "medium",
+       "high"
+      ]
+     }
+    ]
+   },
+   "sonar": {
+    "id": "sonar",
+    "name": "Sonar"
+   }
+  }
+ },
+ "cerebras": {
+  "id": "cerebras",
+  "name": "Cerebras",
+  "api": null,
+  "models": {
+   "qwen-3.8-27b": {
+    "id": "qwen-3.8-27b",
+    "name": "Qwen3.8 27B",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "none",
+       "low",
+       "medium",
+       "high"
+      ]
+     }
+    ]
+   },
+   "gpt-oss-120b": {
+    "id": "gpt-oss-120b",
+    "name": "GPT OSS 120B",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "low",
+       "medium",
+       "high"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "deepinfra": {
+  "id": "deepinfra",
+  "name": "Deep Infra",
+  "api": null,
+  "models": {
+   "ByteDance/Seed-2.0-mini": {
+    "id": "ByteDance/Seed-2.0-mini",
+    "name": "Seed 2.0 Mini",
+    "reasoning_options": []
+   },
+   "ByteDance/Seed-2.0-pro": {
+    "id": "ByteDance/Seed-2.0-pro",
+    "name": "Seed 2.0 Pro",
+    "reasoning_options": []
+   },
+   "ByteDance/Seed-2.0-code": {
+    "id": "ByteDance/Seed-2.0-code",
+    "name": "Seed 2.0 Code",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "none",
+       "low",
+       "medium",
+       "high"
+      ]
+     }
+    ]
+   },
+   "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning": {
+    "id": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning",
+    "name": "Nemotron 3 Nano Omni 30B A3B Reasoning",
+    "reasoning_options": []
+   },
+   "nvidia/Nemotron-3-Nano-30B-A3B": {
+    "id": "nvidia/Nemotron-3-Nano-30B-A3B",
+    "name": "Nemotron 3 Nano 30B A3B",
+    "reasoning_options": [
+     {
+      "type": "toggle"
+     }
+    ]
+   },
+   "nvidia/Llama-3.3-Nemotron-Super-49B-v1.5": {
+    "id": "nvidia/Llama-3.3-Nemotron-Super-49B-v1.5",
+    "name": "Llama 3.3 Nemotron Super 49B v1.5",
+    "reasoning_options": []
+   },
+   "stepfun-ai/Step-5-Preview": {
+    "id": "stepfun-ai/Step-5-Preview",
+    "name": "Step 5 Preview",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "low",
+       "medium",
+       "high"
+      ]
+     }
+    ]
+   },
+   "stepfun-ai/Step-3.7-Flash": {
+    "id": "stepfun-ai/Step-3.7-Flash",
+    "name": "Step 3.7 Flash",
+    "reasoning_options": []
+   },
+   "anthropic/claude-fable-5": {
+    "id": "anthropic/claude-fable-5",
+    "name": "Claude Fable 5",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "low",
+       "medium",
+       "high",
+       "xhigh",
+       "max"
+      ]
+     }
+    ]
+   },
+   "XiaomiMiMo/MiMo-V2.6-Flash": {
+    "id": "XiaomiMiMo/MiMo-V2.6-Flash",
+    "name": "MiMo-V2.6-Flash",
+    "reasoning_options": [
+     {
+      "type": "toggle"
+     }
+    ]
+   },
+   "XiaomiMiMo/MiMo-V2.5-Pro": {
+    "id": "XiaomiMiMo/MiMo-V2.5-Pro",
+    "name": "MiMo-V2.5-Pro",
+    "reasoning_options": [
+     {
+      "type": "toggle"
+     }
+    ]
+   },
+   "XiaomiMiMo/MiMo-V2.5": {
+    "id": "XiaomiMiMo/MiMo-V2.5",
+    "name": "MiMo-V2.5",
+    "reasoning_options": [
+     {
+      "type": "toggle"
+     }
+    ]
+   }
+  }
+ },
+ "azure": {
+  "id": "azure",
+  "name": "Azure",
+  "api": null,
+  "models": {
+   "gpt-image-2": {
+    "id": "gpt-image-2",
+    "name": "GPT-Image-2"
+   },
+   "gpt-6-sol": {
+    "id": "gpt-6-sol",
+    "name": "GPT-6 Sol",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "none",
+       "low",
+       "medium",
+       "high",
+       "xhigh",
+       "max"
+      ]
+     }
+    ]
+   },
+   "gpt-image-2.5-sunburst": {
+    "id": "gpt-image-2.5-sunburst",
+    "name": "GPT Image 2.5 Sunburst"
+   },
+   "gpt-5.1-codex-max": {
+    "id": "gpt-5.1-codex-max",
+    "name": "GPT-5.1 Codex Max",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "low",
+       "medium",
+       "high",
+       "xhigh"
+      ]
+     }
+    ]
+   },
+   "claude-opus-4-5": {
+    "id": "claude-opus-4-5",
+    "name": "Claude Opus 4.5",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "low",
+       "medium",
+       "high"
+      ]
+     },
+     {
+      "type": "budget_tokens",
+      "min": 1024
+     }
+    ]
+   },
+   "text-embedding-ada-002": {
+    "id": "text-embedding-ada-002",
+    "name": "text-embedding-ada-002"
+   },
+   "phi-4-mini": {
+    "id": "phi-4-mini",
+    "name": "Phi-4-mini"
+   },
+   "gpt-5.6-luna": {
+    "id": "gpt-5.6-luna",
+    "name": "GPT-5.6 Luna",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "none",
+       "low",
+       "medium",
+       "high",
+       "xhigh",
+       "max"
+      ]
+     }
+    ]
+   },
+   "gpt-5-codex": {
+    "id": "gpt-5-codex",
+    "name": "GPT-5-Codex",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "low",
+       "medium",
+       "high"
+      ]
+     }
+    ]
+   },
+   "kimi-k2.7-code": {
+    "id": "kimi-k2.7-code",
+    "name": "Kimi K2.7 Code",
+    "reasoning_options": []
+   },
+   "gpt-5.4-mini": {
+    "id": "gpt-5.4-mini",
+    "name": "GPT-5.4 Mini",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "none",
+       "low",
+       "medium",
+       "high",
+       "xhigh"
+      ]
+     }
+    ]
+   },
+   "gpt-5.3-codex": {
+    "id": "gpt-5.3-codex",
+    "name": "GPT-5.3 Codex",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "none",
+       "low",
+       "medium",
+       "high",
+       "xhigh"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "google-vertex": {
+  "id": "google-vertex",
+  "name": "Vertex",
+  "api": null,
+  "models": {
+   "gemini-3-flash-preview": {
+    "id": "gemini-3-flash-preview",
+    "name": "Gemini 3 Flash Preview",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "minimal",
+       "low",
+       "medium",
+       "high"
+      ]
+     }
+    ]
+   },
+   "claude-sonnet-5-5@default": {
+    "id": "claude-sonnet-5-5@default",
+    "name": "Claude Sonnet 5.5",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "low",
+       "medium",
+       "high",
+       "xhigh",
+       "max"
+      ]
+     }
+    ]
+   },
+   "gemini-4-carbon": {
+    "id": "gemini-4-carbon",
+    "name": "Gemini 4 Carbon",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "low",
+       "medium",
+       "high"
+      ]
+     }
+    ]
+   },
+   "claude-opus-5-5@default": {
+    "id": "claude-opus-5-5@default",
+    "name": "Claude Opus 5.5",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "low",
+       "medium",
+       "high",
+       "xhigh",
+       "max"
+      ]
+     }
+    ]
+   },
+   "gemini-3.6-flash": {
+    "id": "gemini-3.6-flash",
+    "name": "Gemini 3.6 Flash",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "minimal",
+       "low",
+       "medium",
+       "high"
+      ]
+     }
+    ]
+   },
+   "gemini-embedding-001": {
+    "id": "gemini-embedding-001",
+    "name": "Gemini Embedding 001"
+   },
+   "gemini-2.5-flash-lite": {
+    "id": "gemini-2.5-flash-lite",
+    "name": "Gemini 2.5 Flash-Lite",
+    "reasoning_options": [
+     {
+      "type": "toggle"
+     },
+     {
+      "type": "budget_tokens",
+      "min": 512,
+      "max": 24576
+     }
+    ]
+   },
+   "gemini-2.5-pro-tts": {
+    "id": "gemini-2.5-pro-tts",
+    "name": "Gemini 2.5 Pro TTS"
+   },
+   "claude-opus-4-8@default": {
+    "id": "claude-opus-4-8@default",
+    "name": "Claude Opus 4.8",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "low",
+       "medium",
+       "high",
+       "xhigh",
+       "max"
+      ]
+     }
+    ]
+   },
+   "claude-sonnet-4@20250514": {
+    "id": "claude-sonnet-4@20250514",
+    "name": "Claude Sonnet 4",
+    "reasoning_options": [
+     {
+      "type": "budget_tokens",
+      "min": 1024
+     }
+    ]
+   },
+   "claude-opus-4-7@default": {
+    "id": "claude-opus-4-7@default",
+    "name": "Claude Opus 4.7",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "low",
+       "medium",
+       "high",
+       "xhigh",
+       "max"
+      ]
+     }
+    ]
+   },
+   "gemini-3.1-flash-lite-image": {
+    "id": "gemini-3.1-flash-lite-image",
+    "name": "Nano Banana 2 Lite",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "minimal",
+       "high"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "amazon-bedrock": {
+  "id": "amazon-bedrock",
+  "name": "Amazon Bedrock",
+  "api": null,
+  "models": {
+   "amazon.nova-micro-v1:0": {
+    "id": "amazon.nova-micro-v1:0",
+    "name": "Nova Micro"
+   },
+   "openai.gpt-5.6-terra": {
+    "id": "openai.gpt-5.6-terra",
+    "name": "GPT-5.6 Terra",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "none",
+       "low",
+       "medium",
+       "high",
+       "xhigh",
+       "max"
+      ]
+     }
+    ]
+   },
+   "nvidia.nemotron-nano-3-30b": {
+    "id": "nvidia.nemotron-nano-3-30b",
+    "name": "NVIDIA Nemotron Nano 3 30B",
+    "reasoning_options": []
+   },
+   "openai.gpt-oss-20b": {
+    "id": "openai.gpt-oss-20b",
+    "name": "gpt-oss-20b",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "low",
+       "medium",
+       "high"
+      ]
+     }
+    ]
+   },
+   "in.openai.gpt-5.6-luna": {
+    "id": "in.openai.gpt-5.6-luna",
+    "name": "GPT-5.6 Luna (India)",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "none",
+       "low",
+       "medium",
+       "high",
+       "xhigh",
+       "max"
+      ]
+     }
+    ]
+   },
+   "au.anthropic.claude-opus-4-6-v1": {
+    "id": "au.anthropic.claude-opus-4-6-v1",
+    "name": "AU Anthropic Claude Opus 4.6",
+    "reasoning_options": [
+     {
+      "type": "toggle"
+     },
+     {
+      "type": "effort",
+      "values": [
+       "low",
+       "medium",
+       "high",
+       "max"
+      ]
+     },
+     {
+      "type": "budget_tokens",
+      "min": 1024
+     }
+    ]
+   },
+   "us.anthropic.claude-opus-4-5-20251101-v1:0": {
+    "id": "us.anthropic.claude-opus-4-5-20251101-v1:0",
+    "name": "Claude Opus 4.5 (US)",
+    "reasoning_options": [
+     {
+      "type": "toggle"
+     },
+     {
+      "type": "effort",
+      "values": [
+       "low",
+       "medium",
+       "high"
+      ]
+     },
+     {
+      "type": "budget_tokens",
+      "min": 1024
+     }
+    ]
+   },
+   "qwen.qwen3-235b-a22b-2507-v1:0": {
+    "id": "qwen.qwen3-235b-a22b-2507-v1:0",
+    "name": "Qwen3 235B-A22B Instruct 2507"
+   },
+   "deepseek.r1-v1:0": {
+    "id": "deepseek.r1-v1:0",
+    "name": "DeepSeek-R1",
+    "reasoning_options": []
+   },
+   "global.xai.grok-4.6": {
+    "id": "global.xai.grok-4.6",
+    "name": "Grok 4.6 (Global)",
+    "reasoning_options": [
+     {
+      "type": "effort",
+      "values": [
+       "low",
+       "medium",
+       "high",
+       "xhigh"
+      ]
+     }
+    ]
+   },
+   "global.anthropic.claude-haiku-4-5-20251001-v1:0": {
+    "id": "global.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "name": "Claude Haiku 4.5 (Global)",
+    "reasoning_options": [
+     {
+      "type": "toggle"
+     },
+     {
+      "type": "budget_tokens",
+      "min": 1024
+     }
+    ]
+   },
+   "us.anthropic.claude-haiku-4-5-20251001-v1:0": {
+    "id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "name": "Claude Haiku 4.5 (US)",
+    "reasoning_options": [
+     {
+      "type": "toggle"
+     },
+     {
+      "type": "budget_tokens",
+      "min": 1024
+     }
+    ]
+   }
+  }
+ }
+}

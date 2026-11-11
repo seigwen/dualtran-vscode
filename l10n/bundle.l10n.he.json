@@ -36,6 +36,8 @@
   "DualTran — target language": "DualTran — שפת יעד",
   "DualTran — AI provider": "DualTran — ספק AI",
   "Built-in first, then every provider models.dev knows": "מובנה תחילה, ואז כל ספק ש-models.dev מכיר",
+  "DualTran — AI model": "DualTran — מודל AI",
+  "Choose the model this provider should use": "בחרו את המודל שספק זה אמור להשתמש בו",
   "More (models.dev)": "עוד (models.dev)",
   "DualTran: {0} — {1}": "DualTran: {0} — {1}",
   "DualTran: {0} — set a model": "DualTran: {0} — הגדר מודל",

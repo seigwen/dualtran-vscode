@@ -36,6 +36,8 @@
   "pickTargetTitle": "DualTran — markmál",
   "pickProviderTitle": "DualTran — AI-veitandi",
   "pickProviderPlaceholder": "Innbyggður fyrst, síðan hver veitandi sem models.dev þekkir",
+  "pickModelTitle": "DualTran — Gervigreindarlíkan",
+  "pickModelPlaceholder": "Veldu líkanið sem þessi þjónustuaðili ætti að nota",
   "providerSeparator": "Fleiri (models.dev)",
   "infoProviderPicked": "DualTran: {0}",
   "infoProviderModel": "DualTran: {0} — {1}",

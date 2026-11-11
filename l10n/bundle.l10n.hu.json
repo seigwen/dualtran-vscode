@@ -36,6 +36,8 @@
   "DualTran — target language": "DualTran — célnyelv",
   "DualTran — AI provider": "DualTran — AI-szolgáltató",
   "Built-in first, then every provider models.dev knows": "Először a beépítettek, majd a models.dev által ismert összes szolgáltató",
+  "DualTran — AI model": "DualTran — AI-modell",
+  "Choose the model this provider should use": "Válassza ki a modellt, amelyet ennek a szolgáltatónak használnia kell",
   "More (models.dev)": "Továbbiak (models.dev)",
   "DualTran: {0} — {1}": "DualTran: {0} — {1}",
   "DualTran: {0} — set a model": "DualTran: {0} — állítson be egy modellt",

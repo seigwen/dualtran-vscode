@@ -36,6 +36,8 @@
   "DualTran — target language": "DualTran — цільова мова",
   "DualTran — AI provider": "DualTran — постачальник ШІ",
   "Built-in first, then every provider models.dev knows": "Спочатку вбудовані, потім усі постачальники, відомі models.dev",
+  "DualTran — AI model": "DualTran — Модель ШІ",
+  "Choose the model this provider should use": "Виберіть модель, яку має використовувати цей провайдер",
   "More (models.dev)": "Більше (models.dev)",
   "DualTran: {0} — {1}": "DualTran: {0} — {1}",
   "DualTran: {0} — set a model": "DualTran: {0} — встановіть модель",

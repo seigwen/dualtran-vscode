@@ -36,6 +36,8 @@
   "DualTran — target language": "DualTran — målsprog",
   "DualTran — AI provider": "DualTran — AI-udbyder",
   "Built-in first, then every provider models.dev knows": "Indbygget først, derefter alle udbydere models.dev kender",
+  "DualTran — AI model": "DualTran — AI-model",
+  "Choose the model this provider should use": "Vælg den model, som denne udbyder skal bruge",
   "More (models.dev)": "Mere (models.dev)",
   "DualTran: {0} — {1}": "DualTran: {0} — {1}",
   "DualTran: {0} — set a model": "DualTran: {0} — angiv en model",

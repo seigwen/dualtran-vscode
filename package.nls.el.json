@@ -36,6 +36,8 @@
   "pickTargetTitle": "DualTran — γλώσσα προορισμού",
   "pickProviderTitle": "DualTran — πάροχος AI",
   "pickProviderPlaceholder": "Ενσωματωμένος πρώτα, μετά κάθε πάροχος που γνωρίζει το models.dev",
+  "pickModelTitle": "DualTran — Μοντέλο AI",
+  "pickModelPlaceholder": "Επιλέξτε το μοντέλο που πρέπει να χρησιμοποιεί αυτός ο πάροχος",
   "providerSeparator": "Περισσότερα (models.dev)",
   "infoProviderPicked": "DualTran: {0}",
   "infoProviderModel": "DualTran: {0} — {1}",

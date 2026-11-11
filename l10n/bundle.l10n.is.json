@@ -36,6 +36,8 @@
   "DualTran — target language": "DualTran — markmál",
   "DualTran — AI provider": "DualTran — AI-veitandi",
   "Built-in first, then every provider models.dev knows": "Innbyggður fyrst, síðan hver veitandi sem models.dev þekkir",
+  "DualTran — AI model": "DualTran — Gervigreindarlíkan",
+  "Choose the model this provider should use": "Veldu líkanið sem þessi þjónustuaðili ætti að nota",
   "More (models.dev)": "Fleiri (models.dev)",
   "DualTran: {0} — {1}": "DualTran: {0} — {1}",
   "DualTran: {0} — set a model": "DualTran: {0} — stilltu líkan",

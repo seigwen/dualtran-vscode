@@ -36,6 +36,8 @@
   "pickTargetTitle": "DualTran — teikentaal",
   "pickProviderTitle": "DualTran — AI-verskaffer",
   "pickProviderPlaceholder": "Ingeboude eerste, dan elke verskaffer wat models.dev ken",
+  "pickModelTitle": "DualTran — KI-model",
+  "pickModelPlaceholder": "Kies die model wat hierdie verskaffer moet gebruik",
   "providerSeparator": "Meer (models.dev)",
   "infoProviderPicked": "DualTran: {0}",
   "infoProviderModel": "DualTran: {0} — {1}",
