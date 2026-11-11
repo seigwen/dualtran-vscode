@@ -1,8 +1,11 @@
 **/*
 !extension.js
-!src/translate.js
+!src/**/*.js
 !assets/icon.png
 !README.md
 !CHANGELOG.md
 !LICENSE
 !package.json
+!package.nls.json
+!package.nls.*.json
+!l10n/*.json
