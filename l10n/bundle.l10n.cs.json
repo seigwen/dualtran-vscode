@@ -36,6 +36,8 @@
   "DualTran — target language": "DualTran — cílový jazyk",
   "DualTran — AI provider": "DualTran — poskytovatel AI",
   "Built-in first, then every provider models.dev knows": "Nejprve vestavěné, poté všichni poskytovatelé známí models.dev",
+  "DualTran — AI model": "DualTran — Model AI",
+  "Choose the model this provider should use": "Zvolte model, který má tento poskytovatel používat",
   "More (models.dev)": "Další (models.dev)",
   "DualTran: {0} — {1}": "DualTran: {0} — {1}",
   "DualTran: {0} — set a model": "DualTran: {0} — nastavte model",

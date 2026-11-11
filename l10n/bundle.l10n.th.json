@@ -36,6 +36,8 @@
   "DualTran — target language": "DualTran — ภาษาปลายทาง",
   "DualTran — AI provider": "DualTran — ผู้ให้บริการ AI",
   "Built-in first, then every provider models.dev knows": "ในตัวก่อน จากนั้นทุกผู้ให้บริการที่ models.dev รู้จัก",
+  "DualTran — AI model": "DualTran — โมเดล AI",
+  "Choose the model this provider should use": "เลือกโมเดลที่ผู้ให้บริการนี้ควรใช้",
   "More (models.dev)": "เพิ่มเติม (models.dev)",
   "DualTran: {0} — {1}": "DualTran: {0} — {1}",
   "DualTran: {0} — set a model": "DualTran: {0} — ตั้งค่าโมเดล",

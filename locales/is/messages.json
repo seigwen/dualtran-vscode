@@ -110,6 +110,8 @@
   "pickProviderPlaceholder": {
     "message": "Innbyggður fyrst, síðan hver veitandi sem models.dev þekkir"
   },
+  "pickModelTitle": { "message": "DualTran — Gervigreindarlíkan", "description": "DualTran — AI model" },
+  "pickModelPlaceholder": { "message": "Veldu líkanið sem þessi þjónustuaðili ætti að nota", "description": "Choose the model this provider should use" },
   "providerSeparator": {
     "message": "Fleiri (models.dev)"
   },

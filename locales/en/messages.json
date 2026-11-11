@@ -36,6 +36,8 @@
   "pickTargetTitle": { "message": "DualTran — target language" },
   "pickProviderTitle": { "message": "DualTran — AI provider" },
   "pickProviderPlaceholder": { "message": "Built-in first, then every provider models.dev knows" },
+  "pickModelTitle": { "message": "DualTran — AI model", "description": "Title of the model QuickPick opened right after a provider is chosen" },
+  "pickModelPlaceholder": { "message": "Choose the model this provider should use", "description": "Placeholder of the model QuickPick; {0} is the provider name" },
   "providerSeparator": { "message": "More (models.dev)" },
   "infoProviderPicked": { "message": "DualTran: {0}" },
   "infoProviderModel": { "message": "DualTran: {0} — {1}" },

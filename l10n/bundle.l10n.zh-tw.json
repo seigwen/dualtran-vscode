@@ -36,6 +36,8 @@
   "DualTran — target language": "DualTran — 目標語言",
   "DualTran — AI provider": "DualTran — AI 服務商",
   "Built-in first, then every provider models.dev knows": "先列內建服務商，再列 models.dev 收錄的全部",
+  "DualTran — AI model": "DualTran — AI 模型",
+  "Choose the model this provider should use": "選擇此提供者應使用的模型",
   "More (models.dev)": "更多（models.dev）",
   "DualTran: {0} — {1}": "DualTran: {0} — {1}",
   "DualTran: {0} — set a model": "DualTran: {0} — 請設定模型",

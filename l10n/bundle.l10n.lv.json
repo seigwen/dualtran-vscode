@@ -36,6 +36,8 @@
   "DualTran — target language": "DualTran — mērķa valoda",
   "DualTran — AI provider": "DualTran — AI nodrošinātājs",
   "Built-in first, then every provider models.dev knows": "Vispirms iebūvētais, pēc tam visi models.dev zināmie nodrošinātāji",
+  "DualTran — AI model": "DualTran — MI modelis",
+  "Choose the model this provider should use": "Izvēlieties modeli, kuru šim nodrošinātājam vajadzētu izmantot",
   "More (models.dev)": "Vairāk (models.dev)",
   "DualTran: {0} — {1}": "DualTran: {0} — {1}",
   "DualTran: {0} — set a model": "DualTran: {0} — iestatīt modeli",

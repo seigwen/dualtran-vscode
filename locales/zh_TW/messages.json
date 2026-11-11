@@ -110,6 +110,8 @@
   "pickProviderPlaceholder": {
     "message": "先列內建服務商，再列 models.dev 收錄的全部"
   },
+  "pickModelTitle": { "message": "DualTran — AI 模型", "description": "DualTran — AI model" },
+  "pickModelPlaceholder": { "message": "選擇此提供者應使用的模型", "description": "Choose the model this provider should use" },
   "providerSeparator": {
     "message": "更多（models.dev）"
   },

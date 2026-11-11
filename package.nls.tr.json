@@ -36,6 +36,8 @@
   "pickTargetTitle": "DualTran — hedef dil",
   "pickProviderTitle": "DualTran — AI sağlayıcısı",
   "pickProviderPlaceholder": "Önce yerleşik, ardından models.dev'in bildiği tüm sağlayıcılar",
+  "pickModelTitle": "DualTran — YZ modeli",
+  "pickModelPlaceholder": "Bu sağlayıcının kullanması gereken modeli seçin",
   "providerSeparator": "Daha fazla (models.dev)",
   "infoProviderPicked": "DualTran: {0}",
   "infoProviderModel": "DualTran: {0} — {1}",

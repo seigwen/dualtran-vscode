@@ -36,6 +36,8 @@
   "pickTargetTitle": "DualTran — 対象言語",
   "pickProviderTitle": "DualTran — AI プロバイダー",
   "pickProviderPlaceholder": "組み込みを先に、続いて models.dev が認識するすべてのプロバイダー",
+  "pickModelTitle": "DualTran — AIモデル",
+  "pickModelPlaceholder": "このプロバイダーが使用すべきモデルを選択してください",
   "providerSeparator": "その他（models.dev）",
   "infoProviderPicked": "DualTran: {0}",
   "infoProviderModel": "DualTran: {0} — {1}",

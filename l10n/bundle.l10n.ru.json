@@ -36,6 +36,8 @@
   "DualTran — target language": "DualTran — целевой язык",
   "DualTran — AI provider": "DualTran — провайдер ИИ",
   "Built-in first, then every provider models.dev knows": "Сначала встроенные, затем все провайдеры, известные models.dev",
+  "DualTran — AI model": "DualTran — Модель ИИ",
+  "Choose the model this provider should use": "Выберите модель, которую должен использовать этот провайдер",
   "More (models.dev)": "Ещё (models.dev)",
   "DualTran: {0} — {1}": "DualTran: {0} — {1}",
   "DualTran: {0} — set a model": "DualTran: {0} — задайте модель",

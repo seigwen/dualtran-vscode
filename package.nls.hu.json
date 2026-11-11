@@ -36,6 +36,8 @@
   "pickTargetTitle": "DualTran — célnyelv",
   "pickProviderTitle": "DualTran — AI-szolgáltató",
   "pickProviderPlaceholder": "Először a beépítettek, majd a models.dev által ismert összes szolgáltató",
+  "pickModelTitle": "DualTran — AI-modell",
+  "pickModelPlaceholder": "Válassza ki a modellt, amelyet ennek a szolgáltatónak használnia kell",
   "providerSeparator": "Továbbiak (models.dev)",
   "infoProviderPicked": "DualTran: {0}",
   "infoProviderModel": "DualTran: {0} — {1}",

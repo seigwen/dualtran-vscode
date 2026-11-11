@@ -36,6 +36,8 @@
   "DualTran — target language": "DualTran — ciljni jezik",
   "DualTran — AI provider": "DualTran — ponudnik AI",
   "Built-in first, then every provider models.dev knows": "Najprej vgrajeni, nato vsi ponudniki, ki jih pozna models.dev",
+  "DualTran — AI model": "DualTran — Model UI",
+  "Choose the model this provider should use": "Izberite model, ki ga naj ta ponudnik uporablja",
   "More (models.dev)": "Več (models.dev)",
   "DualTran: {0} — {1}": "DualTran: {0} — {1}",
   "DualTran: {0} — set a model": "DualTran: {0} — nastavite model",

@@ -36,6 +36,8 @@
   "DualTran — target language": "DualTran — 対象言語",
   "DualTran — AI provider": "DualTran — AI プロバイダー",
   "Built-in first, then every provider models.dev knows": "組み込みを先に、続いて models.dev が認識するすべてのプロバイダー",
+  "DualTran — AI model": "DualTran — AIモデル",
+  "Choose the model this provider should use": "このプロバイダーが使用すべきモデルを選択してください",
   "More (models.dev)": "その他（models.dev）",
   "DualTran: {0} — {1}": "DualTran: {0} — {1}",
   "DualTran: {0} — set a model": "DualTran: {0} — モデルを設定してください",

@@ -36,6 +36,8 @@
   "DualTran — target language": "DualTran — idioma de destinació",
   "DualTran — AI provider": "DualTran — proveïdor d'IA",
   "Built-in first, then every provider models.dev knows": "Primer els integrats, després tots els proveïdors que coneix models.dev",
+  "DualTran — AI model": "DualTran — Model d'IA",
+  "Choose the model this provider should use": "Tria el model que ha de fer servir aquest proveïdor",
   "More (models.dev)": "Més (models.dev)",
   "DualTran: {0} — {1}": "DualTran: {0} — {1}",
   "DualTran: {0} — set a model": "DualTran: {0} — estableix un model",

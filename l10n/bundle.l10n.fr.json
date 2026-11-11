@@ -36,6 +36,8 @@
   "DualTran — target language": "DualTran — langue cible",
   "DualTran — AI provider": "DualTran — fournisseur IA",
   "Built-in first, then every provider models.dev knows": "Intégrés d'abord, puis tous les fournisseurs connus de models.dev",
+  "DualTran — AI model": "DualTran — Modèle d'IA",
+  "Choose the model this provider should use": "Choisissez le modèle que ce fournisseur doit utiliser",
   "More (models.dev)": "Plus (models.dev)",
   "DualTran: {0} — {1}": "DualTran : {0} — {1}",
   "DualTran: {0} — set a model": "DualTran : {0} — définir un modèle",

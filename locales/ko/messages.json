@@ -110,6 +110,8 @@
   "pickProviderPlaceholder": {
     "message": "내장 제공자 우선, 그다음 models.dev가 아는 모든 제공자"
   },
+  "pickModelTitle": { "message": "DualTran — AI 모델", "description": "DualTran — AI model" },
+  "pickModelPlaceholder": { "message": "이 공급자가 사용할 모델을 선택하세요", "description": "Choose the model this provider should use" },
   "providerSeparator": {
     "message": "더 보기 (models.dev)"
   },

@@ -110,6 +110,8 @@
   "pickProviderPlaceholder": {
     "message": "מובנה תחילה, ואז כל ספק ש-models.dev מכיר"
   },
+  "pickModelTitle": { "message": "DualTran — מודל AI", "description": "DualTran — AI model" },
+  "pickModelPlaceholder": { "message": "בחרו את המודל שספק זה אמור להשתמש בו", "description": "Choose the model this provider should use" },
   "providerSeparator": {
     "message": "עוד (models.dev)"
   },

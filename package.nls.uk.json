@@ -36,6 +36,8 @@
   "pickTargetTitle": "DualTran — цільова мова",
   "pickProviderTitle": "DualTran — постачальник ШІ",
   "pickProviderPlaceholder": "Спочатку вбудовані, потім усі постачальники, відомі models.dev",
+  "pickModelTitle": "DualTran — Модель ШІ",
+  "pickModelPlaceholder": "Виберіть модель, яку має використовувати цей провайдер",
   "providerSeparator": "Більше (models.dev)",
   "infoProviderPicked": "DualTran: {0}",
   "infoProviderModel": "DualTran: {0} — {1}",

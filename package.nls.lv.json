@@ -36,6 +36,8 @@
   "pickTargetTitle": "DualTran — mērķa valoda",
   "pickProviderTitle": "DualTran — AI nodrošinātājs",
   "pickProviderPlaceholder": "Vispirms iebūvētais, pēc tam visi models.dev zināmie nodrošinātāji",
+  "pickModelTitle": "DualTran — MI modelis",
+  "pickModelPlaceholder": "Izvēlieties modeli, kuru šim nodrošinātājam vajadzētu izmantot",
   "providerSeparator": "Vairāk (models.dev)",
   "infoProviderPicked": "DualTran: {0}",
   "infoProviderModel": "DualTran: {0} — {1}",

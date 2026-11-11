@@ -36,6 +36,8 @@
   "pickTargetTitle": "DualTran — Zielsprache",
   "pickProviderTitle": "DualTran — KI-Anbieter",
   "pickProviderPlaceholder": "Zuerst integriert, dann alle Anbieter, die models.dev kennt",
+  "pickModelTitle": "DualTran — KI-Modell",
+  "pickModelPlaceholder": "Wählen Sie das Modell, das dieser Anbieter verwenden soll",
   "providerSeparator": "Mehr (models.dev)",
   "infoProviderPicked": "DualTran: {0}",
   "infoProviderModel": "DualTran: {0} — {1}",

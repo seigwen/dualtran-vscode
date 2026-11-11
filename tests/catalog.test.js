@@ -35,22 +35,33 @@ test("projectCatalog keeps reachable providers and indexes reasoning for every p
   assert.deepStrictEqual(reasoning.google["gemini-2.5-pro"], ["low", "high"]);
   assert.deepStrictEqual(reasoning.toggleonly.thinker, ["high"], "toggle models expose the ON switch only");
   assert.deepStrictEqual(reasoning.openai["gpt-4o"], []);
-  assert.deepStrictEqual(modelsById.openai.map((m) => m.id), ["gpt-5", "gpt-4o"]);
+  assert.deepStrictEqual(
+    modelsById.openai.map((m) => m.id),
+    ["gpt-4o", "gpt-5"],
+    "a picker renders models sorted by name, not in catalogue order"
+  );
 });
 
-test("buildProviderList puts built-ins first, then the catalogue, without alias twins", () => {
+test("buildProviderList renders one alphabetical list: built-ins and catalogue interleaved", () => {
   const { providers, modelsById } = projectCatalog(raw);
   const list = buildProviderList(providers, modelsById);
-  assert.strictEqual(list[0].builtIn, true);
-  const builtInCount = list.filter((p) => p.builtIn).length;
-  assert.strictEqual(builtInCount, BUILTINS.length);
-  assert.ok(list.slice(builtInCount).every((p) => p.builtIn === false), "catalogue comes after the divider");
+  const names = list.map((p) => p.name);
+  assert.deepStrictEqual(names, [...names].sort((a, b) => a.localeCompare(b, "en", { sensitivity: "base" })), "list is not sorted by name");
+  // A built-in keeps its curated id next to the catalogue's own entries, no grouping.
+  const builtIns = list.filter((p) => p.builtIn).map((p) => p.id);
+  assert.strictEqual(builtIns.length, BUILTINS.length);
+  assert.ok(list.some((p) => !p.builtIn), "catalogue providers are in the same list");
+  assert.ok(
+    list.some((p, index) => !p.builtIn && list.slice(index + 1).some((next) => next.builtIn)),
+    "a catalogue provider must not wait below every built-in"
+  );
   const moons = list.filter((p) => p.id === "moonshot" || p.id === "moonshotai");
   assert.strictEqual(moons.length, 1, "moonshot ↔ moonshotai must not repeat");
   assert.ok(!list.some((p) => p.id === "no-api"));
   // A built-in pulls its model list from the catalogue entry it aliases.
   const openai = list.find((p) => p.id === "openai");
   assert.ok(openai.models.some((m) => m.id === "gpt-5"));
+  assert.deepStrictEqual(openai.models.map((m) => m.id), ["gpt-4o", "gpt-5"], "each provider's models are sorted too");
 });
 
 test("resolveReasoning maps the lowest sentinel onto the model's own levels", () => {

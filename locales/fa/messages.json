@@ -110,6 +110,8 @@
   "pickProviderPlaceholder": {
     "message": "ابتدا ارائه‌دهنده‌های داخلی، سپس همه ارائه‌دهنده‌های شناخته‌شده در models.dev"
   },
+  "pickModelTitle": { "message": "DualTran — مدل هوش مصنوعی", "description": "DualTran — AI model" },
+  "pickModelPlaceholder": { "message": "مدلی را انتخاب کنید که این ارائه‌دهنده باید از آن استفاده کند", "description": "Choose the model this provider should use" },
   "providerSeparator": {
     "message": "بیشتر (models.dev)"
   },

@@ -2,8 +2,12 @@
  * catalog.js — the provider list for hosts that only speak OpenAI-compatible HTTP.
  *
  * Two layers, the same split every DualTran surface uses:
- *   • BUILTINS  — curated ids, names and endpoints, always first in the list;
+ *   • BUILTINS  — curated ids, names and endpoints that win an id clash with models.dev;
  *   • models.dev — the long tail (200+ providers), fetched once and cached.
+ *
+ * Both layers land in one list, sorted by name: the picker renders what it is
+ * given, so ordering here is the ordering the user sees (a `builtIn` flag
+ * survives for callers that care, but never splits the list).
  *
  * models.dev's own entries for the big names carry no `api` (the SDK infers it),
  * so a built-in still pulls its *models* from the catalogue entry it aliases —
@@ -46,6 +50,24 @@ function levelsOf(model) {
   return options.some((option) => option && option.type === "toggle") ? ["high"] : [];
 }
 
+/** The order every DualTran picker renders: alphabetical by display name, digits numeric. */
+function sortByName(list) {
+  return list.sort(
+    (a, b) =>
+      a.name.localeCompare(b.name, "en", { numeric: true, sensitivity: "base" }) ||
+      String(a.id).localeCompare(String(b.id))
+  );
+}
+
+/** models.dev has no order worth keeping: sort so the rendered list is readable. */
+function sortModels(models) {
+  return models.sort(
+    (a, b) =>
+      String(a.label).localeCompare(String(b.label), "en", { numeric: true, sensitivity: "base" }) ||
+      String(a.id).localeCompare(String(b.id))
+  );
+}
+
 /**
  * Trim models.dev's api.json down to what a dropdown needs.
  * @returns {{ providers: Array<{id,name,api,models:Array<{id,label}>}>, reasoning: Object<string, Object<string, string[]>> }}
@@ -63,17 +85,23 @@ function projectCatalog(raw) {
       // every model is indexed, even with no levels, so lookups never see undefined
       levels[modelId] = levelsOf(model);
     }
+    sortModels(models);
     reasoning[id] = levels;
     modelsById[id] = models;
     if (entry.api && models.length) {
       providers.push({ id, name: entry.name || id, api: entry.api, models });
     }
   }
-  providers.sort((a, b) => a.name.localeCompare(b.name));
+  sortByName(providers);
   return { providers, modelsById, reasoning };
 }
 
-/** Built-ins in registry order, then the catalogue alphabetically, alias twins removed. */
+/**
+ * One list: built-ins and the catalogue interleaved, alphabetical by name.
+ * A built-in keeps its curated id/endpoint and claims its models.dev twin (alias
+ * twins such as moonshot ↔ moonshotai appear once); a built-in with no reachable
+ * catalogue entry still ships, with its curated models.
+ */
 function buildProviderList(catalogue, modelsById, builtins) {
   const list = builtins || BUILTINS;
   const byId = new Map((catalogue || []).map((provider) => [provider.id, provider]));
@@ -84,14 +112,14 @@ function buildProviderList(catalogue, modelsById, builtins) {
     // A built-in whose models.dev entry has no `api` (OpenAI, Anthropic …) still
     // gets its model list from that entry: that is where reasoning lives.
     const models = (dev && dev.models) || fallbackModels[entry.dev] || (entry.models || []).map((id) => ({ id, label: id }));
-    return { id: entry.id, name: entry.name, api: entry.api, models, builtIn: true };
+    return { id: entry.id, name: entry.name, api: entry.api, models: sortModels([...models]), builtIn: true };
   });
   for (const provider of catalogue || []) {
     if (claimed.has(provider.id)) continue;
     if (list.some((entry) => entry.id === provider.id)) continue;
-    out.push({ id: provider.id, name: provider.name, api: provider.api, models: provider.models, builtIn: false });
+    out.push({ id: provider.id, name: provider.name, api: provider.api, models: sortModels([...provider.models]), builtIn: false });
   }
-  return out;
+  return sortByName(out);
 }
 
 /**
@@ -109,4 +137,4 @@ function resolveReasoning(setting, levels) {
   return "";
 }
 
-module.exports = { MODELS_DEV_URL, BUILTINS, LEVEL_ORDER, levelsOf, projectCatalog, buildProviderList, resolveReasoning };
+module.exports = { MODELS_DEV_URL, BUILTINS, LEVEL_ORDER, levelsOf, sortByName, sortModels, projectCatalog, buildProviderList, resolveReasoning };
