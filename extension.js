@@ -209,7 +209,7 @@ async function runTranslate(context, text) {
   // catalogue fetch, no key prompt, no request.
   if (cfg.engine === "ai" && !cfg.provider) {
     const error = providerRequiredError();
-    error.message = t("providerRequiredError");
+    error.message = t("Choose an AI provider in settings before translating.");
     throw error;
   }
   let reasoning = "";
@@ -257,7 +257,7 @@ function paintStatus(text, busy) {
 function paintTranslateAction(actionText, ready) {
   if (!status) return;
   status.text = `${ready ? "$(globe)" : "$(lock)"} ${actionText}`;
-  status.tooltip = ready ? actionText : t("providerRequiredError");
+  status.tooltip = ready ? actionText : t("Choose an AI provider in settings before translating.");
   status.show();
 }
 
@@ -353,7 +353,7 @@ function activate(context) {
     if (!editor) return vscode.window.showWarningMessage(t("warnOpenFile"));
     const text = selectionOrLine(editor).trim();
     if (!text) return;
-    if (aiUnconfigured()) return vscode.window.showWarningMessage(t("providerRequiredError"));
+    if (aiUnconfigured()) return vscode.window.showWarningMessage(t("Choose an AI provider in settings before translating."));
     try {
       paintStatus(t("translating…"), true);
       const result = await runTranslate(context, text);
@@ -378,7 +378,7 @@ function activate(context) {
     if (!editor) return vscode.window.showWarningMessage(t("warnOpenFile"));
     const text = selectionOrLine(editor).trim();
     if (!text) return;
-    if (aiUnconfigured()) return vscode.window.showWarningMessage(t("providerRequiredError"));
+    if (aiUnconfigured()) return vscode.window.showWarningMessage(t("Choose an AI provider in settings before translating."));
     try {
       paintStatus(t("translating…"), true);
       const result = await runTranslate(context, text);
@@ -394,7 +394,7 @@ function activate(context) {
     const editor = vscode.window.activeTextEditor;
     if (!editor) return;
     if (editor.selection.isEmpty) return vscode.window.showWarningMessage(t("warnSelectText"));
-    if (aiUnconfigured()) return vscode.window.showWarningMessage(t("providerRequiredError"));
+    if (aiUnconfigured()) return vscode.window.showWarningMessage(t("Choose an AI provider in settings before translating."));
     const text = editor.document.getText(editor.selection);
     try {
       const result = await runTranslate(context, text);

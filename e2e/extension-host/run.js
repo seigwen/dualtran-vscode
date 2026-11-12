@@ -54,6 +54,15 @@ async function runChecks() {
   const extension = vscode.extensions.getExtension("seigwenlee.dualtran");
   assert.ok(extension, "DualTran extension is not installed in the test host");
   await extension.activate();
+  // A command that ends in showWarningMessage returns a thenable that only
+  // settles when the notification is dismissed; resolve it immediately so the
+  // unconfigured-provider assertion does not hang the suite.
+  const warnings = [];
+  const originalWarning = vscode.window.showWarningMessage;
+  vscode.window.showWarningMessage = async (message) => {
+    warnings.push(String(message));
+    return undefined;
+  };
 
   const commands = await vscode.commands.getCommands(true);
   for (const id of [
@@ -86,6 +95,11 @@ async function runChecks() {
   await new Promise((resolve) => setTimeout(resolve, 750));
   const unconfigured = JSON.parse((await mockRequest("/requests")).text);
   assert.strictEqual(unconfigured.length, 0, "an unconfigured provider must send no request");
+  assert.ok(
+    warnings.some((message) => message.includes("AI provider") || message.includes("提供")),
+    `expected a provider-required warning, got ${JSON.stringify(warnings)}`
+  );
+  vscode.window.showWarningMessage = originalWarning;
 
   await config.update("ai.provider", "openai", vscode.ConfigurationTarget.Global);
   await config.update("ai.endpoint", `${MOCK}/v1`, vscode.ConfigurationTarget.Global);

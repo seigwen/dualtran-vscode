@@ -39,6 +39,7 @@ async function main() {
 
     if (!locale) {
       await runTests({
+        version: "1.143.1",
         extensionDevelopmentPath: ROOT,
         extensionTestsPath: path.join(HERE, "extension-host", "run.js"),
         launchArgs,
@@ -60,12 +61,14 @@ async function main() {
 
       const hostEnv = { ...baseEnv, DT_EXPECT_LOCALE: locale };
       await runTests({
+        version: "1.143.1",
         extensionDevelopmentPath: ROOT,
         extensionTestsPath: path.join(HERE, "extension-host", "run.js"),
         launchArgs,
         extensionTestsEnv: { ...hostEnv, DT_WARMUP: "1" },
       });
       await runTests({
+        version: "1.143.1",
         extensionDevelopmentPath: ROOT,
         extensionTestsPath: path.join(HERE, "extension-host", "run.js"),
         launchArgs,
