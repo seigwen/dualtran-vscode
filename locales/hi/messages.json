@@ -110,8 +110,18 @@
   "pickProviderPlaceholder": {
     "message": "पहले अंतर्निहित, फिर models.dev के सभी प्रदाता"
   },
-  "pickModelTitle": { "message": "DualTran — AI मॉडल", "description": "DualTran — AI model" },
-  "pickModelPlaceholder": { "message": "वह मॉडल चुनें जिसे इस प्रदाता को उपयोग करना चाहिए", "description": "Choose the model this provider should use" },
+  "providerPlaceholder": { "message": "प्रदाता चुनें", "description": "Select a provider" },
+  "providerRequiredForModel": { "message": "पहले प्रदाता चुनें", "description": "Select a provider first" },
+  "providerRequiredError": { "message": "अनुवाद करने से पहले सेटिंग्स में AI प्रदाता चुनें।", "description": "Choose an AI provider in settings before translating." },
+  "statusTranslateAction": { "message": "अनुवाद करें", "description": "Translate" },
+  "pickModelTitle": {
+    "message": "DualTran — AI मॉडल",
+    "description": "DualTran — AI model"
+  },
+  "pickModelPlaceholder": {
+    "message": "वह मॉडल चुनें जिसे इस प्रदाता को उपयोग करना चाहिए",
+    "description": "Choose the model this provider should use"
+  },
   "providerSeparator": {
     "message": "अधिक (models.dev)"
   },

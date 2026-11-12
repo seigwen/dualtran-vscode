@@ -36,8 +36,6 @@
   "DualTran — target language": "DualTran — målspråk",
   "DualTran — AI provider": "DualTran — AI-leverantör",
   "Built-in first, then every provider models.dev knows": "Inbyggd först, sedan alla leverantörer som models.dev känner till",
-  "DualTran — AI model": "DualTran — AI-modell",
-  "Choose the model this provider should use": "Välj den modell som den här leverantören ska använda",
   "More (models.dev)": "Fler (models.dev)",
   "DualTran: {0} — {1}": "DualTran: {0} — {1}",
   "DualTran: {0} — set a model": "DualTran: {0} — ange en modell",
@@ -45,5 +43,11 @@
   "DualTran: catalogue refresh failed — {0}": "DualTran: uppdatering av katalogen misslyckades — {0}",
   "DualTran: could not load models.dev — {0}": "DualTran: kunde inte läsa in models.dev — {0}",
   "DualTran: API key saved.": "DualTran: API-nyckel sparad.",
-  "translating…": "översätter…"
+  "translating…": "översätter…",
+  "DualTran — AI model": "DualTran — AI-modell",
+  "Choose the model this provider should use": "Välj den modell som den här leverantören ska använda",
+  "Select a provider": "Välj en leverantör",
+  "Select a provider first": "Välj en leverantör först",
+  "Choose an AI provider in settings before translating.": "Välj en AI-leverantör i inställningarna innan du översätter.",
+  "Translate": "Översätt"
 }

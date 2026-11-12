@@ -36,8 +36,6 @@
   "DualTran — target language": "DualTran — 対象言語",
   "DualTran — AI provider": "DualTran — AI プロバイダー",
   "Built-in first, then every provider models.dev knows": "組み込みを先に、続いて models.dev が認識するすべてのプロバイダー",
-  "DualTran — AI model": "DualTran — AIモデル",
-  "Choose the model this provider should use": "このプロバイダーが使用すべきモデルを選択してください",
   "More (models.dev)": "その他（models.dev）",
   "DualTran: {0} — {1}": "DualTran: {0} — {1}",
   "DualTran: {0} — set a model": "DualTran: {0} — モデルを設定してください",
@@ -45,5 +43,11 @@
   "DualTran: catalogue refresh failed — {0}": "DualTran: カタログの更新に失敗しました — {0}",
   "DualTran: could not load models.dev — {0}": "DualTran: models.dev を読み込めませんでした — {0}",
   "DualTran: API key saved.": "DualTran: API キーを保存しました",
-  "translating…": "翻訳中…"
+  "translating…": "翻訳中…",
+  "DualTran — AI model": "DualTran — AIモデル",
+  "Choose the model this provider should use": "このプロバイダーが使用すべきモデルを選択してください",
+  "Select a provider": "プロバイダーを選択",
+  "Select a provider first": "先にプロバイダーを選択してください",
+  "Choose an AI provider in settings before translating.": "翻訳する前に設定で AI プロバイダーを選択してください。",
+  "Translate": "翻訳"
 }

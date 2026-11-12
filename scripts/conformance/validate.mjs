@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * DualTran host conformance validator (SPEC 2.0.0).
+ * DualTran host conformance validator (SPEC 2.1.0).
  *
  * Usage:
  *   node validate.mjs <payload.json>
@@ -14,7 +14,7 @@
  * repository (DualTran-manage/scripts/sync-conformance-kit.mjs enforces it).
  */
 
-export const SPEC_VERSION = "2.0.0";
+export const SPEC_VERSION = "2.1.0";
 
 const PICKERS = new Set([
   "select",
@@ -157,6 +157,26 @@ export function validatePayload(payload, config = {}) {
   }
   const providerOptions = asArray(provider.options);
   if (providerOptions.length < 5) fail("R2", `provider picker has only ${providerOptions.length} options`);
+  const placeholder = provider.placeholder;
+  if (!isObject(placeholder)) fail("R2", "provider.placeholder is required (empty state)");
+  if (String(placeholder.value ?? "") !== "") {
+    fail("R2", `provider.placeholder must have an empty value, got "${placeholder.value}"`);
+  }
+  if (placeholder.disabled !== true) fail("R2", "provider.placeholder must be disabled");
+  if (!labelOf(placeholder)) fail("R2", "provider.placeholder needs a label");
+  if (DIVIDER_LABEL.test(labelOf(placeholder))) {
+    fail("R2", `provider.placeholder label looks like a divider: "${labelOf(placeholder)}"`);
+  }
+  const currentProvider = String(provider.current ?? "").trim();
+  if (currentProvider === "" && placeholder.selected !== true) {
+    fail("R2", "provider.current is empty but provider.placeholder is not selected");
+  }
+  if (currentProvider !== "" && placeholder.selected === true) {
+    fail("R2", "provider.current is set but provider.placeholder is still selected");
+  }
+  if (currentProvider === "" && String(provider.fallback ?? "").trim() !== "") {
+    fail("R2", `provider.fallback must stay empty when unconfigured, got "${provider.fallback}"`);
+  }
   uniqueBy(providerOptions, valueOf, "R2", "provider options");
   for (const option of providerOptions) {
     if (option.disabled === true) {
@@ -165,6 +185,12 @@ export function validatePayload(payload, config = {}) {
     if (DIVIDER_LABEL.test(labelOf(option))) {
       fail("R2", `provider picker contains a divider label "${labelOf(option)}"`);
     }
+  }
+  if (providerOptions.some((option) => valueOf(option) === "")) {
+    fail("R2", "provider placeholder must not be part of provider.options");
+  }
+  if (currentProvider !== "" && !providerOptions.some((option) => valueOf(option) === currentProvider)) {
+    fail("R2", `selected provider "${currentProvider}" is not in the picker`);
   }
   const nonCustom = providerOptions.filter((option) => option.source !== "custom");
   const custom = providerOptions.filter((option) => option.source === "custom");
@@ -190,10 +216,27 @@ export function validatePayload(payload, config = {}) {
   if (!isObject(model)) fail("R2", "model section is missing");
   if (!PICKERS.has(model.control)) fail("R2", `model must be a picker, got "${model.control}"`);
   const byProvider = model.byProvider;
-  if (!isObject(byProvider) || Object.keys(byProvider).length === 0) {
+  if ((!isObject(byProvider) || Object.keys(byProvider).length === 0) && currentProvider !== "") {
     fail("R2", "model.byProvider is empty");
   }
-  for (const [providerId, options] of Object.entries(byProvider)) {
+  const modelDisabled = model.disabled === true;
+  if (currentProvider === "" && !modelDisabled) {
+    fail("R2", "model picker must be disabled while no provider is selected");
+  }
+  if (currentProvider !== "" && modelDisabled) {
+    fail("R2", "model picker is disabled although a provider is selected");
+  }
+  const selectedProvider = String(model.selectedProvider ?? "").trim();
+  if (currentProvider === "" && selectedProvider !== "") {
+    fail("R2", `model.selectedProvider must be empty while unconfigured, got "${selectedProvider}"`);
+  }
+  if (currentProvider !== "" && selectedProvider !== currentProvider) {
+    fail("R2", `model.selectedProvider "${selectedProvider}" does not match provider.current "${currentProvider}"`);
+  }
+  if (currentProvider === "" && asArray(model.options).length > 0) {
+    fail("R2", "model.options must be empty while no provider is selected");
+  }
+  for (const [providerId, options] of Object.entries(byProvider || {})) {
     const list = asArray(options);
     if (list.length === 0) fail("R2", `provider "${providerId}" has an empty model list`);
     uniqueBy(list, valueOf, "R2", `models for ${providerId}`);
@@ -211,11 +254,11 @@ export function validatePayload(payload, config = {}) {
       fail("R2", `model.byProvider has "${providerId}" but the provider picker does not`);
     }
   }
-  if (model.selectedProvider && !byProvider[model.selectedProvider]) {
-    fail("R2", `selected provider "${model.selectedProvider}" has no model list`);
+  if (selectedProvider && !byProvider[selectedProvider]) {
+    fail("R2", `selected provider "${selectedProvider}" has no model list`);
   }
-  if (model.selectedProvider && model.selectedModel) {
-    const selected = asArray(byProvider[model.selectedProvider]);
+  if (selectedProvider && model.selectedModel) {
+    const selected = asArray(byProvider[selectedProvider]);
     if (!selected.some((option) => valueOf(option) === String(model.selectedModel))) {
       const customAllowed = selected.some((option) => /^__custom/.test(valueOf(option)));
       if (!customAllowed) {
@@ -229,6 +272,18 @@ export function validatePayload(payload, config = {}) {
   if (!isObject(endpoint)) fail("R3", "endpoint section is missing");
   if (!TEXT_CONTROLS.has(endpoint.control)) {
     fail("R3", `endpoint must remain an editable text input, got "${endpoint.control}"`);
+  }
+  const endpointCurrent = String(endpoint.current ?? "");
+  const endpointPlaceholder = String(endpoint.placeholder ?? "");
+  if (currentProvider === "") {
+    if (endpointCurrent !== "") {
+      fail("R3", `endpoint must be empty while unconfigured, got "${endpointCurrent}"`);
+    }
+    if (endpointPlaceholder !== "https://") {
+      fail("R3", `endpoint placeholder must be "https://" while unconfigured, got "${endpointPlaceholder}"`);
+    }
+  } else if (endpointCurrent.trim() === "") {
+    fail("R3", "endpoint must be filled after a provider is selected");
   }
   const autofill = endpoint.autofill;
   if (!isObject(autofill)) fail("R3", "endpoint.autofill is missing");
@@ -249,6 +304,12 @@ export function validatePayload(payload, config = {}) {
   const reasoning = payload.reasoning;
   if (!isObject(reasoning)) fail("R4", "reasoning section is missing");
   if (!PICKERS.has(reasoning.control)) fail("R4", `reasoning must be a picker, got "${reasoning.control}"`);
+  if (currentProvider === "" && reasoning.disabled !== true) {
+    fail("R4", "reasoning picker must be disabled while no provider is selected");
+  }
+  if (currentProvider !== "" && reasoning.disabled === true) {
+    fail("R4", "reasoning picker is disabled although a provider is selected");
+  }
   const sentinel = String(reasoning.default ?? "");
   const allowedSentinels = new Set(["lowest", "__lowest__"]);
   if (limitsFor(config, "R4").sentinel) allowedSentinels.add(limitsFor(config, "R4").sentinel);
@@ -359,9 +420,24 @@ function cleanPayload() {
       current: "zh-CN",
       options: languageOptions.map(([value, label]) => ({ value, label })),
     },
-    provider: { control: "select", current: "openai", options: providerOptions },
+    provider: {
+      control: "select",
+      current: "openai",
+      placeholder: {
+        value: "",
+        label: "Select a provider",
+        disabled: true,
+        selected: false,
+      },
+      fallback: "openai",
+      options: providerOptions,
+    },
     model: {
       control: "select",
+      disabled: false,
+      selectedProvider: "openai",
+      selectedModel: "gpt-4.1",
+      options: [{ value: "gpt-4.1", label: "GPT-4.1" }],
       byProvider: {
         openai: [{ value: "gpt-4.1", label: "GPT-4.1" }],
         anthropic: [{ value: "claude-sonnet-4-5", label: "Claude Sonnet 4.5" }],
@@ -370,6 +446,8 @@ function cleanPayload() {
     },
     endpoint: {
       control: "text",
+      current: "https://api.openai.com/v1",
+      placeholder: "https://",
       autofill: {
         provider: "openai",
         providerApi: "https://api.openai.com/v1",
@@ -381,6 +459,7 @@ function cleanPayload() {
     },
     reasoning: {
       control: "select",
+      disabled: false,
       default: "lowest",
       resolved: {
         none: [{ setting: "lowest", options: ["none", "minimal", "low"], value: "none" }],
@@ -419,12 +498,31 @@ export function selfTest() {
       }
     }
   };
+  const unconfigured = (payload) => {
+    payload.provider.current = "";
+    payload.provider.placeholder.selected = true;
+    payload.provider.fallback = "";
+    payload.model.disabled = true;
+    payload.model.selectedProvider = "";
+    payload.model.selectedModel = "";
+    payload.model.options = [];
+    payload.endpoint.current = "";
+    payload.endpoint.placeholder = "https://";
+    payload.reasoning.disabled = true;
+  };
 
   // The clean fixture must pass — otherwise every negative test below is meaningless.
   try {
     validatePayload(cleanPayload(), config);
   } catch (error) {
     failures.push(`clean fixture failed: ${error.message}`);
+  }
+  try {
+    const emptyFixture = clone(cleanPayload());
+    unconfigured(emptyFixture);
+    validatePayload(emptyFixture, config);
+  } catch (error) {
+    failures.push(`clean unconfigured fixture failed: ${error.message}`);
   }
 
   expectFail("R1", "target language is a text input", (p) => {
@@ -465,13 +563,25 @@ export function selfTest() {
   expectFail("STATIC", "banned divider token", (p) => {
     p.static.hits = [{ token: "providerSeparator" }];
   });
+  expectFail("R2", "unconfigured provider falls back to openai", (p) => {
+    unconfigured(p);
+    p.provider.fallback = "openai";
+  });
+  expectFail("R3", "unconfigured endpoint keeps the OpenAI default", (p) => {
+    unconfigured(p);
+    p.endpoint.current = "https://api.openai.com/v1";
+  });
+  expectFail("R2", "placeholder is enabled", (p) => {
+    unconfigured(p);
+    p.provider.placeholder.disabled = false;
+  });
 
   if (failures.length) {
     const error = new Error(`self-test failed:\n- ${failures.join("\n- ")}`);
     error.failures = failures;
     throw error;
   }
-  return 12;
+  return 15;
 }
 
 function main() {

@@ -36,8 +36,6 @@
   "DualTran — target language": "DualTran — लक्ष्य भाषा",
   "DualTran — AI provider": "DualTran — AI प्रदाता",
   "Built-in first, then every provider models.dev knows": "पहले अंतर्निहित, फिर models.dev के सभी प्रदाता",
-  "DualTran — AI model": "DualTran — AI मॉडल",
-  "Choose the model this provider should use": "वह मॉडल चुनें जिसे इस प्रदाता को उपयोग करना चाहिए",
   "More (models.dev)": "अधिक (models.dev)",
   "DualTran: {0} — {1}": "DualTran: {0} — {1}",
   "DualTran: {0} — set a model": "DualTran: {0} — मॉडल सेट करें",
@@ -45,5 +43,11 @@
   "DualTran: catalogue refresh failed — {0}": "DualTran: कैटलॉग रीफ़्रेश विफल — {0}",
   "DualTran: could not load models.dev — {0}": "DualTran: models.dev लोड नहीं हो सका — {0}",
   "DualTran: API key saved.": "DualTran: API कुंजी सहेजी गई।",
-  "translating…": "अनुवाद हो रहा है…"
+  "translating…": "अनुवाद हो रहा है…",
+  "DualTran — AI model": "DualTran — AI मॉडल",
+  "Choose the model this provider should use": "वह मॉडल चुनें जिसे इस प्रदाता को उपयोग करना चाहिए",
+  "Select a provider": "प्रदाता चुनें",
+  "Select a provider first": "पहले प्रदाता चुनें",
+  "Choose an AI provider in settings before translating.": "अनुवाद करने से पहले सेटिंग्स में AI प्रदाता चुनें।",
+  "Translate": "अनुवाद करें"
 }

@@ -110,8 +110,18 @@
   "pickProviderPlaceholder": {
     "message": "ئالدى بىلەن قۇرۇلما تەمىنلىگۈچى، ئاندىن models.dev بىلگەن بارلىق تەمىنلىگۈچىلەر"
   },
-  "pickModelTitle": { "message": "DualTran — سۈنئىي ئىدراك مودېلى", "description": "DualTran — AI model" },
-  "pickModelPlaceholder": { "message": "بۇ تەمىنلىگۈچى ئىشلىتىشكە تېگىشلىك مودېلنى تاللاڭ", "description": "Choose the model this provider should use" },
+  "providerPlaceholder": { "message": "بىر تەمىنلىگۈچى تاللاڭ", "description": "Select a provider" },
+  "providerRequiredForModel": { "message": "ئاۋۋال بىر تەمىنلىگۈچى تاللاڭ", "description": "Select a provider first" },
+  "providerRequiredError": { "message": "تەرجىمە قىلىشتىن ئىلگىرى تەڭشەكتە بىر سۈنئىي ئىدراك تەمىنلىگۈچىسىنى تاللاڭ.", "description": "Choose an AI provider in settings before translating." },
+  "statusTranslateAction": { "message": "تەرجىمە قىلىش", "description": "Translate" },
+  "pickModelTitle": {
+    "message": "DualTran — سۈنئىي ئىدراك مودېلى",
+    "description": "DualTran — AI model"
+  },
+  "pickModelPlaceholder": {
+    "message": "بۇ تەمىنلىگۈچى ئىشلىتىشكە تېگىشلىك مودېلنى تاللاڭ",
+    "description": "Choose the model this provider should use"
+  },
   "providerSeparator": {
     "message": "تېخىمۇ كۆپ (models.dev)"
   },

@@ -36,8 +36,6 @@
   "DualTran — target language": "DualTran — ภาษาปลายทาง",
   "DualTran — AI provider": "DualTran — ผู้ให้บริการ AI",
   "Built-in first, then every provider models.dev knows": "ในตัวก่อน จากนั้นทุกผู้ให้บริการที่ models.dev รู้จัก",
-  "DualTran — AI model": "DualTran — โมเดล AI",
-  "Choose the model this provider should use": "เลือกโมเดลที่ผู้ให้บริการนี้ควรใช้",
   "More (models.dev)": "เพิ่มเติม (models.dev)",
   "DualTran: {0} — {1}": "DualTran: {0} — {1}",
   "DualTran: {0} — set a model": "DualTran: {0} — ตั้งค่าโมเดล",
@@ -45,5 +43,11 @@
   "DualTran: catalogue refresh failed — {0}": "DualTran: รีเฟรชแคตตาล็อกไม่สำเร็จ — {0}",
   "DualTran: could not load models.dev — {0}": "DualTran: ไม่สามารถโหลด models.dev ได้ — {0}",
   "DualTran: API key saved.": "DualTran: บันทึกคีย์ API แล้ว",
-  "translating…": "กำลังแปล…"
+  "translating…": "กำลังแปล…",
+  "DualTran — AI model": "DualTran — โมเดล AI",
+  "Choose the model this provider should use": "เลือกโมเดลที่ผู้ให้บริการนี้ควรใช้",
+  "Select a provider": "เลือกผู้ให้บริการ",
+  "Select a provider first": "เลือกผู้ให้บริการก่อน",
+  "Choose an AI provider in settings before translating.": "เลือกผู้ให้บริการ AI ในการตั้งค่าก่อนแปล",
+  "Translate": "แปล"
 }

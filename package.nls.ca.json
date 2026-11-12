@@ -36,8 +36,6 @@
   "pickTargetTitle": "DualTran — idioma de destinació",
   "pickProviderTitle": "DualTran — proveïdor d'IA",
   "pickProviderPlaceholder": "Primer els integrats, després tots els proveïdors que coneix models.dev",
-  "pickModelTitle": "DualTran — Model d'IA",
-  "pickModelPlaceholder": "Tria el model que ha de fer servir aquest proveïdor",
   "providerSeparator": "Més (models.dev)",
   "infoProviderPicked": "DualTran: {0}",
   "infoProviderModel": "DualTran: {0} — {1}",
@@ -46,5 +44,11 @@
   "errorCatalogueRefresh": "DualTran: ha fallat l'actualització del catàleg — {0}",
   "errorCatalogueLoad": "DualTran: no s'ha pogut carregar models.dev — {0}",
   "infoApiKeySaved": "DualTran: clau API desada.",
-  "statusTranslating": "s'està traduint…"
+  "statusTranslating": "s'està traduint…",
+  "pickModelTitle": "DualTran — Model d'IA",
+  "pickModelPlaceholder": "Tria el model que ha de fer servir aquest proveïdor",
+  "providerPlaceholder": "Selecciona un proveïdor",
+  "providerRequiredForModel": "Selecciona primer un proveïdor",
+  "providerRequiredError": "Selecciona un proveïdor d'IA a la configuració abans de traduir.",
+  "statusTranslateAction": "Tradueix"
 }

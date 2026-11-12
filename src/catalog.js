@@ -23,6 +23,7 @@ const MODELS_DEV_URL = "https://models.dev/api.json";
 /** Curated providers: id → endpoint. `dev` is the models.dev id it aliases. */
 const BUILTINS = [
   { id: "openai", name: "OpenAI", dev: "openai", api: "https://api.openai.com/v1", models: ["gpt-4o-mini"] },
+  { id: "anthropic", name: "Anthropic", dev: "anthropic", api: "https://api.anthropic.com/v1", models: ["claude-sonnet-4-5"] },
   { id: "google-gemini", name: "Google Gemini", dev: "google", api: "https://generativelanguage.googleapis.com/v1beta/openai", models: ["gemini-2.5-flash"] },
   { id: "deepseek", name: "DeepSeek", dev: "deepseek", api: "https://api.deepseek.com/v1", models: ["deepseek-chat"] },
   { id: "moonshot", name: "Moonshot", dev: "moonshotai", api: "https://api.moonshot.ai/v1", models: ["kimi-k2-0905-preview"] },

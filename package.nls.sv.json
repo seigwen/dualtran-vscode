@@ -36,8 +36,6 @@
   "pickTargetTitle": "DualTran — målspråk",
   "pickProviderTitle": "DualTran — AI-leverantör",
   "pickProviderPlaceholder": "Inbyggd först, sedan alla leverantörer som models.dev känner till",
-  "pickModelTitle": "DualTran — AI-modell",
-  "pickModelPlaceholder": "Välj den modell som den här leverantören ska använda",
   "providerSeparator": "Fler (models.dev)",
   "infoProviderPicked": "DualTran: {0}",
   "infoProviderModel": "DualTran: {0} — {1}",
@@ -46,5 +44,11 @@
   "errorCatalogueRefresh": "DualTran: uppdatering av katalogen misslyckades — {0}",
   "errorCatalogueLoad": "DualTran: kunde inte läsa in models.dev — {0}",
   "infoApiKeySaved": "DualTran: API-nyckel sparad.",
-  "statusTranslating": "översätter…"
+  "statusTranslating": "översätter…",
+  "pickModelTitle": "DualTran — AI-modell",
+  "pickModelPlaceholder": "Välj den modell som den här leverantören ska använda",
+  "providerPlaceholder": "Välj en leverantör",
+  "providerRequiredForModel": "Välj en leverantör först",
+  "providerRequiredError": "Välj en AI-leverantör i inställningarna innan du översätter.",
+  "statusTranslateAction": "Översätt"
 }

@@ -36,8 +36,6 @@
   "DualTran — target language": "DualTran — mērķa valoda",
   "DualTran — AI provider": "DualTran — AI nodrošinātājs",
   "Built-in first, then every provider models.dev knows": "Vispirms iebūvētais, pēc tam visi models.dev zināmie nodrošinātāji",
-  "DualTran — AI model": "DualTran — MI modelis",
-  "Choose the model this provider should use": "Izvēlieties modeli, kuru šim nodrošinātājam vajadzētu izmantot",
   "More (models.dev)": "Vairāk (models.dev)",
   "DualTran: {0} — {1}": "DualTran: {0} — {1}",
   "DualTran: {0} — set a model": "DualTran: {0} — iestatīt modeli",
@@ -45,5 +43,11 @@
   "DualTran: catalogue refresh failed — {0}": "DualTran: kataloga atjaunināšana neizdevās — {0}",
   "DualTran: could not load models.dev — {0}": "DualTran: nevarēja ielādēt models.dev — {0}",
   "DualTran: API key saved.": "DualTran: API atslēga saglabāta.",
-  "translating…": "tulko…"
+  "translating…": "tulko…",
+  "DualTran — AI model": "DualTran — MI modelis",
+  "Choose the model this provider should use": "Izvēlieties modeli, kuru šim nodrošinātājam vajadzētu izmantot",
+  "Select a provider": "Atlasiet pakalpojumu sniedzēju",
+  "Select a provider first": "Vispirms atlasiet pakalpojumu sniedzēju",
+  "Choose an AI provider in settings before translating.": "Pirms tulkošanas iestatījumos atlasiet AI pakalpojumu sniedzēju.",
+  "Translate": "Tulkot"
 }

@@ -110,8 +110,18 @@
   "pickProviderPlaceholder": {
     "message": "Nejprve vestavěné, poté všichni poskytovatelé známí models.dev"
   },
-  "pickModelTitle": { "message": "DualTran — Model AI", "description": "DualTran — AI model" },
-  "pickModelPlaceholder": { "message": "Zvolte model, který má tento poskytovatel používat", "description": "Choose the model this provider should use" },
+  "providerPlaceholder": { "message": "Vyberte poskytovatele", "description": "Select a provider" },
+  "providerRequiredForModel": { "message": "Nejprve vyberte poskytovatele", "description": "Select a provider first" },
+  "providerRequiredError": { "message": "Před překladem vyberte poskytovatele AI v nastavení.", "description": "Choose an AI provider in settings before translating." },
+  "statusTranslateAction": { "message": "Přeložit", "description": "Translate" },
+  "pickModelTitle": {
+    "message": "DualTran — Model AI",
+    "description": "DualTran — AI model"
+  },
+  "pickModelPlaceholder": {
+    "message": "Zvolte model, který má tento poskytovatel používat",
+    "description": "Choose the model this provider should use"
+  },
   "providerSeparator": {
     "message": "Další (models.dev)"
   },

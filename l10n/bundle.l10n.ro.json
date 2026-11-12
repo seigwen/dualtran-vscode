@@ -36,8 +36,6 @@
   "DualTran — target language": "DualTran — limba țintă",
   "DualTran — AI provider": "DualTran — furnizor AI",
   "Built-in first, then every provider models.dev knows": "Mai întâi cele integrate, apoi fiecare furnizor cunoscut de models.dev",
-  "DualTran — AI model": "DualTran — Model AI",
-  "Choose the model this provider should use": "Alegeți modelul pe care să îl folosească acest furnizor",
   "More (models.dev)": "Mai multe (models.dev)",
   "DualTran: {0} — {1}": "DualTran: {0} — {1}",
   "DualTran: {0} — set a model": "DualTran: {0} — setați un model",
@@ -45,5 +43,11 @@
   "DualTran: catalogue refresh failed — {0}": "DualTran: reîmprospătarea catalogului a eșuat — {0}",
   "DualTran: could not load models.dev — {0}": "DualTran: nu s-a putut încărca models.dev — {0}",
   "DualTran: API key saved.": "DualTran: cheia API a fost salvată.",
-  "translating…": "se traduce…"
+  "translating…": "se traduce…",
+  "DualTran — AI model": "DualTran — Model AI",
+  "Choose the model this provider should use": "Alegeți modelul pe care să îl folosească acest furnizor",
+  "Select a provider": "Selectați un furnizor",
+  "Select a provider first": "Selectați mai întâi un furnizor",
+  "Choose an AI provider in settings before translating.": "Selectați un furnizor de IA în setări înainte de a traduce.",
+  "Translate": "Tradu"
 }

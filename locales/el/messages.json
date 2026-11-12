@@ -110,8 +110,18 @@
   "pickProviderPlaceholder": {
     "message": "Ενσωματωμένος πρώτα, μετά κάθε πάροχος που γνωρίζει το models.dev"
   },
-  "pickModelTitle": { "message": "DualTran — Μοντέλο AI", "description": "DualTran — AI model" },
-  "pickModelPlaceholder": { "message": "Επιλέξτε το μοντέλο που πρέπει να χρησιμοποιεί αυτός ο πάροχος", "description": "Choose the model this provider should use" },
+  "providerPlaceholder": { "message": "Επιλέξτε πάροχο", "description": "Select a provider" },
+  "providerRequiredForModel": { "message": "Επιλέξτε πρώτα πάροχο", "description": "Select a provider first" },
+  "providerRequiredError": { "message": "Επιλέξτε πάροχο AI στις ρυθμίσεις πριν από τη μετάφραση.", "description": "Choose an AI provider in settings before translating." },
+  "statusTranslateAction": { "message": "Μετάφραση", "description": "Translate" },
+  "pickModelTitle": {
+    "message": "DualTran — Μοντέλο AI",
+    "description": "DualTran — AI model"
+  },
+  "pickModelPlaceholder": {
+    "message": "Επιλέξτε το μοντέλο που πρέπει να χρησιμοποιεί αυτός ο πάροχος",
+    "description": "Choose the model this provider should use"
+  },
   "providerSeparator": {
     "message": "Περισσότερα (models.dev)"
   },

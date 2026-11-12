@@ -36,8 +36,6 @@
   "DualTran — target language": "DualTran — idioma de destinació",
   "DualTran — AI provider": "DualTran — proveïdor d'IA",
   "Built-in first, then every provider models.dev knows": "Primer els integrats, després tots els proveïdors que coneix models.dev",
-  "DualTran — AI model": "DualTran — Model d'IA",
-  "Choose the model this provider should use": "Tria el model que ha de fer servir aquest proveïdor",
   "More (models.dev)": "Més (models.dev)",
   "DualTran: {0} — {1}": "DualTran: {0} — {1}",
   "DualTran: {0} — set a model": "DualTran: {0} — estableix un model",
@@ -45,5 +43,11 @@
   "DualTran: catalogue refresh failed — {0}": "DualTran: ha fallat l'actualització del catàleg — {0}",
   "DualTran: could not load models.dev — {0}": "DualTran: no s'ha pogut carregar models.dev — {0}",
   "DualTran: API key saved.": "DualTran: clau API desada.",
-  "translating…": "s'està traduint…"
+  "translating…": "s'està traduint…",
+  "DualTran — AI model": "DualTran — Model d'IA",
+  "Choose the model this provider should use": "Tria el model que ha de fer servir aquest proveïdor",
+  "Select a provider": "Selecciona un proveïdor",
+  "Select a provider first": "Selecciona primer un proveïdor",
+  "Choose an AI provider in settings before translating.": "Selecciona un proveïdor d'IA a la configuració abans de traduir.",
+  "Translate": "Tradueix"
 }

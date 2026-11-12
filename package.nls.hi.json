@@ -36,8 +36,6 @@
   "pickTargetTitle": "DualTran — लक्ष्य भाषा",
   "pickProviderTitle": "DualTran — AI प्रदाता",
   "pickProviderPlaceholder": "पहले अंतर्निहित, फिर models.dev के सभी प्रदाता",
-  "pickModelTitle": "DualTran — AI मॉडल",
-  "pickModelPlaceholder": "वह मॉडल चुनें जिसे इस प्रदाता को उपयोग करना चाहिए",
   "providerSeparator": "अधिक (models.dev)",
   "infoProviderPicked": "DualTran: {0}",
   "infoProviderModel": "DualTran: {0} — {1}",
@@ -46,5 +44,11 @@
   "errorCatalogueRefresh": "DualTran: कैटलॉग रीफ़्रेश विफल — {0}",
   "errorCatalogueLoad": "DualTran: models.dev लोड नहीं हो सका — {0}",
   "infoApiKeySaved": "DualTran: API कुंजी सहेजी गई।",
-  "statusTranslating": "अनुवाद हो रहा है…"
+  "statusTranslating": "अनुवाद हो रहा है…",
+  "pickModelTitle": "DualTran — AI मॉडल",
+  "pickModelPlaceholder": "वह मॉडल चुनें जिसे इस प्रदाता को उपयोग करना चाहिए",
+  "providerPlaceholder": "प्रदाता चुनें",
+  "providerRequiredForModel": "पहले प्रदाता चुनें",
+  "providerRequiredError": "अनुवाद करने से पहले सेटिंग्स में AI प्रदाता चुनें।",
+  "statusTranslateAction": "अनुवाद करें"
 }

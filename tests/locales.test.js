@@ -31,9 +31,11 @@ test("ships the agreed 38 locales", () => {
 });
 
 test("every locale carries every key, non-empty", () => {
+  // Key *order* may differ per locale (the merge script appends a new batch after
+  // the catalogue's last member); completeness is what has to hold everywhere.
   for (const code of EXPECTED) {
     const catalogue = read(code);
-    assert.deepEqual(Object.keys(catalogue), enKeys, `${code}: key set`);
+    assert.deepEqual(Object.keys(catalogue).sort(), [...enKeys].sort(), `${code}: key set`);
     for (const key of enKeys) {
       const value = catalogue[key] && catalogue[key].message;
       assert.equal(typeof value === "string" && value.trim().length > 0, true, `${code}: ${key}`);

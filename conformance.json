@@ -1,22 +1,43 @@
 {
-  "spec": "2.0.0",
+  "spec": "2.1.0",
   "host": "dualtran-vscode",
   "payload": "tests/conformance.test.js",
   "static": {
-    "files": ["extension.js", "package.json"],
+    "files": ["extension.js", "package.json", "src/translate.js"],
     "patterns": [
       "providerSeparator",
       "__separator__",
       "__more__",
       "More (models.dev)",
-      "QuickPickItemKind.Separator"
+      "QuickPickItemKind.Separator",
+      {
+        "token": "openai-default-fallback",
+        "regex": "\\|\\|\\s*\"openai\""
+      },
+      {
+        "token": "custom-provider-fallback",
+        "regex": "\\|\\|\\s*CUSTOM_PROVIDER"
+      },
+      {
+        "token": "openai-endpoint-default",
+        "regex": "default\"\\s*:\\s*\"https://api\\.openai\\.com/v1\""
+      },
+      {
+        "token": "openai-model-default",
+        "regex": "default\"\\s*:\\s*\"gpt-4o-mini\""
+      }
     ]
   },
   "platformLimits": [
     {
       "rule": "R2",
-      "reason": "VS Code settings schema cannot enumerate models.dev models dynamically; model picker is a QuickPick",
-      "evidence": "package.json dualtran.ai.model stays a free string (custom model ids are typed there), models are listed by the second QuickPick inside dualtran.pickProvider built from the models.dev catalogue (tests/conformance.test.js pins both ends)"
+      "reason": "VS Code settings schema cannot enumerate models.dev models dynamically; dualtran.ai.provider is an enum (empty item labelled via enumItemLabels) while dualtran.ai.model stays a free string, and models are listed by the model QuickPick inside dualtran.pickProvider built from the models.dev catalogue",
+      "evidence": "package.json dualtran.ai.provider: enum[0] is \"\", enumItemLabels[0] is %providerPlaceholder%, default \"\"; dualtran.ai.model stays a free string (custom model ids are typed there); tests/conformance.test.js pins both ends"
+    },
+    {
+      "rule": "R3",
+      "reason": "A settings-schema input cannot carry a placeholder; the visible \"https://\" placeholder belongs to the endpoint input of the picker UI",
+      "evidence": "dualtran.ai.endpoint stays a free string with default \"\" in package.json and the same empty default in extension.js config(); tests/conformance.test.js pins the payload placeholder to \"https://\" and the autofill/override rule"
     }
   ]
 }

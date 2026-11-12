@@ -110,8 +110,18 @@
   "pickProviderPlaceholder": {
     "message": "מובנה תחילה, ואז כל ספק ש-models.dev מכיר"
   },
-  "pickModelTitle": { "message": "DualTran — מודל AI", "description": "DualTran — AI model" },
-  "pickModelPlaceholder": { "message": "בחרו את המודל שספק זה אמור להשתמש בו", "description": "Choose the model this provider should use" },
+  "providerPlaceholder": { "message": "בחרו ספק", "description": "Select a provider" },
+  "providerRequiredForModel": { "message": "תחילה בחרו ספק", "description": "Select a provider first" },
+  "providerRequiredError": { "message": "יש לבחור ספק בינה מלאכותית בהגדרות לפני התרגום.", "description": "Choose an AI provider in settings before translating." },
+  "statusTranslateAction": { "message": "תרגם", "description": "Translate" },
+  "pickModelTitle": {
+    "message": "DualTran — מודל AI",
+    "description": "DualTran — AI model"
+  },
+  "pickModelPlaceholder": {
+    "message": "בחרו את המודל שספק זה אמור להשתמש בו",
+    "description": "Choose the model this provider should use"
+  },
   "providerSeparator": {
     "message": "עוד (models.dev)"
   },

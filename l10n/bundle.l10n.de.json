@@ -36,8 +36,6 @@
   "DualTran — target language": "DualTran — Zielsprache",
   "DualTran — AI provider": "DualTran — KI-Anbieter",
   "Built-in first, then every provider models.dev knows": "Zuerst integriert, dann alle Anbieter, die models.dev kennt",
-  "DualTran — AI model": "DualTran — KI-Modell",
-  "Choose the model this provider should use": "Wählen Sie das Modell, das dieser Anbieter verwenden soll",
   "More (models.dev)": "Mehr (models.dev)",
   "DualTran: {0} — {1}": "DualTran: {0} — {1}",
   "DualTran: {0} — set a model": "DualTran: {0} — Modell festlegen",
@@ -45,5 +43,11 @@
   "DualTran: catalogue refresh failed — {0}": "DualTran: Katalogaktualisierung fehlgeschlagen — {0}",
   "DualTran: could not load models.dev — {0}": "DualTran: models.dev konnte nicht geladen werden — {0}",
   "DualTran: API key saved.": "DualTran: API-Schlüssel gespeichert.",
-  "translating…": "übersetze…"
+  "translating…": "übersetze…",
+  "DualTran — AI model": "DualTran — KI-Modell",
+  "Choose the model this provider should use": "Wählen Sie das Modell, das dieser Anbieter verwenden soll",
+  "Select a provider": "Anbieter auswählen",
+  "Select a provider first": "Wählen Sie zuerst einen Anbieter",
+  "Choose an AI provider in settings before translating.": "Wählen Sie vor dem Übersetzen einen KI-Anbieter in den Einstellungen.",
+  "Translate": "Übersetzen"
 }

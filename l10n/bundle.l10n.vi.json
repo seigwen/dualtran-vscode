@@ -36,8 +36,6 @@
   "DualTran — target language": "DualTran — ngôn ngữ đích",
   "DualTran — AI provider": "DualTran — nhà cung cấp AI",
   "Built-in first, then every provider models.dev knows": "Tích hợp sẵn trước, sau đó là mọi nhà cung cấp mà models.dev biết",
-  "DualTran — AI model": "DualTran — Mô hình AI",
-  "Choose the model this provider should use": "Chọn mô hình mà nhà cung cấp này nên sử dụng",
   "More (models.dev)": "Thêm (models.dev)",
   "DualTran: {0} — {1}": "DualTran: {0} — {1}",
   "DualTran: {0} — set a model": "DualTran: {0} — đặt một model",
@@ -45,5 +43,11 @@
   "DualTran: catalogue refresh failed — {0}": "DualTran: làm mới danh mục thất bại — {0}",
   "DualTran: could not load models.dev — {0}": "DualTran: không thể tải models.dev — {0}",
   "DualTran: API key saved.": "DualTran: đã lưu khóa API.",
-  "translating…": "đang dịch…"
+  "translating…": "đang dịch…",
+  "DualTran — AI model": "DualTran — Mô hình AI",
+  "Choose the model this provider should use": "Chọn mô hình mà nhà cung cấp này nên sử dụng",
+  "Select a provider": "Chọn nhà cung cấp",
+  "Select a provider first": "Trước tiên hãy chọn nhà cung cấp",
+  "Choose an AI provider in settings before translating.": "Chọn nhà cung cấp AI trong cài đặt trước khi dịch.",
+  "Translate": "Dịch"
 }

@@ -36,8 +36,6 @@
   "pickTargetTitle": "DualTran — teikentaal",
   "pickProviderTitle": "DualTran — AI-verskaffer",
   "pickProviderPlaceholder": "Ingeboude eerste, dan elke verskaffer wat models.dev ken",
-  "pickModelTitle": "DualTran — KI-model",
-  "pickModelPlaceholder": "Kies die model wat hierdie verskaffer moet gebruik",
   "providerSeparator": "Meer (models.dev)",
   "infoProviderPicked": "DualTran: {0}",
   "infoProviderModel": "DualTran: {0} — {1}",
@@ -46,5 +44,11 @@
   "errorCatalogueRefresh": "DualTran: katalogusverfrissing het misluk — {0}",
   "errorCatalogueLoad": "DualTran: kon nie models.dev laai nie — {0}",
   "infoApiKeySaved": "DualTran: API-sleutel gestoor.",
-  "statusTranslating": "vertaal…"
+  "statusTranslating": "vertaal…",
+  "pickModelTitle": "DualTran — KI-model",
+  "pickModelPlaceholder": "Kies die model wat hierdie verskaffer moet gebruik",
+  "providerPlaceholder": "Kies 'n verskaffer",
+  "providerRequiredForModel": "Kies eers 'n verskaffer",
+  "providerRequiredError": "Kies eers 'n KI-verskaffer in die instellings voordat u vertaal.",
+  "statusTranslateAction": "Vertaal"
 }

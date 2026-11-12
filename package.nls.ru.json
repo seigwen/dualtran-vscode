@@ -36,8 +36,6 @@
   "pickTargetTitle": "DualTran — целевой язык",
   "pickProviderTitle": "DualTran — провайдер ИИ",
   "pickProviderPlaceholder": "Сначала встроенные, затем все провайдеры, известные models.dev",
-  "pickModelTitle": "DualTran — Модель ИИ",
-  "pickModelPlaceholder": "Выберите модель, которую должен использовать этот провайдер",
   "providerSeparator": "Ещё (models.dev)",
   "infoProviderPicked": "DualTran: {0}",
   "infoProviderModel": "DualTran: {0} — {1}",
@@ -46,5 +44,11 @@
   "errorCatalogueRefresh": "DualTran: не удалось обновить каталог — {0}",
   "errorCatalogueLoad": "DualTran: не удалось загрузить models.dev — {0}",
   "infoApiKeySaved": "DualTran: API-ключ сохранён",
-  "statusTranslating": "перевод…"
+  "statusTranslating": "перевод…",
+  "pickModelTitle": "DualTran — Модель ИИ",
+  "pickModelPlaceholder": "Выберите модель, которую должен использовать этот провайдер",
+  "providerPlaceholder": "Выберите провайдера",
+  "providerRequiredForModel": "Сначала выберите провайдера",
+  "providerRequiredError": "Перед переводом выберите провайдера ИИ в настройках.",
+  "statusTranslateAction": "Перевести"
 }

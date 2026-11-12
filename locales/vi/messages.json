@@ -110,8 +110,18 @@
   "pickProviderPlaceholder": {
     "message": "Tích hợp sẵn trước, sau đó là mọi nhà cung cấp mà models.dev biết"
   },
-  "pickModelTitle": { "message": "DualTran — Mô hình AI", "description": "DualTran — AI model" },
-  "pickModelPlaceholder": { "message": "Chọn mô hình mà nhà cung cấp này nên sử dụng", "description": "Choose the model this provider should use" },
+  "providerPlaceholder": { "message": "Chọn nhà cung cấp", "description": "Select a provider" },
+  "providerRequiredForModel": { "message": "Trước tiên hãy chọn nhà cung cấp", "description": "Select a provider first" },
+  "providerRequiredError": { "message": "Chọn nhà cung cấp AI trong cài đặt trước khi dịch.", "description": "Choose an AI provider in settings before translating." },
+  "statusTranslateAction": { "message": "Dịch", "description": "Translate" },
+  "pickModelTitle": {
+    "message": "DualTran — Mô hình AI",
+    "description": "DualTran — AI model"
+  },
+  "pickModelPlaceholder": {
+    "message": "Chọn mô hình mà nhà cung cấp này nên sử dụng",
+    "description": "Choose the model this provider should use"
+  },
   "providerSeparator": {
     "message": "Thêm (models.dev)"
   },

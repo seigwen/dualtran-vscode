@@ -36,8 +36,6 @@
   "pickTargetTitle": "DualTran — target language",
   "pickProviderTitle": "DualTran — AI provider",
   "pickProviderPlaceholder": "Built-in first, then every provider models.dev knows",
-  "pickModelTitle": "DualTran — AI model",
-  "pickModelPlaceholder": "Choose the model this provider should use",
   "providerSeparator": "More (models.dev)",
   "infoProviderPicked": "DualTran: {0}",
   "infoProviderModel": "DualTran: {0} — {1}",
@@ -46,5 +44,11 @@
   "errorCatalogueRefresh": "DualTran: catalogue refresh failed — {0}",
   "errorCatalogueLoad": "DualTran: could not load models.dev — {0}",
   "infoApiKeySaved": "DualTran: API key saved.",
-  "statusTranslating": "translating…"
+  "statusTranslating": "translating…",
+  "pickModelTitle": "DualTran — AI model",
+  "pickModelPlaceholder": "Choose the model this provider should use",
+  "providerPlaceholder": "Select a provider",
+  "providerRequiredForModel": "Select a provider first",
+  "providerRequiredError": "Choose an AI provider in settings before translating.",
+  "statusTranslateAction": "Translate"
 }

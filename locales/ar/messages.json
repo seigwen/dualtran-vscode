@@ -110,8 +110,18 @@
   "pickProviderPlaceholder": {
     "message": "المزوّدون المدمجون أولًا، ثم كل مزوّد يعرفه models.dev"
   },
-  "pickModelTitle": { "message": "DualTran — نموذج ذكاء اصطناعي", "description": "DualTran — AI model" },
-  "pickModelPlaceholder": { "message": "اختر النموذج الذي يجب أن يستخدمه هذا المزوّد", "description": "Choose the model this provider should use" },
+  "providerPlaceholder": { "message": "اختر مزوّدًا", "description": "Select a provider" },
+  "providerRequiredForModel": { "message": "اختر مزوّدًا أولًا", "description": "Select a provider first" },
+  "providerRequiredError": { "message": "اختر مزوّد ذكاء اصطناعي في الإعدادات قبل الترجمة.", "description": "Choose an AI provider in settings before translating." },
+  "statusTranslateAction": { "message": "ترجمة", "description": "Translate" },
+  "pickModelTitle": {
+    "message": "DualTran — نموذج ذكاء اصطناعي",
+    "description": "DualTran — AI model"
+  },
+  "pickModelPlaceholder": {
+    "message": "اختر النموذج الذي يجب أن يستخدمه هذا المزوّد",
+    "description": "Choose the model this provider should use"
+  },
   "providerSeparator": {
     "message": "المزيد (models.dev)"
   },

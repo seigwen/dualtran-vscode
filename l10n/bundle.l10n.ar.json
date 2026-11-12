@@ -36,8 +36,6 @@
   "DualTran — target language": "DualTran — اللغة الهدف",
   "DualTran — AI provider": "DualTran — مزوّد الذكاء الاصطناعي",
   "Built-in first, then every provider models.dev knows": "المزوّدون المدمجون أولًا، ثم كل مزوّد يعرفه models.dev",
-  "DualTran — AI model": "DualTran — نموذج ذكاء اصطناعي",
-  "Choose the model this provider should use": "اختر النموذج الذي يجب أن يستخدمه هذا المزوّد",
   "More (models.dev)": "المزيد (models.dev)",
   "DualTran: {0} — {1}": "DualTran: {0} — {1}",
   "DualTran: {0} — set a model": "DualTran: {0} — عيّن نموذجًا",
@@ -45,5 +43,11 @@
   "DualTran: catalogue refresh failed — {0}": "DualTran: فشل تحديث الكتالوج — {0}",
   "DualTran: could not load models.dev — {0}": "DualTran: تعذر تحميل models.dev — {0}",
   "DualTran: API key saved.": "DualTran: تم حفظ مفتاح API.",
-  "translating…": "جارٍ الترجمة…"
+  "translating…": "جارٍ الترجمة…",
+  "DualTran — AI model": "DualTran — نموذج ذكاء اصطناعي",
+  "Choose the model this provider should use": "اختر النموذج الذي يجب أن يستخدمه هذا المزوّد",
+  "Select a provider": "اختر مزوّدًا",
+  "Select a provider first": "اختر مزوّدًا أولًا",
+  "Choose an AI provider in settings before translating.": "اختر مزوّد ذكاء اصطناعي في الإعدادات قبل الترجمة.",
+  "Translate": "ترجمة"
 }

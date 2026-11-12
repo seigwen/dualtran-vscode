@@ -36,8 +36,6 @@
   "pickTargetTitle": "DualTran — célnyelv",
   "pickProviderTitle": "DualTran — AI-szolgáltató",
   "pickProviderPlaceholder": "Először a beépítettek, majd a models.dev által ismert összes szolgáltató",
-  "pickModelTitle": "DualTran — AI-modell",
-  "pickModelPlaceholder": "Válassza ki a modellt, amelyet ennek a szolgáltatónak használnia kell",
   "providerSeparator": "Továbbiak (models.dev)",
   "infoProviderPicked": "DualTran: {0}",
   "infoProviderModel": "DualTran: {0} — {1}",
@@ -46,5 +44,11 @@
   "errorCatalogueRefresh": "DualTran: a katalógus frissítése sikertelen – {0}",
   "errorCatalogueLoad": "DualTran: a models.dev nem tölthető be – {0}",
   "infoApiKeySaved": "DualTran: API-kulcs mentve.",
-  "statusTranslating": "fordítás…"
+  "statusTranslating": "fordítás…",
+  "pickModelTitle": "DualTran — AI-modell",
+  "pickModelPlaceholder": "Válassza ki a modellt, amelyet ennek a szolgáltatónak használnia kell",
+  "providerPlaceholder": "Válasszon szolgáltatót",
+  "providerRequiredForModel": "Először válasszon szolgáltatót",
+  "providerRequiredError": "Fordítás előtt válasszon AI-szolgáltatót a beállításokban.",
+  "statusTranslateAction": "Fordítás"
 }

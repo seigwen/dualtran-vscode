@@ -36,8 +36,6 @@
   "pickTargetTitle": "DualTran — ciljni jezik",
   "pickProviderTitle": "DualTran — AI pružatelj",
   "pickProviderPlaceholder": "Prvo ugrađeni, zatim svi pružatelji koje models.dev poznaje",
-  "pickModelTitle": "DualTran — AI model",
-  "pickModelPlaceholder": "Odaberite model koji bi ovaj pružatelj usluga trebao koristiti",
   "providerSeparator": "Više (models.dev)",
   "infoProviderPicked": "DualTran: {0}",
   "infoProviderModel": "DualTran: {0} — {1}",
@@ -46,5 +44,11 @@
   "errorCatalogueRefresh": "DualTran: osvježavanje kataloga nije uspjelo — {0}",
   "errorCatalogueLoad": "DualTran: nije moguće učitati models.dev — {0}",
   "infoApiKeySaved": "DualTran: API ključ spremljen.",
-  "statusTranslating": "prevođenje…"
+  "statusTranslating": "prevođenje…",
+  "pickModelTitle": "DualTran — AI model",
+  "pickModelPlaceholder": "Odaberite model koji bi ovaj pružatelj usluga trebao koristiti",
+  "providerPlaceholder": "Odaberite pružatelja",
+  "providerRequiredForModel": "Najprije odaberite pružatelja",
+  "providerRequiredError": "Prije prevođenja odaberite pružatelja AI usluga u postavkama.",
+  "statusTranslateAction": "Prevedi"
 }

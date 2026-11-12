@@ -36,8 +36,6 @@
   "DualTran — target language": "DualTran — cílový jazyk",
   "DualTran — AI provider": "DualTran — poskytovatel AI",
   "Built-in first, then every provider models.dev knows": "Nejprve vestavěné, poté všichni poskytovatelé známí models.dev",
-  "DualTran — AI model": "DualTran — Model AI",
-  "Choose the model this provider should use": "Zvolte model, který má tento poskytovatel používat",
   "More (models.dev)": "Další (models.dev)",
   "DualTran: {0} — {1}": "DualTran: {0} — {1}",
   "DualTran: {0} — set a model": "DualTran: {0} — nastavte model",
@@ -45,5 +43,11 @@
   "DualTran: catalogue refresh failed — {0}": "DualTran: obnovení katalogu selhalo — {0}",
   "DualTran: could not load models.dev — {0}": "DualTran: nepodařilo se načíst models.dev — {0}",
   "DualTran: API key saved.": "DualTran: API klíč uložen.",
-  "translating…": "překládání…"
+  "translating…": "překládání…",
+  "DualTran — AI model": "DualTran — Model AI",
+  "Choose the model this provider should use": "Zvolte model, který má tento poskytovatel používat",
+  "Select a provider": "Vyberte poskytovatele",
+  "Select a provider first": "Nejprve vyberte poskytovatele",
+  "Choose an AI provider in settings before translating.": "Před překladem vyberte poskytovatele AI v nastavení.",
+  "Translate": "Přeložit"
 }

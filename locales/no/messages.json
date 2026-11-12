@@ -110,8 +110,18 @@
   "pickProviderPlaceholder": {
     "message": "Innebygd først, deretter alle leverandører models.dev kjenner"
   },
-  "pickModelTitle": { "message": "DualTran — AI-modell", "description": "DualTran — AI model" },
-  "pickModelPlaceholder": { "message": "Velg modellen denne leverandøren skal bruke", "description": "Choose the model this provider should use" },
+  "providerPlaceholder": { "message": "Velg en leverandør", "description": "Select a provider" },
+  "providerRequiredForModel": { "message": "Velg en leverandør først", "description": "Select a provider first" },
+  "providerRequiredError": { "message": "Velg en AI-leverandør i innstillingene før du oversetter.", "description": "Choose an AI provider in settings before translating." },
+  "statusTranslateAction": { "message": "Oversett", "description": "Translate" },
+  "pickModelTitle": {
+    "message": "DualTran — AI-modell",
+    "description": "DualTran — AI model"
+  },
+  "pickModelPlaceholder": {
+    "message": "Velg modellen denne leverandøren skal bruke",
+    "description": "Choose the model this provider should use"
+  },
   "providerSeparator": {
     "message": "Mer (models.dev)"
   },

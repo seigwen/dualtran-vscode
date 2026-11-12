@@ -110,8 +110,18 @@
   "pickProviderPlaceholder": {
     "message": "ابتدا ارائه‌دهنده‌های داخلی، سپس همه ارائه‌دهنده‌های شناخته‌شده در models.dev"
   },
-  "pickModelTitle": { "message": "DualTran — مدل هوش مصنوعی", "description": "DualTran — AI model" },
-  "pickModelPlaceholder": { "message": "مدلی را انتخاب کنید که این ارائه‌دهنده باید از آن استفاده کند", "description": "Choose the model this provider should use" },
+  "providerPlaceholder": { "message": "یک ارائه‌دهنده انتخاب کنید", "description": "Select a provider" },
+  "providerRequiredForModel": { "message": "ابتدا یک ارائه‌دهنده انتخاب کنید", "description": "Select a provider first" },
+  "providerRequiredError": { "message": "پیش از ترجمه، یک ارائه‌دهنده هوش مصنوعی در تنظیمات انتخاب کنید.", "description": "Choose an AI provider in settings before translating." },
+  "statusTranslateAction": { "message": "ترجمه", "description": "Translate" },
+  "pickModelTitle": {
+    "message": "DualTran — مدل هوش مصنوعی",
+    "description": "DualTran — AI model"
+  },
+  "pickModelPlaceholder": {
+    "message": "مدلی را انتخاب کنید که این ارائه‌دهنده باید از آن استفاده کند",
+    "description": "Choose the model this provider should use"
+  },
   "providerSeparator": {
     "message": "بیشتر (models.dev)"
   },

@@ -110,8 +110,18 @@
   "pickProviderPlaceholder": {
     "message": "先列内置服务商，再列 models.dev 收录的全部"
   },
-  "pickModelTitle": { "message": "DualTran — AI 模型", "description": "DualTran — AI model" },
-  "pickModelPlaceholder": { "message": "选择此提供商应使用的模型", "description": "Choose the model this provider should use" },
+  "providerPlaceholder": { "message": "请选择 AI 提供商", "description": "Select a provider" },
+  "providerRequiredForModel": { "message": "请先选择提供商", "description": "Select a provider first" },
+  "providerRequiredError": { "message": "翻译前请先在设置中选择 AI 提供商。", "description": "Choose an AI provider in settings before translating." },
+  "statusTranslateAction": { "message": "翻译", "description": "Translate" },
+  "pickModelTitle": {
+    "message": "DualTran — AI 模型",
+    "description": "DualTran — AI model"
+  },
+  "pickModelPlaceholder": {
+    "message": "选择此提供商应使用的模型",
+    "description": "Choose the model this provider should use"
+  },
   "providerSeparator": {
     "message": "更多（models.dev）"
   },

@@ -110,8 +110,18 @@
   "pickProviderPlaceholder": {
     "message": "Önce yerleşik, ardından models.dev'in bildiği tüm sağlayıcılar"
   },
-  "pickModelTitle": { "message": "DualTran — YZ modeli", "description": "DualTran — AI model" },
-  "pickModelPlaceholder": { "message": "Bu sağlayıcının kullanması gereken modeli seçin", "description": "Choose the model this provider should use" },
+  "providerPlaceholder": { "message": "Bir sağlayıcı seçin", "description": "Select a provider" },
+  "providerRequiredForModel": { "message": "Önce bir sağlayıcı seçin", "description": "Select a provider first" },
+  "providerRequiredError": { "message": "Çeviri yapmadan önce ayarlardan bir yapay zekâ sağlayıcısı seçin.", "description": "Choose an AI provider in settings before translating." },
+  "statusTranslateAction": { "message": "Çevir", "description": "Translate" },
+  "pickModelTitle": {
+    "message": "DualTran — YZ modeli",
+    "description": "DualTran — AI model"
+  },
+  "pickModelPlaceholder": {
+    "message": "Bu sağlayıcının kullanması gereken modeli seçin",
+    "description": "Choose the model this provider should use"
+  },
   "providerSeparator": {
     "message": "Daha fazla (models.dev)"
   },

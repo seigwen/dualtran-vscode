@@ -110,8 +110,18 @@
   "pickProviderPlaceholder": {
     "message": "내장 제공자 우선, 그다음 models.dev가 아는 모든 제공자"
   },
-  "pickModelTitle": { "message": "DualTran — AI 모델", "description": "DualTran — AI model" },
-  "pickModelPlaceholder": { "message": "이 공급자가 사용할 모델을 선택하세요", "description": "Choose the model this provider should use" },
+  "providerPlaceholder": { "message": "제공자 선택", "description": "Select a provider" },
+  "providerRequiredForModel": { "message": "먼저 제공자를 선택하세요", "description": "Select a provider first" },
+  "providerRequiredError": { "message": "번역하기 전에 설정에서 AI 제공자를 선택하세요.", "description": "Choose an AI provider in settings before translating." },
+  "statusTranslateAction": { "message": "번역", "description": "Translate" },
+  "pickModelTitle": {
+    "message": "DualTran — AI 모델",
+    "description": "DualTran — AI model"
+  },
+  "pickModelPlaceholder": {
+    "message": "이 공급자가 사용할 모델을 선택하세요",
+    "description": "Choose the model this provider should use"
+  },
   "providerSeparator": {
     "message": "더 보기 (models.dev)"
   },

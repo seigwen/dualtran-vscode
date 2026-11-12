@@ -36,8 +36,6 @@
   "pickTargetTitle": "DualTran — lingua di destinazione",
   "pickProviderTitle": "DualTran — provider AI",
   "pickProviderPlaceholder": "Prima quelli integrati, poi tutti i provider noti a models.dev",
-  "pickModelTitle": "DualTran — Modello di IA",
-  "pickModelPlaceholder": "Scegli il modello che questo fornitore deve utilizzare",
   "providerSeparator": "Altri (models.dev)",
   "infoProviderPicked": "DualTran: {0}",
   "infoProviderModel": "DualTran: {0} — {1}",
@@ -46,5 +44,11 @@
   "errorCatalogueRefresh": "DualTran: aggiornamento catalogo non riuscito — {0}",
   "errorCatalogueLoad": "DualTran: impossibile caricare models.dev — {0}",
   "infoApiKeySaved": "DualTran: chiave API salvata.",
-  "statusTranslating": "traduzione in corso…"
+  "statusTranslating": "traduzione in corso…",
+  "pickModelTitle": "DualTran — Modello di IA",
+  "pickModelPlaceholder": "Scegli il modello che questo fornitore deve utilizzare",
+  "providerPlaceholder": "Seleziona un fornitore",
+  "providerRequiredForModel": "Seleziona prima un fornitore",
+  "providerRequiredError": "Seleziona un fornitore di IA nelle impostazioni prima di tradurre.",
+  "statusTranslateAction": "Traduci"
 }

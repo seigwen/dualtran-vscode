@@ -36,8 +36,6 @@
   "DualTran — target language": "DualTran — 目标语言",
   "DualTran — AI provider": "DualTran — AI 服务商",
   "Built-in first, then every provider models.dev knows": "先列内置服务商，再列 models.dev 收录的全部",
-  "DualTran — AI model": "DualTran — AI 模型",
-  "Choose the model this provider should use": "选择此提供商应使用的模型",
   "More (models.dev)": "更多（models.dev）",
   "DualTran: {0} — {1}": "DualTran: {0} — {1}",
   "DualTran: {0} — set a model": "DualTran: {0} — 请设置模型",
@@ -45,5 +43,11 @@
   "DualTran: catalogue refresh failed — {0}": "DualTran: 服务商目录刷新失败 — {0}",
   "DualTran: could not load models.dev — {0}": "DualTran: 无法加载 models.dev — {0}",
   "DualTran: API key saved.": "DualTran: API Key 已保存。",
-  "translating…": "翻译中…"
+  "translating…": "翻译中…",
+  "DualTran — AI model": "DualTran — AI 模型",
+  "Choose the model this provider should use": "选择此提供商应使用的模型",
+  "Select a provider": "请选择 AI 提供商",
+  "Select a provider first": "请先选择提供商",
+  "Choose an AI provider in settings before translating.": "翻译前请先在设置中选择 AI 提供商。",
+  "Translate": "翻译"
 }

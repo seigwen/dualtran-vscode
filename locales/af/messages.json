@@ -110,8 +110,18 @@
   "pickProviderPlaceholder": {
     "message": "Ingeboude eerste, dan elke verskaffer wat models.dev ken"
   },
-  "pickModelTitle": { "message": "DualTran — KI-model", "description": "DualTran — AI model" },
-  "pickModelPlaceholder": { "message": "Kies die model wat hierdie verskaffer moet gebruik", "description": "Choose the model this provider should use" },
+  "providerPlaceholder": { "message": "Kies 'n verskaffer", "description": "Select a provider" },
+  "providerRequiredForModel": { "message": "Kies eers 'n verskaffer", "description": "Select a provider first" },
+  "providerRequiredError": { "message": "Kies eers 'n KI-verskaffer in die instellings voordat u vertaal.", "description": "Choose an AI provider in settings before translating." },
+  "statusTranslateAction": { "message": "Vertaal", "description": "Translate" },
+  "pickModelTitle": {
+    "message": "DualTran — KI-model",
+    "description": "DualTran — AI model"
+  },
+  "pickModelPlaceholder": {
+    "message": "Kies die model wat hierdie verskaffer moet gebruik",
+    "description": "Choose the model this provider should use"
+  },
   "providerSeparator": {
     "message": "Meer (models.dev)"
   },

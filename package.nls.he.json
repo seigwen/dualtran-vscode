@@ -36,8 +36,6 @@
   "pickTargetTitle": "DualTran — שפת יעד",
   "pickProviderTitle": "DualTran — ספק AI",
   "pickProviderPlaceholder": "מובנה תחילה, ואז כל ספק ש-models.dev מכיר",
-  "pickModelTitle": "DualTran — מודל AI",
-  "pickModelPlaceholder": "בחרו את המודל שספק זה אמור להשתמש בו",
   "providerSeparator": "עוד (models.dev)",
   "infoProviderPicked": "DualTran: {0}",
   "infoProviderModel": "DualTran: {0} — {1}",
@@ -46,5 +44,11 @@
   "errorCatalogueRefresh": "DualTran: רענון הקטלוג נכשל — {0}",
   "errorCatalogueLoad": "DualTran: לא ניתן לטעון את models.dev — {0}",
   "infoApiKeySaved": "DualTran: מפתח ה-API נשמר.",
-  "statusTranslating": "מתרגם…"
+  "statusTranslating": "מתרגם…",
+  "pickModelTitle": "DualTran — מודל AI",
+  "pickModelPlaceholder": "בחרו את המודל שספק זה אמור להשתמש בו",
+  "providerPlaceholder": "בחרו ספק",
+  "providerRequiredForModel": "תחילה בחרו ספק",
+  "providerRequiredError": "יש לבחור ספק בינה מלאכותית בהגדרות לפני התרגום.",
+  "statusTranslateAction": "תרגם"
 }
