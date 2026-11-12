@@ -36,8 +36,6 @@
   "pickTargetTitle": "DualTran — 目標語言",
   "pickProviderTitle": "DualTran — AI 服務商",
   "pickProviderPlaceholder": "先列內建服務商，再列 models.dev 收錄的全部",
-  "pickModelTitle": "DualTran — AI 模型",
-  "pickModelPlaceholder": "選擇此提供者應使用的模型",
   "providerSeparator": "更多（models.dev）",
   "infoProviderPicked": "DualTran: {0}",
   "infoProviderModel": "DualTran: {0} — {1}",
@@ -46,5 +44,11 @@
   "errorCatalogueRefresh": "DualTran: 服務商目錄重新整理失敗 — {0}",
   "errorCatalogueLoad": "DualTran: 無法載入 models.dev — {0}",
   "infoApiKeySaved": "DualTran: API Key 已儲存。",
-  "statusTranslating": "翻譯中…"
+  "statusTranslating": "翻譯中…",
+  "pickModelTitle": "DualTran — AI 模型",
+  "pickModelPlaceholder": "選擇此提供者應使用的模型",
+  "providerPlaceholder": "請選擇 AI 提供者",
+  "providerRequiredForModel": "請先選擇提供者",
+  "providerRequiredError": "翻譯前請先在設定中選擇 AI 提供者。",
+  "statusTranslateAction": "翻譯"
 }

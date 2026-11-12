@@ -36,8 +36,6 @@
   "pickTargetTitle": "DualTran — цільова мова",
   "pickProviderTitle": "DualTran — постачальник ШІ",
   "pickProviderPlaceholder": "Спочатку вбудовані, потім усі постачальники, відомі models.dev",
-  "pickModelTitle": "DualTran — Модель ШІ",
-  "pickModelPlaceholder": "Виберіть модель, яку має використовувати цей провайдер",
   "providerSeparator": "Більше (models.dev)",
   "infoProviderPicked": "DualTran: {0}",
   "infoProviderModel": "DualTran: {0} — {1}",
@@ -46,5 +44,11 @@
   "errorCatalogueRefresh": "DualTran: не вдалося оновити каталог — {0}",
   "errorCatalogueLoad": "DualTran: не вдалося завантажити models.dev — {0}",
   "infoApiKeySaved": "DualTran: API-ключ збережено.",
-  "statusTranslating": "переклад…"
+  "statusTranslating": "переклад…",
+  "pickModelTitle": "DualTran — Модель ШІ",
+  "pickModelPlaceholder": "Виберіть модель, яку має використовувати цей провайдер",
+  "providerPlaceholder": "Виберіть постачальника",
+  "providerRequiredForModel": "Спочатку виберіть постачальника",
+  "providerRequiredError": "Перед перекладом виберіть постачальника ШІ в налаштуваннях.",
+  "statusTranslateAction": "Перекласти"
 }

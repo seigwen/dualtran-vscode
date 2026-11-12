@@ -110,8 +110,18 @@
   "pickProviderPlaceholder": {
     "message": "ในตัวก่อน จากนั้นทุกผู้ให้บริการที่ models.dev รู้จัก"
   },
-  "pickModelTitle": { "message": "DualTran — โมเดล AI", "description": "DualTran — AI model" },
-  "pickModelPlaceholder": { "message": "เลือกโมเดลที่ผู้ให้บริการนี้ควรใช้", "description": "Choose the model this provider should use" },
+  "providerPlaceholder": { "message": "เลือกผู้ให้บริการ", "description": "Select a provider" },
+  "providerRequiredForModel": { "message": "เลือกผู้ให้บริการก่อน", "description": "Select a provider first" },
+  "providerRequiredError": { "message": "เลือกผู้ให้บริการ AI ในการตั้งค่าก่อนแปล", "description": "Choose an AI provider in settings before translating." },
+  "statusTranslateAction": { "message": "แปล", "description": "Translate" },
+  "pickModelTitle": {
+    "message": "DualTran — โมเดล AI",
+    "description": "DualTran — AI model"
+  },
+  "pickModelPlaceholder": {
+    "message": "เลือกโมเดลที่ผู้ให้บริการนี้ควรใช้",
+    "description": "Choose the model this provider should use"
+  },
   "providerSeparator": {
     "message": "เพิ่มเติม (models.dev)"
   },

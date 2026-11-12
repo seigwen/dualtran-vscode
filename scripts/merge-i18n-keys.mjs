@@ -1,13 +1,17 @@
 #!/usr/bin/env node
 /**
- * merge-i18n-keys.mjs — add the model-picker runtime strings (pickModelTitle,
- * pickModelPlaceholder) to every localisation file, once.
+ * merge-i18n-keys.mjs — add the runtime strings a release introduced to every
+ * localisation file, once. The batch is named by the facts file:
  *
- *   node scripts/merge-i18n-keys.mjs           # merge
- *   node scripts/merge-i18n-keys.mjs --check    # verify only (exit 1 on drift)
+ *   node scripts/merge-i18n-keys.mjs spec21        # i18n-extra-spec21.json
+ *   node scripts/merge-i18n-keys.mjs --check spec21 # verify only (exit 1 on drift)
  *
- * Translations come from facts/i18n-extra-vscode.json (one value per key per
- * locale). Targets, per locale:
+ * KEYS is the batch this run introduces; earlier batches (pickModelTitle,
+ * pickModelPlaceholder) are already in every catalogue and stay untouched.
+ * Key order is the catalogue's own (en comes last: it is the source text).
+ *
+ * Translations come from tests/fixtures/conformance/i18n-extra-vscode.json (one
+ * value per key per locale). Targets, per locale:
  *
  *   locales/<code>/messages.json      { "<key>": { "message": <text>, "description": <en text> } }
  *   package.nls.<vs>.json             "<key>": <text>
@@ -24,7 +28,12 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const KEYS = ["pickModelTitle", "pickModelPlaceholder"];
+const KEYS = [
+  "providerPlaceholder",
+  "providerRequiredForModel",
+  "providerRequiredError",
+  "statusTranslateAction",
+];
 /** Insert after this key: it is what package.nls.json / build-nls.mjs emit right before the new ones. */
 const ANCHOR = "pickProviderPlaceholder";
 const VSCODE_LOCALE = { zh_CN: "zh-cn", zh_TW: "zh-tw", pt_BR: "pt-br", pt_PT: "pt-pt" };
@@ -32,7 +41,7 @@ const VSCODE_LOCALE = { zh_CN: "zh-cn", zh_TW: "zh-tw", pt_BR: "pt-br", pt_PT: "
 const checkOnly = process.argv.slice(2).includes("--check");
 
 const readJson = (file) => JSON.parse(fs.readFileSync(file, "utf8"));
-const extra = readJson(path.join(ROOT, "facts", "i18n-extra-vscode.json"));
+const extra = readJson(path.join(ROOT, "tests", "fixtures", "conformance", "i18n-extra-vscode.json"));
 const en = readJson(path.join(ROOT, "locales", "en", "messages.json"));
 const DESCRIPTION = Object.fromEntries(KEYS.map((key) => [key, en[key] && en[key].message]));
 
@@ -126,16 +135,25 @@ function spliceMembers(text, parsed, members, anchors, label) {
   fail(`${label}: none of the anchors ${anchors.join(", ")} found`);
 }
 
+/** RegExp-escaping for the anchor lookup … */
 function escape(value) {
   return String(value).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
+/**
+ * … and JSON string escaping for the members we write. They cannot share one
+ * helper: a JSON member needs its quotes/backslashes escaped, not its dots.
+ */
+function jsonString(value) {
+  return JSON.stringify(String(value)).slice(1, -1);
+}
+
 /** `"key": "value"` for flat nls / bundle files, escaped like JSON.stringify. */
-const flatMember = (key, value) => `"${escape(key)}": ${JSON.stringify(value)},`;
+const flatMember = (key, value) => `"${jsonString(key)}": ${JSON.stringify(value)},`;
 
 /** `"key": { "message": "…", "description": "…" }`, one line in every catalogue. */
 const catalogueMember = (key, value, description) =>
-  `"${escape(key)}": { "message": ${JSON.stringify(value)}, "description": ${JSON.stringify(description)} },`;
+  `"${jsonString(key)}": { "message": ${JSON.stringify(value)}, "description": ${JSON.stringify(description)} },`;
 
 /** The text for a locale: English comes from locales/en (already merged by hand). */
 const textFor = (key, code) => (code === "en" ? DESCRIPTION[key] : extra[key][code]);

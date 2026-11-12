@@ -36,8 +36,6 @@
   "DualTran — target language": "DualTran — 대상 언어",
   "DualTran — AI provider": "DualTran — AI 제공자",
   "Built-in first, then every provider models.dev knows": "내장 제공자 우선, 그다음 models.dev가 아는 모든 제공자",
-  "DualTran — AI model": "DualTran — AI 모델",
-  "Choose the model this provider should use": "이 공급자가 사용할 모델을 선택하세요",
   "More (models.dev)": "더 보기 (models.dev)",
   "DualTran: {0} — {1}": "DualTran: {0} — {1}",
   "DualTran: {0} — set a model": "DualTran: {0} — 모델 설정",
@@ -45,5 +43,11 @@
   "DualTran: catalogue refresh failed — {0}": "DualTran: 카탈로그 새로 고침 실패 — {0}",
   "DualTran: could not load models.dev — {0}": "DualTran: models.dev를 로드할 수 없음 — {0}",
   "DualTran: API key saved.": "DualTran: API 키 저장됨",
-  "translating…": "번역 중…"
+  "translating…": "번역 중…",
+  "DualTran — AI model": "DualTran — AI 모델",
+  "Choose the model this provider should use": "이 공급자가 사용할 모델을 선택하세요",
+  "Select a provider": "제공자 선택",
+  "Select a provider first": "먼저 제공자를 선택하세요",
+  "Choose an AI provider in settings before translating.": "번역하기 전에 설정에서 AI 제공자를 선택하세요.",
+  "Translate": "번역"
 }

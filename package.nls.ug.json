@@ -36,8 +36,6 @@
   "pickTargetTitle": "DualTran — نىشان تىل",
   "pickProviderTitle": "DualTran — AI تەمىنلىگۈچى",
   "pickProviderPlaceholder": "ئالدى بىلەن قۇرۇلما تەمىنلىگۈچى، ئاندىن models.dev بىلگەن بارلىق تەمىنلىگۈچىلەر",
-  "pickModelTitle": "DualTran — سۈنئىي ئىدراك مودېلى",
-  "pickModelPlaceholder": "بۇ تەمىنلىگۈچى ئىشلىتىشكە تېگىشلىك مودېلنى تاللاڭ",
   "providerSeparator": "تېخىمۇ كۆپ (models.dev)",
   "infoProviderPicked": "DualTran: {0}",
   "infoProviderModel": "DualTran: {0} — {1}",
@@ -46,5 +44,11 @@
   "errorCatalogueRefresh": "DualTran: كاتالوگ يېڭىلاش مەغلۇپ بولدى — {0}",
   "errorCatalogueLoad": "DualTran: models.dev نى يۈكلىيالمىدى — {0}",
   "infoApiKeySaved": "DualTran: API ئاچقۇچى ساقلاندى.",
-  "statusTranslating": "تەرجىمە قىلىنىۋاتىدۇ…"
+  "statusTranslating": "تەرجىمە قىلىنىۋاتىدۇ…",
+  "pickModelTitle": "DualTran — سۈنئىي ئىدراك مودېلى",
+  "pickModelPlaceholder": "بۇ تەمىنلىگۈچى ئىشلىتىشكە تېگىشلىك مودېلنى تاللاڭ",
+  "providerPlaceholder": "بىر تەمىنلىگۈچى تاللاڭ",
+  "providerRequiredForModel": "ئاۋۋال بىر تەمىنلىگۈچى تاللاڭ",
+  "providerRequiredError": "تەرجىمە قىلىشتىن ئىلگىرى تەڭشەكتە بىر سۈنئىي ئىدراك تەمىنلىگۈچىسىنى تاللاڭ.",
+  "statusTranslateAction": "تەرجىمە قىلىش"
 }

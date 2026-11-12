@@ -36,8 +36,6 @@
   "DualTran — target language": "DualTran — teikentaal",
   "DualTran — AI provider": "DualTran — AI-verskaffer",
   "Built-in first, then every provider models.dev knows": "Ingeboude eerste, dan elke verskaffer wat models.dev ken",
-  "DualTran — AI model": "DualTran — KI-model",
-  "Choose the model this provider should use": "Kies die model wat hierdie verskaffer moet gebruik",
   "More (models.dev)": "Meer (models.dev)",
   "DualTran: {0} — {1}": "DualTran: {0} — {1}",
   "DualTran: {0} — set a model": "DualTran: {0} — stel 'n model",
@@ -45,5 +43,11 @@
   "DualTran: catalogue refresh failed — {0}": "DualTran: katalogusverfrissing het misluk — {0}",
   "DualTran: could not load models.dev — {0}": "DualTran: kon nie models.dev laai nie — {0}",
   "DualTran: API key saved.": "DualTran: API-sleutel gestoor.",
-  "translating…": "vertaal…"
+  "translating…": "vertaal…",
+  "DualTran — AI model": "DualTran — KI-model",
+  "Choose the model this provider should use": "Kies die model wat hierdie verskaffer moet gebruik",
+  "Select a provider": "Kies 'n verskaffer",
+  "Select a provider first": "Kies eers 'n verskaffer",
+  "Choose an AI provider in settings before translating.": "Kies eers 'n KI-verskaffer in die instellings voordat u vertaal.",
+  "Translate": "Vertaal"
 }

@@ -110,8 +110,18 @@
   "pickProviderPlaceholder": {
     "message": "Сначала встроенные, затем все провайдеры, известные models.dev"
   },
-  "pickModelTitle": { "message": "DualTran — Модель ИИ", "description": "DualTran — AI model" },
-  "pickModelPlaceholder": { "message": "Выберите модель, которую должен использовать этот провайдер", "description": "Choose the model this provider should use" },
+  "providerPlaceholder": { "message": "Выберите провайдера", "description": "Select a provider" },
+  "providerRequiredForModel": { "message": "Сначала выберите провайдера", "description": "Select a provider first" },
+  "providerRequiredError": { "message": "Перед переводом выберите провайдера ИИ в настройках.", "description": "Choose an AI provider in settings before translating." },
+  "statusTranslateAction": { "message": "Перевести", "description": "Translate" },
+  "pickModelTitle": {
+    "message": "DualTran — Модель ИИ",
+    "description": "DualTran — AI model"
+  },
+  "pickModelPlaceholder": {
+    "message": "Выберите модель, которую должен использовать этот провайдер",
+    "description": "Choose the model this provider should use"
+  },
   "providerSeparator": {
     "message": "Ещё (models.dev)"
   },

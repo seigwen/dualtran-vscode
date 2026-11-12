@@ -110,8 +110,18 @@
   "pickProviderPlaceholder": {
     "message": "Vispirms iebūvētais, pēc tam visi models.dev zināmie nodrošinātāji"
   },
-  "pickModelTitle": { "message": "DualTran — MI modelis", "description": "DualTran — AI model" },
-  "pickModelPlaceholder": { "message": "Izvēlieties modeli, kuru šim nodrošinātājam vajadzētu izmantot", "description": "Choose the model this provider should use" },
+  "providerPlaceholder": { "message": "Atlasiet pakalpojumu sniedzēju", "description": "Select a provider" },
+  "providerRequiredForModel": { "message": "Vispirms atlasiet pakalpojumu sniedzēju", "description": "Select a provider first" },
+  "providerRequiredError": { "message": "Pirms tulkošanas iestatījumos atlasiet AI pakalpojumu sniedzēju.", "description": "Choose an AI provider in settings before translating." },
+  "statusTranslateAction": { "message": "Tulkot", "description": "Translate" },
+  "pickModelTitle": {
+    "message": "DualTran — MI modelis",
+    "description": "DualTran — AI model"
+  },
+  "pickModelPlaceholder": {
+    "message": "Izvēlieties modeli, kuru šim nodrošinātājam vajadzētu izmantot",
+    "description": "Choose the model this provider should use"
+  },
   "providerSeparator": {
     "message": "Vairāk (models.dev)"
   },

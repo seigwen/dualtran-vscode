@@ -110,8 +110,18 @@
   "pickProviderPlaceholder": {
     "message": "Innbyggður fyrst, síðan hver veitandi sem models.dev þekkir"
   },
-  "pickModelTitle": { "message": "DualTran — Gervigreindarlíkan", "description": "DualTran — AI model" },
-  "pickModelPlaceholder": { "message": "Veldu líkanið sem þessi þjónustuaðili ætti að nota", "description": "Choose the model this provider should use" },
+  "providerPlaceholder": { "message": "Veldu þjónustuaðila", "description": "Select a provider" },
+  "providerRequiredForModel": { "message": "Veldu fyrst þjónustuaðila", "description": "Select a provider first" },
+  "providerRequiredError": { "message": "Veldu gervigreindarþjónustuaðila í stillingum áður en þú þýðir.", "description": "Choose an AI provider in settings before translating." },
+  "statusTranslateAction": { "message": "Þýða", "description": "Translate" },
+  "pickModelTitle": {
+    "message": "DualTran — Gervigreindarlíkan",
+    "description": "DualTran — AI model"
+  },
+  "pickModelPlaceholder": {
+    "message": "Veldu líkanið sem þessi þjónustuaðili ætti að nota",
+    "description": "Choose the model this provider should use"
+  },
   "providerSeparator": {
     "message": "Fleiri (models.dev)"
   },

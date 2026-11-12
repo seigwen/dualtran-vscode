@@ -1,6 +1,6 @@
 {
   "name": "dualtran",
-  "displayName": "DualTran \u2014 Translate in Place",
+  "displayName": "DualTran — Translate in Place",
   "description": "Translate the selection and keep it next to the code: inline ghost line or side-by-side panel. Google or your own AI model (BYOK).",
   "version": "0.2.0",
   "publisher": "seigwenlee",
@@ -195,17 +195,51 @@
         },
         "dualtran.ai.endpoint": {
           "type": "string",
-          "default": "https://api.openai.com/v1",
-          "description": "%cfgEndpoint%"
+          "default": "",
+          "markdownDescription": "%cfgEndpoint%"
         },
         "dualtran.ai.model": {
           "type": "string",
-          "default": "gpt-4o-mini",
-          "description": "%cfgModel%"
+          "default": "",
+          "markdownDescription": "%cfgModel%"
         },
         "dualtran.ai.provider": {
           "type": "string",
-          "default": "openai",
+          "enum": [
+            "",
+            "alibaba-cn",
+            "anthropic",
+            "deepseek",
+            "google-gemini",
+            "groq",
+            "lmstudio",
+            "mistral",
+            "moonshot",
+            "ollama",
+            "openai",
+            "openrouter",
+            "siliconflow",
+            "xai",
+            "zhipu"
+          ],
+          "enumItemLabels": [
+            "%providerPlaceholder%",
+            "Alibaba (China)",
+            "Anthropic",
+            "DeepSeek",
+            "Google Gemini",
+            "Groq",
+            "LMStudio",
+            "Mistral",
+            "Moonshot",
+            "Ollama (local)",
+            "OpenAI",
+            "OpenRouter",
+            "SiliconFlow",
+            "xAI",
+            "Zhipu"
+          ],
+          "default": "",
           "markdownDescription": "%cfgProvider%"
         },
         "dualtran.ai.reasoning": {
@@ -247,7 +281,8 @@
     "i18n:sync": "node scripts/locale-kit.mjs",
     "i18n:check": "node scripts/locale-kit.mjs --check",
     "e2e:locale": "DT_LOCALE=de node e2e/run-tests.mjs",
-    "conformance": "node scripts/conformance/run.mjs"
+    "conformance": "node scripts/conformance/run.mjs",
+    "i18n:merge": "node scripts/merge-i18n-keys.mjs"
   },
   "devDependencies": {
     "@vscode/test-electron": "^2.5.2",

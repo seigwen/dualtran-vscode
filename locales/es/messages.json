@@ -110,8 +110,18 @@
   "pickProviderPlaceholder": {
     "message": "Primero los integrados, luego todos los proveedores que conoce models.dev"
   },
-  "pickModelTitle": { "message": "DualTran — Modelo de IA", "description": "DualTran — AI model" },
-  "pickModelPlaceholder": { "message": "Elige el modelo que este proveedor debe usar", "description": "Choose the model this provider should use" },
+  "providerPlaceholder": { "message": "Selecciona un proveedor", "description": "Select a provider" },
+  "providerRequiredForModel": { "message": "Selecciona primero un proveedor", "description": "Select a provider first" },
+  "providerRequiredError": { "message": "Selecciona un proveedor de IA en la configuración antes de traducir.", "description": "Choose an AI provider in settings before translating." },
+  "statusTranslateAction": { "message": "Traducir", "description": "Translate" },
+  "pickModelTitle": {
+    "message": "DualTran — Modelo de IA",
+    "description": "DualTran — AI model"
+  },
+  "pickModelPlaceholder": {
+    "message": "Elige el modelo que este proveedor debe usar",
+    "description": "Choose the model this provider should use"
+  },
   "providerSeparator": {
     "message": "Más (models.dev)"
   },

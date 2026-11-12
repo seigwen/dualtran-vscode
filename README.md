@@ -43,7 +43,7 @@ catalogues; `npm run verify` runs `i18n:check`.
 | DualTran: Translate and Replace Selection | — | Overwrite the selection with the translation |
 | DualTran: Clear Inline Translations | `Esc` | Remove ghost lines |
 | DualTran: Pick Target Language | — | Quick pick, saved to settings |
-| DualTran: Choose AI Provider | — | Quick pick: built-in providers, then everything models.dev lists |
+| DualTran: Choose AI Provider | — | Quick pick: one alphabetical list of providers (models.dev) |
 | DualTran: Refresh Provider Catalogue (models.dev) | — | Drop the cached catalogue and fetch it again |
 | DualTran: Set AI API Key | — | Stored in the OS keychain |
 
@@ -54,10 +54,16 @@ catalogues; `npm run verify` runs `i18n:check`.
   "dualtran.engine": "google",          // or "ai"
   "dualtran.sourceLanguage": "auto",
   "dualtran.targetLanguage": "zh-CN",
-  "dualtran.ai.endpoint": "https://api.openai.com/v1",
-  "dualtran.ai.model": "gpt-4o-mini"
+  "dualtran.ai.provider": "",           // "Select a provider" until you pick one
+  "dualtran.ai.endpoint": "",           // filled with the provider's API base on a pick
+  "dualtran.ai.model": ""               // chosen from the provider's model list
 }
 ```
+
+A fresh install has no AI provider: **DualTran: Choose AI Provider** fills the endpoint with
+the provider's API base and then offers that provider's models. Until one is picked, an AI
+translation reports "Choose an AI provider in settings before translating." and sends no
+request. An endpoint you edit yourself is never overwritten by a later provider switch.
 
 For a local model with Ollama: endpoint `http://127.0.0.1:11434/v1`, model `qwen2.5-coder:7b`,
 any non-empty key.

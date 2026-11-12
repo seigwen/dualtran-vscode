@@ -3,11 +3,28 @@
  *
  * google(): the public gtx endpoint (CORS-enabled, no key, chunked at ~1.8k chars).
  * ai():     any OpenAI-compatible /chat/completions endpoint with the user's key.
+ *
+ * An AI translation with no provider selected is a configuration error, not an
+ * OpenAI call: ai() refuses before it touches the key or the network (SPEC 2.1).
  */
 "use strict";
 
 const GTX = "https://translate.googleapis.com/translate_a/single";
 const MAX_CHUNK = 1800;
+
+/**
+ * The English source of the `providerRequiredError` catalogue string. Hosts wrap
+ * it in their own localiser; this module only needs a message that identifies
+ * the unconfigured state.
+ */
+const PROVIDER_REQUIRED_MESSAGE = "Choose an AI provider in settings before translating.";
+
+/** The error every AI path throws when `provider` is empty. */
+function providerRequiredError() {
+  const error = new Error(PROVIDER_REQUIRED_MESSAGE);
+  error.code = "PROVIDER_REQUIRED";
+  return error;
+}
 
 /** Split on sentence boundaries so each request stays under the endpoint's limit. */
 function chunk(text, size) {
@@ -76,7 +93,11 @@ function aiBody(text, sourceLang, targetLang, cfg, reasoning) {
  */
 async function ai(text, sourceLang, targetLang, cfg, fetchImpl) {
   const doFetch = fetchImpl || fetch;
-  if (!cfg || !cfg.endpoint || !cfg.model || !cfg.key) {
+  // No provider, no request: this is the unconfigured state, not an OpenAI default.
+  if (!cfg || typeof cfg.provider !== "string" || !cfg.provider.trim()) {
+    throw providerRequiredError();
+  }
+  if (!cfg.endpoint || !cfg.model || !cfg.key) {
     throw new Error("AI mode needs an endpoint, a model and an API key.");
   }
   const base = cfg.endpoint.replace(/\/+$/, "");
@@ -120,4 +141,14 @@ async function translate(text, opts) {
   return google(text, o.sourceLanguage, o.targetLanguage, o.fetch);
 }
 
-module.exports = { chunk, parseGoogle, google, ai, aiBody, translate, MAX_CHUNK };
+module.exports = {
+  chunk,
+  parseGoogle,
+  google,
+  ai,
+  aiBody,
+  translate,
+  MAX_CHUNK,
+  PROVIDER_REQUIRED_MESSAGE,
+  providerRequiredError,
+};

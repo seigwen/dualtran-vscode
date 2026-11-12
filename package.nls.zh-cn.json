@@ -36,8 +36,6 @@
   "pickTargetTitle": "DualTran — 目标语言",
   "pickProviderTitle": "DualTran — AI 服务商",
   "pickProviderPlaceholder": "先列内置服务商，再列 models.dev 收录的全部",
-  "pickModelTitle": "DualTran — AI 模型",
-  "pickModelPlaceholder": "选择此提供商应使用的模型",
   "providerSeparator": "更多（models.dev）",
   "infoProviderPicked": "DualTran: {0}",
   "infoProviderModel": "DualTran: {0} — {1}",
@@ -46,5 +44,11 @@
   "errorCatalogueRefresh": "DualTran: 服务商目录刷新失败 — {0}",
   "errorCatalogueLoad": "DualTran: 无法加载 models.dev — {0}",
   "infoApiKeySaved": "DualTran: API Key 已保存。",
-  "statusTranslating": "翻译中…"
+  "statusTranslating": "翻译中…",
+  "pickModelTitle": "DualTran — AI 模型",
+  "pickModelPlaceholder": "选择此提供商应使用的模型",
+  "providerPlaceholder": "请选择 AI 提供商",
+  "providerRequiredForModel": "请先选择提供商",
+  "providerRequiredError": "翻译前请先在设置中选择 AI 提供商。",
+  "statusTranslateAction": "翻译"
 }

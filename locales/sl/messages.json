@@ -110,8 +110,18 @@
   "pickProviderPlaceholder": {
     "message": "Najprej vgrajeni, nato vsi ponudniki, ki jih pozna models.dev"
   },
-  "pickModelTitle": { "message": "DualTran — Model UI", "description": "DualTran — AI model" },
-  "pickModelPlaceholder": { "message": "Izberite model, ki ga naj ta ponudnik uporablja", "description": "Choose the model this provider should use" },
+  "providerPlaceholder": { "message": "Izberite ponudnika", "description": "Select a provider" },
+  "providerRequiredForModel": { "message": "Najprej izberite ponudnika", "description": "Select a provider first" },
+  "providerRequiredError": { "message": "Pred prevajanjem v nastavitvah izberite ponudnika AI.", "description": "Choose an AI provider in settings before translating." },
+  "statusTranslateAction": { "message": "Prevedi", "description": "Translate" },
+  "pickModelTitle": {
+    "message": "DualTran — Model UI",
+    "description": "DualTran — AI model"
+  },
+  "pickModelPlaceholder": {
+    "message": "Izberite model, ki ga naj ta ponudnik uporablja",
+    "description": "Choose the model this provider should use"
+  },
   "providerSeparator": {
     "message": "Več (models.dev)"
   },

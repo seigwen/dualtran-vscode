@@ -36,8 +36,6 @@
   "DualTran — target language": "DualTran — زبان مقصد",
   "DualTran — AI provider": "DualTran — ارائه‌دهنده هوش مصنوعی",
   "Built-in first, then every provider models.dev knows": "ابتدا ارائه‌دهنده‌های داخلی، سپس همه ارائه‌دهنده‌های شناخته‌شده در models.dev",
-  "DualTran — AI model": "DualTran — مدل هوش مصنوعی",
-  "Choose the model this provider should use": "مدلی را انتخاب کنید که این ارائه‌دهنده باید از آن استفاده کند",
   "More (models.dev)": "بیشتر (models.dev)",
   "DualTran: {0} — {1}": "DualTran: {0} — {1}",
   "DualTran: {0} — set a model": "DualTran: {0} — یک مدل تنظیم کنید",
@@ -45,5 +43,11 @@
   "DualTran: catalogue refresh failed — {0}": "DualTran: به‌روزرسانی کاتالوگ ناموفق بود — {0}",
   "DualTran: could not load models.dev — {0}": "DualTran: بارگذاری models.dev ممکن نشد — {0}",
   "DualTran: API key saved.": "DualTran: کلید API ذخیره شد",
-  "translating…": "در حال ترجمه…"
+  "translating…": "در حال ترجمه…",
+  "DualTran — AI model": "DualTran — مدل هوش مصنوعی",
+  "Choose the model this provider should use": "مدلی را انتخاب کنید که این ارائه‌دهنده باید از آن استفاده کند",
+  "Select a provider": "یک ارائه‌دهنده انتخاب کنید",
+  "Select a provider first": "ابتدا یک ارائه‌دهنده انتخاب کنید",
+  "Choose an AI provider in settings before translating.": "پیش از ترجمه، یک ارائه‌دهنده هوش مصنوعی در تنظیمات انتخاب کنید.",
+  "Translate": "ترجمه"
 }

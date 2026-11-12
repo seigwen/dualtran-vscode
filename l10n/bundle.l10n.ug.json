@@ -36,8 +36,6 @@
   "DualTran — target language": "DualTran — نىشان تىل",
   "DualTran — AI provider": "DualTran — AI تەمىنلىگۈچى",
   "Built-in first, then every provider models.dev knows": "ئالدى بىلەن قۇرۇلما تەمىنلىگۈچى، ئاندىن models.dev بىلگەن بارلىق تەمىنلىگۈچىلەر",
-  "DualTran — AI model": "DualTran — سۈنئىي ئىدراك مودېلى",
-  "Choose the model this provider should use": "بۇ تەمىنلىگۈچى ئىشلىتىشكە تېگىشلىك مودېلنى تاللاڭ",
   "More (models.dev)": "تېخىمۇ كۆپ (models.dev)",
   "DualTran: {0} — {1}": "DualTran: {0} — {1}",
   "DualTran: {0} — set a model": "DualTran: {0} — بىر مودېل تەڭشەڭ",
@@ -45,5 +43,11 @@
   "DualTran: catalogue refresh failed — {0}": "DualTran: كاتالوگ يېڭىلاش مەغلۇپ بولدى — {0}",
   "DualTran: could not load models.dev — {0}": "DualTran: models.dev نى يۈكلىيالمىدى — {0}",
   "DualTran: API key saved.": "DualTran: API ئاچقۇچى ساقلاندى.",
-  "translating…": "تەرجىمە قىلىنىۋاتىدۇ…"
+  "translating…": "تەرجىمە قىلىنىۋاتىدۇ…",
+  "DualTran — AI model": "DualTran — سۈنئىي ئىدراك مودېلى",
+  "Choose the model this provider should use": "بۇ تەمىنلىگۈچى ئىشلىتىشكە تېگىشلىك مودېلنى تاللاڭ",
+  "Select a provider": "بىر تەمىنلىگۈچى تاللاڭ",
+  "Select a provider first": "ئاۋۋال بىر تەمىنلىگۈچى تاللاڭ",
+  "Choose an AI provider in settings before translating.": "تەرجىمە قىلىشتىن ئىلگىرى تەڭشەكتە بىر سۈنئىي ئىدراك تەمىنلىگۈچىسىنى تاللاڭ.",
+  "Translate": "تەرجىمە قىلىش"
 }

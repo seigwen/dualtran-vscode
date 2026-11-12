@@ -110,8 +110,18 @@
   "pickProviderPlaceholder": {
     "message": "Mai întâi cele integrate, apoi fiecare furnizor cunoscut de models.dev"
   },
-  "pickModelTitle": { "message": "DualTran — Model AI", "description": "DualTran — AI model" },
-  "pickModelPlaceholder": { "message": "Alegeți modelul pe care să îl folosească acest furnizor", "description": "Choose the model this provider should use" },
+  "providerPlaceholder": { "message": "Selectați un furnizor", "description": "Select a provider" },
+  "providerRequiredForModel": { "message": "Selectați mai întâi un furnizor", "description": "Select a provider first" },
+  "providerRequiredError": { "message": "Selectați un furnizor de IA în setări înainte de a traduce.", "description": "Choose an AI provider in settings before translating." },
+  "statusTranslateAction": { "message": "Tradu", "description": "Translate" },
+  "pickModelTitle": {
+    "message": "DualTran — Model AI",
+    "description": "DualTran — AI model"
+  },
+  "pickModelPlaceholder": {
+    "message": "Alegeți modelul pe care să îl folosească acest furnizor",
+    "description": "Choose the model this provider should use"
+  },
   "providerSeparator": {
     "message": "Mai multe (models.dev)"
   },

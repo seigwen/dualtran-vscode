@@ -36,8 +36,6 @@
   "pickTargetTitle": "DualTran — hedef dil",
   "pickProviderTitle": "DualTran — AI sağlayıcısı",
   "pickProviderPlaceholder": "Önce yerleşik, ardından models.dev'in bildiği tüm sağlayıcılar",
-  "pickModelTitle": "DualTran — YZ modeli",
-  "pickModelPlaceholder": "Bu sağlayıcının kullanması gereken modeli seçin",
   "providerSeparator": "Daha fazla (models.dev)",
   "infoProviderPicked": "DualTran: {0}",
   "infoProviderModel": "DualTran: {0} — {1}",
@@ -46,5 +44,11 @@
   "errorCatalogueRefresh": "DualTran: katalog yenileme başarısız — {0}",
   "errorCatalogueLoad": "DualTran: models.dev yüklenemedi — {0}",
   "infoApiKeySaved": "DualTran: API anahtarı kaydedildi.",
-  "statusTranslating": "çevriliyor…"
+  "statusTranslating": "çevriliyor…",
+  "pickModelTitle": "DualTran — YZ modeli",
+  "pickModelPlaceholder": "Bu sağlayıcının kullanması gereken modeli seçin",
+  "providerPlaceholder": "Bir sağlayıcı seçin",
+  "providerRequiredForModel": "Önce bir sağlayıcı seçin",
+  "providerRequiredError": "Çeviri yapmadan önce ayarlardan bir yapay zekâ sağlayıcısı seçin.",
+  "statusTranslateAction": "Çevir"
 }

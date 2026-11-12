@@ -36,8 +36,6 @@
   "pickTargetTitle": "DualTran — زبان مقصد",
   "pickProviderTitle": "DualTran — ارائه‌دهنده هوش مصنوعی",
   "pickProviderPlaceholder": "ابتدا ارائه‌دهنده‌های داخلی، سپس همه ارائه‌دهنده‌های شناخته‌شده در models.dev",
-  "pickModelTitle": "DualTran — مدل هوش مصنوعی",
-  "pickModelPlaceholder": "مدلی را انتخاب کنید که این ارائه‌دهنده باید از آن استفاده کند",
   "providerSeparator": "بیشتر (models.dev)",
   "infoProviderPicked": "DualTran: {0}",
   "infoProviderModel": "DualTran: {0} — {1}",
@@ -46,5 +44,11 @@
   "errorCatalogueRefresh": "DualTran: به‌روزرسانی کاتالوگ ناموفق بود — {0}",
   "errorCatalogueLoad": "DualTran: بارگذاری models.dev ممکن نشد — {0}",
   "infoApiKeySaved": "DualTran: کلید API ذخیره شد",
-  "statusTranslating": "در حال ترجمه…"
+  "statusTranslating": "در حال ترجمه…",
+  "pickModelTitle": "DualTran — مدل هوش مصنوعی",
+  "pickModelPlaceholder": "مدلی را انتخاب کنید که این ارائه‌دهنده باید از آن استفاده کند",
+  "providerPlaceholder": "یک ارائه‌دهنده انتخاب کنید",
+  "providerRequiredForModel": "ابتدا یک ارائه‌دهنده انتخاب کنید",
+  "providerRequiredError": "پیش از ترجمه، یک ارائه‌دهنده هوش مصنوعی در تنظیمات انتخاب کنید.",
+  "statusTranslateAction": "ترجمه"
 }

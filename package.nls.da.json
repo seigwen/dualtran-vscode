@@ -36,8 +36,6 @@
   "pickTargetTitle": "DualTran — målsprog",
   "pickProviderTitle": "DualTran — AI-udbyder",
   "pickProviderPlaceholder": "Indbygget først, derefter alle udbydere models.dev kender",
-  "pickModelTitle": "DualTran — AI-model",
-  "pickModelPlaceholder": "Vælg den model, som denne udbyder skal bruge",
   "providerSeparator": "Mere (models.dev)",
   "infoProviderPicked": "DualTran: {0}",
   "infoProviderModel": "DualTran: {0} — {1}",
@@ -46,5 +44,11 @@
   "errorCatalogueRefresh": "DualTran: opdatering af katalog mislykkedes — {0}",
   "errorCatalogueLoad": "DualTran: kunne ikke indlæse models.dev — {0}",
   "infoApiKeySaved": "DualTran: API-nøgle gemt.",
-  "statusTranslating": "oversætter…"
+  "statusTranslating": "oversætter…",
+  "pickModelTitle": "DualTran — AI-model",
+  "pickModelPlaceholder": "Vælg den model, som denne udbyder skal bruge",
+  "providerPlaceholder": "Vælg en udbyder",
+  "providerRequiredForModel": "Vælg først en udbyder",
+  "providerRequiredError": "Vælg en AI-udbyder i indstillingerne, før du oversætter.",
+  "statusTranslateAction": "Oversæt"
 }

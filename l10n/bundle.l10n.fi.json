@@ -36,8 +36,6 @@
   "DualTran — target language": "DualTran — kohdekieli",
   "DualTran — AI provider": "DualTran — AI-palveluntarjoaja",
   "Built-in first, then every provider models.dev knows": "Sisäänrakennettu ensin, sitten kaikki models.dev:n tuntemat palveluntarjoajat",
-  "DualTran — AI model": "DualTran — Tekoälymalli",
-  "Choose the model this provider should use": "Valitse malli, jota tämän palveluntarjoajan pitäisi käyttää",
   "More (models.dev)": "Lisää (models.dev)",
   "DualTran: {0} — {1}": "DualTran: {0} — {1}",
   "DualTran: {0} — set a model": "DualTran: {0} — aseta malli",
@@ -45,5 +43,11 @@
   "DualTran: catalogue refresh failed — {0}": "DualTran: luettelon päivitys epäonnistui — {0}",
   "DualTran: could not load models.dev — {0}": "DualTran: models.dev-palvelua ei voitu ladata — {0}",
   "DualTran: API key saved.": "DualTran: API-avain tallennettu.",
-  "translating…": "käännetään…"
+  "translating…": "käännetään…",
+  "DualTran — AI model": "DualTran — Tekoälymalli",
+  "Choose the model this provider should use": "Valitse malli, jota tämän palveluntarjoajan pitäisi käyttää",
+  "Select a provider": "Valitse palveluntarjoaja",
+  "Select a provider first": "Valitse ensin palveluntarjoaja",
+  "Choose an AI provider in settings before translating.": "Valitse tekoälypalveluntarjoaja asetuksista ennen kääntämistä.",
+  "Translate": "Käännä"
 }

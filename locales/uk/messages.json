@@ -110,8 +110,18 @@
   "pickProviderPlaceholder": {
     "message": "Спочатку вбудовані, потім усі постачальники, відомі models.dev"
   },
-  "pickModelTitle": { "message": "DualTran — Модель ШІ", "description": "DualTran — AI model" },
-  "pickModelPlaceholder": { "message": "Виберіть модель, яку має використовувати цей провайдер", "description": "Choose the model this provider should use" },
+  "providerPlaceholder": { "message": "Виберіть постачальника", "description": "Select a provider" },
+  "providerRequiredForModel": { "message": "Спочатку виберіть постачальника", "description": "Select a provider first" },
+  "providerRequiredError": { "message": "Перед перекладом виберіть постачальника ШІ в налаштуваннях.", "description": "Choose an AI provider in settings before translating." },
+  "statusTranslateAction": { "message": "Перекласти", "description": "Translate" },
+  "pickModelTitle": {
+    "message": "DualTran — Модель ШІ",
+    "description": "DualTran — AI model"
+  },
+  "pickModelPlaceholder": {
+    "message": "Виберіть модель, яку має використовувати цей провайдер",
+    "description": "Choose the model this provider should use"
+  },
   "providerSeparator": {
     "message": "Більше (models.dev)"
   },

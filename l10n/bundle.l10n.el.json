@@ -36,8 +36,6 @@
   "DualTran — target language": "DualTran — γλώσσα προορισμού",
   "DualTran — AI provider": "DualTran — πάροχος AI",
   "Built-in first, then every provider models.dev knows": "Ενσωματωμένος πρώτα, μετά κάθε πάροχος που γνωρίζει το models.dev",
-  "DualTran — AI model": "DualTran — Μοντέλο AI",
-  "Choose the model this provider should use": "Επιλέξτε το μοντέλο που πρέπει να χρησιμοποιεί αυτός ο πάροχος",
   "More (models.dev)": "Περισσότερα (models.dev)",
   "DualTran: {0} — {1}": "DualTran: {0} — {1}",
   "DualTran: {0} — set a model": "DualTran: {0} — ορίστε ένα μοντέλο",
@@ -45,5 +43,11 @@
   "DualTran: catalogue refresh failed — {0}": "DualTran: η ανανέωση του καταλόγου απέτυχε — {0}",
   "DualTran: could not load models.dev — {0}": "DualTran: δεν ήταν δυνατή η φόρτωση του models.dev — {0}",
   "DualTran: API key saved.": "DualTran: το κλειδί API αποθηκεύτηκε.",
-  "translating…": "μετάφραση…"
+  "translating…": "μετάφραση…",
+  "DualTran — AI model": "DualTran — Μοντέλο AI",
+  "Choose the model this provider should use": "Επιλέξτε το μοντέλο που πρέπει να χρησιμοποιεί αυτός ο πάροχος",
+  "Select a provider": "Επιλέξτε πάροχο",
+  "Select a provider first": "Επιλέξτε πρώτα πάροχο",
+  "Choose an AI provider in settings before translating.": "Επιλέξτε πάροχο AI στις ρυθμίσεις πριν από τη μετάφραση.",
+  "Translate": "Μετάφραση"
 }

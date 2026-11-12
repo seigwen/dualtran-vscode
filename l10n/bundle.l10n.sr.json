@@ -36,8 +36,6 @@
   "DualTran — target language": "DualTran — ciljni jezik",
   "DualTran — AI provider": "DualTran — AI provajder",
   "Built-in first, then every provider models.dev knows": "Prvo ugrađeni, zatim svaki provajder koji models.dev poznaje",
-  "DualTran — AI model": "DualTran — AI модел",
-  "Choose the model this provider should use": "Изаберите модел који овај добављач треба да користи",
   "More (models.dev)": "Više (models.dev)",
   "DualTran: {0} — {1}": "DualTran: {0} — {1}",
   "DualTran: {0} — set a model": "DualTran: {0} — postavite model",
@@ -45,5 +43,11 @@
   "DualTran: catalogue refresh failed — {0}": "DualTran: osvežavanje kataloga nije uspelo — {0}",
   "DualTran: could not load models.dev — {0}": "DualTran: nije moguće učitati models.dev — {0}",
   "DualTran: API key saved.": "DualTran: API ključ je sačuvan.",
-  "translating…": "prevodim…"
+  "translating…": "prevodim…",
+  "DualTran — AI model": "DualTran — AI модел",
+  "Choose the model this provider should use": "Изаберите модел који овај добављач треба да користи",
+  "Select a provider": "Изаберите добављача",
+  "Select a provider first": "Прво изаберите добављача",
+  "Choose an AI provider in settings before translating.": "Пре превођења изаберите добављача вештачке интелигенције у подешавањима.",
+  "Translate": "Преведи"
 }

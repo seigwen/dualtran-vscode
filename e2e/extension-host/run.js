@@ -54,6 +54,15 @@ async function runChecks() {
   const extension = vscode.extensions.getExtension("seigwenlee.dualtran");
   assert.ok(extension, "DualTran extension is not installed in the test host");
   await extension.activate();
+  // A command that ends in showWarningMessage returns a thenable that only
+  // settles when the notification is dismissed; resolve it immediately so the
+  // unconfigured-provider assertion does not hang the suite.
+  const warnings = [];
+  const originalWarning = vscode.window.showWarningMessage;
+  vscode.window.showWarningMessage = async (message) => {
+    warnings.push(String(message));
+    return undefined;
+  };
 
   const commands = await vscode.commands.getCommands(true);
   for (const id of [
@@ -66,12 +75,6 @@ async function runChecks() {
   }
 
   const config = vscode.workspace.getConfiguration("dualtran");
-  await config.update("engine", "ai", vscode.ConfigurationTarget.Global);
-  await config.update("ai.provider", "openai", vscode.ConfigurationTarget.Global);
-  await config.update("ai.endpoint", `${MOCK}/v1`, vscode.ConfigurationTarget.Global);
-  await config.update("ai.model", "gpt-5", vscode.ConfigurationTarget.Global);
-  await config.update("ai.reasoning", "high", vscode.ConfigurationTarget.Global);
-  await vscode.commands.executeCommand("dualtran.__e2e.setApiKey", "e2e-key");
 
   const document = await vscode.workspace.openTextDocument({
     language: "markdown",
@@ -79,6 +82,30 @@ async function runChecks() {
   });
   const editor = await vscode.window.showTextDocument(document);
   editor.selection = new vscode.Selection(0, 0, 0, 12);
+
+  // 0) SPEC 2.1: a fresh install has no provider, and an AI translation sends nothing.
+  assert.strictEqual(config.inspect("ai.provider").defaultValue, "", "ai.provider must default to empty");
+  assert.strictEqual(config.inspect("ai.endpoint").defaultValue, "", "ai.endpoint must default to empty");
+  await config.update("engine", "ai", vscode.ConfigurationTarget.Global);
+  await config.update("ai.provider", "", vscode.ConfigurationTarget.Global);
+  await config.update("ai.endpoint", "", vscode.ConfigurationTarget.Global);
+  await config.update("ai.model", "", vscode.ConfigurationTarget.Global);
+  await mockRequest("/reset", { method: "POST" });
+  await vscode.commands.executeCommand("dualtran.translateInline");
+  await new Promise((resolve) => setTimeout(resolve, 750));
+  const unconfigured = JSON.parse((await mockRequest("/requests")).text);
+  assert.strictEqual(unconfigured.length, 0, "an unconfigured provider must send no request");
+  assert.ok(
+    warnings.some((message) => message.includes("AI provider") || message.includes("提供")),
+    `expected a provider-required warning, got ${JSON.stringify(warnings)}`
+  );
+  vscode.window.showWarningMessage = originalWarning;
+
+  await config.update("ai.provider", "openai", vscode.ConfigurationTarget.Global);
+  await config.update("ai.endpoint", `${MOCK}/v1`, vscode.ConfigurationTarget.Global);
+  await config.update("ai.model", "gpt-5", vscode.ConfigurationTarget.Global);
+  await config.update("ai.reasoning", "high", vscode.ConfigurationTarget.Global);
+  await vscode.commands.executeCommand("dualtran.__e2e.setApiKey", "e2e-key");
 
   // 1) one real request, with the configured model, key and reasoning level
   await vscode.commands.executeCommand("dualtran.translateInline");

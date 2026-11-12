@@ -36,8 +36,6 @@
   "DualTran — target language": "DualTran — שפת יעד",
   "DualTran — AI provider": "DualTran — ספק AI",
   "Built-in first, then every provider models.dev knows": "מובנה תחילה, ואז כל ספק ש-models.dev מכיר",
-  "DualTran — AI model": "DualTran — מודל AI",
-  "Choose the model this provider should use": "בחרו את המודל שספק זה אמור להשתמש בו",
   "More (models.dev)": "עוד (models.dev)",
   "DualTran: {0} — {1}": "DualTran: {0} — {1}",
   "DualTran: {0} — set a model": "DualTran: {0} — הגדר מודל",
@@ -45,5 +43,11 @@
   "DualTran: catalogue refresh failed — {0}": "DualTran: רענון הקטלוג נכשל — {0}",
   "DualTran: could not load models.dev — {0}": "DualTran: לא ניתן לטעון את models.dev — {0}",
   "DualTran: API key saved.": "DualTran: מפתח ה-API נשמר.",
-  "translating…": "מתרגם…"
+  "translating…": "מתרגם…",
+  "DualTran — AI model": "DualTran — מודל AI",
+  "Choose the model this provider should use": "בחרו את המודל שספק זה אמור להשתמש בו",
+  "Select a provider": "בחרו ספק",
+  "Select a provider first": "תחילה בחרו ספק",
+  "Choose an AI provider in settings before translating.": "יש לבחור ספק בינה מלאכותית בהגדרות לפני התרגום.",
+  "Translate": "תרגם"
 }

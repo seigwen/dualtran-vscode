@@ -36,8 +36,6 @@
   "pickTargetTitle": "DualTran — limba țintă",
   "pickProviderTitle": "DualTran — furnizor AI",
   "pickProviderPlaceholder": "Mai întâi cele integrate, apoi fiecare furnizor cunoscut de models.dev",
-  "pickModelTitle": "DualTran — Model AI",
-  "pickModelPlaceholder": "Alegeți modelul pe care să îl folosească acest furnizor",
   "providerSeparator": "Mai multe (models.dev)",
   "infoProviderPicked": "DualTran: {0}",
   "infoProviderModel": "DualTran: {0} — {1}",
@@ -46,5 +44,11 @@
   "errorCatalogueRefresh": "DualTran: reîmprospătarea catalogului a eșuat — {0}",
   "errorCatalogueLoad": "DualTran: nu s-a putut încărca models.dev — {0}",
   "infoApiKeySaved": "DualTran: cheia API a fost salvată.",
-  "statusTranslating": "se traduce…"
+  "statusTranslating": "se traduce…",
+  "pickModelTitle": "DualTran — Model AI",
+  "pickModelPlaceholder": "Alegeți modelul pe care să îl folosească acest furnizor",
+  "providerPlaceholder": "Selectați un furnizor",
+  "providerRequiredForModel": "Selectați mai întâi un furnizor",
+  "providerRequiredError": "Selectați un furnizor de IA în setări înainte de a traduce.",
+  "statusTranslateAction": "Tradu"
 }

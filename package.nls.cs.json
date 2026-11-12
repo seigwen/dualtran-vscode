@@ -36,8 +36,6 @@
   "pickTargetTitle": "DualTran — cílový jazyk",
   "pickProviderTitle": "DualTran — poskytovatel AI",
   "pickProviderPlaceholder": "Nejprve vestavěné, poté všichni poskytovatelé známí models.dev",
-  "pickModelTitle": "DualTran — Model AI",
-  "pickModelPlaceholder": "Zvolte model, který má tento poskytovatel používat",
   "providerSeparator": "Další (models.dev)",
   "infoProviderPicked": "DualTran: {0}",
   "infoProviderModel": "DualTran: {0} — {1}",
@@ -46,5 +44,11 @@
   "errorCatalogueRefresh": "DualTran: obnovení katalogu selhalo — {0}",
   "errorCatalogueLoad": "DualTran: nepodařilo se načíst models.dev — {0}",
   "infoApiKeySaved": "DualTran: API klíč uložen.",
-  "statusTranslating": "překládání…"
+  "statusTranslating": "překládání…",
+  "pickModelTitle": "DualTran — Model AI",
+  "pickModelPlaceholder": "Zvolte model, který má tento poskytovatel používat",
+  "providerPlaceholder": "Vyberte poskytovatele",
+  "providerRequiredForModel": "Nejprve vyberte poskytovatele",
+  "providerRequiredError": "Před překladem vyberte poskytovatele AI v nastavení.",
+  "statusTranslateAction": "Přeložit"
 }

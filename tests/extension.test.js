@@ -9,6 +9,7 @@ function stubVscode() {
   const commands = [];
   const subs = [];
   const vscode = {
+    l10n: { t: (message) => message },
     window: {
       activeTextEditor: undefined,
       visibleTextEditors: [],
@@ -21,6 +22,7 @@ function stubVscode() {
     },
     workspace: {
       getConfiguration: () => ({ get: (_k, d) => d, update: async () => {} }),
+      onDidChangeConfiguration: () => ({ dispose() {} }),
     },
     commands: {
       registerCommand: (id, fn) => { commands.push(id); const d = { dispose() {} }; subs.push(d); return d; },
